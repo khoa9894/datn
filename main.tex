@@ -1,0 +1,320 @@
+% ====================================================================
+% KHAI BÁO CLASS VÀ GÓI NGÔN NGỮ/PHÔNG CHỮ CƠ BẢN
+% ====================================================================
+\documentclass[a4paper,12pt]{extarticle}
+\pdfcompresslevel=9
+\pdfobjcompresslevel=3
+\usepackage{vntex}
+\usepackage{mathptmx}
+\usepackage[unicode]{hyperref}
+\usepackage{adjustbox}
+\hypersetup{urlcolor=blue,linkcolor=black,citecolor=black,colorlinks=true}
+
+% ====================================================================
+% THIẾT LẬP LỀ (GEOMETRY)
+% ====================================================================
+\usepackage{geometry}
+\def\thesislayout{
+    \geometry{
+        a4paper,
+        left=3cm,
+        right=2cm,
+        top=2cm,
+        bottom=2.5cm,
+    }
+}
+\def\thesisheadlayout{
+    \geometry{
+        a4paper,
+        left=3cm,
+        top=1cm,
+        right=2cm,
+        bottom=2cm,
+    }
+}
+\thesislayout
+
+% ====================================================================
+% GÓI KỸ THUẬT VÀ TOÁN HỌC
+% ====================================================================
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage[makeroom]{cancel}
+\usepackage[normalem]{ulem}
+\usepackage{float}
+
+% ====================================================================
+% GÓI BẢNG BIỂU VÀ ĐỒ HỌA
+% ====================================================================
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{tikz}
+\usetikzlibrary{arrows,snakes,backgrounds,calc}
+\usepackage{array, tabularx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{diagbox}
+\usepackage{multirow}
+\usepackage{caption,subcaption}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{graphics}
+\usepackage{forest}
+
+% ====================================================================
+% GÓI FORMAT VÀ LIST
+% ====================================================================
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{alltt}
+\usepackage{color}
+\usepackage[framemethod=tikz]{mdframed}
+
+% ====================================================================
+% GÓI CODE VÀ THUẬT TOÁN
+% ====================================================================
+\usepackage{listings}
+\usepackage[lined,boxed,commentsnumbered]{algorithm2e}
+
+% ====================================================================
+% GÓI CHỨC NĂNG KHÁC
+% ====================================================================
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% ====================================================================
+% KHẮC PHỤC CĂN CHỈNH ĐỀ MỤC (SECTIONING)
+% Đề mục sẽ được căn trái nhờ titlesec
+% Văn bản sẽ là căn đều (justified) vì titlesec chỉ tác động lên đề mục
+% ====================================================================
+% ====================================================================
+% KHẮC PHỤC CĂN CHỈNH ĐỀ MỤC (SECTIONING)
+% ====================================================================
+\usepackage{titlesec}
+\usepackage[titles]{tocloft} % <--- BỔ SUNG GÓI NÀY
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+
+% Sửa lại dòng này để hiện chữ "Chương"
+\titleformat{\section}[block]{\normalfont\Large\bfseries}{Chương \thesection:}{0.5em}{\raggedright}
+
+% Giữ nguyên các dòng này của bạn
+\titleformat{\subsection}[block]{\normalfont\large\bfseries}{\thesubsection}{1em}{\raggedright}
+\titleformat{\subsubsection}[block]{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{\raggedright}
+
+% --- BỔ SUNG PHẦN NÀY ĐỂ MỤC LỤC ĐẸP ---
+\renewcommand{\cftsecpresnum}{Chương }
+\addtolength{\cftsecnumwidth}{4.5em} 
+% ---------------------------------------
+
+% Định nghĩa lại subsubsubsection (Giữ nguyên phần @startsection của bạn)
+\makeatletter
+\newcounter {subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection .\@alph\c@subsubsubsection}
+\newcommand\subsubsubsection{\@startsection{subsubsubsection}{4}{\z@}%
+	{-3.25ex\@plus -1ex \@minus -.2ex}%
+	{1.5ex \@plus .2ex}%
+	{\normalfont\normalsize\bfseries}}
+\newcommand*\l@subsubsubsection{\@dottedtocline{4}{10.0em}{4.1em}}
+\newcommand*{\subsubsubsectionmark}[1]{}
+\makeatother
+
+\titleformat{\subsubsubsection}[block]{\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{\raggedright}
+
+% ====================================================================
+% ĐỊNH NGHĨA MÔI TRƯỜNG ĐỊNH LÝ
+% ====================================================================
+\newtheorem{theorem}{{\bf Định lý}}
+\newtheorem{property}{{\bf Tính chất}}
+\newtheorem{proposition}{{\bf Mệnh đề}}
+\newtheorem{corollary}[proposition]{{\bf Hệ quả}}
+\newtheorem{lemma}[proposition]{{\bf Bổ đề}}
+\theoremstyle{definition}
+\newtheorem{exer}{Bài toán}
+
+% ====================================================================
+% ĐỊNH NGHĨA LISTINGS (CODE)
+% ====================================================================
+\lstset{
+    language=R,
+    basicstyle=\footnotesize\sffamily,
+    commentstyle=\ttfamily\color{black},
+    numbers=left,
+    numberstyle=\ttfamily\color{black}\footnotesize,
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{white},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=single,
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    title=\lstname,
+    escapeinside={},
+    keywordstyle={},
+    morekeywords={}
+}
+
+% ====================================================================
+% ĐỊNH NGHĨA HEADER VÀ FOOTER (Giữ nguyên theo format HCMUT)
+% ====================================================================
+\setlength{\headheight}{40pt}
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\footruleskip}{1mm}
+
+\fancyhead[L]{
+    \begin{tabular}{rl}
+        \begin{picture}(25,15)(0,0)
+            \put(0,-8){\includegraphics[width=10mm, height=10mm]{Image/HCMUT logo.png}}
+        \end{picture}&
+        \begin{tabular}{l}
+            \textbf{ Trường Đại Học Bách Khoa - Đại học Quốc gia TP.HCM }\\
+            \textbf{ Khoa Khoa Học \& Kỹ Thuật Máy Tính}
+        \end{tabular}
+    \end{tabular}
+}
+\fancyhead[R]{
+    \begin{tabular}{l}
+        \tiny \bf \\
+        \tiny \bf
+    \end{tabular}
+}
+\fancyfoot{}
+\fancyfoot[L]{\scriptsize Báo cáo Đồ án chuyên ngành - HK1 2025 - 2026}
+\fancyfoot[R]{\scriptsize Trang {\thepage}/\pageref{LastPage}}
+
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+% ====================================================================
+% CÁC LỆNH FORMAT CUỐI
+% ĐÃ BỎ \sloppy để tối ưu căn đều
+% ====================================================================
+\everymath{\color{black}}
+% \sloppy <-- ĐÃ BỎ!
+\captionsetup[figure]{labelfont={small,bf},textfont={small,it},belowskip=-1pt,aboveskip=-9pt}
+\captionsetup[table]{labelfont={small,bf},textfont={small,it},belowskip=-1pt,aboveskip=7pt}
+\setlength{\floatsep}{5pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{5pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\addtocontents{lof}{\protect\thispagestyle{empty}}
+\addtocontents{lot}{\protect\thispagestyle{empty}}
+
+\begin{document}
+
+\begin{titlepage}
+	\thispagestyle{empty}
+	
+	% ===== Khung viền =====
+	\begin{tikzpicture}[remember picture, overlay]
+		\draw[line width=3pt]
+		($(current page.north west)+(1.8cm,-1.8cm)$)
+		rectangle
+		($(current page.south east)+(-1.8cm,1.8cm)$);
+		\draw[line width=1pt]
+		($(current page.north west)+(2.0cm,-2.0cm)$)
+		rectangle
+		($(current page.south east)+(-2.0cm,2.0cm)$);
+	\end{tikzpicture}
+	
+	\vspace*{-0.5cm}
+	
+	% ===== Phần đầu =====
+	\begin{center}
+		{\fontsize{13}{15}\selectfont \textbf{ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH}}\\[0.15cm]
+		{\fontsize{13}{15}\selectfont \textbf{TRƯỜNG ĐẠI HỌC BÁCH KHOA}}\\[0.15cm]
+		{\fontsize{13}{15}\selectfont \textbf{KHOA KHOA HỌC -- KỸ THUẬT MÁY TÍNH}}
+	\end{center}
+	
+	\vspace{0.8cm}
+	
+	% ===== Logo =====
+	\begin{center}
+		\includegraphics[width=4.5cm]{Image/HCMUT logo.png}
+	\end{center}
+	
+	\vspace{0.8cm}
+	
+	% ===== Tiêu đề =====
+	\begin{center}
+		{\fontsize{14}{16}\selectfont \textbf{BÁO CÁO}}\\[0.2cm]
+		{\fontsize{14}{16}\selectfont \textbf{ĐỒ ÁN CHUYÊN NGÀNH}}\\[0.8cm]
+		
+		{\fontsize{16}{18}\selectfont \textbf{XÂY DỰNG WEBSITE HỌC TOÁN TƯ DUY}}\\[0.2cm]
+		{\fontsize{16}{18}\selectfont \textbf{CHO HỌC SINH TIỂU HỌC}}\\[0.2cm]
+		
+		\vspace{0.5cm}
+		{\fontsize{14}{16}\selectfont \textbf{NGÀNH: KHOA HỌC MÁY TÍNH}}
+	\end{center}
+	
+	\vspace{1.0cm}
+	
+	% ===== Thông tin =====
+	\begin{center}
+		\begin{tabular}{l l}
+			\textbf{HỘI ĐỒNG:} & HỘI ĐỒNG 25L ĐỒ ÁN CHUYÊN NGÀNH \\[0.1cm]
+			\textbf{GIẢNG VIÊN HƯỚNG DẪN:} & ThS. Trần Thị Quế Nguyệt \\[0.1cm]
+			\textbf{THƯ KÝ HỘI ĐỒNG:} & CN. Lê Bình Đẳng \\[0.6cm]
+			
+			\textbf{SINH VIÊN THỰC HIỆN:} & Nguyễn Văn Thành -- 2320012 \\[0.2cm]
+			& Nguyễn Minh Tân -- 2213057 \\[0.2cm]
+			& Trương Anh Khoa -- 2211657
+		\end{tabular}
+	\end{center}
+	
+	\vspace{0.5cm}
+	
+	% ===== Địa điểm - thời gian =====
+	\begin{center}
+		{\fontsize{13}{15}\selectfont \textbf{TP. HỒ CHÍ MINH, THÁNG 12/2025}}
+	\end{center}
+	
+\end{titlepage}
+
+
+\newpage
+\input{Content/LỜI CAM ĐOAN}
+\newpage
+\input{Content/LỜI CẢM ƠN}
+
+\newpage
+\tableofcontents
+
+% Chuong 1
+\newpage
+\input{Content/Tổng quan về đề tài}
+
+% Chuong 2
+\newpage
+\input{Content/Khảo sát liên quan}
+
+% Chuong 3
+\input{Content/Phân tích yêu cầu}
+
+% Chuong 4
+\newpage
+\input{Content/Phân tích và thiết kế hệ thống}
+ 
+% Chuong 5
+\input{Content/Thiết kế giao diện}
+ 
+ % Chuong 6
+\input{Content/Hiện thực}
+
+% Chuong 7
+\input{Content/Tổng kết}
+
+\newpage
+\input{Content/TÀI LIỆU THAM KHẢO}
+
+
+\end{document}

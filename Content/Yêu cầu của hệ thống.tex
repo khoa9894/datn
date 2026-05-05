@@ -1,0 +1,93 @@
+\subsection{Yêu cầu chức năng}
+\begin{itemize}
+    \item \textbf{Yêu cầu chung cho người dùng}
+    \begin{itemize}
+        \item Người dùng có thể đăng nhập và đăng ký tài khoản.
+        \item Người dùng có thể xem và chỉnh sửa hồ sơ cá nhân.
+        \item Người dùng có thể thay đổi mật khẩu và khôi phục lại mật khẩu khi quên.
+    \end{itemize}
+    
+    \item \textbf{Đối với học sinh}
+    \begin{itemize}
+        \item Học sinh có thể học toán thông qua các bài tập dạng tương tác (kéo thả, nối, trắc nghiệm, điền khuyết, tô màu, đúng/sai,...)
+        \item Học sinh có thể tham gia làm bài thi Đấu trường hằng tuần và tích lũy điểm để nâng cấp bậc xếp hạng.
+        \item Học sinh có thể chơi các trò chơi toán học tư duy (chơi đơn hoặc tương tác cùng phụ huynh).
+        \item Học sinh có thể theo dõi tiến độ học tập và lịch sử làm bài.
+        \item Học sinh có thể thực hiện các nhiệm vụ hằng ngày và nhận thưởng.
+        \item Học sinh có thể theo dõi bảng xếp hạng học tập và bảng xếp hạng đấu trường.
+        \item Học sinh có thể làm bài kiểm tra đầu vào để đánh giá năng lực hiện tại.
+        \item Học sinh có thể liên kết tài khoản với phụ huynh (Nhập mã mời hoặc gửi yêu cầu).
+    \end{itemize}
+    
+    \item \textbf{Đối với phụ huynh}
+    \begin{itemize}
+        \item Phụ huynh có thể theo dõi tiến độ và kết quả học tập của con.
+        \item Phụ huynh có thể liên kết tài khoản với học sinh (Gửi yêu cầu liên kết).
+        \item Phụ huynh có thể nâng cấp tài khoản cho bản thân và cho các tài khoản học sinh được liên kết.
+    \end{itemize}
+\end{itemize}
+
+
+\subsection{Yêu cầu phi chức năng}
+
+\subsubsection{Hiệu năng}
+\begin{itemize}[leftmargin=2.0cm]
+	\item Thời gian tải trang chính $\leq 3$ giây với kết nối Internet ổn định.
+	\item Hệ thống phản hồi các thao tác người dùng trong thời gian $\leq 1$ giây.
+	\item Kết quả bài tập và biểu đồ tiến độ được cập nhật gần thời gian thực.
+\end{itemize}
+
+\subsubsection{Bảo mật}
+\begin{itemize}[leftmargin=2.0cm]
+	\item Người dùng chỉ được truy cập và thao tác trên dữ liệu cá nhân của mình.
+	\item Hệ thống áp dụng cơ chế xác thực và phân quyền người dùng.
+	\item Dữ liệu truyền tải giữa trình duyệt và máy chủ được mã hóa bằng HTTPS.
+\end{itemize}
+
+\subsubsection{Tính khả dụng và Độ tin cậy}
+\begin{itemize}[leftmargin=2.0cm]
+	\item Hệ thống đảm bảo thời gian hoạt động (uptime) tối thiểu 99\%.
+	\item Dữ liệu được sao lưu tự động định kỳ mỗi 24 giờ.
+	\item Có cơ chế khôi phục hệ thống trong vòng 30 phút sau sự cố.
+\end{itemize}
+
+\subsubsection{Khả năng mở rộng}
+\begin{itemize}[leftmargin=2.0cm]
+	\item Hệ thống có khả năng phục vụ đồng thời tối thiểu 500 người dùng.
+	\item Kiến trúc cho phép mở rộng theo chiều ngang khi số lượng người dùng tăng.
+	\item Dễ dàng tích hợp hoặc bổ sung các tính năng và nội dung mới.
+\end{itemize}
+
+\subsubsection{Tính dễ sử dụng}
+\begin{itemize}[leftmargin=2.0cm]
+	\item Giao diện trực quan, thân thiện, phù hợp với học sinh.
+	\item Người dùng mới có thể hoàn thành bài tập đầu tiên trong thời gian $\leq 2$ phút.
+	\item Hệ thống hỗ trợ hướng dẫn sử dụng và phản hồi trực quan.
+\end{itemize}
+
+\subsubsection{Tương thích}
+\begin{itemize}[leftmargin=2.0cm]
+	\item Ứng dụng tương thích với các trình duyệt phổ biến như Chrome, Firefox, Edge và Safari.
+	\item Giao diện hỗ trợ hiển thị tốt trên máy tính, máy tính bảng và thiết bị di động (responsive).
+\end{itemize}
+
+\subsubsection{Khả năng bảo trì}
+\begin{itemize}[leftmargin=2.0cm]
+	\item Mã nguồn được tổ chức rõ ràng, dễ bảo trì và mở rộng.
+	\item Các bản cập nhật được triển khai thông qua quy trình CI/CD.
+	\item Lỗi nghiêm trọng được phát hiện và khắc phục trong vòng 24 giờ.
+\end{itemize}
+
+\subsubsection{Khả năng triển khai linh hoạt}
+\begin{itemize}[leftmargin=2.0cm]
+	\item Backend có thể triển khai trên nhiều nền tảng hạ tầng đám mây khác nhau.
+	\item Hệ thống hỗ trợ triển khai độc lập giữa frontend và backend.
+\end{itemize}
+
+\subsubsection{Quyền riêng tư và Tuân thủ}
+\begin{itemize}[leftmargin=2.0cm]
+	\item Không chia sẻ dữ liệu người dùng cho bên thứ ba khi chưa có sự đồng ý.
+	\item Cung cấp chức năng xóa tài khoản và toàn bộ dữ liệu theo yêu cầu của người dùng.
+	\item Tuân thủ các quy định về bảo vệ dữ liệu cá nhân.
+\end{itemize}
+

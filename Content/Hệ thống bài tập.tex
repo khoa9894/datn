@@ -1,0 +1,108 @@
+\subsubsection{Các dạng toán}
+\subsubsubsection{Dạng toán trắc nghiệm (Multiple Choice)}
+
+\textbf{Đặc điểm kỹ thuật:}
+\begin{itemize}
+	\item \textbf{Cấu trúc dữ liệu:} Mỗi câu hỏi bao gồm một câu hỏi chính và 4 lựa chọn, trong đó có duy nhất một đáp án đúng
+	\item \textbf{Tương tác:} Người dùng chọn một trong các lựa chọn bằng cách nhấp chuột
+	\item \textbf{Xác thực:} Hệ thống so sánh lựa chọn với đáp án chính xác được định nghĩa trong dữ liệu
+	\item \textbf{Phản hồi:} Hiển thị hiệu ứng nhấp nháy cho đáp án đúng khi trả lời chính xác
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Image/multi.jpg}
+	\vspace{0.5cm}
+	\caption{Dạng toán trắc nghiệm}
+	\label{fig:multiple-choice}
+\end{figure}
+
+\subsubsubsection{Dạng toán ghép cặp (Matching)}
+
+\textbf{Đặc điểm kỹ thuật:}
+\begin{itemize}
+	\item \textbf{Cấu trúc dữ liệu:} Mỗi câu hỏi bao gồm 4 cặp ghép, mỗi cặp có một phần tử bên trái và một phần tử bên phải cần được kết nối
+	\item \textbf{Tương tác:} Người dùng kéo thả các block đáp án vào vùng tương ứng bằng cơ chế drag-drop 
+	\item \textbf{Xác thực:} Hệ thống kiểm tra từng cặp ghép có đúng vị trí hay không và theo dõi trạng thái của tất cả các block
+	\item \textbf{Phản hồi:} Thay đổi màu sắc của block khi kéo thả thành công 
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Image/match.jpg}
+	\vspace{0.5cm}
+	\caption{Dạng toán ghép cặp}
+	\label{fig:matching}
+\end{figure}
+
+\subsubsubsection{Dạng toán điền từ/số (Fill in the Blanks)}
+
+\textbf{Đặc điểm kỹ thuật:}
+\begin{itemize}
+	\item \textbf{Cấu trúc dữ liệu:} Mỗi câu hỏi chứa tối đa 3 ô trống cần điền
+	\item \textbf{Tương tác:} Người dùng nhập trực tiếp số vào các ô input, có thể điền từng ô riêng lẻ hoặc tất cả cùng lúc
+	\item \textbf{Xác thực:} Hệ thống kiểm tra từng ô điền riêng biệt và tính điểm từng phần 
+	\item \textbf{Phản hồi:} Hiệu ứng fade-in khi hiển thị đáp án 
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Image/fill.jpg}
+	\vspace{0.5cm}
+	\caption{Dạng toán điền từ}
+	\label{fig:fill-blanks}
+\end{figure}
+
+\subsubsubsection{Dạng toán kéo thả (Drag and Drop)}
+
+\textbf{Đặc điểm kỹ thuật:}
+\begin{itemize}
+	\item \textbf{Cấu trúc dữ liệu:} Câu hỏi chứa biểu thức toán học với vị trí trống linh hoạt (đầu, giữa, hoặc cuối) và danh sách các lựa chọn bao gồm đáp án đúng và nhiễu
+	\item \textbf{Tương tác:} Người dùng kéo các số từ danh sách lựa chọn vào vùng trống trong biểu thức
+	\item \textbf{Xác thực:} Hệ thống so sánh lựa chọn với đáp án chính xác được định nghĩa trong dữ liệu
+	\item \textbf{Phản hồi:} Reset về vị trí ban đầu khi thả sai, hiệu ứng visual khi thả đúng 
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Image/drag.jpg}
+	\vspace{0.5cm}
+	\caption{Dạng toán kéo thả}
+	\label{fig:drag-drop}
+\end{figure}
+
+\subsubsubsection{Dạng toán phân loại chẵn/lẻ (Even/Odd Classification)}
+
+\textbf{Đặc điểm kỹ thuật:}
+\begin{itemize}
+	\item \textbf{Cấu trúc dữ liệu:} Câu hỏi chứa seed number để tạo ra 20 số ngẫu nhiên nhất quán, mỗi số cần được phân loại là chẵn hoặc lẻ
+	\item \textbf{Tương tác:} Người dùng chọn mode (chẵn/lẻ) rồi click vào các số để gán màu tương ứng, con trỏ thay đổi màu theo mode hiện tại
+	\item \textbf{Xác thực:} Hệ thống kiểm tra toàn bộ danh sách cùng lúc, đảm bảo tất cả số đã được phân loại và đúng tính chất chẵn/lẻ
+	\item \textbf{Phản hồi:} Đổi màu nền số theo lựa chọn và hiệu ứng chuyển đổi màu khi hiển thị đáp án đúng
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Image/Grouping.jpg}
+	\vspace{0.5cm}
+	\caption{Dạng toán phân loại chẵn lẻ}
+	\label{fig:even-odd}
+\end{figure}
+
+\subsubsubsection{Dạng toán đúng/sai (True/False)}
+
+\textbf{Đặc điểm kỹ thuật:}
+\begin{itemize}
+	\item \textbf{Cấu trúc dữ liệu:} Mỗi câu hỏi gồm một câu hỏi chính, đáp án boolean (true/false), và nội dung hướng dẫn tùy chọn
+	\item \textbf{Tương tác:} Người dùng chọn một trong hai lựa chọn Đúng/Sai bằng cách click, chỉ cho phép chọn một đáp án duy nhất
+	\item \textbf{Xác thực:} Hệ thống so sánh lựa chọn với đáp án chính xác được định nghĩa trong dữ liệu
+	\item \textbf{Phản hồi:} Hiển thị hiệu ứng nhấp nháy cho đáp án đúng khi trả lời chính xác
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\textwidth]{Image/true.jpg}
+	\vspace{0.5cm}
+	\caption{Dạng toán đúng sai}
+	\label{fig:true-false}
+\end{figure}

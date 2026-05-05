@@ -1,0 +1,81 @@
+\section{Hiện thực}
+\subsection{Công nghệ sử dụng}
+
+\subsubsection{Giao diện người dùng}
+
+\begin{itemize}
+  \item \textbf{Next.js (React)}
+    \begin{itemize}
+      \item \textbf{Giới thiệu:} Next.js là một framework React mã nguồn mở được phát triển bởi Vercel, hỗ trợ rendering phía server (SSR) và tạo trang tĩnh (SSG) \cite{nextjsdocs}.
+      \item \textbf{Lý do sử dụng:} Next.js có khả năng tối ưu hiệu năng với Server-Side Rendering và Static Site Generation, giúp trang web load nhanh và thân thiện với SEO, ngoài ra framework này còn hỗ trợ routing tự động, API routes tích hợp sẵn, và có hệ sinh thái React phong phú với nhiều thư viện UI component \cite{nextjsdocs}. Next.js cho phép phát triển full-stack với cả frontend và backend API trong cùng một dự án, giúp đơn giản hóa quá trình phát triển. Ngoài ra, việc triển khai lên Vercel hoặc các nền tảng cloud khác rất dễ dàng, có cộng đồng hỗ trợ lớn và được cập nhật thường xuyên. Nhược điểm chính là learning curve cao hơn so với React thuần, nhưng đổi lại mang lại hiệu năng và trải nghiệm người dùng vượt trội.
+    \end{itemize}
+    
+  \item \textbf{Cocos Creator}
+    \begin{itemize}
+      \item \textbf{Giới thiệu:} Cocos Creator là một game engine đa nền tảng mã nguồn mở, chuyên dụng cho phát triển game 2D/3D và các ứng dụng tương tác \cite{cocoscreator38}.
+      \item \textbf{Lý do sử dụng:} Cocos Creator được sử dụng để tạo các bài tập tương tác (interactive exercises) và minigames với đồ họa phong phú, animation mượt mà. Engine này hỗ trợ export ra WebGL để chạy trực tiếp trên trình duyệt web, tích hợp dễ dàng với Next.js. Cocos Creator cung cấp editor trực quan giúp thiết kế game nhanh chóng, hỗ trợ physics engine tích hợp sẵn, và có khả năng xử lý nhiều đối tượng game cùng lúc với hiệu năng cao \cite{cocoscreator38}. Điều này rất phù hợp cho việc tạo các trò chơi toán học tương tác, bài tập kéo thả, và các minigame giáo dục hấp dẫn.
+    \end{itemize}
+\end{itemize}
+
+
+\subsubsection{Hạ tầng Backend và Quản lý dữ liệu}
+
+\begin{itemize}
+	\item \textbf{Node.js \& Express.js}
+	\begin{itemize}
+		\item \textbf{Giới thiệu:} Node.js là một môi trường thực thi JavaScript phía server dựa trên V8 engine của Chrome, trong khi Express.js là một framework ứng dụng web tối giản, linh hoạt chạy trên nền tảng Node.js \cite{nodejs, expressjs}.
+		\item \textbf{Lý do sử dụng:} Sự kết hợp giữa Node.js và Express.js cho phép xây dựng các dịch vụ API có hiệu suất cao nhờ cơ chế hướng sự kiện (event-driven) và I/O không chặn (non-blocking I/O). Điều này đặc biệt quan trọng đối với các tính năng thời gian thực trong Đấu trường, nơi cần xử lý đồng thời nhiều kết nối từ học sinh. Theo tài liệu chính thức \cite{expressjs}, Express.js cung cấp hệ thống Middleware mạnh mẽ, giúp nhóm dễ dàng quản lý luồng dữ liệu, xác thực người dùng và tích hợp các dịch vụ bên thứ ba một cách nhất quán. Việc sử dụng ngôn ngữ TypeScript đồng bộ từ Frontend đến Backend giúp giảm thiểu sai sót về kiểu dữ liệu và tăng tốc độ phát triển dự án.
+	\end{itemize}
+	
+	\item \textbf{MongoDB} 
+	\begin{itemize}
+		\item \textbf{Giới thiệu:} MongoDB là hệ quản trị cơ sở dữ liệu NoSQL hướng tài liệu (document-oriented), lưu trữ dữ liệu dưới dạng các tài liệu có cấu trúc tương tự JSON \cite{mongodb}.
+		\item \textbf{Lý do sử dụng:} MongoDB đóng vai trò là cơ sở dữ liệu chính để lưu trữ thông tin người dùng, kho câu hỏi, kết quả học tập và dữ liệu thống kê. Với tính chất \textit{schema-less}, MongoDB cho phép lưu trữ các định dạng câu hỏi toán học đa dạng (kéo thả, trắc nghiệm, điền số) mà không cần cấu trúc bảng cứng nhắc. Hệ thống tận dụng Mongoose ODM để giao tiếp giữa Node.js và cơ sở dữ liệu, giúp quản lý dữ liệu chặt chẽ hơn qua các định nghĩa Schema. Ngoài ra, khả năng mở rộng ngang (horizontal scaling) và Aggregation Pipeline mạnh mẽ của MongoDB hỗ trợ hiệu quả cho việc xử lý các truy vấn phức tạp như tính toán độ chính xác trung bình và thống kê lịch sử làm bài của học sinh.
+	\end{itemize}
+	
+	\item \textbf{Redis} 
+	\begin{itemize}
+		\item \textbf{Giới thiệu:} Redis là hệ thống lưu trữ dữ liệu cấu trúc key-value dưới dạng in-memory (lưu trữ trên RAM), thường được dùng làm bộ nhớ đệm (caching) \cite{redis}.
+		\item \textbf{Lý do sử dụng:} Redis được tích hợp để tối ưu hóa tốc độ phản hồi của hệ thống thông qua việc lưu trữ các dữ liệu có tần suất truy cập cao nhưng ít thay đổi hoặc các dữ liệu mang tính tạm thời như phiên đăng nhập (session). Đặc biệt, trong tính năng Đấu trường, Redis hỗ trợ tính toán và hiển thị bảng xếp hạng (leaderboard) theo thời gian thực với độ trễ cực thấp, mang lại trải nghiệm mượt mà cho học sinh khi tham gia thi đấu.
+	\end{itemize}
+\end{itemize}
+
+\newpage
+\subsubsection{Dịch vụ bên ngoài}
+\begin{itemize}
+  \item \textbf{Payment Gateway}
+    \begin{itemize}
+      \item \textbf{Giới thiệu:} Dịch vụ thanh toán trực tuyến của bên thứ ba (VNPay).
+      \item \textbf{Lý do sử dụng:} Xử lý các giao dịch thanh toán cho việc đăng ký Premium một cách an toàn và tuân thủ các tiêu chuẩn bảo mật PCI DSS. Hỗ trợ nhiều phương thức thanh toán phổ biến tại Việt Nam như chuyển khoản ngân hàng, QR code, và ví điện tử. Cung cấp webhook để cập nhật trạng thái thanh toán real-time.
+    \end{itemize}
+ \end{itemize}
+
+\subsubsection{Hạ tầng và DevOps}
+
+\begin{itemize}
+	\item \textbf{Vercel}
+	\begin{itemize}
+		\item \textbf{Giới thiệu:} Vercel là nền tảng điện toán đám mây (cloud deployment) được tối ưu hóa riêng cho Next.js và các ứng dụng full-stack hiện đại \cite{vercel}.
+		\item \textbf{Lý do sử dụng:} Hỗ trợ quy trình triển khai ứng dụng Next.js tối giản thông qua cơ chế CI/CD tự động từ kho lưu trữ Git. Vercel cung cấp mạng lưới Edge Network toàn cầu giúp tối ưu hóa tốc độ truy cập (latency), khả năng tự động mở rộng (auto-scaling) và tính năng Preview Deployments cho mỗi pull request.
+	\end{itemize}
+	
+	\item \textbf{GitHub} 
+	\begin{itemize}
+		\item \textbf{Giới thiệu:} GitHub là nền tảng quản lý mã nguồn dựa trên Git, hỗ trợ cộng tác phát triển phần mềm trên phạm vi toàn cầu \cite{github}.
+		\item \textbf{Lý do sử dụng:} Là dịch vụ tiêu chuẩn trong việc lưu trữ mã nguồn, theo dõi lịch sử thay đổi (version control), thực hiện quy trình kiểm tra mã (code review) và tích hợp linh hoạt với các công cụ CI/CD của bên thứ ba.
+	\end{itemize}
+	
+	\item \textbf{Amazon Web Services (AWS)}
+	\begin{itemize}
+		\item \textbf{Giới thiệu:} Nền tảng điện toán đám mây cung cấp hạ tầng mạnh mẽ. Trong đề tài này, nhóm triển khai hệ thống container trên các máy ảo EC2 nhằm vận hành ứng dụng theo mô hình Kubernetes tập trung.
+		
+		\item \textbf{Lý do sử dụng:} 
+		\begin{itemize}
+			\item \textbf{K3s}: Được lựa chọn nhờ kiến trúc tối giản, phù hợp với các instance EC2 có cấu hình vừa phải. K3s cho phép nhóm vận hành các công cụ chuẩn của Kubernetes như Deployment, Service và YAML manifest để quản lý vòng đời ứng dụng một cách nhất quán qua giao diện dòng lệnh \texttt{kubectl} \cite{k3s}.
+			
+			\item \textbf{Tính linh hoạt:} Việc kết hợp K3s và AWS giúp tận dụng hạ tầng đàn hồi của EC2 trong khi vẫn giữ quyền kiểm soát toàn diện cụm (cluster). Giải pháp này đáp ứng tốt các yêu cầu về chi phí, hiệu năng và khả năng mở rộng quy mô trong môi trường thực tế.
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\input{Content/Mô tả tổ chức mã nguồn}

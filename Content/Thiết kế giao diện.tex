@@ -1,0 +1,974 @@
+\section{Thiết kế giao diện}
+Giao diện người dùng đóng vai trò quan trọng trong việc mang lại trải nghiệm học tập hiệu quả cho học sinh. Với mục tiêu tạo ra một nền tảng học toán vừa thân thiện vừa hấp dẫn, nhóm đã thiết kế giao diện dựa trên các tiêu chí: dễ sử dụng, trực quan, sáng tạo và phù hợp với lứa tuổi tiểu học. Toàn bộ thiết kế giao diện được trình bày chi tiết tại: \href{https://www.figma.com/design/SoUfs7Sxqv9unjfvdxj9dB/Dino---DACN?node-id=0-1&t=fxbj1E539k6XP6Ww-1}{Figma - Thiết kế Dino Math}.
+
+\subsection{Giao diện Landing Page}
+Landing Page của hệ thống \textbf{Dino Math} được thiết kế nhằm mục đích giới thiệu tổng quan về nền tảng học Toán tư duy trực tuyến dành cho học sinh tiểu học, đồng thời thu hút người dùng và khuyến khích đăng ký sử dụng hệ thống. Giao diện Landing Page được thiết kế như \textit{Hình \ref{fig:landingpage}}.
+
+\newline
+\vspace{0.5cm}
+Giao diện được thiết kế với tông màu tươi sáng kết hợp với các hình minh họa sinh động cũng như hoạt ảnh (Animation) được tạo bằng Lottielab, qua đó tạo cảm giác thân thiện và phù hợp với đối tượng người dùng là trẻ em, đồng thời vẫn đảm bảo tính rõ ràng và dễ sử dụng đối với phụ huynh.
+
+\newline
+\vspace{0.5cm}
+Phần \textbf{Đầu trang (Header)} bao gồm logo nhận diện thương hiệu của hệ thống và các nút chức năng \textit{Đăng ký} và \textit{Đăng nhập}. Các thành phần này được bố trí hợp lý, giúp người dùng dễ dàng truy cập vào hệ thống.
+
+\newline
+\vspace{0.5cm}
+Khu vực \textbf{Giới thiệu chính (Hero Section)} nằm ở vị trí trung tâm của trang, hiển thị khẩu hiệu \textit{``Học mà chơi, chơi mà học!''}, thể hiện rõ định hướng giáo dục của hệ thống. Bên dưới là đoạn mô tả ngắn giới thiệu Dino Math là nền tảng học Toán tư duy trực tuyến dành cho học sinh tiểu học. Nút kêu gọi hành động \textit{``Dùng thử ngay''} được thiết kế nổi bật nhằm khuyến khích người dùng trải nghiệm hệ thống.
+
+\newline
+\vspace{0.5cm}
+Tiếp theo là khu vực \textbf{Các tính năng nổi bật}, trong đó các chức năng chính của hệ thống được trình bày dưới dạng các thẻ nội dung kèm biểu tượng minh họa. Các tính năng bao gồm học Toán thông qua bài tập tương tác, kết hợp học và chơi với các minigame Toán học, so tài với người dùng khác, theo dõi tiến trình học tập, tăng cường sự tương tác giữa phụ huynh và học sinh, cũng như gợi ý lộ trình học tập phù hợp với chương trình học thực tế.
+
+\newline
+\vspace{0.5cm}
+Cuối trang là \textbf{Chân trang (Footer)}, cung cấp thông tin giới thiệu ngắn gọn về hệ thống, các liên kết điều hướng nhanh, biểu tượng mạng xã hội và thông tin bản quyền. Ngoài ra, landing page còn hiển thị các công nghệ và nền tảng hỗ trợ hệ thống nhằm tăng mức độ tin cậy cho người dùng.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/LandingPage.jpg}
+	\vspace{0.6cm}
+	\caption{Landing Page}
+	\label{fig:landingpage}
+\end{figure}
+
+\subsection{Giao diện đăng nhập và đăng ký tài khoản}
+\subsubsection{Giao diện đăng nhập}
+\label{subsubsec:login}
+\begin{itemize}
+	\item \textbf{Mục đích:} Cho phép người dùng xác thực tài khoản thông qua email và mật khẩu để truy cập và sử dụng các dịch vụ của hệ thống.
+	\item \textbf{Mô tả:} 
+	\begin{itemize}
+		\item Giao diện đăng nhập ở giữa màn hình sẽ được hiển thị khi người dùng chọn tab \textit{Đăng nhập} ở thanh điều hướng bên trái.
+		\item Có 2 phương thức để đăng nhập: Đăng nhập bằng tài khoản hệ thống hoặc Đăng nhập bằng tài khoản Google.
+		\begin{itemize}
+			\item Đối với chức năng Đăng nhập bằng tài khoản hệ thống, người dùng phải nhập thông tin đăng nhập vào các field \textit{Email} và \textit{Mật khẩu} như \textit{Hình \ref{fig:login1}} và \textit{Hình \ref{fig:login2}}. Nếu người dùng quên mật khẩu, có thể bấm vào link \textit{Quên mật khẩu} để truy cập vào trang \textbf{Lấy lại mật khẩu} được mô tả ở mục \ref{subsec:resetpassword}.
+			Nút \textit{Đăng nhập} chỉ được enable khi giá trị của các field khác rỗng. Sau khi bấm đăng nhập, hệ thống sẽ tiến hành gửi request về backend để
+			xác thực người dùng. Nếu thành công, người dùng sẽ được điều hướng về giao diện mặc định tùy theo loại tài khoản (đối với tài khoản học sinh, giao diện mặc định là \textbf{Trang chủ} được mô tả ở mục \ref{subsubsec:studenthome}, còn đối với phụ huynh là \textbf{Trang thống kê tổng quan} được mô tả ở mục \ref{subsubsec:parenthome}). Nếu thất bại, lỗi cụ thể sẽ được hiển thị dưới dạng toast message để thông báo cho người dùng như \textit{Hình \ref{fig:wrongpassword}}. Ngoài ra, đối với tài khoản học sinh, sau khi đăng nhập lần đầu tiên, người dùng sẽ được điều hướng đến giao diện \textbf{Onboarding} được mô tả ở mục \ref{subsec:onboarding} để cập nhật hồ sơ cá nhân.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\textwidth]{Image/UI/Auth/LoginPage-HidePassword.jpg}
+				\vspace{0.6cm}
+				\caption{Giao diện đăng nhập - Ẩn mật khẩu}
+				\label{fig:login1}
+			\end{figure}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\textwidth]{Image/UI/Auth/LoginPage-ShowPassword.jpg}
+				\vspace{0.6cm}
+				\caption{Giao diện đăng nhập - Hiện mật khẩu}
+				\label{fig:login2}
+			\end{figure}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\textwidth]{Image/UI/Auth/LoginErrorMessage.jpg}
+				\vspace{0.6cm}
+				\caption{Giao diện đăng nhập - Lỗi sai mật khẩu}
+				\label{fig:wrongpassword}
+			\end{figure}
+			\item Đối với chức năng đăng nhập bằng Google, người dùng sẽ bấm vào nút \textit{Đăng nhập bằng Google} và được điều hướng đến trang xác thực
+			của Google. Sau đó, người dùng thực hiện các thao tác đăng nhập bằng tài khoản Google. Nếu thành công, trang xác thực sẽ điều hướng người dùng
+			về trang chủ của mình.
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Giao diện đăng ký tài khoản}
+\begin{itemize}
+	\item \textbf{Mục đích:} Cho phép người dùng đăng ký tài khoản mới.
+	\item \textbf{Mô tả:} Giao diện đăng ký sẽ được hiển thị khi người dùng chọn tab \textit{Đăng ký} ở thanh điều hướng bên trái. Giao diện đăng ký tài khoản bao gồm 2 bước:
+	\begin{itemize}
+		\item \textbf{Bước 1 - Chọn loại tài khoản}: Người dùng cần chọn 1 trong 2 loại tài khoản mà mình muốn tạo bao gồm: Phụ huynh hoặc Học sinh. Giao diện của bước này được mô tả như thiết kế như \textit{Hình \ref{fig:rolepick}} bên dưới. 
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/SignUpPage-RolePicking.jpg}
+			\vspace{0.6cm}
+			\caption{Giao diện đăng ký tài khoản - Chọn loại tài khoản}
+			\label{fig:rolepick}
+		\end{figure}
+		
+		\item \textbf{Bước 2 - Nhập thông tin đăng ký}: Người dùng cần nhập  các thông tin bao gồm: Email, Họ và tên, Mật khẩu và Xác nhận mật khẩu. Đối với thông tin về Họ và tên, thông tin này chỉ xuất hiện khi người dùng chọn đăng ký tài khoản Phụ huynh, còn đối với Học sinh, thông tin này sẽ được bổ sung sau ở giao diện \textbf{Onboarding} được mô tả ở mục \ref{subsec:onboarding}.
+		Nút \textit{Đăng ký} chỉ được enable khi các điều kiện sau được thỏa mãn:
+		\begin{itemize}
+			\item Giá trị của tất cả các field khác rỗng.
+			\item Mật khẩu có ít nhất 8 ký tự, trong đó phải chứa chữ cái in hoa, chữ thường, số và ký tự đặc biệt.
+			\item Mật khẩu và Xác nhận mật khẩu phải trùng khớp.
+		\end{itemize}
+		Giao diện của bước 2 được thiết kế như \textit{Hình \ref{fig:regstudent}} và \textit{Hình \ref{fig:regparent}} bên dưới.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/SignUpPage-SignUp-Student.jpg}
+			\vspace{0.6cm}
+			\caption{Giao diện đăng ký tài khoản - Học sinh}
+			\label{fig:regstudent}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/SignUpPage-SignUp-Parent.jpg}
+			\vspace{0.6cm}
+			\caption{Giao diện đăng ký tài khoản - Phụ huynh}
+			\label{fig:regparent}
+		\end{figure}
+		
+		\item \textbf{Bước 3 - Bấm đăng ký tài khoản}: Sau khi tất cả thông tin hợp lệ, người dùng có thể bấm nút đăng ký tài khoản để tiến hành tạo tài khoản mới. Thông báo đăng ký thành công hoặc thất bại sẽ được hiển thị dưới dạng toast message được thiết kế như \textit{Hình \ref{fig:regerror}} và \textit{Hình \ref{fig:success}} bên dưới.
+	\end{itemize}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Auth/EmailExistError.jpg}
+		\vspace{0.6cm}
+		\caption{Giao diện đăng ký tài khoản - Lỗi email đã được sử dụng}
+		\label{fig:regerror}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Auth/SignUpSuccess.jpg}
+		\vspace{0.6cm}
+		\caption{Giao diện đăng ký tài khoản thành công}
+		\label{fig:success}
+	\end{figure}
+\end{itemize}}
+
+\subsection{Giao diện Onboarding}
+\label{subsec:onboarding}
+\begin{itemize}
+	\item \textbf{Mục đích:} 
+	\begin{itemize}
+		\item Cho phép người dùng là Học sinh cập nhật thông tin của mình khi đăng nhập lần đầu tiên. 
+		\item Cung cấp giao diện tương tác với Linh vật động của hệ thống, tạo cảm giác hứng thú và gần gũi đối với đối tượng người dùng chính là học sinh Tiểu học.
+	\end{itemize}
+	\item \textbf{Mô tả:} 
+	Giao diện Onboarding bao gồm 3 bước như sau:
+	\begin{itemize}
+		\item \textbf{Bước 1 - Nhập thông tin cá nhân bao gồm họ tên và khối lớp (1-5)}: Học sinh cần nhập Họ và tên cũng như chọn Khối lớp mà mình đang học ở ô dropdown. Nút Tiếp tục chỉ được enable khi tất cả các thông tin đã được điền. Giao diện của bước 1 được thiết kế như \textit{Hình \ref{fig:onboarding}} bên dưới.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/Onboarding-Info.jpg}
+			\vspace{0.6cm}
+			\caption{Giao diện Onboarding - Nhập Họ tên và Khối lớp}
+			\label{fig:onboarding}
+		\end{figure}
+		
+		\item \textbf{Bước 2 - Cập nhật ảnh đại diện}: Học sinh có thể chọn ảnh đại diện có sẵn của hệ thống hoặc ảnh tự chọn. Giao diện của bước 2 được thiết kế như \textit{Hình \ref{fig:avatar}} bên dưới.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/Onboarding-Avatar.jpg}
+			\vspace{0.6cm}
+			\caption{Giao diện Onboarding - Cập nhật ảnh đại diện}
+			\label{fig:avatar}
+		\end{figure}
+		
+		\item \textbf{Bước 3 - Nhập mã liên kết tài khoản}: Hệ thống sẽ được tổ chức thành các Family (Gia đình), mỗi gia đình được quản lý bởi một tài khoản Phụ huynh duy nhất. Mã liên kết hay mã mời là mã mà Phụ huynh gửi cho Học sinh để liên kết vào Family của Phụ huynh đó. Ở bước Nhập mã liên kết, Học sinh có thể để trống field này và có thể thực hiện liên kết sau khi đã đăng nhập. Giao diện của bước 3 được thiết kế như \textit{Hình \ref{fig:link}} bên dưới.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/Onboarding-InviteCode.jpg}
+			\vspace{0.6cm}
+			\caption{Giao diện Onboarding - Nhập mã liên kết tài khoản}
+			\label{fig:link}
+		\end{figure}
+		\item Sau khi bấm hoàn thành, học sinh sẽ được điều hướng về \textbf{Trang chủ} của mình được mô tả ở mục \ref{subsubsec:studenthome}.
+	\end{itemize}
+\end{itemize}
+
+\newpage
+\subsection{Giao diện Lấy lại mật khẩu}
+\label{subsec:resetpassword}
+\begin{itemize}
+	\item \textbf{Mục đích:} Giúp người dùng lấy lại mật khẩu thông qua xác thực OTP được gửi đến email.
+	\item \textbf{Mô tả:} 
+	Khi người dùng bấm vào link \textit{Quên mật khẩu} ở giao diện đăng nhập, trang lấy lại mật khẩu sẽ được hiển thị. Giao diện Lấy lại mật khẩu bao gồm 3 bước như sau:
+	\begin{itemize}
+		\item \textbf{Bước 1 - Gửi OTP qua email}: Người dùng cần nhập email mà mình đã dùng để đăng ký tài khoản vào ô trống. Sau đó bấm \textit{Gửi mã xác thực}, hệ thống sẽ xác thực email được nhập vào và gửi một mã OTP đến email đó. Giao diện của bước 1 được thiết kế như \textit{Hình \ref{fig:sendotp}} bên dưới.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/PasswordReset1.jpg}
+			\vspace{0.6cm}
+			\caption{Giao diện Lấy lại mật khẩu - Bước 1}
+			\label{fig:sendotp}
+		\end{figure}
+		
+		\item \textbf{Bước 2 - Nhập OTP}: Người dùng nhập mã OTP vào các ô trống sau đó bấm \textit{Xác thực}. Nếu mã OTP hợp lệ, tiếp tục thực hiện bước 3.
+		Giao diện của bước 2 được thiết kế như \textit{Hình \ref{fig:inputotp}} bên dưới.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/PasswordReset2.jpg}
+			\vspace{0.6cm}
+			\caption{Giao diện Lấy lại mật khẩu - Bước 2}
+			\label{fig:inputotp}
+		\end{figure}
+		
+		\item \textbf{Bước 3 - Đặt lại mật khẩu}: Người dùng nhập mật khẩu mới và xác nhận mật khẩu. Nút \textit{Đổi mật khẩu} chỉ được enable khi:
+		\begin{itemize}
+			\item Giá trị của tất cả các field khác rỗng.
+			\item Mật khẩu có ít nhất 8 ký tự, trong đó phải chứa chữ cái in hoa, chữ thường, số và ký tự đặc biệt.
+			\item Mật khẩu và Xác nhận mật khẩu phải trùng khớp.
+		\end{itemize}
+		Giao diện của bước 3 được thiết kế như \textit{Hình \ref{fig:resetpw}} bên dưới.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/PasswordReset3.jpg}
+			\vspace{0.6cm}
+			\caption{Giao diện Lấy lại mật khẩu - Bước 3}
+			\label{fig:resetpw}
+		\end{figure}
+		
+		\item Sau khi đổi mật khẩu thành công, người dùng sẽ nhận được thông báo và được điều hướng về \textbf{Trang đăng nhập} được mô tả ở mục \ref{subsubsec:login}.
+	\end{itemize}
+\end{{itemize}
+
+\subsection{Các màn hình chính của tài khoản Học sinh}
+\textbf{Mô tả tổng quan}
+Layout chính của giao diện bao gồm 2 phần: 
+\begin{itemize}
+	\item \textbf{Thanh điều hướng:} Nằm trên cùng chứa logo thương hiệu của website, các nút điều hướng, nút mở hồ sơ cá nhân, nút thông báo vào nút đăng xuất. Các nút điều hướng tương ứng với từng trang tính năng của website, bao gồm:
+	\begin{itemize}
+		\item Trang chủ (Nhà)
+		\item Trang Bài học
+		\item Trang Đấu trường
+		\item Trang Bảng xếp hạng
+		\item Trang Nhiệm vụ
+		\item Trang Minigames
+		\item Trang Lịch sử làm bài
+	\end{itemize}
+	\item \textbf{Phần nội dung} Chiếm phần còn lại của layout, là nơi thể hiện nội dung của các trang tính năng.
+\end{itemize}
+Layout tổng thể của các màn hình chức năng chính được minh họa thông qua giao diện trang chủ được thiết kế như hình bên dưới.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Home-Morning.jpg}
+	\vspace{0.6cm}
+	\caption{Trang chủ (minh họa cho layout tổng thể)}
+\end{figure}
+
+\subsubsection{Trang chủ}
+\label{subsubsec:studenthome}
+Trang chủ là trang hiển thị mặc định ngay sau khi học sinh đăng nhập thành công vào hệ thống. Trang chủ có hiển thị giờ giấc và lời chào dành cho người dùng nhằm tạo cảm giác thân thiện và gần gũi. Các thẻ hiển thị giờ và lời chào sẽ thay đổi kiểu thiết kế tùy thuộc vào thời gian trong ngày (Sáng, Chiều, Tối). Giao diện trang chủ vào buổi sáng, buổi chiều và buổi tối được thiết kế lần lượt như các hình \ref{fig:homemorning}, \ref{fig:homeafternoon} và \ref{fig:homenight}. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Home-Morning.jpg}
+	\vspace{0.6cm}
+	\caption{Trang chủ - Buổi sáng}
+	\label{fig:homemorning}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Home-Afternoon.jpg}
+	\vspace{0.6cm}
+	\caption{Trang chủ - Buổi chiều}
+	\label{fig:homeafternoon}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Home-Night.jpg}
+	\vspace{0.6cm}
+	\caption{Trang chủ - Buổi tối}
+	\label{fig:homenight}
+\end{figure}
+
+\vspace{0.2cm}
+\newline
+Học sinh có thể chọn lớp mình muốn học bằng cách nhấp chuột vào các bong bóng được đánh số từ 1-5. Việc thay đổi lớp ở Trang chủ sẽ không làm thay đổi thông tin về khối lớp trong hồ sơ người dùng.
+
+\vspace{0.2cm}
+\newline
+Tại trang chủ, hệ thống hiển thị chủ đề gần nhất mà người dùng đã truy cập. Người dùng có thể nhanh chóng quay lại bài học bằng cách nhấn nút \textit{Tiếp tục học}. Bên cạnh đó, các chủ đề đã hoàn thành cũng được liệt kê trong mục \textit{Ôn lại kiến thức} đi kèm với biểu tượng 'Review'. Cả hai thao tác này đều điều hướng người dùng đến cùng một giao diện chi tiết của chủ đề (được mô tả cụ thể tại mục \ref{subsubsec:topic}).
+
+\vspace{0.2cm}
+\newpage
+Khi người dùng truy cập vào Trang chủ, một thông báo sẽ được hiển thị dưới dạng popup được thiết kế như \textit{Hình \ref{fig:recommend}}. Popup này chứa thông tin gợi ý chủ đề học theo thời gian và khối lớp của người dùng. Người dùng có thể bấm nút \textit{Học ngay} để điều hướng đến trang chủ đề tương ứng được mô tả ở mục \ref{subsubsec:topic}. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/LessonRecommend.jpg}
+		\vspace{0.6cm}
+		\caption{Trang chủ - Gợi ý chủ đề học}
+		\label{fig:recommend}
+	\end{figure}
+
+\vspace{0.2cm}
+\newline
+Đối với người dùng mới, hệ thống sẽ hiển thị thông báo về bài kiểm tra đầu vào dưới dạng popup được thiết kế như \textit{Hình \ref{fig:enttest}}. Người dùng có thể bấm vào nút \textit{Làm bài} để điều hướng đến giao diện bài kiểm tra được mô tả chi tiết ở mục \ref{subsubsec:exam}, hoặc bấm vào nút \textit{Đóng} để đóng popup. Sau khi đóng, người dùng có thể mở lại popup này bằng cách bấm vào float button hiển thị ở góc phải trên cùng của giao diện trang chủ như \textit{Hình \ref{fig:floatbtn}}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/EntranceTestPopup.jpg}
+		\vspace{0.6cm}
+		\caption{Trang chủ - Popup thông báo về bài kiểm tra đầu vào}
+		\label{fig:enttest}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/EntranceTestFloatingButton.jpg}
+		\vspace{0.6cm}
+		\caption{Trang chủ - Nút mở popup bài kiểm tra đầu vào ở góc trên bên phải}
+		\label{fig:floatbtn}
+	\end{figure}
+
+
+\subsubsection{Trang Bài học}
+\label{subsubsec:lesson}
+Phần nội dung chính của trang Bài học liệt kê danh sách toàn bộ các chủ đề thuộc khối lớp hiện tại, bao gồm cả những chủ đề đã được mở khóa (như minh họa tại \textit{Hình \ref{fig:lesson}}) và các chủ đề còn đang trong trạng thái khóa (như minh họa tại \textit{Hình \ref{fig:lessonlocked}}). Để bắt đầu quá trình học, người dùng có thể nhấn vào các thẻ chủ đề trong danh sách. Bên cạnh đó, người dùng cũng có thể nhanh chóng quay lại nội dung đang học dang dở bằng cách nhấn nút \textit{Bắt đầu} nằm trong container chủ đề được bố trí phía trên danh sách. Cả 2 thao tác kể trên đều sẽ điều hướng người dùng đến \textbf{Trang Chủ đề} được mô tả ở mục \ref{subsubsec:topic}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Topics-G1.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Bài học - Các chủ đề của Lớp 1 (tương tự với các lớp khác)}
+	\label{fig:lesson}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Topics-Locked.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Bài học - Các chủ đề bị khóa}
+	\label{fig:lessonlocked}
+\end{figure}
+
+\vspace{0.2cm}
+\newline
+Ngoài liệt kê danh sách các bài học, hệ thống còn hiển thị rõ ràng thông tin về khối lớp hiện tại mà học sinh đã lựa chọn ở \textbf{Trang chủ} (được mô tả chi tiết trong mục \ref{subsubsec:studenthome}). Đi kèm với đó, hệ thống sẽ cập nhật tiến trình học tập hiện tại thông qua tỉ lệ phần trăm các chủ đề đã hoàn thành trên tổng số chủ đề thuộc khối lớp đó. Ngoài ra, tổng số lượng Thạch anh tích lũy được từ các hoạt động học tập cũng được hiển thị đầy đủ, đóng vai trò như một hệ thống điểm thưởng để xếp hạng người dùng. Hệ thống cũng cung cấp các số liệu thống kê cụ thể bao gồm số lượng chủ đề đã học, số lượng chủ đề đã mở khóa và thông tin về chủ đề gần nhất mà người dùng vừa truy cập.
+
+\subsubsection{Trang Chủ đề (Trang Milestones)}
+\label{subsubsec:topic}
+\textbf{Trang Chủ đề} chỉ có thể truy cập bằng cách bấm vào các thẻ chủ đề ở \textbf{Trang Bài học} trong mục \ref{subsubsec:lesson} hoặc bấm vào các nút \textit{Tiếp tục học/Bắt đầu} trong container hiển thị chủ đề học gần nhất được mô tả ở \textbf{Trang chủ} (mục \ref{subsubsec:studenthome}) và \textbf{Trang Bài học} (mục \ref{subsubsec:lesson}). Nhóm thiết kế giao diện cho \textbf{Trang Chủ đề} theo phong cách phiêu lưu qua từng thế giới và vùng đất, tạo cho người dùng cảm giác hứng thú với việc học tập. Mỗi khối lớp gắn liền với một thế giới khác nhau, mỗi thế giới lại gồm các vùng đất khác nhau ứng với các độ khó khác nhau. Trang còn bao gồm danh sách các milestone, mỗi milestone đóng vai trò như một bài học trong chủ đề bao gồm nhiều bài tập tương tác giúp học sinh luyện tập khả năng làm toán.
+
+\vspace{0.2cm}
+\newline
+Ngoài ra, trang còn hiển thị tên chủ đề hiện tại cùng với tiến trình học tập (tỉ lệ phần trăm các milestone đã học trên tổng số milestone của chủ đề đó). Người dùng phải học hết các milestone thuộc một độ khó nhất định thì mới mở khóa được các milestone ở độ khó tiếp theo. Người dùng có thể bấm vào nút mũi tên ở 2 bên chuyển đổi giữa các milestone, sau đó bấm nút \textit{Làm bài nào !} để điều hướng sang \textbf{Trang Bài tập} được mô tả ở mục \ref{subsubsec:exercise}. 
+
+\newpage
+	% --- Trang Chủ đề của Lớp 1 ---
+	\noindent Thế giới của Lớp 1 được thiết kế với bối cảnh thảo nguyên do đây là lớp nhỏ nhất và có độ khó thấp nhất. Các hình từ \ref{fig:e1} đến \ref{fig:h1} là thiết kế cho trang chủ đề của lớp 1 ứng với các mức độ khó khác nhau của bài học. Giao diện khóa của các bài học (milestone) được thiết kế như \textit{Hình \ref{fig:l1}}.
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G1-NB.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 1 - Nhận biết}
+			\label{fig:e1}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G1-TH.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 1 - Thông hiểu}
+			\label{fig:md1}
+		\end{minipage}
+		
+		\vspace{0.4cm}
+		
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G1-VD.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 1 - Vận dụng}
+			\label{fig:h1}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G1-Locked.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 1 - Milestone bị khóa}
+			\label{fig:l1}
+		\end{minipage}
+	\end{figure}
+	
+	\vspace{0.4cm}
+	
+	% --- Trang Chủ đề của Lớp 2 ---
+	\noindent Thế giới của Lớp 2 được thiết kế với bối cảnh rừng rậm, khắc nghiệt hơn thảo nguyên một chút. Các hình từ \ref{fig:e2} đến \ref{fig:h2} là thiết kế cho trang chủ đề của lớp 2 ứng với các mức độ khó khác nhau của bài học. Giao diện khóa của các bài học (milestone) được thiết kế như \textit{Hình \ref{fig:l2}}.
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G2-NB.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 2 - Nhận biết}
+			\label{fig:e2}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G2-TH.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 2 - Thông hiểu}
+			\label{fig:md2}
+		\end{minipage}
+		
+		\vspace{0.4cm}
+		
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G2-VD.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 2 - Vận dụng}
+			\label{fig:h2}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G2-Locked.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 2 - Milestone bị khóa}
+			\label{fig:l2}
+		\end{minipage}
+	\end{figure}
+	
+	\vspace{0.4cm}
+	
+	% --- Trang Chủ đề của Lớp 3 ---
+	\noindent Thế giới của Lớp 3 được thiết kế với bối cảnh biển cả. Các hình từ \ref{fig:e3} đến \ref{fig:h3} là thiết kế cho trang chủ đề của lớp 3 ứng với các mức độ khó khác nhau của bài học. Giao diện khóa của các bài học (milestone) được thiết kế như \textit{Hình \ref{fig:l3}}.
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G3-NB.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 3 - Nhận biết}
+			\label{fig:e3}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G3-TH.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 3 - Thông hiểu}
+		\end{minipage}
+		
+		\vspace{0.4cm}
+		
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G3-VD.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 3 - Vận dụng}
+			\label{fig:h3}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G3-Locked.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 3 - Milestone bị khóa}
+			\label{fig:l3}
+		\end{minipage}
+	\end{figure}
+	
+	\vspace{0.4cm}
+	
+	% --- Trang Chủ đề của Lớp 4 ---
+	\noindent Thế giới của Lớp 4 được thiết kế với bối cảnh sa mạc. Các hình từ \ref{fig:e4} đến \ref{fig:h4} là thiết kế cho trang chủ đề của lớp 4 ứng với các mức độ khó khác nhau của bài học. Giao diện khóa của các bài học (milestone) được thiết kế như \textit{Hình \ref{fig:l4}}.
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G4-NB.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 4 - Nhận biết}
+			\label{fig:e4}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G4-TH.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 4 - Thông hiểu}
+		\end{minipage}
+		
+		\vspace{0.4cm}
+		
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G4-VD.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 4 - Vận dụng}
+			\label{fig:h4}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G4-Locked.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 4 - Milestone bị khóa}
+			\label{fig:l4}
+		\end{minipage}
+	\end{figure}
+	
+	\vspace{0.4cm}
+	
+	% --- Trang Chủ đề của Lớp 5 ---
+	\noindent Thế giới của Lớp 5 được thiết kế với bối cảnh núi lửa. Các hình từ \ref{fig:e5} đến \ref{fig:h5} là thiết kế cho trang chủ đề của lớp 5 ứng với các mức độ khó khác nhau của bài học. Giao diện khóa của các bài học (milestone) được thiết kế như \textit{Hình \ref{fig:l5}}.
+	\begin{figure}[H]
+		\centering
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G5-NB.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 5 - Nhận biết}
+			\label{fig:e5}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G5-TH.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 5 - Thông hiểu}
+		\end{minipage}
+		
+		\vspace{0.4cm}
+		
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G5-VD.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 5 - Vận dụng}
+			\label{fig:h5}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Milestones/Paths-G5-Locked.jpg}
+			\vspace{0.2cm}
+			\caption{Lớp 5 - Milestone bị khóa}
+			\label{fig:l5}
+		\end{minipage}
+	\end{figure}
+
+\subsubsection{Trang Bài tập}
+\label{subsubsec:exercise}
+\textbf{Trang Bài tập} chỉ có thể được truy cập bằng cách bấm vào nút \textit{Làm bài} ở \textbf{Trang Chủ đề} được mô tả ở mục \ref{subsubsec:topic}. Tại trang này người dùng có thể làm các dạng bài tập tương tác như kéo thả, trắc nghiệm, đúng/sai, điền khuyết, lắp ghép (xem chi tiết ở mục \ref{subsec:interact}). Phần tên bài học và danh sách các câu hỏi được hiển thị trên sidebar nằm bên trái giao diện. Người dùng có thể chuyển câu hỏi bằng cách nhấn vào các nút được đánh số thứ tự tương ứng. Người dùng có thể nộp bài bằng cách bấm vào nút \textit{Nộp bài} ở dưới cùng của sidebar. Với mỗi câu làm đúng, người dùng sẽ nhận được một lượng thạch anh nhất định. Giao diện làm bài tập được thiết kế như các hình từ \ref{fig:choice} đến \ref{fig:gr}.
+	\begin{figure}[H]
+		\centering
+		% --- Hàng 1 ---
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Exercises/MultiChoice.jpg}
+			\vspace{0.2cm}
+			\caption{Dạng Trắc nghiệm}
+			\label{fig:choice}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Exercises/Matching.jpg}
+			\vspace{0.2cm}
+			\caption{Dạng Lắp ghép}
+		\end{minipage}
+		
+		\vspace{0.4cm} % Khoảng cách giữa các hàng
+	\end{figure}
+	\begin{figure}[H]
+		
+		% --- Hàng 2 ---
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Exercises/Fill.jpg}
+			\vspace{0.2cm}
+			\caption{Dạng Điền khuyết}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Exercises/TrueFalse.jpg}
+			\vspace{0.2cm}
+			\caption{Dạng Đúng-Sai}
+		\end{minipage}
+		
+		\vspace{0.4cm}
+		
+		% --- Hàng 3 (Căn giữa 1 ảnh cuối) ---
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Exercises/Drag.jpg}
+			\vspace{0.2cm}
+			\caption{Dạng Kéo thả}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Exercises/Grouping.jpg}
+			\vspace{0.2cm}
+			\caption{Dạng Nhóm}
+			\label{fig:gr}
+		\end{minipage}
+	\end{figure}
+
+\newline
+Sau khi tương tác với bài tập, người dùng có thể bấm \textit{Kiểm tra đáp án} để kiểm tra câu trả lời của mình. Nếu trả lời đúng, giao diện sẽ giống như \textit{Hình \ref{fig:correct}}; nếu sai, giao diện sẽ giống như \textit{Hình \ref{fig:wrong}}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Correct.jpg}
+	\vspace{0.6cm}
+	\caption{Hiệu ứng chúc mừng khi làm đúng}
+	\label{fig:correct}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{Image/UI/Exercises/Wrong.jpg}
+	\vspace{0.6cm}
+	\caption{Hiệu ứng chúc mừng khi làm đúng}
+	\label{fig:wrong}
+\end{figure}
+
+Sau khi người dùng hoàn thành tất cả câu hỏi, giao diện kết quả sẽ được hiển thị như giao diện sẽ giống như \textit{Hình \ref{fig:result}} bao gồm tên lớp, chủ đề, tên bài học, tổng số điểm đạt được và tổng số thạch anh nhận được.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Finish.jpg}
+	\vspace{0.6cm}
+	\caption{Giao diện kết quả sau khi hoàn thành bài học}
+	\label{fig:result}
+\end{figure}
+
+\subsubsection{Trang Đấu trường}
+\label{subsubsec:arena}
+Người dùng có thể tham gia làm bài thi đấu trường theo tuần, xem thời gian còn lại của đấu trường, xem bậc xếp hạng hiện tại của mình, xem bảng xếp hạng tuần và xem thể lệ đấu trường. Để bắt đầu làm bài thi, người dùng chỉ cần bấm nút \textit{Tham gia ngay} bên trong khung màu cam được hiển thị trên giao diện. Sau khi bấm nút, người dùng sẽ được điều hướng sang \textbf{Trang Bài thi} được mô tả ở mục \ref{subsubsec:exam}. Giao diện chính của trang đấu trường được thiết kế như \textit{Hình \ref{fig:arena}}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Arena-Home.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Đấu trường}
+	\label{fig:arena}
+\end{figure}
+
+\vspace{0.2cm}
+\newline
+Để xem thể lệ cuộc thi, người dùng bấm vào nút \textit{Xem thể lệ} nằm ở bên trái của giao diện. Trang thể lệ đấu trường sẽ được phóng to, người dùng có thể bấm chuyển trang để đọc hết tất cả các thể lệ.
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{1.0\textwidth} % Sử dụng toàn bộ độ rộng văn bản
+		\centering
+		
+		% Dòng 1
+		\includegraphics[width=0.48\textwidth]{Image/UI/Main-Student/Arena-R1.jpg}
+		\hspace{0.1cm} % Đẩy hình 2 sang sát lề phải của minipage
+		\includegraphics[width=0.48\textwidth]{Image/UI/Main-Student/Arena-R2.jpg}
+		\\[0.3cm] % Khoảng cách dòng
+		
+		% Dòng 2
+		\includegraphics[width=0.48\textwidth]{Image/UI/Main-Student/Arena-R3.jpg}
+		\hspace{0.1cm}
+		\includegraphics[width=0.48\textwidth]{Image/UI/Main-Student/Arena-R4.jpg}
+		\\[0.3cm]
+		
+		% Dòng 3 (Hình cuối cùng nằm giữa hoặc căn trái tùy ý)
+		\includegraphics[width=0.48\textwidth]{Image/UI/Main-Student/Arena-R5.jpg}
+		
+	\end{minipage}
+	\vspace{0.4cm}
+	\caption{Trang Đấu trường - Thể lệ}
+	\label{fig:arena-rules}
+\end{figure}
+
+Sau khi có kết quả bài thi Đấu trường, tùy theo số điểm đạt được mà mỗi thí sinh sẽ được thưởng một lượng Battle Points nhất định (đơn vị điểm dành riêng cho đấu trường). Battle Points (BP) sẽ là tiêu chí để xét xem một người dùng đang ở bậc xếp hạng nào. Các bậc xếp hạng và huy hiệu tương ứng được thiết kế như \textit{Hình \ref{fig:badges}}. Đối với bảng xếp hạng tuần, thứ hạng được quyết định dựa trên số điểm đạt được và thời gian hoàn thành bài thi của mỗi thí sinh.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/badges.jpg}
+		\vspace{0.6cm}
+		\caption[
+		Hệ thống các huy hiệu ứng với từng bậc xếp hạng
+		]{
+			\centering
+			Hệ thống các huy hiệu ứng với từng bậc xếp hạng \\
+			\textit{(nguồn: Rank Badge Design - Free by Taen \cite{figma_community_file})}
+		}
+		\label{fig:badges}
+	\end{figure}
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Arena-Finished.jpg}
+		\vspace{0.6cm}
+		\caption{Trang Đấu trường - Sau khi hoàn thành bài thi}
+	\end{figure}
+\end{itemize}
+
+\subsubsection{Trang Bài thi}
+\label{subsubsec:exam}
+\textbf{Trang Bài thi} cung cấp giao diện làm bài cho \textbf{Bài kiểm tra đầu vào} (mục \ref{subsubsec:studenthome}) và \textbf{Đấu trường} (mục \ref{subsubsec:arena}). Người dùng có thể chuyển câu hỏi bằng cách bấm vào các nút số ở thanh bên trái của màn hình hoặc bấm các nút điều hướng để chuyển sang câu tiếp theo hoặc trước đó. Giao diện còn hỗ trợ hiển thị thời gian làm bài còn lại cũng như số câu hỏi đã làm trên tổng số câu hỏi. Tất cả các câu hỏi kiểm tra sẽ thuộc dạng trắc nghiệm. Đối với bài thi Đấu trường, do thời gian làm bài dài (7 ngày), người dùng có thể thoát và lưu tiến trình làm bài của mình để có thể tiếp tục làm sau đó.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Exam.jpg}
+		\vspace{0.6cm}
+		\caption{Trang Bài thi}
+	\end{figure}
+
+\vspace{0.2cm}
+\newline
+Khi người dùng chưa hoàn thành bài thi nhưng bấm thoát, giao diện sẽ hiển thị một thông báo lưu tiến trình làm bài như \textit{Hình \ref{fig:save}}. Khi người dùng bấm nộp bài, giao diện sẽ hiển thị thông báo để xác nhận như \textit{Hình \ref{fig:submit}}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Exitpopup.jpg}
+		\vspace{0.6cm}
+		\caption{Trang Bài thi - Thông báo khi thoát}
+		\label{fig:save}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Submitpopup.jpg}
+		\vspace{0.6cm}
+		\caption{Trang Bài thi - Thông báo khi bấm nộp bài}
+		\label{fig:submit}
+	\end{figure}
+
+\subsubsection{Trang Xếp hạng}
+Trang xếp hạng sẽ hiển thị top 8 học sinh đạt số lượng thạch anh cao nhất (thạch anh là tiêu chí để xếp hạng học tập), đồng thời vinh danh 3 học sinh xuất sắc nhất. Ngoài ra, trang còn hiển thị số lượng thạch anh mà người dùng đang sở hữu và vị trí xếp hạng hiện tại của người dùng.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Leaderboard.jpg}
+		\vspace{0.6cm}
+		\caption{Trang Xếp hạng}
+	\end{figure}
+
+\newpage
+\subsubsection{Trang Nhiệm vụ}
+Trang nhiệm vụ hiển thị các nhiệm vụ hệ thống, phần thưởng là thạch anh. Nếu người dùng hoàn thành được nhiệm vụ đó thì họ có thể nhận phần thưởng tương ứng. Người dùng còn có thể xem các nhiệm vụ đã hoàn thành và các nhiệm vụ chưa hoàn thành.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Mission-Complete.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Nhiệm vụ - Đã hoàn thành}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Mission-Incomplete.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Nhiệm vụ - Chưa hoàn thành}
+\end{figure}
+
+\newpage
+\subsubsection{Trang Minigames}
+\label{subsubsec:games}
+Trang Minigames hiển thị các Minigame bao gồm hai loại chính: Game chơi đơn - nơi người dùng giải quyết các trò chơi toán học cá nhân; và Game tương tác cho phép học sinh đối đầu hoặc hợp tác với phụ huynh và các thành viên khác trong Family để cùng giải toán. Tại đây, người dùng có thể tham gia trò chơi ngay lập tức bằng cách bấm vào nút \textit{Chơi ngay}, sau đó, một tab mới trên trình duyệt sẽ được mở và giao diện trò chơi được hiển thị, ví dụ như \textit{Hình \ref{fig:mathmatch}}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Game-Single.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Minigame - Chơi đơn}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Game-PVP.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Minigame - Tương tác}
+\end{figure}
+
+\newpage
+Nhóm đã hiện thực được một minigames với tên gọi Math Match. Người chơi sẽ phải nối các phép tính có kết quả bằng nhau để hoàn thành màn chơi.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/MathMatchGame.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Minigame - Minigame Math Match}
+	\label{fig:mathmatch}
+\end{figure}
+
+\subsubsection{Trang Lịch sử làm bài}
+Người dùng có thể dễ dàng theo dõi tiến độ thông qua việc lọc lịch sử làm bài và xem các chỉ số thống kê về số lượng, độ chính xác trung bình của bài tập. Giao diện chính của trang lịch sử làm bài được thiết kế như hình bên dưới.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/History.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Lịch sử làm bài}
+	\label{fig:history}
+\end{figure}
+
+\newpage
+Khi bấm vào nút \textit{Xem} trên các bản ghi được hiển thị ở  \textit{Hình \ref{fig:history}}, người dùng còn có thể xem chi tiết bài làm với các thông tin như: thời gian làm bài, thời gian hoàn thành, tổng số câu, số câu đúng, số câu sai. Đặc biệt, người dùng có thể biết mình làm sai hoặc đúng câu nào cũng như đáp án chính xác của câu đó. Giao diện chi tiết bài làm được thiết kế như 2 hình dưới đây.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/ExamDetail1.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Lịch sử làm bài - Chi tiết bài làm}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/ExamDetail2.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Lịch sử làm bài - Chi tiết bài làm}
+\end{figure}
+
+\newpage
+\subsubsection{Quản lý tài khoản cá nhân}
+\label{subsubsec:profile}
+\begin{enumerate}
+\item \textbf{Xem và cập nhật thông tin cá nhân}
+\vspace{0.1cm}
+\newline
+	Học sinh có thể xem và chỉnh sửa thông tin cá nhân, bao gồm ảnh đại diện, họ và tên, khối lớp. Tuy nhiên, email là cố định với mỗi tài khoản và chỉ được quyền xem.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Info.jpg}
+		\vspace{0.6cm}
+		\caption{Quản lý tài khoản cá nhân - Xem và cập nhật thông tin}
+	\end{figure}
+
+\item \textbf{Thay đổi mật khẩu}
+\vspace{0.1cm}
+\newline	
+Học sinh có thể thay đổi mật khẩu bằng cách nhập các thông tin như mật khẩu hiện tại, mật khẩu mới và xác nhận mật khẩu. Chỉ có thể thay đổi mật khẩu khi các thông tin trên thỏa mãn các điều kiện sau:
+		\begin{itemize}
+			\item Giá trị của tất cả các field khác rỗng.
+			\item Giá trị của field mật khẩu hiện tại phải trùng khớp.
+			\item Mật khẩu có ít nhất 8 ký tự, trong đó phải chứa chữ cái in hoa, chữ thường, số và ký tự đặc biệt.
+			\item Mật khẩu và Xác nhận mật khẩu phải trùng khớp. 
+		\end{itemize}
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/ChangePassword.jpg}
+			\vspace{0.6cm}
+			\caption{Quản lý tài khoản cá nhân - Thay đổi mật khẩu}
+		\end{figure}
+
+	
+\item \textbf{Liên kết tài khoản}
+\vspace{0.1cm}
+\newline
+Để liên kết tài khoản, học sinh cần nhập mã liên kết vào ô trống (mã liên kết do phụ huynh cung cấp), sau đó bấm gửi yêu cầu và chờ xác nhận của phụ huynh. Sau khi đã liên kết tài khoản, học sinh có thể xem mã liên kết (mã mời) của Family hiện tại và có thể chia sẻ cho các học sinh khác. Ngoài ra, học sinh còn có thể xem đươc phụ huynh nào đang quản lý Family của mình và các thành viên khác trong Family.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Account-Unlinked.jpg}
+			\vspace{0.6cm}
+			\caption{Quản lý tài khoản cá nhân - Chưa liên kết tài khoản}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Account-Linked.jpg}
+			\vspace{0.6cm}
+			\caption{Quản lý tài khoản cá nhân - Đã liên kết tài khoản}
+		\end{figure}
+\end{enumerate}
+
+\subsection{Các màn hình chính của tài khoản Phụ huynh}
+\subsubsection{Trang Thống kê tổng quan}
+\label{subsubsec:parenthome}
+Mỗi phụ huynh sẽ là quản trị viên của một Family và có thể quản lý nhiều học sinh khác nhau. Vì thế, ở phần bộ lọc bên trái, ngoài lọc theo thời gian còn có lọc theo học sinh. Ở phần nội dung giữa màn hình, phụ huynh có thể xem các thống kê tổng quan về học tập và đấu trường của học sinh được chọn.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Parent/Statistics.jpg}
+		\vspace{0.6cm}
+		\caption{Thống kê tổng quan}
+	\end{figure}
+
+
+\subsubsection{Trang Lịch sử bài làm}
+Phụ huynh có thể xem lịch sử các lần làm bài của học sinh, xem thống kê tổng quan về số bài tập đã làm và tỉ lệ làm đúng trung bình. Phụ huynh có thể thay đổi bộ lọc ở bên trái để dễ dàng lọc các bản ghi. Trên mỗi bản ghi có hiển thị thông tin về tên bài tập, thời gian làm bài, thời gian kết thúc, số câu đúng và đánh giá mức độ bằng số sao và màu sắc. Giao diện lịch sử làm bài của phụ huynh được thiết kế như hình bên dưới.
+\begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Parent/History.jpg}
+ 	\vspace{0.6cm}
+ 	\caption{Lịch sử làm bài}
+ \end{figure}
+ 
+\vspace{0.2cm}
+\newline
+Phụ huynh còn có thể xem chi tiết bài làm của học sinh bằng cách bấm vào nút \textit{Xem} trên mỗi bản ghi. Trang chi tiết bài làm bao gồm thông tin tổng quan của bài làm (tên học sinh, lớp, thời gian hoàn thành, thời gian làm bài, tổng số câu, số câu đúng/sai). Ngoài ra, phụ huynh có thể đánh giá năng lực của con thông qua chi tiết các câu trả lời. Giao diện chi tiết bài làm được thiết kế như hình dưới đây.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Parent/ExamDetail.jpg}
+		\vspace{0.6cm}
+		\caption{Chi tiết bài làm}
+	\end{figure}
+
+\subsubsection{Trang Minigames}
+Trang Minigames của phụ huynh được thiết kế tương tự với Trang Minigames của Học sinh. Thiết kế được mô tả chi tiết ở mục \ref{subsubsec:games}.
+
+\newpage
+\subsubsection{Quản lý tài khoản cá nhân}
+\begin{enumerate}
+	\item \textbf{Xem và cập nhật thông tin cá nhân}
+	\vspace{0.1cm}
+	\newline
+	Phụ huynh có thể xem và chỉnh sửa thông tin cá nhân, bao gồm ảnh đại diện, họ và tên. Tuy nhiên, email là cố định với mỗi tài khoản và chỉ được quyền xem.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Main-Parent/Info.jpg}
+			\vspace{0.6cm}
+			\caption{Quản lý tài khoản cá nhân - Xem và cập nhật thông tin}
+		\end{figure}
+	
+	\item \textbf{Thay đổi mật khẩu}: Giao diện thay đổi mật khẩu của phụ huynh được thiết kế tương tự với giao diện của Học sinh. Thiết kế được mô tả chi tiết ở mục \ref{subsubsec:profile}.
+	
+	\item \textbf{Liên kết tài khoản}
+	\vspace{0.1cm}
+	\newline
+	Để liên kết với tài khoản của học sinh, phụ huynh có thể làm theo 2 cách sau đây:
+		\begin{itemize}
+			\item Cách 1: Sao chép mã liên kết và chia sẻ cho học sinh. Sau khi học sinh nhập mã liên kết và gửi yêu cầu, phụ huynh sẽ nhận được email xác nhận, lúc này cần chấp nhận yêu cầu để liên kết tài khoản.
+			\item Cách 2: Liên kết trực tiếp bằng cách nhập email của tài khoản học sinh muốn liên kết, sau đó bấm gửi yêu cầu. Học sinh sẽ nhận được lời mời từ email và chấp nhận để liên kết tài khoản.
+		\end{itemize}
+		
+		\newpage
+		Sau khi đã liên kết, phụ huynh có thể xem danh sách các tài khoản học sinh đã được thêm vào Family như \textit{Hình \ref{fig:linked}}.
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Main-Parent/NoLinkedAccount.jpg}
+			\vspace{0.6cm}
+			\caption{Quản lý tài khoản cá nhân - Liên kết tài khoản bằng mã liên kết hoặc liên kết trực tiếp}
+		\end{figure}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\textwidth]{Image/UI/Main-Parent/Account-Linked.jpg}
+			\vspace{0.6cm}
+			\caption{Quản lý tài khoản cá nhân - Đã liên kết tài khoản}
+			\label{fig:linked}
+		\end{figure}
+	
+	\newpage
+	\item \textbf{Nâng cấp tài khoản}
+	\vspace{0.1cm}
+	\newline
+	Phụ huynh có thể nâng cấp tài khoản qua các bước sau:
+		\begin{itemize}
+			\item Bước 1: Chọn Gói nâng cấp muốn mua.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\textwidth]{Image/UI/Main-Parent/Plans.jpg}
+				\vspace{0.6cm}
+				\caption{Các gói nâng cấp}
+			\end{figure}
+			
+			\item Bước 2: Thanh toán qua QRCode của VNPay.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\textwidth]{Image/UI/Main-Parent/Payment-Loading.jpg}
+				\vspace{0.6cm}
+				\caption{Chờ xác nhận thanh toán}
+			\end{figure}
+			
+			\newpage
+			\item Bước 3: Sau khi thanh toán thành công, màn hình hiển thị trạng thái tài khoản đã nâng cấp và một số các phúc lợi của người dùng.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\textwidth]{Image/UI/Main-Parent/AfterPurchase.jpg}
+				\vspace{0.6cm}
+				\caption{Trạng thái tài khoản đã được nâng cấp}
+			\end{figure}
+		\end{itemize}
+\end{enumerate}
+
+\subsection{Mô tả thiết kế hệ thống bài tập}
+\label{subsec:interact}
+Để xây dựng một môi trường học tập toán tư duy hiệu quả, hệ thống bài tập không chỉ dừng lại ở việc kiểm tra kiến thức mà còn phải đóng vai trò là công cụ kích thích sự phát triển trí tuệ. Thiết kế của chúng tôi dựa trên ba trụ cột chính: tính sư phạm, tính tương tác và tính công nghệ.
+
+\subsubsection{Cơ sở thiết kế và chuẩn kiến thức}
+Nội dung bài tập được xây dựng dựa trên \textbf{Chương trình Giáo dục phổ thông 2018} của Bộ Giáo dục và Đào tạo Việt Nam \cite{bogddt2018}, tập trung vào 5 mạch kiến thức cốt lõi: Số và phép tính, Hình học và Đo lường, Thống kê và Xác suất. Tuy nhiên, thay vì các bài tập tính toán đơn thuần, chúng tôi tích hợp các phương pháp tư duy từ mô hình giáo dục quốc tế như \textbf{Singapore Math (phương pháp CPA: Concrete-Pictorial-Abstract)} \cite{leong2015concrete} để giúp học sinh Việt Nam dễ dàng chuyển đổi từ tư duy trực quan sang tư duy trừu tượng.
+
+\subsubsection{Kiến trúc mô-đun và Công nghệ phát triển}
+Hệ thống được thiết kế dựa trên kiến trúc mô-đun linh hoạt, cho phép tách biệt giữa dữ liệu bài toán (Content) và logic tương tác (Logic). 
+
+\begin{itemize}
+	\item \textbf{Công cụ phát triển:} Toàn bộ hệ thống tương tác được phát triển trên engine \textbf{Cocos Creator 3.8} \cite{cocoscreator38}. Việc sử dụng hệ thống \textit{Entity Component System (ECS)} của Cocos Creator giúp tối ưu hóa hiệu suất xử lý đồng thời trên cả nền tảng Web và Mobile, đảm bảo các hiệu ứng hoạt hình và phản hồi vật lý mượt mà.
+	\item \textbf{Tính mở rộng:} Nhờ vào khả năng quản lý tài nguyên (Asset Management) mạnh mẽ của Cocos 3.8, hệ thống dễ dàng tích hợp thêm các dạng bài tập mới (Drag-and-Drop, Fill-in-the-blank, Logic Matching) mà không làm ảnh hưởng đến cấu trúc tổng thể của ứng dụng.
+\end{itemize}
+
+\subsubsection{Giải pháp tương tác và Game hóa (Gamification)}
+Khắc phục nhược điểm của các hệ thống cũ tại Việt Nam vốn nặng về lý thuyết, giải pháp của chúng tôi ứng dụng các nguyên lý trong \textbf{Khung lý thuyết Octalysis} \cite{chou2015} để thiết kế hệ thống phần thưởng và nhiệm vụ:
+\begin{itemize}
+	\item \textbf{Phản hồi tức thì (Instant Feedback):} Sử dụng hệ thống Particle và Animation trong Cocos Creator để tạo ra các hiệu ứng khích lệ khi học sinh giải đúng, giúp duy trì trạng thái "Flow" (luồng hứng thú) trong quá trình học.
+	\item \textbf{Tương tác đa chạm:} Tận dụng tối đa bộ lọc sự kiện (Input Events) của Cocos để tạo ra các bài tập kéo thả vật thể, xoay hình học không gian, giúp học sinh tiểu học phát triển tư duy hình khối một cách trực quan nhất.
+\end{itemize}
+
+\input{Content/Hệ thống bài tập}
+

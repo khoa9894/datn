@@ -1,0 +1,723 @@
+
+
+% Cấu hình forest cho cây thư mục
+\forestset{
+  dir tree/.style={
+    for tree={
+      font=\ttfamily,
+      grow'=0,
+      child anchor=west,
+      parent anchor=south,
+      anchor=west,
+      calign=first,
+      edge path={
+        \noexpand\path [draw, \forestoption{edge}]
+        (!u.south west) +(7.5pt,0) |- node[fill,inner sep=1.25pt] {} (.child anchor)\forestoption{edge label};
+      },
+      before typesetting nodes={
+        if n=1
+          {insert before={[,phantom]}}
+          {}
+      },
+      fit=band,
+      before computing xy={l=15pt},
+    }
+  }
+}
+
+% Cấu hình listings
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  xleftmargin=2em,
+  framexleftmargin=1.5em,
+  backgroundcolor=\color{gray!10}
+}
+\subsection{Cấu trúc mã nguồn}
+
+\subsubsection{Tổng quan cấu trúc mã nguồn}
+\label{sec:tong-quan-ma-nguon}
+
+Dự án \textbf{Dino Math} được thiết kế và phát triển dựa trên kiến trúc \textbf{Client-Server} phân lớp, nhằm đảm bảo tính độc lập giữa giao diện người dùng và logic xử lý nghiệp vụ. Mã nguồn của hệ thống được tổ chức thành hai thành phần chính, tương ứng với hai kho lưu trữ (repository) riêng biệt để thuận tiện cho việc quản lý phiên bản và triển khai độc lập:
+
+\begin{itemize}
+	\item \textbf{Phần giao diện người dùng (Frontend):} 
+	Được xây dựng trên nền tảng framework \textit{Next.js} kết hợp với \textit{React} và ngôn ngữ \textit{TypeScript} nhằm đảm bảo tính chặt chẽ về kiểu dữ liệu và tối ưu hóa hiệu năng phía người dùng. Điểm đặc biệt của hệ thống là việc tích hợp trực tiếp game engine \textit{Cocos Creator}, cho phép vận hành các Minigame toán học tương tác một cách mượt mà ngay trên trình duyệt.
+	
+	\item \textbf{Phần xử lý trung tâm (Backend):} 
+	Sử dụng môi trường thực thi \textit{Node.js} kết hợp với framework \textit{Express} và ngôn ngữ \textit{TypeScript}. Hệ thống quản trị dữ liệu thông qua cơ sở dữ liệu NoSQL \textit{MongoDB} để lưu trữ thông tin người dùng và kết quả học tập; đồng thời tích hợp \textit{Redis} làm bộ nhớ đệm (caching) nhằm tối ưu hóa tốc độ truy xuất và nâng cao khả năng phản hồi của hệ thống.
+\end{itemize}
+
+Sự kết hợp giữa các công nghệ hiện đại này không chỉ giúp dự án vận hành ổn định mà còn tạo tiền đề thuận lợi cho việc triển khai linh hoạt trên hạ tầng đám mây AWS \cite{awsec2} và quản lý thông qua cụm k3s \cite{k3s}.
+
+\vspace{0.5cm}
+
+\textbf{Cấu trúc thư mục tổng quan:}
+
+\begin{forest}
+  dir tree
+  [dino-math-project/
+    [dino-fe/ \textit{(Frontend - Next.js)}
+      [src/
+        [apis/ \textit{(API clients)}]
+        [app/ \textit{(Routes)}]
+        [components/ \textit{(UI)}]
+        [stores/ \textit{(State)}]
+        [types/ \textit{(TypeScript)}]
+      ]
+      [public/
+        [assets/ \textit{(Images)}]
+        [web-desktop/ \textit{(Cocos build)}]
+      ]
+    ]
+    [dino\_math\_backend/ \textit{(Backend - Express)}
+      [src/ \textit{(Source)}
+        [controllers/ \textit{(Logic)}]
+        [model/ \textit{(Schemas)}]
+        [routes/ \textit{(Endpoints)}]
+        [middleware/ \textit{(Auth)}]
+      ]
+      [ERD/ \textit{(DB design)}]
+    ]
+  ]
+\end{forest}
+
+\subsubsection{Cấu trúc Frontend}
+
+\subsubsubsection{Tổng quan Frontend}
+
+Frontend được xây dựng trên \textbf{Next.js 14} với App Router, sử dụng TypeScript và Zustand cho state management. Hệ thống tích hợp Cocos Creator để render các bài tập tương tác.
+
+\begin{forest}
+  dir tree
+  [dino-fe/
+    [src/
+      [apis/]
+      [app/]
+      [components/]
+      [stores/]
+      [types/]
+    ]
+    [public/
+      [assets/]
+      [web-desktop/ \textit{(Cocos Creator build)}
+    ]
+    [eslint.config.mjs]
+    [next.config.ts]
+    [package.json]
+    [tsconfig.json]
+  ]
+\end{forest}
+
+\subsubsubsection{Thư mục \texttt{app/} - Routes}
+
+Các route chính của ứng dụng sử dụng App Router với Route Groups:
+
+\textbf{Route Groups:}
+\begin{itemize}
+\item \texttt{(full)} -- Layout fullscreen không có navbar, dùng cho adventure và arena-exam
+\item \texttt{(main)} -- Layout chuẩn có navbar, dùng cho home, lessons, arena, v.v.
+\end{itemize}
+
+\textbf{Dynamic Routes:}
+\begin{itemize}
+\item \texttt{[gradeLevel]} -- Khối lớp động (1, 2, 3, ...)
+\item \texttt{[topicId]} -- ID chủ đề động
+\end{itemize}
+
+\subsubsubsection{Thư mục \texttt{components/} - UI Components}
+
+
+\textbf{Các components chính:}
+\begin{itemize}
+\item \texttt{GameComponent/} -- Cocos game integration
+\item \texttt{Navbar/} -- Navigation bar cho layout (main)
+\item \texttt{ProfilePopup/} -- Avatar selection popup
+\item \texttt{Loader/}, \texttt{ScreenLoader/} -- Loading states
+\item \texttt{RoundedTextBox/}, \texttt{RoundedPasswordBox/} -- Form inputs
+\item \texttt{OTPInput/} -- OTP verification
+\item \texttt{LectureSlider/} -- Lesson navigation
+\item \texttt{MascotWriting/} -- Animated mascot
+\item \texttt{Volume/} -- Audio control
+\end{itemize}
+
+\subsubsubsection{Thư mục \texttt{apis/} - API Clients}
+
+\begin{forest}
+  dir tree
+  [apis/
+    [authApis.ts]
+    [config.ts]
+    [index.ts]
+    [lessonApis.ts]
+    [userApis.ts]
+    [worldApis.ts]
+  ]
+\end{forest}
+
+\textbf{Nội dung:}
+\begin{itemize}
+\item \texttt{authApis.ts} -- Authentication API calls (login, register, logout)
+\item \texttt{config.ts} -- API base URL và configuration
+\item \texttt{index.ts} -- Export tất cả API functions
+\item \texttt{lessonApis.ts} -- Lesson/lecture/exercise API calls
+\item \texttt{userApis.ts} -- User profile và management APIs
+\item \texttt{worldApis.ts} -- World/grade/land data APIs
+\end{itemize}
+
+\subsubsubsection{Thư mục \texttt{stores/} - State Management}
+
+Quản lý state toàn cục với Zustand:
+
+\begin{forest}
+  dir tree
+  [stores/
+    [lessonStore.ts]
+    [userStore.ts]
+  ]
+\end{forest}
+
+\textbf{Stores:}
+\begin{itemize}
+\item \texttt{lessonStore.ts} -- Current lesson state, exercises, progress
+\item \texttt{userStore.ts} -- User information, authentication state
+\end{itemize}
+
+\subsubsubsection{Thư mục \texttt{types/} - TypeScript Types}
+
+\begin{forest}
+  dir tree
+  [types/
+    [dto.types.ts]
+    [index.ts]
+  ]
+\end{forest}
+
+\textbf{Types:}
+\begin{itemize}
+\item \texttt{dto.types.ts} -- Data Transfer Objects (API request/response types)
+\item \texttt{index.ts} -- Export tất cả types
+\end{itemize}
+
+\subsubsubsection{Thư mục \texttt{public/} - Static Assets}
+
+\begin{forest}
+  dir tree
+  [public/
+    [assets/
+      [arena/]
+      [auth/]
+      [exercises/]
+      [games/]
+      [home/]
+      [landing/]
+      [leaderboard/]
+      [mission/]
+      [onboarding/]
+    ]
+    [web-desktop/ \textit{(Cocos Creator build)}
+      [application.js]
+      [index.html]
+      [index.js]
+      [style.css]
+      [assets/
+        [internal/]
+        [main/]
+        [resources/]
+      ]
+      [cocos-js/]
+      [src/]
+    ]
+  ]
+\end{forest}
+
+\textbf{Nội dung:}
+\begin{itemize}
+\item \texttt{assets/} -- Hình ảnh, icons, SVG theo từng module
+\item \texttt{web-desktop/} -- Build output của Cocos Creator game engine
+  \begin{itemize}
+  \item \texttt{assets/main/} -- Game assets (sprites, animations, JSON configs)
+  \item \texttt{cocos-js/} -- Cocos engine runtime
+  \item \texttt{src/} -- Game source bundles
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{Module Frontend}
+
+\subsubsubsection{Module Xác thực (Auth)}
+
+\textbf{Cấu trúc:}
+
+\begin{forest}
+  dir tree
+  [app/auth/
+    [page.tsx \textit{(Login/Register)}]
+    [reset-password/
+      [page.tsx]
+    ]
+  ]
+\end{forest}
+
+\textbf{Chức năng:}
+\begin{itemize}
+\item Xác thực người dùng
+\item Lưu trữ và làm mới JWT token
+\item Phân quyền theo vai trò (student, parent, admin)
+\item Reset password qua email/OTP
+\end{itemize}
+
+\subsubsubsection{Module Học sinh (Student Dashboard)}
+
+\textbf{Cấu trúc:}
+
+\begin{forest}
+  dir tree
+  [app/student/
+    [(main)/
+      [layout.tsx]
+      [home/ \textit{(Dashboard)}]
+      [lessons/ \textit{(Browse)}]
+      [arena/ \textit{(Compete)}]
+      [leaderboard/ \textit{(Ranking)}]
+      [missions/ \textit{(Quests)}]
+      [games/ \textit{(Minigames)}]
+      [history/ \textit{(Progress)}]
+    ]
+    [(full)/
+      [adventure/ \textit{(Learning)}]
+      [arena-exam/ \textit{(Testing)}]
+    ]
+  ]
+\end{forest}
+
+\textbf{Chức năng:}
+\begin{itemize}
+\item Hiển thị bài học khả dụng
+\item Theo dõi tiến độ
+\item Xem điểm số và thành tích
+\item Thi đấu và xếp hạng
+\end{itemize}
+
+\subsubsubsection{Module Cocos Game Integration}
+
+\textbf{Cấu trúc:}
+
+\begin{forest}
+  dir tree
+  [components/GameComponent/
+    [CocosComponent.tsx \textit{(Core bridge)}]
+    [CocosGameWrapper.tsx \textit{(React wrapper)}]
+  ]
+\end{forest}
+
+\textbf{Chức năng:}
+\begin{itemize}
+\item Tích hợp Cocos Creator vào React
+\item Render 6 dạng bài tập:
+  \begin{itemize}
+  \item Kéo thả (Drag \& Drop)
+  \item Điền từ (Fill in the blank)
+  \item Ghép đôi (Matching)
+  \item Trắc nghiệm (Multiple Choice)
+  \item Đúng/Sai (True/False)
+  \item Phân loại chẵn lẻ (Odd/even classification)
+
+  \end{itemize}
+\item Bridge communication giữa React và Cocos
+\item Quản lý lifecycle của game instance
+\end{itemize}
+
+\textbf{Luồng hoạt động:}
+\begin{enumerate}
+\item Component nhận props chứa dữ liệu bài tập từ API
+\item CocosGameWrapper khởi tạo engine
+\item Serialize và truyền data vào game
+\item Học sinh tương tác trong Cocos canvas
+\item Kết quả gửi ngược về React
+\item Cập nhật state và gọi API lưu tiến độ
+\end{enumerate}
+
+\newpage
+\subsubsubsection{Module Arena (Đấu trường)}
+
+\textbf{Cấu trúc:}
+
+\begin{forest}
+  dir tree
+  [app/student/
+    [(main)/arena/ \textit{(Browse mode)}
+      [page.tsx]
+      [ArenaClient.tsx]
+    ]
+    [(full)/arena-exam/ \textit{(Exam mode)}
+      [page.tsx]
+      [ExamClient.tsx]
+    ]
+  ]
+\end{forest}
+
+\textbf{Chức năng:}
+\begin{itemize}
+\item Thi trắc nghiệm có giới hạn thời gian
+\item Xếp hạng và so sánh điểm
+\item Xem lại đáp án
+\end{itemize}
+
+\subsubsubsection{Data Flow Frontend}
+
+\begin{enumerate}
+\item UI Component nhận user interaction
+\item Component gọi Store action hoặc API service
+\item Store xử lý logic và gọi API
+\item API trả dữ liệu về
+\item Store cập nhật state
+\item UI re-render
+\end{enumerate}
+
+\subsubsection{Cấu trúc Backend}
+
+\subsubsubsection{Tổng quan Backend}
+
+Backend được xây dựng trên \textbf{Node.js + Express + TypeScript}, kết nối \textbf{MongoDB} (database) và \textbf{Redis} (cache/session). API theo chuẩn RESTful với Swagger documentation.
+
+\begin{forest}
+  dir tree
+  [dino\_math\_backend/
+    [src/]
+    [ERD/]
+    [sample\_data-main/]
+    [docker-compose.yml]
+    [Dockerfile]
+    [package.json]
+    [tsconfig.json]
+  ]
+\end{forest}
+
+\subsubsubsection{Thư mục \texttt{src/} - Source Code}
+
+Kiến trúc MVC:
+
+\begin{forest}
+  dir tree
+  [src/
+    [index.ts]
+    [controllers/]
+    [middleware/]
+    [model/]
+    [routes/]
+    [utils/]
+  ]
+\end{forest}
+
+\subsubsubsection{Thư mục \texttt{controllers/}}
+
+\begin{forest}
+  dir tree
+  [controllers/
+    [auth.controller.ts]
+    [user.controller.ts]
+    [lesson.controller.ts]
+    [lecture.controller.ts]
+    [exercise.controller.ts]
+    [arena.controller.ts]
+    [participation.controller.ts]
+    [grade.controller.ts]
+    [world.controller.ts]
+    [land.controller.ts]
+    [rank.controller.ts]
+    [academicTerm.controller.ts]
+  ]
+\end{forest}
+
+\textbf{Mô tả:}
+\begin{itemize}
+\item \texttt{auth.controller.ts} -- Authentication
+\item \texttt{user.controller.ts} -- User management
+\item Các controllers khác xử lý business logic cho từng resource
+\end{itemize}
+
+\subsubsubsection{Thư mục \texttt{model/} - Database Schemas}
+
+\begin{forest}
+  dir tree
+  [model/
+    [user.ts]
+    [family.ts]
+    [lesson.ts]
+    [lecture.ts]
+    [exercise.ts]
+    [arena.ts]
+    [participation.ts]
+    [grade.ts]
+    [world.ts]
+    [land.ts]
+    [rank.ts]
+    [academicTerm.ts]
+  ]
+\end{forest}
+
+\textbf{Mô tả:}
+\begin{itemize}
+\item \texttt{user.ts} -- User schema
+\item \texttt{family.ts} -- Family \& invite codes
+\item \texttt{participation.ts} -- Exam results
+\item Các schemas khác định nghĩa cấu trúc dữ liệu MongoDB
+\end{itemize}
+
+\subsubsubsection{Thư mục \texttt{routes/} - API Endpoints}
+
+\begin{forest}
+  dir tree
+  [routes/
+    [auth.routes.ts]
+    [user.routes.ts]
+    [lesson.routes.ts]
+    [lecture.routes.ts]
+    [exercise.routes.ts]
+    [arena.routes.ts]
+    [participation.routes.ts]
+    [grade.routes.ts]
+    [world.routes.ts]
+    [land.routes.ts]
+    [rank.routes.ts]
+    [academicTerm.routes.ts]
+  ]
+\end{forest}
+
+\textbf{Endpoints chính:}
+\begin{itemize}
+\item \texttt{auth.routes.ts} -- /auth/register, /auth/login
+\item \texttt{user.routes.ts} -- CRUD /users
+\item Các routes khác định nghĩa CRUD endpoints
+\end{itemize}
+
+\subsubsubsection{Thư mục \texttt{middleware/}}
+
+\begin{forest}
+  dir tree
+  [middleware/
+    [auth.middleware.ts]
+    [logger.ts]
+    [rateLimit.ts]
+  ]
+\end{forest}
+
+\textbf{Middleware:}
+\begin{itemize}
+\item \texttt{auth.middleware.ts} -- JWT verification
+\item \texttt{logger.ts} -- Request logging
+\item \texttt{rateLimit.ts} -- Rate limiting
+\end{itemize}
+
+\subsubsubsection{Thư mục \texttt{utils/}}
+
+\begin{forest}
+  dir tree
+  [utils/
+    [redisClient.ts]
+    [swagger.ts]
+  ]
+\end{forest}
+
+\textbf{Utilities:}
+\begin{itemize}
+\item \texttt{redisClient.ts} -- Redis singleton
+\item \texttt{swagger.ts} -- API docs config
+\end{itemize}
+
+\subsubsection{Module Backend}
+
+\subsubsubsection{Module Authentication}
+
+\textbf{Files:} \texttt{auth.controller.ts}, \texttt{auth.middleware.ts}, \texttt{user.ts}, \texttt{family.ts}
+
+\textbf{Chức năng:}
+\begin{itemize}
+\item \textbf{Đăng ký (POST /auth/register):}
+  \begin{itemize}
+  \item Validate email và password strength
+  \item Hash password với bcrypt
+  \item Tạo Family và inviteCode cho parent
+  \item Lưu user vào MongoDB
+  \end{itemize}
+  
+\item \textbf{Đăng nhập (POST /auth/login):}
+  \begin{itemize}
+  \item Verify credentials
+  \item Generate JWT tokens
+  \item Lưu token vào Redis với TTL
+  \item Trả về token + user info
+  \end{itemize}
+  
+\item \textbf{Middleware:}
+  \begin{itemize}
+  \item Kiểm tra Bearer token
+  \item Verify JWT signature
+  \item Check token trong Redis
+  \item Inject user info vào request
+  \end{itemize}
+  
+\item \textbf{Đăng xuất (POST /auth/logout):}
+  \begin{itemize}
+  \item Xóa token khỏi Redis
+  \item Invalidate session
+  \end{itemize}
+\end{itemize}
+
+\subsubsubsection{Module User Management}
+
+\textbf{Files:} \texttt{user.controller.ts}, \texttt{user.ts}
+
+\textbf{API Endpoints:}
+\begin{itemize}
+\item \texttt{GET /users} -- Danh sách users (admin)
+\item \texttt{GET /users/:id} -- Chi tiết user
+\item \texttt{PUT /users/:id} -- Cập nhật profile
+\item \texttt{DELETE /users/:id} -- Xóa user (admin)
+\end{itemize}
+
+\textbf{Phân quyền:}
+\begin{itemize}
+\item \textbf{Admin:} Toàn quyền
+\item \textbf{Parent:} Xem chính mình và members trong family
+\item \textbf{Student:} Chỉ xem chính mình và family members
+\end{itemize}
+
+\subsubsubsection{Module Lesson \& Lecture}
+
+\textbf{Files:} \texttt{lesson.controller.ts}, \texttt{lecture.controller.ts}
+
+\textbf{Kiến trúc phân cấp:}
+\begin{enumerate}
+\item \textbf{Grade} -- Khối lớp (Lớp 1, 2, ...)
+\item \textbf{Lesson} -- Bài học (thuộc Grade + AcademicTerm)
+\item \textbf{Lecture} -- Bài giảng (chi tiết nội dung)
+\item \textbf{Exercise} -- Bài tập thực hành
+\end{enumerate}
+
+\textbf{API Endpoints:}
+\begin{itemize}
+\item \texttt{GET /lessons} -- Filter theo grade, subject, term
+\item \texttt{GET /lessons/:id} -- Chi tiết + populate lectures
+\item \texttt{POST /lessons} -- Tạo mới
+\item \texttt{PUT /lessons/:id} -- Cập nhật
+\item \texttt{DELETE /lessons/:id} -- Xóa
+\end{itemize}
+
+\subsubsubsection{Module Exercise}
+
+\textbf{Files:} \texttt{exercise.controller.ts}, \texttt{exercise.ts}
+
+\textbf{Chức năng:}
+\begin{itemize}
+\item 6 dạng bài tập:
+  \begin{itemize}
+  \item Multiple Choice
+  \item True/False
+  \item Fill in the Blank
+  \item Drag \& Drop
+  \item Matching
+  \item Odd/even classification
+  \end{itemize}
+\item Gắn với lecture cụ thể
+\item Lưu đáp án và điểm số
+\item Hỗ trợ multimedia
+\end{itemize}
+
+\textbf{API Endpoints:}
+\begin{itemize}
+\item \texttt{GET /exercises} -- Filter theo lectureId
+\item \texttt{GET /exercises/:id} -- Chi tiết
+\item \texttt{POST /exercises} -- Tạo mới
+\item \texttt{PUT /exercises/:id} -- Cập nhật
+\item \texttt{DELETE /exercises/:id} -- Xóa
+\end{itemize}
+
+\subsubsubsection{Module Arena}
+
+\textbf{Files:} \texttt{arena.controller.ts}, \texttt{participation.controller.ts}
+
+\textbf{Chức năng:}
+\begin{itemize}
+\item Tạo đề thi với time limit
+\item Chọn câu hỏi từ exercise pool
+\item Tracking qua Participation model
+\item Tính battlePoints và xếp hạng
+\item 3 loại arena:
+  \begin{itemize}
+  \item Practice Mode
+  \item Exam Mode
+  \item Competition Mode
+  \end{itemize}
+\end{itemize}
+
+\textbf{API Endpoints:}
+\begin{itemize}
+\item \texttt{GET /arenas} -- Danh sách
+\item \texttt{POST /arenas} -- Tạo mới
+\item \texttt{GET /arenas/:id/start} -- Bắt đầu làm bài
+\item \texttt{POST /participations/:id/submit} -- Nộp bài
+\item \texttt{GET /participations/:id/result} -- Xem kết quả
+\end{itemize}
+
+\subsubsubsection{Module Rank}
+
+\textbf{Files:} \texttt{rank.controller.ts}, \texttt{rank.ts}
+
+\textbf{Chức năng:}
+\begin{itemize}
+\item Định nghĩa cấp bậc (Bronze, Silver, Gold, ...)
+\item Điều kiện thăng hạng theo battlePoints
+\item Phần thưởng (quartz, avatars, ...)
+\end{itemize}
+
+\subsubsection{Data Flow Hệ thống}
+
+\subsubsubsection{Luồng Đăng nhập}
+
+\begin{enumerate}
+\item Client: POST \texttt{/auth/login} (email + password)
+\item Backend: Verify credentials với MongoDB
+\item Backend: Generate JWT token
+\item Backend: Lưu token vào Redis (TTL 7 days)
+\item Backend: Trả token + user info
+\item Client: Lưu token vào localStorage
+\item Các request sau: Gửi token qua Authorization header
+\end{enumerate}
+
+\subsubsubsection{Luồng Làm bài tập}
+
+\begin{enumerate}
+\item Client: GET \texttt{/lessons/:id}
+\item Backend: Trả lesson + populate lectures
+\item Client: GET \texttt{/exercises?lectureId=xxx}
+\item Backend: Trả exercises
+\item Client: Render trong Cocos wrapper
+\item Học sinh làm bài
+\item Client: Gửi kết quả
+\item Backend: Lưu Participation + cập nhật progress
+\end{enumerate}
+
+\subsubsubsection{Luồng Arena (Thi đấu)}
+
+\begin{enumerate}
+\item Client: GET \texttt{/arenas} -- Lấy danh sách
+\item Client: GET \texttt{/arenas/:id/start}
+\item Backend: Tạo Participation (status="in\_progress")
+\item Backend: Trả exerciseIds + startTime
+\item Client: Hiển thị câu hỏi + timer
+\item Client: POST \texttt{/participations/:id/submit}
+\item Backend:
+  \begin{itemize}
+  \item Validate timeLimit
+  \item Chấm điểm
+  \item Cập nhật battlePoints
+  \item Check và update rank
+  \item Update participation (completed)
+  \end{itemize}
+\item Client: Hiển thị kết quả + leaderboard
+\end{enumerate}
+
+\subsubsection{Kết luận}
+Cấu trúc mã nguồn của dự án \textbf{Dino Math} được tổ chức một cách khoa học và nhất quán theo mô hình phân lớp. Việc tách biệt hoàn toàn giữa các thành phần không chỉ giúp nhóm phát triển dễ dàng quản lý mã nguồn mà còn tối ưu hóa quy trình kiểm thử và triển khai độc lập. Toàn bộ mã nguồn của dự án hiện được lưu trữ công khai nhằm phục vụ mục đích kiểm tra và phát triển, cụ thể tại các kho lưu trữ: \href{https://github.com/coldwind444/dino-fe.git}{Frontend Repository} và \href{https://github.com/boyastro/dino_math_backend.git}{Backend Repository}. Cách tiếp cận này đảm bảo hệ thống có khả năng mở rộng cao, sẵn sàng cho việc tích hợp thêm các tính năng giáo dục phức tạp mà không làm ảnh hưởng đến độ ổn định cốt lõi của ứng dụng.
