@@ -1,147 +1,147 @@
 \thispagestyle {empty}
-\contentsline {section}{\numberline {1}Tổng quan về đề tài}{6}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Lý do chọn đề tài}{6}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Thách thức hiện tại}{6}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Mục tiêu của đề tài}{7}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Phạm vi của đề tài}{7}{subsection.1.4}%
-\contentsline {section}{\numberline {2}Khảo sát liên quan}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}So sánh các hệ thống hiện tại trên thị trường}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Điểm mạnh và điểm yếu của các giải pháp hiện có tại Việt Nam}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Giải pháp đề xuất}{9}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Phân tích yêu cầu}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Yêu cầu chức năng}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Yêu cầu phi chức năng}{10}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Hiệu năng}{10}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Bảo mật}{10}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Tính khả dụng và Độ tin cậy}{10}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Khả năng mở rộng}{10}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Tính dễ sử dụng}{10}{subsubsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.6}Tương thích}{10}{subsubsection.3.2.6}%
-\contentsline {subsubsection}{\numberline {3.2.7}Khả năng bảo trì}{11}{subsubsection.3.2.7}%
-\contentsline {subsubsection}{\numberline {3.2.8}Khả năng triển khai linh hoạt}{11}{subsubsection.3.2.8}%
-\contentsline {subsubsection}{\numberline {3.2.9}Quyền riêng tư và Tuân thủ}{11}{subsubsection.3.2.9}%
-\contentsline {subsection}{\numberline {3.3}Các tác nhân hệ thống}{11}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Người dùng cuối (End-users)}{11}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Nhà phát triển và đội ngũ kỹ thuật (Development \& Technical Team)}{11}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Đối tác công nghệ (Technology Partners)}{11}{subsubsection.3.3.3}%
-\contentsline {section}{\numberline {4}Phân tích và thiết kế hệ thống}{12}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Sơ đồ usecase}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Mô tả chi tiết}{13}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Đăng nhập (Login)}{13}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Đăng ký (Sign Up)}{16}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Làm bài tập (Do exercises)}{19}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Tham gia đấu trường (Join arena)}{22}{subsubsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.5}Xem lịch sử làm bài (View exercise history)}{25}{subsubsection.4.2.5}%
-\contentsline {subsubsection}{\numberline {4.2.6}Chơi trò chơi (Play Minigames)}{28}{subsubsection.4.2.6}%
-\contentsline {subsubsection}{\numberline {4.2.7}Xem thống kê của học sinh (View Student Statistics)}{31}{subsubsection.4.2.7}%
-\contentsline {subsubsection}{\numberline {4.2.8}Đăng ký gói Premium (Subscribe Premium)}{34}{subsubsection.4.2.8}%
-\contentsline {subsection}{\numberline {4.3}Mô tả kiến trúc hệ thống}{38}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Tầng Trình bày (Presentation Layer)}{38}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Tầng Điều khiển (Controller Layer)}{38}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Tầng Ứng dụng (Application Layer)}{39}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Tầng Nghiệp vụ (Business Logic Layer)}{39}{subsubsection.4.3.4}%
-\contentsline {subsubsection}{\numberline {4.3.5}Tầng Truy cập Dữ liệu (Data Access Layer)}{39}{subsubsection.4.3.5}%
-\contentsline {subsubsection}{\numberline {4.3.6}Các Dịch vụ Bên ngoài (External Services)}{39}{subsubsection.4.3.6}%
-\contentsline {subsubsection}{\numberline {4.3.7}Luồng Xử lý Tổng quát}{39}{subsubsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.4}Thiết kế cơ sở dữ liệu}{39}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Quản lý Người dùng và Gia đình (User \& Family)}{40}{subsubsection.4.4.1}%
-\contentsline {subsubsubsection}{\numberline {4.4.1.a}User (Người dùng)}{41}{subsubsubsection.4.4.1.1}%
-\contentsline {subsubsubsection}{\numberline {4.4.1.b}Family (Gia đình)}{41}{subsubsubsection.4.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.4.2}Cấu trúc Chương trình Học (Academic \& Structure)}{41}{subsubsection.4.4.2}%
-\contentsline {subsubsubsection}{\numberline {4.4.2.a}Grade (Khối lớp)}{41}{subsubsubsection.4.4.2.1}%
-\contentsline {subsubsubsection}{\numberline {4.4.2.b}AcademicTerm (Học kỳ)}{42}{subsubsubsection.4.4.2.2}%
-\contentsline {subsubsubsection}{\numberline {4.4.2.c}Topic (Chủ đề)}{42}{subsubsubsection.4.4.2.3}%
-\contentsline {subsubsubsection}{\numberline {4.4.2.d}Lecture (Bài giảng)}{42}{subsubsubsection.4.4.2.4}%
-\contentsline {subsubsubsection}{\numberline {4.4.2.e}Exercise (Bài tập)}{42}{subsubsubsection.4.4.2.5}%
-\contentsline {subsubsection}{\numberline {4.4.3}Trò chơi hóa và Tài nguyên (Gamification \& Assets)}{43}{subsubsection.4.4.3}%
-\contentsline {subsubsubsection}{\numberline {4.4.3.a}World (Thế giới)}{43}{subsubsubsection.4.4.3.1}%
-\contentsline {subsubsubsection}{\numberline {4.4.3.b}Land (Vùng đất)}{43}{subsubsubsection.4.4.3.2}%
-\contentsline {subsubsubsection}{\numberline {4.4.3.c}Rank (Xếp hạng)}{43}{subsubsubsection.4.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.4.4}Tiến độ và Kết quả Học tập (Progress \& Results)}{43}{subsubsection.4.4.4}%
-\contentsline {subsubsubsection}{\numberline {4.4.4.a}Progress (Tiến độ)}{43}{subsubsubsection.4.4.4.1}%
-\contentsline {subsubsubsection}{\numberline {4.4.4.b}LectureResult và ExerciseResult}{43}{subsubsubsection.4.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.5}Kiểm tra và Thi đấu (Assessment \& Competition)}{43}{subsubsection.4.4.5}%
-\contentsline {subsubsubsection}{\numberline {4.4.5.a}Assessment và AssessmentResult}{44}{subsubsubsection.4.4.5.1}%
-\contentsline {subsubsubsection}{\numberline {4.4.5.b}Arena và Participation}{44}{subsubsubsection.4.4.5.2}%
-\contentsline {section}{\numberline {5}Thiết kế giao diện}{44}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Giao diện Landing Page}{44}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Giao diện đăng nhập và đăng ký tài khoản}{46}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Giao diện đăng nhập}{46}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Giao diện đăng ký tài khoản}{47}{subsubsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.3}Giao diện Onboarding}{50}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Giao diện Lấy lại mật khẩu}{52}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Các màn hình chính của tài khoản Học sinh}{53}{subsection.5.5}%
-\contentsline {subsubsection}{\numberline {5.5.1}Trang chủ}{54}{subsubsection.5.5.1}%
-\contentsline {subsubsection}{\numberline {5.5.2}Trang Bài học}{57}{subsubsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.5.3}Trang Chủ đề (Trang Milestones)}{58}{subsubsection.5.5.3}%
-\contentsline {subsubsection}{\numberline {5.5.4}Trang Bài tập}{61}{subsubsection.5.5.4}%
-\contentsline {subsubsection}{\numberline {5.5.5}Trang Đấu trường}{63}{subsubsection.5.5.5}%
-\contentsline {subsubsection}{\numberline {5.5.6}Trang Bài thi}{65}{subsubsection.5.5.6}%
-\contentsline {subsubsection}{\numberline {5.5.7}Trang Xếp hạng}{67}{subsubsection.5.5.7}%
-\contentsline {subsubsection}{\numberline {5.5.8}Trang Nhiệm vụ}{68}{subsubsection.5.5.8}%
-\contentsline {subsubsection}{\numberline {5.5.9}Trang Minigames}{69}{subsubsection.5.5.9}%
-\contentsline {subsubsection}{\numberline {5.5.10}Trang Lịch sử làm bài}{70}{subsubsection.5.5.10}%
-\contentsline {subsubsection}{\numberline {5.5.11}Quản lý tài khoản cá nhân}{72}{subsubsection.5.5.11}%
-\contentsline {subsection}{\numberline {5.6}Các màn hình chính của tài khoản Phụ huynh}{74}{subsection.5.6}%
-\contentsline {subsubsection}{\numberline {5.6.1}Trang Thống kê tổng quan}{74}{subsubsection.5.6.1}%
-\contentsline {subsubsection}{\numberline {5.6.2}Trang Lịch sử bài làm}{74}{subsubsection.5.6.2}%
-\contentsline {subsubsection}{\numberline {5.6.3}Trang Minigames}{75}{subsubsection.5.6.3}%
-\contentsline {subsubsection}{\numberline {5.6.4}Quản lý tài khoản cá nhân}{76}{subsubsection.5.6.4}%
-\contentsline {subsection}{\numberline {5.7}Mô tả thiết kế hệ thống bài tập}{79}{subsection.5.7}%
-\contentsline {subsubsection}{\numberline {5.7.1}Cơ sở thiết kế và chuẩn kiến thức}{79}{subsubsection.5.7.1}%
-\contentsline {subsubsection}{\numberline {5.7.2}Kiến trúc mô-đun và Công nghệ phát triển}{79}{subsubsection.5.7.2}%
-\contentsline {subsubsection}{\numberline {5.7.3}Giải pháp tương tác và Game hóa (Gamification)}{80}{subsubsection.5.7.3}%
-\contentsline {subsubsection}{\numberline {5.7.4}Các dạng toán}{80}{subsubsection.5.7.4}%
-\contentsline {subsubsubsection}{\numberline {5.7.4.a}Dạng toán trắc nghiệm (Multiple Choice)}{80}{subsubsubsection.5.7.4.1}%
-\contentsline {subsubsubsection}{\numberline {5.7.4.b}Dạng toán ghép cặp (Matching)}{80}{subsubsubsection.5.7.4.2}%
-\contentsline {subsubsubsection}{\numberline {5.7.4.c}Dạng toán điền từ/số (Fill in the Blanks)}{81}{subsubsubsection.5.7.4.3}%
-\contentsline {subsubsubsection}{\numberline {5.7.4.d}Dạng toán kéo thả (Drag and Drop)}{82}{subsubsubsection.5.7.4.4}%
-\contentsline {subsubsubsection}{\numberline {5.7.4.e}Dạng toán phân loại chẵn/lẻ (Even/Odd Classification)}{83}{subsubsubsection.5.7.4.5}%
-\contentsline {subsubsubsection}{\numberline {5.7.4.f}Dạng toán đúng/sai (True/False)}{83}{subsubsubsection.5.7.4.6}%
-\contentsline {section}{\numberline {6}Hiện thực}{84}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Công nghệ sử dụng}{84}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Giao diện người dùng}{84}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Hạ tầng Backend và Quản lý dữ liệu}{85}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Dịch vụ bên ngoài}{86}{subsubsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.4}Hạ tầng và DevOps}{86}{subsubsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.2}Cấu trúc mã nguồn}{86}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Tổng quan cấu trúc mã nguồn}{86}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Cấu trúc Frontend}{88}{subsubsection.6.2.2}%
-\contentsline {subsubsubsection}{\numberline {6.2.2.a}Tổng quan Frontend}{88}{subsubsubsection.6.2.2.1}%
-\contentsline {subsubsubsection}{\numberline {6.2.2.b}Thư mục \texttt {app/} - Routes}{88}{subsubsubsection.6.2.2.2}%
-\contentsline {subsubsubsection}{\numberline {6.2.2.c}Thư mục \texttt {components/} - UI Components}{88}{subsubsubsection.6.2.2.3}%
-\contentsline {subsubsubsection}{\numberline {6.2.2.d}Thư mục \texttt {apis/} - API Clients}{88}{subsubsubsection.6.2.2.4}%
-\contentsline {subsubsubsection}{\numberline {6.2.2.e}Thư mục \texttt {stores/} - State Management}{89}{subsubsubsection.6.2.2.5}%
-\contentsline {subsubsubsection}{\numberline {6.2.2.f}Thư mục \texttt {types/} - TypeScript Types}{89}{subsubsubsection.6.2.2.6}%
-\contentsline {subsubsubsection}{\numberline {6.2.2.g}Thư mục \texttt {public/} - Static Assets}{90}{subsubsubsection.6.2.2.7}%
-\contentsline {subsubsection}{\numberline {6.2.3}Module Frontend}{91}{subsubsection.6.2.3}%
-\contentsline {subsubsubsection}{\numberline {6.2.3.a}Module Xác thực (Auth)}{91}{subsubsubsection.6.2.3.1}%
-\contentsline {subsubsubsection}{\numberline {6.2.3.b}Module Học sinh (Student Dashboard)}{91}{subsubsubsection.6.2.3.2}%
-\contentsline {subsubsubsection}{\numberline {6.2.3.c}Module Cocos Game Integration}{92}{subsubsubsection.6.2.3.3}%
-\contentsline {subsubsubsection}{\numberline {6.2.3.d}Module Arena (Đấu trường)}{93}{subsubsubsection.6.2.3.4}%
-\contentsline {subsubsubsection}{\numberline {6.2.3.e}Data Flow Frontend}{93}{subsubsubsection.6.2.3.5}%
-\contentsline {subsubsection}{\numberline {6.2.4}Cấu trúc Backend}{93}{subsubsection.6.2.4}%
-\contentsline {subsubsubsection}{\numberline {6.2.4.a}Tổng quan Backend}{93}{subsubsubsection.6.2.4.1}%
-\contentsline {subsubsubsection}{\numberline {6.2.4.b}Thư mục \texttt {src/} - Source Code}{94}{subsubsubsection.6.2.4.2}%
-\contentsline {subsubsubsection}{\numberline {6.2.4.c}Thư mục \texttt {controllers/}}{95}{subsubsubsection.6.2.4.3}%
-\contentsline {subsubsubsection}{\numberline {6.2.4.d}Thư mục \texttt {model/} - Database Schemas}{96}{subsubsubsection.6.2.4.4}%
-\contentsline {subsubsubsection}{\numberline {6.2.4.e}Thư mục \texttt {routes/} - API Endpoints}{97}{subsubsubsection.6.2.4.5}%
-\contentsline {subsubsubsection}{\numberline {6.2.4.f}Thư mục \texttt {middleware/}}{97}{subsubsubsection.6.2.4.6}%
-\contentsline {subsubsubsection}{\numberline {6.2.4.g}Thư mục \texttt {utils/}}{97}{subsubsubsection.6.2.4.7}%
-\contentsline {subsubsection}{\numberline {6.2.5}Module Backend}{98}{subsubsection.6.2.5}%
-\contentsline {subsubsubsection}{\numberline {6.2.5.a}Module Authentication}{98}{subsubsubsection.6.2.5.1}%
-\contentsline {subsubsubsection}{\numberline {6.2.5.b}Module User Management}{98}{subsubsubsection.6.2.5.2}%
-\contentsline {subsubsubsection}{\numberline {6.2.5.c}Module Lesson \& Lecture}{99}{subsubsubsection.6.2.5.3}%
-\contentsline {subsubsubsection}{\numberline {6.2.5.d}Module Exercise}{99}{subsubsubsection.6.2.5.4}%
-\contentsline {subsubsubsection}{\numberline {6.2.5.e}Module Arena}{100}{subsubsubsection.6.2.5.5}%
-\contentsline {subsubsubsection}{\numberline {6.2.5.f}Module Rank}{100}{subsubsubsection.6.2.5.6}%
-\contentsline {subsubsection}{\numberline {6.2.6}Data Flow Hệ thống}{101}{subsubsection.6.2.6}%
-\contentsline {subsubsubsection}{\numberline {6.2.6.a}Luồng Đăng nhập}{101}{subsubsubsection.6.2.6.1}%
-\contentsline {subsubsubsection}{\numberline {6.2.6.b}Luồng Làm bài tập}{101}{subsubsubsection.6.2.6.2}%
-\contentsline {subsubsubsection}{\numberline {6.2.6.c}Luồng Arena (Thi đấu)}{101}{subsubsubsection.6.2.6.3}%
-\contentsline {subsubsection}{\numberline {6.2.7}Kết luận}{102}{subsubsection.6.2.7}%
-\contentsline {section}{\numberline {7}Tổng kết}{102}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Kết quả giai đoạn 1}{102}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Kế hoạch và phân công công việc giai đoạn 1}{103}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Kế hoạch cho giai đoạn 2}{106}{subsection.7.3}%
-\contentsline {section}{Tài liệu tham khảo}{110}{section*.100}%
+\contentsline {section}{\numberline {1}T^^e1^^bb^^95ng quan v^^e1^^bb^^81 ^^c4^^91^^e1^^bb^^81 t^^c3^^a0i}{6}{section.1}%
+\contentsline {subsection}{\numberline {1.1}L^^c3^^bd do ch^^e1^^bb^^8dn ^^c4^^91^^e1^^bb^^81 t^^c3^^a0i}{6}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Th^^c3^^a1ch th^^e1^^bb^^a9c hi^^e1^^bb^^87n t^^e1^^ba^^a1i}{6}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}M^^e1^^bb^^a5c ti^^c3^^aau c^^e1^^bb^^a7a ^^c4^^91^^e1^^bb^^81 t^^c3^^a0i}{7}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Ph^^e1^^ba^^a1m vi c^^e1^^bb^^a7a ^^c4^^91^^e1^^bb^^81 t^^c3^^a0i}{7}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Kh^^e1^^ba^^a3o s^^c3^^a1t li^^c3^^aan quan}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}So s^^c3^^a1nh c^^c3^^a1c h^^e1^^bb^^87 th^^e1^^bb^^91ng hi^^e1^^bb^^87n t^^e1^^ba^^a1i tr^^c3^^aan th^^e1^^bb^^8b tr^^c6^^b0^^e1^^bb^^9dng}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}^^c4^^90i^^e1^^bb^^83m m^^e1^^ba^^a1nh v^^c3^^a0 ^^c4^^91i^^e1^^bb^^83m y^^e1^^ba^^bfu c^^e1^^bb^^a7a c^^c3^^a1c gi^^e1^^ba^^a3i ph^^c3^^a1p hi^^e1^^bb^^87n c^^c3^^b3 t^^e1^^ba^^a1i Vi^^e1^^bb^^87t Nam}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Gi^^e1^^ba^^a3i ph^^c3^^a1p ^^c4^^91^^e1^^bb^^81 xu^^e1^^ba^^a5t}{9}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Ph^^c3^^a2n t^^c3^^adch y^^c3^^aau c^^e1^^ba^^a7u}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Y^^c3^^aau c^^e1^^ba^^a7u ch^^e1^^bb^^a9c n^^c4^^83ng}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Y^^c3^^aau c^^e1^^ba^^a7u phi ch^^e1^^bb^^a9c n^^c4^^83ng}{10}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Hi^^e1^^bb^^87u n^^c4^^83ng}{10}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}B^^e1^^ba^^a3o m^^e1^^ba^^adt}{10}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}T^^c3^^adnh kh^^e1^^ba^^a3 d^^e1^^bb^^a5ng v^^c3^^a0 ^^c4^^90^^e1^^bb^^99 tin c^^e1^^ba^^ady}{10}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Kh^^e1^^ba^^a3 n^^c4^^83ng m^^e1^^bb^^9f r^^e1^^bb^^99ng}{10}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}T^^c3^^adnh d^^e1^^bb^^85 s^^e1^^bb^^ad d^^e1^^bb^^a5ng}{11}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}T^^c6^^b0^^c6^^a1ng th^^c3^^adch}{11}{subsubsection.3.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.7}Kh^^e1^^ba^^a3 n^^c4^^83ng b^^e1^^ba^^a3o tr^^c3^^ac}{11}{subsubsection.3.2.7}%
+\contentsline {subsubsection}{\numberline {3.2.8}Kh^^e1^^ba^^a3 n^^c4^^83ng tri^^e1^^bb^^83n khai linh ho^^e1^^ba^^a1t}{11}{subsubsection.3.2.8}%
+\contentsline {subsubsection}{\numberline {3.2.9}Quy^^e1^^bb^^81n ri^^c3^^aang t^^c6^^b0 v^^c3^^a0 Tu^^c3^^a2n th^^e1^^bb^^a7}{11}{subsubsection.3.2.9}%
+\contentsline {subsection}{\numberline {3.3}C^^c3^^a1c t^^c3^^a1c nh^^c3^^a2n h^^e1^^bb^^87 th^^e1^^bb^^91ng}{11}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Ng^^c6^^b0^^e1^^bb^^9di d^^c3^^b9ng cu^^e1^^bb^^91i (End-users)}{11}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Nh^^c3^^a0 ph^^c3^^a1t tri^^e1^^bb^^83n v^^c3^^a0 ^^c4^^91^^e1^^bb^^99i ng^^c5^^a9 k^^e1^^bb^^b9 thu^^e1^^ba^^adt (Development \& Technical Team)}{12}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}^^c4^^90^^e1^^bb^^91i t^^c3^^a1c c^^c3^^b4ng ngh^^e1^^bb^^87 (Technology Partners)}{12}{subsubsection.3.3.3}%
+\contentsline {section}{\numberline {4}Ph^^c3^^a2n t^^c3^^adch v^^c3^^a0 thi^^e1^^ba^^bft k^^e1^^ba^^bf h^^e1^^bb^^87 th^^e1^^bb^^91ng}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}S^^c6^^a1 ^^c4^^91^^e1^^bb^^93 usecase}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}M^^c3^^b4 t^^e1^^ba^^a3 chi ti^^e1^^ba^^bft}{14}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}^^c4^^90^^c4^^83ng nh^^e1^^ba^^adp (Login)}{14}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}^^c4^^90^^c4^^83ng k^^c3^^bd (Sign Up)}{17}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}L^^c3^^a0m b^^c3^^a0i t^^e1^^ba^^adp (Do exercises)}{20}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Tham gia ^^c4^^91^^e1^^ba^^a5u tr^^c6^^b0^^e1^^bb^^9dng (Join arena)}{23}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.5}Xem l^^e1^^bb^^8bch s^^e1^^bb^^ad l^^c3^^a0m b^^c3^^a0i (View exercise history)}{26}{subsubsection.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.6}Ch^^c6^^a1i tr^^c3^^b2 ch^^c6^^a1i (Play Minigames)}{29}{subsubsection.4.2.6}%
+\contentsline {subsubsection}{\numberline {4.2.7}Xem th^^e1^^bb^^91ng k^^c3^^aa c^^e1^^bb^^a7a h^^e1^^bb^^8dc sinh (View Student Statistics)}{32}{subsubsection.4.2.7}%
+\contentsline {subsubsection}{\numberline {4.2.8}^^c4^^90^^c4^^83ng k^^c3^^bd g^^c3^^b3i Premium (Subscribe Premium)}{35}{subsubsection.4.2.8}%
+\contentsline {subsection}{\numberline {4.3}M^^c3^^b4 t^^e1^^ba^^a3 ki^^e1^^ba^^bfn tr^^c3^^bac h^^e1^^bb^^87 th^^e1^^bb^^91ng}{39}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}T^^e1^^ba^^a7ng Tr^^c3^^acnh b^^c3^^a0y (Presentation Layer)}{39}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}T^^e1^^ba^^a7ng ^^c4^^90i^^e1^^bb^^81u khi^^e1^^bb^^83n (Controller Layer)}{39}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}T^^e1^^ba^^a7ng ^^e1^^bb^^a8ng d^^e1^^bb^^a5ng (Application Layer)}{40}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}T^^e1^^ba^^a7ng Nghi^^e1^^bb^^87p v^^e1^^bb^^a5 (Business Logic Layer)}{40}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}T^^e1^^ba^^a7ng Truy c^^e1^^ba^^adp D^^e1^^bb^^af li^^e1^^bb^^87u (Data Access Layer)}{40}{subsubsection.4.3.5}%
+\contentsline {subsubsection}{\numberline {4.3.6}C^^c3^^a1c D^^e1^^bb^^8bch v^^e1^^bb^^a5 B^^c3^^aan ngo^^c3^^a0i (External Services)}{40}{subsubsection.4.3.6}%
+\contentsline {subsubsection}{\numberline {4.3.7}Lu^^e1^^bb^^93ng X^^e1^^bb^^ad l^^c3^^bd T^^e1^^bb^^95ng qu^^c3^^a1t}{40}{subsubsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.4}Thi^^e1^^ba^^bft k^^e1^^ba^^bf c^^c6^^a1 s^^e1^^bb^^9f d^^e1^^bb^^af li^^e1^^bb^^87u}{40}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Qu^^e1^^ba^^a3n l^^c3^^bd Ng^^c6^^b0^^e1^^bb^^9di d^^c3^^b9ng v^^c3^^a0 Gia ^^c4^^91^^c3^^acnh (User \& Family)}{41}{subsubsection.4.4.1}%
+\contentsline {subsubsubsection}{\numberline {4.4.1.a}User (Ng^^c6^^b0^^e1^^bb^^9di d^^c3^^b9ng)}{42}{subsubsubsection.4.4.1.1}%
+\contentsline {subsubsubsection}{\numberline {4.4.1.b}Family (Gia ^^c4^^91^^c3^^acnh)}{42}{subsubsubsection.4.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.4.2}C^^e1^^ba^^a5u tr^^c3^^bac Ch^^c6^^b0^^c6^^a1ng tr^^c3^^acnh H^^e1^^bb^^8dc (Academic \& Structure)}{42}{subsubsection.4.4.2}%
+\contentsline {subsubsubsection}{\numberline {4.4.2.a}Grade (Kh^^e1^^bb^^91i l^^e1^^bb^^9bp)}{42}{subsubsubsection.4.4.2.1}%
+\contentsline {subsubsubsection}{\numberline {4.4.2.b}AcademicTerm (H^^e1^^bb^^8dc k^^e1^^bb^^b3)}{43}{subsubsubsection.4.4.2.2}%
+\contentsline {subsubsubsection}{\numberline {4.4.2.c}Topic (Ch^^e1^^bb^^a7 ^^c4^^91^^e1^^bb^^81)}{43}{subsubsubsection.4.4.2.3}%
+\contentsline {subsubsubsection}{\numberline {4.4.2.d}Lecture (B^^c3^^a0i gi^^e1^^ba^^a3ng)}{43}{subsubsubsection.4.4.2.4}%
+\contentsline {subsubsubsection}{\numberline {4.4.2.e}Exercise (B^^c3^^a0i t^^e1^^ba^^adp)}{43}{subsubsubsection.4.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.4.3}Tr^^c3^^b2 ch^^c6^^a1i h^^c3^^b3a v^^c3^^a0 T^^c3^^a0i nguy^^c3^^aan (Gamification \& Assets)}{44}{subsubsection.4.4.3}%
+\contentsline {subsubsubsection}{\numberline {4.4.3.a}World (Th^^e1^^ba^^bf gi^^e1^^bb^^9bi)}{44}{subsubsubsection.4.4.3.1}%
+\contentsline {subsubsubsection}{\numberline {4.4.3.b}Land (V^^c3^^b9ng ^^c4^^91^^e1^^ba^^a5t)}{44}{subsubsubsection.4.4.3.2}%
+\contentsline {subsubsubsection}{\numberline {4.4.3.c}Rank (X^^e1^^ba^^bfp h^^e1^^ba^^a1ng)}{44}{subsubsubsection.4.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.4.4}Ti^^e1^^ba^^bfn ^^c4^^91^^e1^^bb^^99 v^^c3^^a0 K^^e1^^ba^^bft qu^^e1^^ba^^a3 H^^e1^^bb^^8dc t^^e1^^ba^^adp (Progress \& Results)}{44}{subsubsection.4.4.4}%
+\contentsline {subsubsubsection}{\numberline {4.4.4.a}Progress (Ti^^e1^^ba^^bfn ^^c4^^91^^e1^^bb^^99)}{44}{subsubsubsection.4.4.4.1}%
+\contentsline {subsubsubsection}{\numberline {4.4.4.b}LectureResult v^^c3^^a0 ExerciseResult}{44}{subsubsubsection.4.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.5}Ki^^e1^^bb^^83m tra v^^c3^^a0 Thi ^^c4^^91^^e1^^ba^^a5u (Assessment \& Competition)}{44}{subsubsection.4.4.5}%
+\contentsline {subsubsubsection}{\numberline {4.4.5.a}Assessment v^^c3^^a0 AssessmentResult}{45}{subsubsubsection.4.4.5.1}%
+\contentsline {subsubsubsection}{\numberline {4.4.5.b}Arena v^^c3^^a0 Participation}{45}{subsubsubsection.4.4.5.2}%
+\contentsline {section}{\numberline {5}Thi^^e1^^ba^^bft k^^e1^^ba^^bf giao di^^e1^^bb^^87n}{45}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Giao di^^e1^^bb^^87n Landing Page}{45}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Giao di^^e1^^bb^^87n ^^c4^^91^^c4^^83ng nh^^e1^^ba^^adp v^^c3^^a0 ^^c4^^91^^c4^^83ng k^^c3^^bd t^^c3^^a0i kho^^e1^^ba^^a3n}{47}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Giao di^^e1^^bb^^87n ^^c4^^91^^c4^^83ng nh^^e1^^ba^^adp}{47}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Giao di^^e1^^bb^^87n ^^c4^^91^^c4^^83ng k^^c3^^bd t^^c3^^a0i kho^^e1^^ba^^a3n}{48}{subsubsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.3}Giao di^^e1^^bb^^87n Onboarding}{51}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Giao di^^e1^^bb^^87n L^^e1^^ba^^a5y l^^e1^^ba^^a1i m^^e1^^ba^^adt kh^^e1^^ba^^a9u}{53}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}C^^c3^^a1c m^^c3^^a0n h^^c3^^acnh ch^^c3^^adnh c^^e1^^bb^^a7a t^^c3^^a0i kho^^e1^^ba^^a3n H^^e1^^bb^^8dc sinh}{54}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Trang ch^^e1^^bb^^a7}{55}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}Trang B^^c3^^a0i h^^e1^^bb^^8dc}{58}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}Trang Ch^^e1^^bb^^a7 ^^c4^^91^^e1^^bb^^81 (Trang Milestones)}{59}{subsubsection.5.5.3}%
+\contentsline {subsubsection}{\numberline {5.5.4}Trang B^^c3^^a0i t^^e1^^ba^^adp}{62}{subsubsection.5.5.4}%
+\contentsline {subsubsection}{\numberline {5.5.5}Trang ^^c4^^90^^e1^^ba^^a5u tr^^c6^^b0^^e1^^bb^^9dng}{64}{subsubsection.5.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.6}Trang B^^c3^^a0i thi}{66}{subsubsection.5.5.6}%
+\contentsline {subsubsection}{\numberline {5.5.7}Trang X^^e1^^ba^^bfp h^^e1^^ba^^a1ng}{68}{subsubsection.5.5.7}%
+\contentsline {subsubsection}{\numberline {5.5.8}Trang Nhi^^e1^^bb^^87m v^^e1^^bb^^a5}{69}{subsubsection.5.5.8}%
+\contentsline {subsubsection}{\numberline {5.5.9}Trang Minigames}{70}{subsubsection.5.5.9}%
+\contentsline {subsubsection}{\numberline {5.5.10}Trang L^^e1^^bb^^8bch s^^e1^^bb^^ad l^^c3^^a0m b^^c3^^a0i}{71}{subsubsection.5.5.10}%
+\contentsline {subsubsection}{\numberline {5.5.11}Qu^^e1^^ba^^a3n l^^c3^^bd t^^c3^^a0i kho^^e1^^ba^^a3n c^^c3^^a1 nh^^c3^^a2n}{73}{subsubsection.5.5.11}%
+\contentsline {subsection}{\numberline {5.6}C^^c3^^a1c m^^c3^^a0n h^^c3^^acnh ch^^c3^^adnh c^^e1^^bb^^a7a t^^c3^^a0i kho^^e1^^ba^^a3n Ph^^e1^^bb^^a5 huynh}{75}{subsection.5.6}%
+\contentsline {subsubsection}{\numberline {5.6.1}Trang Th^^e1^^bb^^91ng k^^c3^^aa t^^e1^^bb^^95ng quan}{75}{subsubsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {5.6.2}Trang L^^e1^^bb^^8bch s^^e1^^bb^^ad b^^c3^^a0i l^^c3^^a0m}{75}{subsubsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.3}Trang Minigames}{76}{subsubsection.5.6.3}%
+\contentsline {subsubsection}{\numberline {5.6.4}Qu^^e1^^ba^^a3n l^^c3^^bd t^^c3^^a0i kho^^e1^^ba^^a3n c^^c3^^a1 nh^^c3^^a2n}{77}{subsubsection.5.6.4}%
+\contentsline {subsection}{\numberline {5.7}M^^c3^^b4 t^^e1^^ba^^a3 thi^^e1^^ba^^bft k^^e1^^ba^^bf h^^e1^^bb^^87 th^^e1^^bb^^91ng b^^c3^^a0i t^^e1^^ba^^adp}{80}{subsection.5.7}%
+\contentsline {subsubsection}{\numberline {5.7.1}C^^c6^^a1 s^^e1^^bb^^9f thi^^e1^^ba^^bft k^^e1^^ba^^bf v^^c3^^a0 chu^^e1^^ba^^a9n ki^^e1^^ba^^bfn th^^e1^^bb^^a9c}{80}{subsubsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.2}Ki^^e1^^ba^^bfn tr^^c3^^bac m^^c3^^b4-^^c4^^91un v^^c3^^a0 C^^c3^^b4ng ngh^^e1^^bb^^87 ph^^c3^^a1t tri^^e1^^bb^^83n}{80}{subsubsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.3}Gi^^e1^^ba^^a3i ph^^c3^^a1p t^^c6^^b0^^c6^^a1ng t^^c3^^a1c v^^c3^^a0 Game h^^c3^^b3a (Gamification)}{81}{subsubsection.5.7.3}%
+\contentsline {subsubsection}{\numberline {5.7.4}C^^c3^^a1c d^^e1^^ba^^a1ng to^^c3^^a1n}{81}{subsubsection.5.7.4}%
+\contentsline {subsubsubsection}{\numberline {5.7.4.a}D^^e1^^ba^^a1ng to^^c3^^a1n tr^^e1^^ba^^afc nghi^^e1^^bb^^87m (Multiple Choice)}{81}{subsubsubsection.5.7.4.1}%
+\contentsline {subsubsubsection}{\numberline {5.7.4.b}D^^e1^^ba^^a1ng to^^c3^^a1n gh^^c3^^a9p c^^e1^^ba^^b7p (Matching)}{81}{subsubsubsection.5.7.4.2}%
+\contentsline {subsubsubsection}{\numberline {5.7.4.c}D^^e1^^ba^^a1ng to^^c3^^a1n ^^c4^^91i^^e1^^bb^^81n t^^e1^^bb^^ab/s^^e1^^bb^^91 (Fill in the Blanks)}{82}{subsubsubsection.5.7.4.3}%
+\contentsline {subsubsubsection}{\numberline {5.7.4.d}D^^e1^^ba^^a1ng to^^c3^^a1n k^^c3^^a9o th^^e1^^ba^^a3 (Drag and Drop)}{83}{subsubsubsection.5.7.4.4}%
+\contentsline {subsubsubsection}{\numberline {5.7.4.e}D^^e1^^ba^^a1ng to^^c3^^a1n ph^^c3^^a2n lo^^e1^^ba^^a1i ch^^e1^^ba^^b5n/l^^e1^^ba^^bb (Even/Odd Classification)}{84}{subsubsubsection.5.7.4.5}%
+\contentsline {subsubsubsection}{\numberline {5.7.4.f}D^^e1^^ba^^a1ng to^^c3^^a1n ^^c4^^91^^c3^^bang/sai (True/False)}{84}{subsubsubsection.5.7.4.6}%
+\contentsline {section}{\numberline {6}Hi^^e1^^bb^^87n th^^e1^^bb^^b1c}{85}{section.6}%
+\contentsline {subsection}{\numberline {6.1}C^^c3^^b4ng ngh^^e1^^bb^^87 s^^e1^^bb^^ad d^^e1^^bb^^a5ng}{85}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Giao di^^e1^^bb^^87n ng^^c6^^b0^^e1^^bb^^9di d^^c3^^b9ng}{85}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}H^^e1^^ba^^a1 t^^e1^^ba^^a7ng Backend v^^c3^^a0 Qu^^e1^^ba^^a3n l^^c3^^bd d^^e1^^bb^^af li^^e1^^bb^^87u}{86}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}D^^e1^^bb^^8bch v^^e1^^bb^^a5 b^^c3^^aan ngo^^c3^^a0i}{87}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.4}H^^e1^^ba^^a1 t^^e1^^ba^^a7ng v^^c3^^a0 DevOps}{87}{subsubsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.2}C^^e1^^ba^^a5u tr^^c3^^bac m^^c3^^a3 ngu^^e1^^bb^^93n}{87}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}T^^e1^^bb^^95ng quan c^^e1^^ba^^a5u tr^^c3^^bac m^^c3^^a3 ngu^^e1^^bb^^93n}{87}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}C^^e1^^ba^^a5u tr^^c3^^bac Frontend}{89}{subsubsection.6.2.2}%
+\contentsline {subsubsubsection}{\numberline {6.2.2.a}T^^e1^^bb^^95ng quan Frontend}{89}{subsubsubsection.6.2.2.1}%
+\contentsline {subsubsubsection}{\numberline {6.2.2.b}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {app/} - Routes}{89}{subsubsubsection.6.2.2.2}%
+\contentsline {subsubsubsection}{\numberline {6.2.2.c}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {components/} - UI Components}{89}{subsubsubsection.6.2.2.3}%
+\contentsline {subsubsubsection}{\numberline {6.2.2.d}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {apis/} - API Clients}{89}{subsubsubsection.6.2.2.4}%
+\contentsline {subsubsubsection}{\numberline {6.2.2.e}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {stores/} - State Management}{90}{subsubsubsection.6.2.2.5}%
+\contentsline {subsubsubsection}{\numberline {6.2.2.f}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {types/} - TypeScript Types}{90}{subsubsubsection.6.2.2.6}%
+\contentsline {subsubsubsection}{\numberline {6.2.2.g}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {public/} - Static Assets}{91}{subsubsubsection.6.2.2.7}%
+\contentsline {subsubsection}{\numberline {6.2.3}Module Frontend}{92}{subsubsection.6.2.3}%
+\contentsline {subsubsubsection}{\numberline {6.2.3.a}Module X^^c3^^a1c th^^e1^^bb^^b1c (Auth)}{92}{subsubsubsection.6.2.3.1}%
+\contentsline {subsubsubsection}{\numberline {6.2.3.b}Module H^^e1^^bb^^8dc sinh (Student Dashboard)}{92}{subsubsubsection.6.2.3.2}%
+\contentsline {subsubsubsection}{\numberline {6.2.3.c}Module Cocos Game Integration}{93}{subsubsubsection.6.2.3.3}%
+\contentsline {subsubsubsection}{\numberline {6.2.3.d}Module Arena (^^c4^^90^^e1^^ba^^a5u tr^^c6^^b0^^e1^^bb^^9dng)}{94}{subsubsubsection.6.2.3.4}%
+\contentsline {subsubsubsection}{\numberline {6.2.3.e}Data Flow Frontend}{94}{subsubsubsection.6.2.3.5}%
+\contentsline {subsubsection}{\numberline {6.2.4}C^^e1^^ba^^a5u tr^^c3^^bac Backend}{94}{subsubsection.6.2.4}%
+\contentsline {subsubsubsection}{\numberline {6.2.4.a}T^^e1^^bb^^95ng quan Backend}{94}{subsubsubsection.6.2.4.1}%
+\contentsline {subsubsubsection}{\numberline {6.2.4.b}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {src/} - Source Code}{95}{subsubsubsection.6.2.4.2}%
+\contentsline {subsubsubsection}{\numberline {6.2.4.c}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {controllers/}}{96}{subsubsubsection.6.2.4.3}%
+\contentsline {subsubsubsection}{\numberline {6.2.4.d}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {model/} - Database Schemas}{97}{subsubsubsection.6.2.4.4}%
+\contentsline {subsubsubsection}{\numberline {6.2.4.e}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {routes/} - API Endpoints}{98}{subsubsubsection.6.2.4.5}%
+\contentsline {subsubsubsection}{\numberline {6.2.4.f}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {middleware/}}{98}{subsubsubsection.6.2.4.6}%
+\contentsline {subsubsubsection}{\numberline {6.2.4.g}Th^^c6^^b0 m^^e1^^bb^^a5c \texttt {utils/}}{98}{subsubsubsection.6.2.4.7}%
+\contentsline {subsubsection}{\numberline {6.2.5}Module Backend}{99}{subsubsection.6.2.5}%
+\contentsline {subsubsubsection}{\numberline {6.2.5.a}Module Authentication}{99}{subsubsubsection.6.2.5.1}%
+\contentsline {subsubsubsection}{\numberline {6.2.5.b}Module User Management}{99}{subsubsubsection.6.2.5.2}%
+\contentsline {subsubsubsection}{\numberline {6.2.5.c}Module Lesson \& Lecture}{100}{subsubsubsection.6.2.5.3}%
+\contentsline {subsubsubsection}{\numberline {6.2.5.d}Module Exercise}{100}{subsubsubsection.6.2.5.4}%
+\contentsline {subsubsubsection}{\numberline {6.2.5.e}Module Arena}{101}{subsubsubsection.6.2.5.5}%
+\contentsline {subsubsubsection}{\numberline {6.2.5.f}Module Rank}{101}{subsubsubsection.6.2.5.6}%
+\contentsline {subsubsection}{\numberline {6.2.6}Data Flow H^^e1^^bb^^87 th^^e1^^bb^^91ng}{102}{subsubsection.6.2.6}%
+\contentsline {subsubsubsection}{\numberline {6.2.6.a}Lu^^e1^^bb^^93ng ^^c4^^90^^c4^^83ng nh^^e1^^ba^^adp}{102}{subsubsubsection.6.2.6.1}%
+\contentsline {subsubsubsection}{\numberline {6.2.6.b}Lu^^e1^^bb^^93ng L^^c3^^a0m b^^c3^^a0i t^^e1^^ba^^adp}{102}{subsubsubsection.6.2.6.2}%
+\contentsline {subsubsubsection}{\numberline {6.2.6.c}Lu^^e1^^bb^^93ng Arena (Thi ^^c4^^91^^e1^^ba^^a5u)}{102}{subsubsubsection.6.2.6.3}%
+\contentsline {subsubsection}{\numberline {6.2.7}K^^e1^^ba^^bft lu^^e1^^ba^^adn}{103}{subsubsection.6.2.7}%
+\contentsline {section}{\numberline {7}T^^e1^^bb^^95ng k^^e1^^ba^^bft}{103}{section.7}%
+\contentsline {subsection}{\numberline {7.1}K^^e1^^ba^^bft qu^^e1^^ba^^a3 giai ^^c4^^91o^^e1^^ba^^a1n 1}{103}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}K^^e1^^ba^^bf ho^^e1^^ba^^a1ch v^^c3^^a0 ph^^c3^^a2n c^^c3^^b4ng c^^c3^^b4ng vi^^e1^^bb^^87c giai ^^c4^^91o^^e1^^ba^^a1n 1}{104}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}K^^e1^^ba^^bf ho^^e1^^ba^^a1ch cho giai ^^c4^^91o^^e1^^ba^^a1n 2}{107}{subsection.7.3}%
+\contentsline {section}{T^^c3^^a0i li^^e1^^bb^^87u tham kh^^e1^^ba^^a3o}{111}{section*.100}%

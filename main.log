@@ -1,24 +1,29 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.17)  22 DEC 2025 21:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2026.5.5)  5 MAY 2026 13:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./main.tex
 (main.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
-(D:\Program\MikTex\tex/latex/extsizes\extarticle.cls
+L3 programming layer <2026-03-20>
+
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/extsiz
+es/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
-(D:\Program\MikTex\tex/latex/base\size12.clo
+
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/s
+ize12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-(D:\Program\MikTex\tex/latex/base\exscale.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/e
+xscale.sty
 Package: exscale 2025/06/05 v2.1i Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
-\big@size=\dimen148
+\big@size=\dimen150
 )
 \c@part=\count275
 \c@section=\count276
@@ -30,23 +35,28 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \c@table=\count282
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen149
+\bibindent=\dimen151
 )
-(D:\Program\MikTex\tex/latex/vntex\vntex.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/vntex/
+vntex.sty
 Package: vntex 2009/07/12 v1.1 support for Vietnamese
 
-(D:\Program\MikTex\tex/latex/base\ifthen.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/i
+fthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-(D:\Program\MikTex\tex/latex/base\fontenc.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/f
+ontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 
-(D:\Program\MikTex\tex/latex/vntex\t5enc.def
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/vntex/
+t5enc.def
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 Now handling font encoding T5 ...
 ... processing UTF-8 mapping file for font encoding T5
 
-(D:\Program\MikTex\tex/latex/vntex\t5enc.dfu
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/vntex/
+t5enc.dfu
 File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -203,22 +213,27 @@ File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
 LaTeX Font Info:    Trying to load font information for T5+cmr on input line 11
 6.
 
-(D:\Program\MikTex\tex/latex/vntex\t5cmr.fd
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/vntex/
+t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ))
 
 Package vntex Warning: No input encoding specified, using UTF-8 as default on i
 nput line 88.
 
-(D:\Program\MikTex\tex/latex/base\inputenc.sty
+
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/i
+nputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 )
-(D:\Program\MikTex\tex/latex/vntex\vncaps.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/vntex/
+vncaps.tex
 File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
 ))
-(D:\Program\MikTex\tex/latex/psnfss\mathptmx.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss
+/mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -254,132 +269,157 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-(D:\Program\MikTex\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperr
+ef/hyperref.sty
+Package: hyperref 2026-04-24 v7.01q Hypertext links for LaTeX
 
-(D:\Program\MikTex\tex/generic/iftex\iftex.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ifte
+x/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
-(D:\Program\MikTex\tex/latex/graphics\keyval.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
+cs/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(D:\Program\MikTex\tex/latex/kvsetkeys\kvsetkeys.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvsetk
+eys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(D:\Program\MikTex\tex/generic/kvdefinekeys\kvdefinekeys.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvde
+finekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(D:\Program\MikTex\tex/generic/pdfescape\pdfescape.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfe
+scape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(D:\Program\MikTex\tex/generic/ltxcmds\ltxcmds.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxc
+mds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(D:\Program\MikTex\tex/generic/pdftexcmds\pdftexcmds.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdft
+excmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(D:\Program\MikTex\tex/generic/infwarerr\infwarerr.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infw
+arerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-(D:\Program\MikTex\tex/latex/hycolor\hycolor.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolo
+r/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(D:\Program\MikTex\tex/latex/hyperref\nameref.sty
-Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperr
+ef/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
 
-(D:\Program\MikTex\tex/latex/refcount\refcount.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcou
+nt/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(D:\Program\MikTex\tex/generic/gettitlestring\gettitlestring.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/gett
+itlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 
-(D:\Program\MikTex\tex/latex/kvoptions\kvoptions.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvopti
+ons/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count283
 )
-(D:\Program\MikTex\tex/latex/etoolbox\etoolbox.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolb
+ox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count284
 )
-(D:\Program\MikTex\tex/generic/stringenc\stringenc.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/stri
+ngenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen150
+\@linkdim=\dimen152
 \Hy@linkcounter=\count285
 \Hy@pagecounter=\count286
 
-(D:\Program\MikTex\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperr
+ef/pd1enc.def
+File: pd1enc.def 2026-04-24 v7.01q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(D:\Program\MikTex\tex/generic/intcalc\intcalc.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intc
+alc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count287
 
-(D:\Program\MikTex\tex/latex/hyperref\puenc.def
-File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperr
+ef/puenc.def
+File: puenc.def 2026-04-24 v7.01q Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4066.
-Package hyperref Info: Hyper figures OFF on input line 4195.
-Package hyperref Info: Link nesting OFF on input line 4200.
-Package hyperref Info: Hyper index ON on input line 4203.
-Package hyperref Info: Plain pages OFF on input line 4210.
-Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Option `unicode' set `true' on input line 4070.
+Package hyperref Info: Hyper figures OFF on input line 4199.
+Package hyperref Info: Link nesting OFF on input line 4204.
+Package hyperref Info: Hyper index ON on input line 4207.
+Package hyperref Info: Plain pages OFF on input line 4214.
+Package hyperref Info: Backreferencing OFF on input line 4219.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4462.
+Package hyperref Info: Bookmarks ON on input line 4466.
 \c@Hy@tempcnt=\count288
 
-(D:\Program\MikTex\tex/latex/url\url.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/ur
+l.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen151
+LaTeX Info: Redefining \url on input line 4805.
+\XeTeXLinkMargin=\dimen153
 
-(D:\Program\MikTex\tex/generic/bitset\bitset.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bits
+et/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(D:\Program\MikTex\tex/generic/bigintcalc\bigintcalc.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigi
+ntcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count289
-\Field@Width=\dimen152
-\Fld@charsize=\dimen153
-Package hyperref Info: Hyper figures OFF on input line 6078.
-Package hyperref Info: Link nesting OFF on input line 6083.
-Package hyperref Info: Hyper index ON on input line 6086.
-Package hyperref Info: backreferencing OFF on input line 6093.
-Package hyperref Info: Link coloring OFF on input line 6098.
-Package hyperref Info: Link coloring with OCG OFF on input line 6103.
-Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Field@Width=\dimen154
+\Fld@charsize=\dimen155
+Package hyperref Info: Hyper figures OFF on input line 6091.
+Package hyperref Info: Link nesting OFF on input line 6096.
+Package hyperref Info: Hyper index ON on input line 6099.
+Package hyperref Info: backreferencing OFF on input line 6106.
+Package hyperref Info: Link coloring OFF on input line 6111.
+Package hyperref Info: Link coloring with OCG OFF on input line 6116.
+Package hyperref Info: PDF/A mode OFF on input line 6121.
 \Hy@abspage=\count290
 \c@Item=\count291
 \c@Hfootnote=\count292
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(D:\Program\MikTex\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperr
+ef/hpdftex.def
+File: hpdftex.def 2026-04-24 v7.01q Hyperref driver for pdfTeX
 \Fld@listcount=\count293
 \c@bookmark@seq@number=\count294
 
-(D:\Program\MikTex\tex/latex/rerunfilecheck\rerunfilecheck.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunf
+ilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
 
-(D:\Program\MikTex\tex/generic/uniquecounter\uniquecounter.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniq
+uecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -387,121 +427,146 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip51
 )
-(D:\Program\MikTex\tex/latex/adjustbox\adjustbox.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjust
+box/adjustbox.sty
 Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
 
-(D:\Program\MikTex\tex/latex/xkeyval\xkeyval.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xkeyva
+l/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(D:\Program\MikTex\tex/generic/xkeyval\xkeyval.tex
-(D:\Program\MikTex\tex/generic/xkeyval\xkvutils.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/xkey
+val/xkeyval.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/xkey
+val/xkvutils.tex
 \XKV@toks=\toks20
 \XKV@tempa@toks=\toks21
 )
 \XKV@depth=\count295
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(D:\Program\MikTex\tex/latex/adjustbox\adjcalc.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjust
+box/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
 )
-(D:\Program\MikTex\tex/latex/adjustbox\trimclip.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjust
+box/trimclip.sty
 Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
 
-(D:\Program\MikTex\tex/latex/graphics\graphicx.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
+cs/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
-(D:\Program\MikTex\tex/latex/graphics\graphics.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
+cs/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
-(D:\Program\MikTex\tex/latex/graphics\trig.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
+cs/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
-(D:\Program\MikTex\tex/latex/graphics-cfg\graphics.cfg
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
+cs-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 
-(D:\Program\MikTex\tex/latex/graphics-def\pdftex.def
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
+cs-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen154
-\Gin@req@width=\dimen155
+\Gin@req@height=\dimen156
+\Gin@req@width=\dimen157
 )
-(D:\Program\MikTex\tex/latex/collectbox\collectbox.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/collec
+tbox/collectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box53
 )
-\tc@llx=\dimen156
-\tc@lly=\dimen157
-\tc@urx=\dimen158
-\tc@ury=\dimen159
+\tc@llx=\dimen158
+\tc@lly=\dimen159
+\tc@urx=\dimen160
+\tc@ury=\dimen161
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
-(D:\Program\MikTex\tex/latex/adjustbox\tc-pdftex.def
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/adjust
+box/tc-pdftex.def
 File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen160
-\adjbox@Height=\dimen161
-\adjbox@Depth=\dimen162
-\adjbox@Totalheight=\dimen163
-\adjbox@pwidth=\dimen164
-\adjbox@pheight=\dimen165
-\adjbox@pdepth=\dimen166
-\adjbox@ptotalheight=\dimen167
+\adjbox@Width=\dimen162
+\adjbox@Height=\dimen163
+\adjbox@Depth=\dimen164
+\adjbox@Totalheight=\dimen165
+\adjbox@pwidth=\dimen166
+\adjbox@pheight=\dimen167
+\adjbox@pdepth=\dimen168
+\adjbox@ptotalheight=\dimen169
 
-(D:\Program\MikTex\tex/latex/ifoddpage\ifoddpage.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ifoddp
+age/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count296
 )
-(D:\Program\MikTex\tex/latex/varwidth\varwidth.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/varwid
+th/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box54
 \sift@deathcycles=\count297
-\@vwid@loff=\dimen168
-\@vwid@roff=\dimen169
+\@vwid@loff=\dimen170
+\@vwid@roff=\dimen171
 )
 ==> First Aid for varwidth.sty applied!
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 11.
- (D:\Program\MikTex\tex/latex/geometry\geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(D:\Program\MikTex\tex/generic/iftex\ifvtex.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geomet
+ry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ifte
+x/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count298
 \Gm@cntv=\count299
 \c@Gm@tempcnt=\count300
-\Gm@bindingoffset=\dimen170
-\Gm@wd@mp=\dimen171
-\Gm@odd@mp=\dimen172
-\Gm@even@mp=\dimen173
-\Gm@layoutwidth=\dimen174
-\Gm@layoutheight=\dimen175
-\Gm@layouthoffset=\dimen176
-\Gm@layoutvoffset=\dimen177
+\Gm@bindingoffset=\dimen172
+\Gm@wd@mp=\dimen173
+\Gm@odd@mp=\dimen174
+\Gm@even@mp=\dimen175
+\Gm@layoutwidth=\dimen176
+\Gm@layoutheight=\dimen177
+\Gm@layouthoffset=\dimen178
+\Gm@layoutvoffset=\dimen179
 \Gm@dimlist=\toks22
 
-(D:\Program\MikTex\tex/latex/geometry\geometry.cfg))
-(D:\Program\MikTex\tex/latex/amsmath\amsmath.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geomet
+ry/geometry.cfg))
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmat
+h/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
-(D:\Program\MikTex\tex/latex/amsmath\amstext.sty
+
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmat
+h/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
 
-(D:\Program\MikTex\tex/latex/amsmath\amsgen.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmat
+h/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks23
-\ex@=\dimen178
+\ex@=\dimen180
 ))
-(D:\Program\MikTex\tex/latex/amsmath\amsbsy.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmat
+h/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen179
+\pmbraise@=\dimen181
 )
-(D:\Program\MikTex\tex/latex/amsmath\amsopn.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmat
+h/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count301
@@ -521,7 +586,7 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen180
+\big@size=\dimen182
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count306
@@ -539,12 +604,12 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \column@=\count311
 \maxfields@=\count312
 \andhelp@=\toks25
-\eqnshift@=\dimen181
-\alignsep@=\dimen182
-\tagshift@=\dimen183
-\tagwidth@=\dimen184
-\totwidth@=\dimen185
-\lineht@=\dimen186
+\eqnshift@=\dimen183
+\alignsep@=\dimen184
+\tagshift@=\dimen185
+\tagwidth@=\dimen186
+\totwidth@=\dimen187
+\lineht@=\dimen188
 \@envbody=\toks26
 \multlinegap=\skip53
 \multlinetaggap=\skip54
@@ -552,7 +617,8 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
-(D:\Program\MikTex\tex/latex/amscls\amsthm.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls
+/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks28
 \thm@bodyfont=\toks29
@@ -564,39 +630,45 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip57
 \dth@everypar=\toks33
 )
-(D:\Program\MikTex\tex/latex/amsfonts\amssymb.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfon
+ts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(D:\Program\MikTex\tex/latex/amsfonts\amsfonts.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfon
+ts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup6
 \symAMSb=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(D:\Program\MikTex\tex/latex/amsmath\amscd.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmat
+h/amscd.sty
 Package: amscd 2017/04/14 v2.1 AMS Commutative Diagrams
 \athelp@=\toks34
-\minaw@=\dimen187
-\bigaw@=\dimen188
-\minCDarrowwidth=\dimen189
+\minaw@=\dimen189
+\bigaw@=\dimen190
+\minCDarrowwidth=\dimen191
 )
-(D:\Program\MikTex\tex/latex/cancel\cancel.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/cancel
+/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
-(D:\Program\MikTex\tex/latex/ulem\ulem.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ulem/u
+lem.sty
 \UL@box=\box57
 \UL@hyphenbox=\box58
 \UL@skip=\skip58
 \UL@hook=\toks35
-\UL@height=\dimen190
+\UL@height=\dimen192
 \UL@pe=\count313
-\UL@pixel=\dimen191
+\UL@pixel=\dimen193
 \ULC@box=\box59
 Package: ulem 2019/11/18
-\ULdepth=\dimen192
+\ULdepth=\dimen194
 )
-(D:\Program\MikTex\tex/latex/float\float.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/
+float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count314
 \float@exts=\toks36
@@ -604,50 +676,63 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks37
 \@floatcapt=\box61
 )
-(D:\Program\MikTex\tex/latex/graphics\epsfig.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
+cs/epsfig.sty
 Package: epsfig 2024/01/14 v1.7b (e)psfig emulation (SPQR)
-\epsfxsize=\dimen193
-\epsfysize=\dimen194
+\epsfxsize=\dimen195
+\epsfysize=\dimen196
 )
-(D:\Program\MikTex\tex/latex/pgf/frontendlayer\tikz.sty
-(D:\Program\MikTex\tex/latex/pgf/basiclayer\pgf.sty
-(D:\Program\MikTex\tex/latex/pgf/utilities\pgfrcs.sty
-(D:\Program\MikTex\tex/generic/pgf/utilities\pgfutil-common.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/fr
+ontendlayer/tikz.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/ba
+siclayer/pgf.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/ut
+ilities/pgfrcs.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks38
-\pgfutil@tempdima=\dimen195
-\pgfutil@tempdimb=\dimen196
+\pgfutil@tempdima=\dimen197
+\pgfutil@tempdimb=\dimen198
 )
-(D:\Program\MikTex\tex/generic/pgf/utilities\pgfutil-latex.def
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+utilities/pgfutil-latex.def
 \pgfutil@abb=\box62
 )
-(D:\Program\MikTex\tex/generic/pgf/utilities\pgfrcs.code.tex
-(D:\Program\MikTex\tex/generic/pgf\pgf.revision.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+utilities/pgfrcs.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/latex/pgf/basiclayer\pgfcore.sty
-(D:\Program\MikTex\tex/latex/pgf/systemlayer\pgfsys.sty
-(D:\Program\MikTex\tex/generic/pgf/systemlayer\pgfsys.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/ba
+siclayer/pgfcore.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/sy
+stemlayer/pgfsys.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+systemlayer/pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/generic/pgf/utilities\pgfkeys.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks39
 \pgfkeys@temptoks=\toks40
 
-(D:\Program\MikTex\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks41
 ))
-\pgf@x=\dimen197
-\pgf@y=\dimen198
-\pgf@xa=\dimen199
-\pgf@ya=\dimen256
-\pgf@xb=\dimen257
-\pgf@yb=\dimen258
-\pgf@xc=\dimen259
-\pgf@yc=\dimen260
-\pgf@xd=\dimen261
-\pgf@yd=\dimen262
+\pgf@x=\dimen199
+\pgf@y=\dimen256
+\pgf@xa=\dimen257
+\pgf@ya=\dimen258
+\pgf@xb=\dimen259
+\pgf@yb=\dimen260
+\pgf@xc=\dimen261
+\pgf@yc=\dimen262
+\pgf@xd=\dimen263
+\pgf@yd=\dimen264
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
 \c@pgf@counta=\count315
@@ -659,34 +744,42 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \t@pgf@tokc=\toks44
 \pgf@sys@id@count=\count319
 
-(D:\Program\MikTex\tex/generic/pgf/systemlayer\pgf.cfg
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+systemlayer/pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(D:\Program\MikTex\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+systemlayer/pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(D:\Program\MikTex\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count320
 \pgfsyssoftpath@bigbuffer@items=\count321
 )
-(D:\Program\MikTex\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(D:\Program\MikTex\tex/latex/xcolor\xcolor.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor
+/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(D:\Program\MikTex\tex/latex/graphics-cfg\color.cfg
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
+cs-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
 
-(D:\Program\MikTex\tex/latex/graphics\mathcolor.ltx)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
+cs/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -697,158 +790,203 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcore.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmath.code.tex
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmathutil.code.tex)
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen263
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmath.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathutil.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen265
 \pgfmath@count=\count322
 \pgfmath@box=\box63
 \pgfmath@toks=\toks45
 \pgfmath@stack@operand=\toks46
 \pgfmath@stack@operation=\toks47
 )
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmathfunctions.code.tex)
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex
-) (D:\Program\MikTex\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex)
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.cod
-e.tex) (D:\Program\MikTex\tex/generic/pgf/math\pgfmathcalc.code.tex)
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmathfloat.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathfunctions.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathfunctions.basic.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathfunctions.trigonometric.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathfunctions.random.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathfunctions.comparison.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathfunctions.base.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathfunctions.round.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathfunctions.misc.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathfunctions.integerarithmetics.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathcalc.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count323
 ))
-(D:\Program\MikTex\tex/generic/pgf/math\pgfint.code.tex)
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfint.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@picminx=\dimen264
-\pgf@picmaxx=\dimen265
-\pgf@picminy=\dimen266
-\pgf@picmaxy=\dimen267
-\pgf@pathminx=\dimen268
-\pgf@pathmaxx=\dimen269
-\pgf@pathminy=\dimen270
-\pgf@pathmaxy=\dimen271
-\pgf@xx=\dimen272
-\pgf@xy=\dimen273
-\pgf@yx=\dimen274
-\pgf@yy=\dimen275
-\pgf@zx=\dimen276
-\pgf@zy=\dimen277
+\pgf@picminx=\dimen266
+\pgf@picmaxx=\dimen267
+\pgf@picminy=\dimen268
+\pgf@picmaxy=\dimen269
+\pgf@pathminx=\dimen270
+\pgf@pathmaxx=\dimen271
+\pgf@pathminy=\dimen272
+\pgf@pathmaxy=\dimen273
+\pgf@xx=\dimen274
+\pgf@xy=\dimen275
+\pgf@yx=\dimen276
+\pgf@yy=\dimen277
+\pgf@zx=\dimen278
+\pgf@zy=\dimen279
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@path@lastx=\dimen278
-\pgf@path@lasty=\dimen279
+\pgf@path@lastx=\dimen280
+\pgf@path@lasty=\dimen281
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@shorten@end@additional=\dimen280
-\pgf@shorten@start@additional=\dimen281
+\pgf@shorten@end@additional=\dimen282
+\pgf@shorten@start@additional=\dimen283
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box64
 \pgf@hbox=\box65
 \pgf@layerbox@main=\box66
 \pgf@picture@serial@count=\count324
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgflinewidth=\dimen282
+\pgflinewidth=\dimen284
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@pt@x=\dimen283
-\pgf@pt@y=\dimen284
-\pgf@pt@temp=\dimen285
+\pgf@pt@x=\dimen285
+\pgf@pt@y=\dimen286
+\pgf@pt@temp=\dimen287
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowsep=\dimen286
+\pgfarrowsep=\dimen288
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@max=\dimen287
+\pgf@max=\dimen289
 \pgf@sys@shading@range@num=\count325
 \pgf@shadingcount=\count326
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box67
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(D:\Program\MikTex\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(D:\Program\MikTex\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box68
 )
-(D:\Program\MikTex\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(D:\Program\MikTex\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/co
+mpatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@nodesepstart=\dimen288
-\pgf@nodesepend=\dimen289
+\pgf@nodesepstart=\dimen290
+\pgf@nodesepend=\dimen291
 )
-(D:\Program\MikTex\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/co
+mpatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(D:\Program\MikTex\tex/latex/pgf/utilities\pgffor.sty
-(D:\Program\MikTex\tex/latex/pgf/utilities\pgfkeys.sty
-(D:\Program\MikTex\tex/generic/pgf/utilities\pgfkeys.code.tex))
-(D:\Program\MikTex\tex/latex/pgf/math\pgfmath.sty
-(D:\Program\MikTex\tex/generic/pgf/math\pgfmath.code.tex))
-(D:\Program\MikTex\tex/generic/pgf/utilities\pgffor.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/ut
+ilities/pgffor.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/ut
+ilities/pgfkeys.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+utilities/pgfkeys.code.tex))
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/ma
+th/pgfmath.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+math/pgfmath.code.tex))
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+utilities/pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen290
-\pgffor@skip=\dimen291
+\pgffor@iter=\dimen292
+\pgffor@skip=\dimen293
 \pgffor@stack=\toks48
 \pgffor@toks=\toks49
 ))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count327
-\pgfplotmarksize=\dimen292
+\pgfplotmarksize=\dimen294
 )
-\tikz@lastx=\dimen293
-\tikz@lasty=\dimen294
-\tikz@lastxsaved=\dimen295
-\tikz@lastysaved=\dimen296
-\tikz@lastmovetox=\dimen297
-\tikz@lastmovetoy=\dimen298
-\tikzleveldistance=\dimen299
-\tikzsiblingdistance=\dimen300
+\tikz@lastx=\dimen295
+\tikz@lasty=\dimen296
+\tikz@lastxsaved=\dimen297
+\tikz@lastysaved=\dimen298
+\tikz@lastmovetox=\dimen299
+\tikz@lastmovetoy=\dimen300
+\tikzleveldistance=\dimen301
+\tikzsiblingdistance=\dimen302
 \tikz@figbox=\box69
 \tikz@figbox@bg=\box70
 \tikz@tempbox=\box71
@@ -858,7 +996,8 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikznumberofcurrentchild=\count330
 \tikz@fig@count=\count331
 
-(D:\Program\MikTex\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmatrixcurrentrow=\count332
 \pgfmatrixcurrentcolumn=\count333
@@ -866,20 +1005,21 @@ File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 \tikz@expandcount=\count335
 
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopa
-ths.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarro
-ws.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\arrowsize=\dimen301
+\arrowsize=\dimen303
 ))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysnak
-es.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibrarysnakes.code.tex
 File: tikzlibrarysnakes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
 
@@ -887,69 +1027,74 @@ Package pgf Warning: Snakes have been superseded by decorations. Please use the
  decoration libraries instead of the snakes library on input line 14.
 
 
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydeco
-rations.pathmorphing.code.tex
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydeco
-rations.code.tex
-(D:\Program\MikTex\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen302
-\pgfdecoratedremainingdistance=\dimen303
-\pgfdecoratedinputsegmentcompleteddistance=\dimen304
-\pgfdecoratedinputsegmentremainingdistance=\dimen305
-\pgf@decorate@distancetomove=\dimen306
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen304
+\pgfdecoratedremainingdistance=\dimen305
+\pgfdecoratedinputsegmentcompleteddistance=\dimen306
+\pgfdecoratedinputsegmentremainingdistance=\dimen307
+\pgf@decorate@distancetomove=\dimen308
 \pgf@decorate@repeatstate=\count336
-\pgfdecorationsegmentamplitude=\dimen307
-\pgfdecorationsegmentlength=\dimen308
+\pgfdecorationsegmentamplitude=\dimen309
+\pgfdecorationsegmentlength=\dimen310
 )
 \tikz@lib@dec@box=\box73
 )
-(D:\Program\MikTex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.
-pathmorphing.code.tex))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydeco
-rations.pathreplacing.code.tex
-(D:\Program\MikTex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.
-pathreplacing.code.tex))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydeco
-rations.shapes.code.tex
-(D:\Program\MikTex\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.
-shapes.code.tex)))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryback
-grounds.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex))
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibrarydecorations.shapes.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/decorations/pgflibrarydecorations.shapes.code.tex)))
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@layerbox@background=\box74
 \pgf@layerboxsaved@background=\box75
 )
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc
-.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (D:\Program\MikTex\tex/latex/tools\array.sty
+)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/
+array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen309
+\col@sep=\dimen311
 \ar@mcellbox=\box76
-\extrarowheight=\dimen310
+\extrarowheight=\dimen312
 \NC@list=\toks50
 \extratabsurround=\skip59
 \backup@length=\skip60
 \ar@cellbox=\box77
 )
-(D:\Program\MikTex\tex/latex/tools\tabularx.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/
+tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-\TX@col@width=\dimen311
-\TX@old@table=\dimen312
-\TX@old@col=\dimen313
-\TX@target=\dimen314
-\TX@delta=\dimen315
+\TX@col@width=\dimen313
+\TX@old@table=\dimen314
+\TX@old@col=\dimen315
+\TX@target=\dimen316
+\TX@delta=\dimen317
 \TX@cols=\count337
 \TX@ftn=\toks51
 )
-(D:\Program\MikTex\tex/latex/tools\longtable.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/
+longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip61
 \LTright=\skip62
 \LTpre=\skip63
 \LTpost=\skip64
 \LTchunksize=\count338
-\LTcapwidth=\dimen316
+\LTcapwidth=\dimen318
 \LT@head=\box78
 \LT@firsthead=\box79
 \LT@foot=\box80
@@ -961,57 +1106,63 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \c@LT@chunks=\count342
 \LT@p@ftn=\toks52
 )
-(D:\Program\MikTex\tex/latex/booktabs\booktabs.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/bookta
+bs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen317
-\lightrulewidth=\dimen318
-\cmidrulewidth=\dimen319
-\belowrulesep=\dimen320
-\belowbottomsep=\dimen321
-\aboverulesep=\dimen322
-\abovetopsep=\dimen323
-\cmidrulesep=\dimen324
-\cmidrulekern=\dimen325
-\defaultaddspace=\dimen326
+\heavyrulewidth=\dimen319
+\lightrulewidth=\dimen320
+\cmidrulewidth=\dimen321
+\belowrulesep=\dimen322
+\belowbottomsep=\dimen323
+\aboverulesep=\dimen324
+\abovetopsep=\dimen325
+\cmidrulesep=\dimen326
+\cmidrulekern=\dimen327
+\defaultaddspace=\dimen328
 \@cmidla=\count343
 \@cmidlb=\count344
-\@aboverulesep=\dimen327
-\@belowrulesep=\dimen328
+\@aboverulesep=\dimen329
+\@belowrulesep=\dimen330
 \@thisruleclass=\count345
 \@lastruleclass=\count346
-\@thisrulewidth=\dimen329
+\@thisrulewidth=\dimen331
 )
-(D:\Program\MikTex\tex/latex/diagbox\diagbox.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/diagbo
+x/diagbox.sty
 Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
 
-(D:\Program\MikTex\tex/latex/pict2e\pict2e.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pict2e
+/pict2e.sty
 Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
 
-(D:\Program\MikTex\tex/latex/pict2e\pict2e.cfg
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pict2e
+/pict2e.cfg
 File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
 )
 Package pict2e Info: Driver file: pdftex.def on input line 112.
 Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
 
-(D:\Program\MikTex\tex/latex/pict2e\p2e-pdftex.def
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pict2e
+/p2e-pdftex.def
 File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
 \pIIe@GRAPH=\toks53
-\@arclen=\dimen330
-\@arcrad=\dimen331
-\pIIe@tempdima=\dimen332
-\pIIe@tempdimb=\dimen333
-\pIIe@tempdimc=\dimen334
-\pIIe@tempdimd=\dimen335
-\pIIe@tempdime=\dimen336
-\pIIe@tempdimf=\dimen337
+\@arclen=\dimen332
+\@arcrad=\dimen333
+\pIIe@tempdima=\dimen334
+\pIIe@tempdimb=\dimen335
+\pIIe@tempdimc=\dimen336
+\pIIe@tempdimd=\dimen337
+\pIIe@tempdime=\dimen338
+\pIIe@tempdimf=\dimen339
 )
-(D:\Program\MikTex\tex/latex/tools\calc.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/
+calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count347
 \calc@Bcount=\count348
-\calc@Adimen=\dimen338
-\calc@Bdimen=\dimen339
+\calc@Adimen=\dimen340
+\calc@Bdimen=\dimen341
 \calc@Askip=\skip65
 \calc@Bskip=\skip66
 LaTeX Info: Redefining \setlength on input line 86.
@@ -1022,33 +1173,36 @@ LaTeX Info: Redefining \addtolength on input line 87.
 \diagbox@boxa=\box83
 \diagbox@boxb=\box84
 \diagbox@boxm=\box85
-\diagbox@wd=\dimen340
-\diagbox@ht=\dimen341
-\diagbox@insepl=\dimen342
-\diagbox@insepr=\dimen343
-\diagbox@outsepl=\dimen344
-\diagbox@outsepr=\dimen345
+\diagbox@wd=\dimen342
+\diagbox@ht=\dimen343
+\diagbox@insepl=\dimen344
+\diagbox@insepr=\dimen345
+\diagbox@outsepl=\dimen346
+\diagbox@outsepr=\dimen347
 )
-(D:\Program\MikTex\tex/latex/multirow\multirow.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/multir
+ow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip68
 \multirow@cntb=\count350
 \multirow@dima=\skip69
-\bigstrutjot=\dimen346
+\bigstrutjot=\dimen348
 )
-(D:\Program\MikTex\tex/latex/caption\caption.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/captio
+n/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
-(D:\Program\MikTex\tex/latex/caption\caption3.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/captio
+n/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen347
-\captionmargin=\dimen348
-\caption@leftmargin=\dimen349
-\caption@rightmargin=\dimen350
-\caption@width=\dimen351
-\caption@indent=\dimen352
-\caption@parindent=\dimen353
-\caption@hangindent=\dimen354
+\caption@tempdima=\dimen349
+\captionmargin=\dimen350
+\caption@leftmargin=\dimen351
+\caption@rightmargin=\dimen352
+\caption@width=\dimen353
+\caption@indent=\dimen354
+\caption@parindent=\dimen355
+\caption@hangindent=\dimen356
 Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count351
@@ -1057,36 +1211,39 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
-(D:\Program\MikTex\tex/latex/caption\ltcaption.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/captio
+n/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 ))
-(D:\Program\MikTex\tex/latex/caption\subcaption.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/captio
+n/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count353
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count354
 )
-(D:\Program\MikTex\tex/latex/tools\multicol.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/
+multicol.sty
 Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \c@tracingmulticols=\count355
 \mult@box=\box86
-\multicol@leftmargin=\dimen355
+\multicol@leftmargin=\dimen357
 \c@unbalance=\count356
 \c@collectmore=\count357
 \doublecol@number=\count358
 \multicoltolerance=\count359
 \multicolpretolerance=\count360
-\full@width=\dimen356
-\page@free=\dimen357
-\premulticols=\dimen358
-\postmulticols=\dimen359
+\full@width=\dimen358
+\page@free=\dimen359
+\premulticols=\dimen360
+\postmulticols=\dimen361
 \multicolsep=\skip70
 \multicolbaselineskip=\skip71
 \partial@page=\box87
 \last@line=\box88
 \mc@boxedresult=\box89
-\maxbalancingoverflow=\dimen360
+\maxbalancingoverflow=\dimen362
 \mult@rightbox=\box90
 \mult@grightbox=\box91
 \mult@firstbox=\box92
@@ -1130,15 +1287,16 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \c@minrows=\count361
 \c@columnbadness=\count362
 \c@finalcolumnbadness=\count363
-\last@try=\dimen361
-\multicolovershoot=\dimen362
-\multicolundershoot=\dimen363
+\last@try=\dimen363
+\multicolovershoot=\dimen364
+\multicolundershoot=\dimen365
 \mult@nat@firstbox=\box130
 \colbreak@box=\box131
 \mc@col@check@num=\count364
 \g__mc_curr_col_int=\count365
 )
-(D:\Program\MikTex\tex/latex/graphics\rotating.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
+cs/rotating.sty
 Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
 \c@r@tfl@t=\count366
 \rotFPtop=\skip72
@@ -1146,55 +1304,56 @@ Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
 \rot@float@box=\box132
 \rot@mess@toks=\toks54
 )
-(D:\Program\MikTex\tex/latex/forest\forest.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/forest
+/forest.sty
 Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
 
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshap
-es.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshap
-es.geometric.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.
-code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/shapes/pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshap
-es.misc.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.
-tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/shapes/pgflibraryshapes.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshap
-es.symbols.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
 File: tikzlibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.co
-de.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/shapes/pgflibraryshapes.symbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshap
-es.arrows.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
 File: tikzlibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.cod
-e.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/shapes/pgflibraryshapes.arrows.code.tex
 File: pgflibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshap
-es.callouts.code.tex
-(D:\Program\MikTex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.c
-ode.tex))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshap
-es.multipart.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/shapes/pgflibraryshapes.callouts.code.tex))
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
 File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 
-(D:\Program\MikTex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.
-code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/shapes/pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodepartlowerbox=\box133
 \pgfnodeparttwobox=\box134
@@ -1217,39 +1376,49 @@ File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodepartsixbox=\box151
 \pgfnodepartfivebox=\box152
 )))
-(D:\Program\MikTex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.
-code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(D:\Program\MikTex\tex/generic/pgf/libraries\pgflibraryintersections.code.tex
-(D:\Program\MikTex\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/pgflibraryintersections.code.tex
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/
+libraries/pgflibraryfpu.code.tex)
 \pgf@intersect@solutions=\count367
 )
-(D:\Program\MikTex\tex/latex/pgfopts\pgfopts.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgfopt
+s/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 \pgfopts@list@add@a@toks=\toks55
 \pgfopts@list@add@b@toks=\toks56
 )
-(D:\Program\MikTex\tex/latex/elocalloc\elocalloc.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/elocal
+loc/elocalloc.sty
 Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
 )
-(D:\Program\MikTex\tex/latex/environ\environ.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/enviro
+n/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(D:\Program\MikTex\tex/latex/trimspaces\trimspaces.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/trimsp
+aces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-(D:\Program\MikTex\tex/latex/l3packages/xparse\xparse.sty
-(D:\Program\MikTex\tex/latex/l3kernel\expl3.sty
-Package: expl3 2025-11-06 L3 programming layer (loader) 
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3pack
+ages/xparse/xparse.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3kern
+el/expl3.sty
+Package: expl3 2026-03-20 L3 programming layer (loader) 
 
-(D:\Program\MikTex\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3back
+end/l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count368
 ))
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
-(D:\Program\MikTex\tex/latex/inlinedef\inlinedef.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/inline
+def/inlinedef.sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \ID@toks=\toks57
 \ID@count=\count369
@@ -1257,7 +1426,7 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \ID@usercommands=\toks58
 \safeloop@depth=\count370
 \safeRKloop@depth=\count371
-\forest@temp@dimen=\dimen364
+\forest@temp@dimen=\dimen366
 \forest@temp@count=\count372
 \forest@n=\count373
 \forest@temp@global@count=\count374
@@ -1268,7 +1437,7 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@global@temparray@N=\count378
 \forest@isnum@count=\count379
 \forest@isdim@nonintpart=\count380
-\forest@isdim@dimen=\dimen365
+\forest@isdim@dimen=\dimen367
 \forest@sort@m=\count381
 \forest@sort@k=\count382
 \forest@sort@p=\count383
@@ -1288,10 +1457,10 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@nodewalk@shortsteps@resolution=\toks63
 \forest@do@dynamics=\toks64
 \forest@box=\box153
-\forest@xg=\dimen366
-\forest@yg=\dimen367
-\forest@xs=\dimen368
-\forest@ys=\dimen369
+\forest@xg=\dimen368
+\forest@yg=\dimen369
+\forest@xs=\dimen370
+\forest@ys=\dimen371
 \forest@pi@toks=\toks65
 \forest@segment@toks=\toks66
 \forest@PIi@toks=\toks67
@@ -1301,38 +1470,47 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@externalize@max@outer@n=\count394
 \forest@externalize@inner@n=\count395
 )
-(D:\Program\MikTex\tex/latex/tools\enumerate.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/
+enumerate.sty
 Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
 \@enLab=\toks69
 )
-(D:\Program\MikTex\tex/latex/enumitem\enumitem.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/enumit
+em/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip74
-\enit@outerparindent=\dimen370
+\enit@outerparindent=\dimen372
 \enit@toks=\toks70
 \enit@inbox=\box154
 \enit@count@id=\count396
 \enitdp@description=\count397
 )
-(D:\Program\MikTex\tex/latex/setspace\setspace.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/setspa
+ce/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-(D:\Program\MikTex\tex/latex/base\alltt.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/a
+lltt.sty
 Package: alltt 2024/07/07 v2.0g defines alltt environment
 )
-(D:\Program\MikTex\tex/latex/mdframed\mdframed.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mdfram
+ed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
 
-(D:\Program\MikTex\tex/latex/zref\zref-abspage.sty
-Package: zref-abspage 2025-06-08 v2.36 Module abspage for zref (HO)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/zref/z
+ref-abspage.sty
+Package: zref-abspage 2026-03-07 v2.37 Module abspage for zref (HO)
 
-(D:\Program\MikTex\tex/latex/zref\zref-base.sty
-Package: zref-base 2025-06-08 v2.36 Module base for zref (HO)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/zref/z
+ref-base.sty
+Package: zref-base 2026-03-07 v2.37 Module base for zref (HO)
 
-(D:\Program\MikTex\tex/generic/etexcmds\etexcmds.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/generic/etex
+cmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-(D:\Program\MikTex\tex/latex/auxhook\auxhook.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/auxhoo
+k/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 Package zref Info: New property list: main on input line 767.
@@ -1342,7 +1520,8 @@ Package zref Info: New property: page on input line 769.
 \c@abspage=\count398
 Package zref Info: New property: abspage on input line 67.
 )
-(D:\Program\MikTex\tex/latex/needspace\needspace.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/needsp
+ace/needspace.sty
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
 \mdf@templength=\skip75
@@ -1387,7 +1566,8 @@ Package: needspace 2025/03/13 v1.3e reserve vertical space
 \mdf@subsubtitleinneraboveskip@length=\skip113
 \mdf@subsubtitleinnerbelowskip@length=\skip114
 
-(D:\Program\MikTex\tex/latex/mdframed\md-frame-1.mdf
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mdfram
+ed/md-frame-1.mdf
 File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 )
 \mdf@frametitlebox=\box155
@@ -1434,30 +1614,34 @@ File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
 \c@mdf@zref@counter=\count404
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(D:\Program\MikTex\tex/latex/listings\listings.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listin
+gs/listings.sty
 \lst@mode=\count405
 \lst@gtempboxa=\box160
 \lst@token=\toks71
 \lst@length=\count406
-\lst@currlwidth=\dimen371
+\lst@currlwidth=\dimen373
 \lst@column=\count407
 \lst@pos=\count408
-\lst@lostspace=\dimen372
-\lst@width=\dimen373
+\lst@lostspace=\dimen374
+\lst@width=\dimen375
 \lst@newlines=\count409
 \lst@lineno=\count410
-\lst@maxwidth=\dimen374
+\lst@maxwidth=\dimen376
 
-(D:\Program\MikTex\tex/latex/listings\lstpatch.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listin
+gs/lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 )
-(D:\Program\MikTex\tex/latex/listings\lstmisc.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listin
+gs/lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 \c@lstnumber=\count411
 \lst@skipnumbers=\count412
 \lst@framebox=\box161
 )
-(D:\Program\MikTex\tex/latex/listings\listings.cfg
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listin
+gs/listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
 Package: listings 2025/11/14 1.11b (Carsten Heinz)
@@ -1468,15 +1652,19 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
     but found:
         2025/11/14 1.11b (Carsten Heinz)
     so I'm assuming it got fixed.
-(D:\Program\MikTex\tex/latex/algorithm2e\algorithm2e.sty
+
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/algori
+thm2e/algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count413
 \algocf@hangindent=\skip142
 
-(D:\Program\MikTex\tex/latex/tools\xspace.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/
+xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(D:\Program\MikTex\tex/latex/relsize\relsize.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/relsiz
+e/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip143
@@ -1487,12 +1675,12 @@ Package: relsize 2013/03/29 ver 4.1
 \skiplength=\skip148
 \algomargin=\skip149
 \skipalgocfslide=\skip150
-\algowidth=\dimen375
-\inoutsize=\dimen376
-\inoutindent=\dimen377
-\interspacetitleruled=\dimen378
-\interspacealgoruled=\dimen379
-\interspacetitleboxruled=\dimen380
+\algowidth=\dimen377
+\inoutsize=\dimen378
+\inoutindent=\dimen379
+\interspacetitleruled=\dimen380
+\interspacealgoruled=\dimen381
+\interspacetitleboxruled=\dimen382
 \algocf@ruledwidth=\skip151
 \algocf@inoutbox=\box162
 \algocf@inputbox=\box163
@@ -1515,7 +1703,8 @@ Package: relsize 2013/03/29 ver 4.1
 \algocf@algoframe=\box168
 \algocf@algobox=\box169
 )
-(D:\Program\MikTex\tex/latex/fancyhdr\fancyhdr.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyh
+dr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
 \f@nch@headwidth=\skip161
@@ -1534,30 +1723,36 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthR=\skip174
 \@temptokenb=\toks72
 )
-(D:\Program\MikTex\tex/latex/lastpage\lastpage.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lastpa
+ge/lastpage.sty
 Package: lastpage 2025/08/14 v2.1h lastpage: 2.09 or 2e? (HMM)
 
-(D:\Program\MikTex\tex/latex/lastpage\lastpage2e.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lastpa
+ge/lastpage2e.sty
 Package: lastpage2e 2025/08/14 v2.1h Decide which 2e lastpage version to use (H
 MM)
 
-(D:\Program\MikTex\tex/latex/lastpage\lastpagemodern.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/lastpa
+ge/lastpagemodern.sty
 Package: lastpagemodern 2025-08-14 v2.1h Refers to last page's name (HMM; JPG)
 \c@lastpagecount=\count417
 ) 
-)) (D:\Program\MikTex\tex/latex/titlesec\titlesec.sty
+))
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/titles
+ec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box170
 \beforetitleunit=\skip175
 \aftertitleunit=\skip176
-\ttl@plus=\dimen381
-\ttl@minus=\dimen382
+\ttl@plus=\dimen383
+\ttl@minus=\dimen384
 \ttl@toksa=\toks73
-\titlewidth=\dimen383
-\titlewidthlast=\dimen384
-\titlewidthfirst=\dimen385
+\titlewidth=\dimen385
+\titlewidthlast=\dimen386
+\titlewidthfirst=\dimen387
 )
-(D:\Program\MikTex\tex/latex/tocloft\tocloft.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/toclof
+t/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
 \cftparskip=\skip177
@@ -1600,19 +1795,23 @@ Package tocloft Info: The document has section divisions on input line 51.
 \c@proposition=\count423
 \c@exer=\count424
 
-(D:\Program\MikTex\tex/latex/listings\lstlang1.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listin
+gs/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
-(D:\Program\MikTex\tex/latex/listings\lstlang2.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listin
+gs/lstlang2.sty
 File: lstlang2.sty 2025/11/14 1.11b listings language file
 )
-(D:\Program\MikTex\tex/latex/listings\lstlang3.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listin
+gs/lstlang3.sty
 File: lstlang3.sty 2025/11/14 1.11b listings language file
 )
 LaTeX Font Info:    Trying to load font information for T5+ptm on input line 21
 2.
 
-(D:\Program\MikTex\tex/latex/vntex\t5ptm.fd
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/vntex/
+t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
 ) (main.aux)
 \openout1 = `main.aux'.
@@ -1643,23 +1842,27 @@ Package hyperref Info: Link coloring ON on input line 212.
 \openout5 = `main.out'.
 
 
-(D:\Program\MikTex\tex/context/base/mkii\supp-pdf.mkii
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/context/base
+/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count425
-\scratchdimen=\dimen386
+\scratchdimen=\dimen388
 \scratchbox=\box171
 \nofMPsegments=\count426
 \nofMParguments=\count427
 \everyMPshowfont=\toks74
 \MPscratchCnt=\count428
-\MPscratchDim=\dimen387
+\MPscratchDim=\dimen389
 \MPnumerator=\count429
 \makeMPintoPDFobject=\count430
 \everyMPtoPDFconversion=\toks75
-) (D:\Program\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+)
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstop
+df-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
-(D:\Program\MikTex\tex/latex/grfext\grfext.sty
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/grfext
+/grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1669,7 +1872,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 
-(D:\Program\MikTex\tex/latex/00miktex\epstopdf-sys.cfg
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00mikt
+ex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 *geometry* driver: auto-detecting
@@ -1718,31 +1922,37 @@ Package pdftex.def Info: Image/HCMUT logo.png  used on input line 242.
 (pdftex.def)             Requested size: 128.0374pt x 129.30356pt.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  263.
-(D:\Program\MikTex\tex/latex/psnfss\ot1ztmcm.fd
+
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss
+/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
  263.
 
-(D:\Program\MikTex\tex/latex/psnfss\omlztmcm.fd
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss
+/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
  263.
 
-(D:\Program\MikTex\tex/latex/psnfss\omsztmcm.fd
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss
+/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
  263.
 
-(D:\Program\MikTex\tex/latex/psnfss\omxztmcm.fd
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss
+/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
 63.
 
-(D:\Program\MikTex\tex/latex/psnfss\ot1ptm.fd
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss
+/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -1751,11 +1961,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 263.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 263.
- [1
 
-{C:/Users/Dell/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/Program/Mik
-Tex/fonts/enc/dvips/vntex/t5.enc} <./Image/HCMUT logo.png>] (Content/L·ªúI CAM 
-ƒêOAN.tex
+
+[1
+
+{/Users/khoa/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pd
+ftex.map} <./Image/HCMUT logo.png>] (Content/L^^e1^^bb^^9cI CAM ^^c4^^90OAN.tex
 <Image/signs/thanh.png, id=603, 700.6175pt x 402.50375pt>
 File: Image/signs/thanh.png Graphic file (type png)
 <use Image/signs/thanh.png>
@@ -1772,48 +1983,59 @@ File: Image/signs/khoa.jpg Graphic file (type jpg)
 Package pdftex.def Info: Image/signs/khoa.jpg  used on input line 19.
 (pdftex.def)             Requested size: 113.81157pt x 85.3574pt.
 
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.23 \newpage
               [1 <./Image/signs/thanh.png> <./Image/signs/tan.png> <./Image/sig
-ns/khoa.jpg>]) (Content/L·ªúI C·∫¢M ∆†N.tex)
+ns/khoa.jpg>]) (Content/L^^e1^^bb^^9cI C^^e1^^ba^^a2M ^^c6^^a0N.tex)
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 289.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [2] (main.toc [3]
+[2] (main.toc
+
+[3]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 143.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [4])
+[4])
 \tf@toc=\write6
 \openout6 = `main.toc'.
+
+
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 293.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [5]
-(Content/T·ªïng quan v·ªÅ ƒë·ªÅ t√†i.tex
+[5] (Content/T^^e1^^bb^^95ng quan v^^e1^^bb^^81 ^^c4^^91^^e1^^bb^^81 t^^c3^^a0i
+.tex
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 5.
 
-(D:\Program\MikTex\tex/latex/psnfss\ts1ptm.fd
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/psnfss
+/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 22.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [6{D:/Program/MikTex/fonts/enc/dvips/base/8r.enc}])
+[6])
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 297.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [7] (Content/Kh·∫£o s√°t li√™n quan.tex
+[7] (Content/Kh^^e1^^ba^^a3o s^^c3^^a1t li^^c3^^aan quan.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
@@ -1822,119 +2044,131 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
 
 Underfull \hbox (badness 1067) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 Video gi£ng gi£i chi
+[]|\T5/ptm/m/n/10.95 Video gi^^a3ng gi^^a3i chi
  []
 
 
 Underfull \hbox (badness 6741) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 R†o c£n ngÊn ng˙
+[]|\T5/ptm/m/n/10.95 R^^a0o c^^a3n ng^^e6n ng^^fa
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--63
-\T5/ptm/m/n/10.95 rßt lÓn; nÎi dung
+\T5/ptm/m/n/10.95 r^^a7t l^^een; n^^ebi dung
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--63
-\T5/ptm/m/n/10.95 ch˜Ïng trºnh BÎ
+\T5/ptm/m/n/10.95 ch^^f7^^ecng tr^^bcnh B^^eb
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 Game h‚a (streak,
+[]|\T5/ptm/m/n/10.95 Game h^^e2a (streak,
  []
 
 
 Underfull \hbox (badness 2277) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 CÏ b£n, thi∂n v∑
+[]|\T5/ptm/m/n/10.95 C^^ec b^^a3n, thi^^b6n v^^b7
  []
 
 
 Underfull \hbox (badness 3281) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 HÂc sinh Viªt
+[]|\T5/ptm/m/n/10.95 H^^e5c sinh Vi^^bbt
  []
 
 
 Underfull \hbox (badness 3364) in paragraph at lines 63--63
-\T5/ptm/m/n/10.95 Nam c¶n ki∏n
+\T5/ptm/m/n/10.95 Nam c^^a6n ki^^b8n
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 Nhi∑u chı ^^_∑
+[]|\T5/ptm/m/n/10.95 Nhi^^b7u ch^^f5 ^^_^^b7
  []
 
 
 Underfull \hbox (badness 4859) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 B°m s°t SGK Viªt
+[]|\T5/ptm/m/n/10.95 B^^a1m s^^a1t SGK Vi^^bbt
  []
 
 
 Underfull \hbox (badness 7667) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 HÂc sinh c¶n
+[]|\T5/ptm/m/n/10.95 H^^e5c sinh c^^a6n
  []
 
 
 Underfull \hbox (badness 1603) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 Chı y∏u theo s°t
+[]|\T5/ptm/m/n/10.95 Ch^^f5 y^^b8u theo s^^a1t
  []
 
 
 Underfull \hbox (badness 3701) in paragraph at lines 63--63
-\T5/ptm/m/n/10.95 ch˜Ïng trºnh hÂc
+\T5/ptm/m/n/10.95 ch^^f7^^ecng tr^^bcnh h^^e5c
  []
 
 
 Underfull \hbox (badness 6078) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 HÂc qua mini-game
+[]|\T5/ptm/m/n/10.95 H^^e5c qua mini-game
  []
 
 
 Underfull \hbox (badness 1152) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 HÂc sinh thΩch
+[]|\T5/ptm/m/n/10.95 H^^e5c sinh th^^bdch
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--63
-\T5/ptm/m/n/10.95 tr£i nghiªm
+\T5/ptm/m/n/10.95 tr^^a3i nghi^^bbm
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--63
-[]|\T5/ptm/m/n/10.95 ^^^a ngÊn
+[]|\T5/ptm/m/n/10.95 ^^^a ng^^e6n
  []
+
+
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 90.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[8]) (Content/Ph√¢n t√≠ch y√™u c·∫ßu.tex
-(Content/Y√™u c·∫ßu c·ªßa h·ªá th·ªëng.tex
+[8]) (Content/Ph^^c3^^a2n t^^c3^^adch y^^c3^^aau c^^e1^^ba^^a7u.tex
+(Content/Y^^c3^^aau c^^e1^^ba^^a7u c^^e1^^bb^^a7a h^^e1^^bb^^87 th^^e1^^bb^^91n
+g.tex
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 26.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [9]
+[9]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
-Package pdftex.def Info: Image/HCMUT logo.png  used on input line 77.
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 76.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [10])
-(Content/C√°c t√°c nh√¢n h·ªá th·ªëng.tex))
+[10]) (Content/C^^c3^^a1c t^^c3^^a1c nh^^c3^^a2n h^^e1^^bb^^87 th^^e1^^bb^^91ng
+.tex
+
+File: Image/HCMUT logo.png Graphic file (type png)
+<use Image/HCMUT logo.png>
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 17.
+(pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
+[11]))
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 304.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [11]
-(Content/Ph√¢n t√≠ch v√† thi·∫øt k·∫ø h·ªá th·ªëng.tex
-<Image/StudentUseCase.drawio.png, id=767, 698.61pt x 864.22874pt>
+[12] (Content/Ph^^c3^^a2n t^^c3^^adch v^^c3^^a0 thi^^e1^^ba^^bft k^^e1^^ba^^bf 
+h^^e1^^bb^^87 th^^e1^^bb^^91ng.tex
+<Image/StudentUseCase.drawio.png, id=773, 698.61pt x 864.22874pt>
 File: Image/StudentUseCase.drawio.png Graphic file (type png)
 <use Image/StudentUseCase.drawio.png>
 Package pdftex.def Info: Image/StudentUseCase.drawio.png  used on input line 7.
 
 (pdftex.def)             Requested size: 218.51521pt x 270.32137pt.
-<Image/ParentUseCase.drawio.png, id=768, 793.96625pt x 703.62875pt>
+<Image/ParentUseCase.drawio.png, id=774, 793.96625pt x 703.62875pt>
 File: Image/ParentUseCase.drawio.png Graphic file (type png)
 <use Image/ParentUseCase.drawio.png>
 Package pdftex.def Info: Image/ParentUseCase.drawio.png  used on input line 14.
@@ -1945,66 +2179,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--47
 
  []
 
-File: Image/HCMUT logo.png Graphic file (type png)
-<use Image/HCMUT logo.png>
-Package pdftex.def Info: Image/HCMUT logo.png  used on input line 52.
-(pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[12 <./Image/StudentUseCase.drawio.png> <./Image/ParentUseCase.drawio.png>]
-File: Image/HCMUT logo.png Graphic file (type png)
-<use Image/HCMUT logo.png>
-Package pdftex.def Info: Image/HCMUT logo.png  used on input line 52.
-(pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
 
-[13]
-<Image/Login.drawio.png, id=784, 1105.12875pt x 683.55376pt>
+
+File: Image/HCMUT logo.png Graphic file (type png)
+<use Image/HCMUT logo.png>
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 52.
+(pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
+[13 <./Image/StudentUseCase.drawio.png> <./Image/ParentUseCase.drawio.png>]
+
+File: Image/HCMUT logo.png Graphic file (type png)
+<use Image/HCMUT logo.png>
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 52.
+(pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
+[14]
+<Image/Login.drawio.png, id=789, 1105.12875pt x 683.55376pt>
 File: Image/Login.drawio.png Graphic file (type png)
 <use Image/Login.drawio.png>
 Package pdftex.def Info: Image/Login.drawio.png  used on input line 55.
 (pdftex.def)             Requested size: 455.24411pt x 281.57306pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 61.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [14 <./Image/Login.drawio.png>]
-<Image/LoginAc.png, id=792, 501.875pt x 1582.91376pt>
+[15 <./Image/Login.drawio.png>]
+<Image/LoginAc.png, id=797, 501.875pt x 1582.91376pt>
 File: Image/LoginAc.png Graphic file (type png)
 <use Image/LoginAc.png>
 Package pdftex.def Info: Image/LoginAc.png  used on input line 65.
 (pdftex.def)             Requested size: 501.87376pt x 1582.90991pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 71.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [15 <./Image/LoginAc.png>]
+[16 <./Image/LoginAc.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 96--99
 
  []
+
+
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 104.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[16]
-<Image/Register.drawio.png, id=806, 1106.1325pt x 784.9325pt>
+[17]
+<Image/Register.drawio.png, id=811, 1106.1325pt x 784.9325pt>
 File: Image/Register.drawio.png Graphic file (type png)
 <use Image/Register.drawio.png>
 Package pdftex.def Info: Image/Register.drawio.png  used on input line 107.
 (pdftex.def)             Requested size: 455.24411pt x 323.04607pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 112.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [17 <./Image/Register.drawio.png>]
-<Image/SignUpAc.png, id=814, 539.01375pt x 1467.4825pt>
+[18 <./Image/Register.drawio.png>]
+<Image/SignUpAc.png, id=821, 539.01375pt x 1467.4825pt>
 File: Image/SignUpAc.png Graphic file (type png)
 <use Image/SignUpAc.png>
 Package pdftex.def Info: Image/SignUpAc.png  used on input line 116.
 (pdftex.def)             Requested size: 539.01242pt x 1467.47893pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 121.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [18 <./Image/SignUpAc.png>]
+[19 <./Image/SignUpAc.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
@@ -2013,23 +2259,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--162
 Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
+
+
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 169.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[19]
-<Image/DoExercise.drawio.png, id=830, 934.49126pt x 864.22874pt>
+[20]
+<Image/DoExercise.drawio.png, id=835, 934.49126pt x 864.22874pt>
 File: Image/DoExercise.drawio.png Graphic file (type png)
 <use Image/DoExercise.drawio.png>
 Package pdftex.def Info: Image/DoExercise.drawio.png  used on input line 172.
 (pdftex.def)             Requested size: 455.24411pt x 421.023pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 177.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [20 <./Image/DoExercise.drawio.png>]
-<Image/homeAc.png, id=838, 603.25375pt x 2653.915pt>
+[21 <./Image/DoExercise.drawio.png>]
+<Image/homeAc.png, id=843, 603.25375pt x 2653.915pt>
 File: Image/homeAc.png Graphic file (type png)
 <use Image/homeAc.png>
 Package pdftex.def Info: Image/homeAc.png  used on input line 181.
@@ -2039,82 +2289,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--235
 
  []
 
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 240.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[21 <./Image/homeAc.png>]
+[22 <./Image/homeAc.png>]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 241.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [22]
-<Image/sequenceArena.drawio.png, id=852, 1456.44125pt x 2155.05125pt>
+[23]
+<Image/sequenceArena.drawio.png, id=857, 1456.44125pt x 2155.05125pt>
 File: Image/sequenceArena.drawio.png Graphic file (type png)
 <use Image/sequenceArena.drawio.png>
 Package pdftex.def Info: Image/sequenceArena.drawio.png  used on input line 245
 .
 (pdftex.def)             Requested size: 455.24411pt x 673.5834pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 251.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [23 <./Image/sequenceArena.drawio.png>]
-<Image/ArenaAc.png, id=860, 1031.855pt x 2533.465pt>
+[24 <./Image/sequenceArena.drawio.png>]
+<Image/ArenaAc.png, id=866, 1031.855pt x 2533.465pt>
 File: Image/ArenaAc.png Graphic file (type png)
 <use Image/ArenaAc.png>
 Package pdftex.def Info: Image/ArenaAc.png  used on input line 255.
 (pdftex.def)             Requested size: 1031.85248pt x 2533.45885pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 290.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [24 <./Image/ArenaAc.png>]
+[25 <./Image/ArenaAc.png>]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 290.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [25]
-<Image/sequenceHis.drawio.png, id=875, 1283.79625pt x 991.705pt>
+[26]
+<Image/sequenceHis.drawio.png, id=880, 1283.79625pt x 991.705pt>
 File: Image/sequenceHis.drawio.png Graphic file (type png)
 <use Image/sequenceHis.drawio.png>
 Package pdftex.def Info: Image/sequenceHis.drawio.png  used on input line 293.
 (pdftex.def)             Requested size: 455.24411pt x 351.65674pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 298.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [26 <./Image/sequenceHis.drawio.png>]
-<Image/HisAc.png, id=883, 577.15625pt x 1957.3125pt>
+[27 <./Image/sequenceHis.drawio.png>]
+<Image/HisAc.png, id=888, 577.15625pt x 1957.3125pt>
 File: Image/HisAc.png Graphic file (type png)
 <use Image/HisAc.png>
 Package pdftex.def Info: Image/HisAc.png  used on input line 302.
 (pdftex.def)             Requested size: 577.15483pt x 1957.30774pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 307.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [27 <./Image/HisAc.png>]
+[28 <./Image/HisAc.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 345--352
 
  []
+
+
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 358.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[28]
-<Image/gameSe.png, id=897, 1028.84375pt x 1248.665pt>
+[29]
+<Image/gameSe.png, id=902, 1028.84375pt x 1248.665pt>
 File: Image/gameSe.png Graphic file (type png)
 <use Image/gameSe.png>
 Package pdftex.def Info: Image/gameSe.png  used on input line 362.
 (pdftex.def)             Requested size: 455.24411pt x 552.51996pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 368.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [29 <./Image/gameSe.png>]
-<Image/gameAc.png, id=905, 343.2825pt x 1969.3575pt>
+[30 <./Image/gameSe.png>]
+<Image/gameAc.png, id=911, 343.2825pt x 1969.3575pt>
 File: Image/gameAc.png Graphic file (type png)
 <use Image/gameAc.png>
 Package pdftex.def Info: Image/gameAc.png  used on input line 372.
@@ -2124,36 +2390,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 405--414
 
  []
 
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 425.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[30 <./Image/gameAc.png>]
+[31 <./Image/gameAc.png>]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 426.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [31]
-<Image/statisticSe.drawio.png, id=920, 1296.845pt x 1616.0375pt>
+[32]
+<Image/statisticSe.drawio.png, id=925, 1296.845pt x 1616.0375pt>
 File: Image/statisticSe.drawio.png Graphic file (type png)
 <use Image/statisticSe.drawio.png>
 Package pdftex.def Info: Image/statisticSe.drawio.png  used on input line 430.
 (pdftex.def)             Requested size: 455.24411pt x 567.2984pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 436.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [32 <./Image/statisticSe.drawio.png>]
-<Image/statisticAc.png, id=928, 871.255pt x 2169.10374pt>
+[33 <./Image/statisticSe.drawio.png>]
+<Image/statisticAc.png, id=933, 871.255pt x 2169.10374pt>
 File: Image/statisticAc.png Graphic file (type png)
 <use Image/statisticAc.png>
 Package pdftex.def Info: Image/statisticAc.png  used on input line 440.
 (pdftex.def)             Requested size: 871.25288pt x 2169.09848pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 446.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [33 <./Image/statisticAc.png>]
+[34 <./Image/statisticAc.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 484--494
 
  []
@@ -2163,60 +2436,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 496--506
 
  []
 
-ignored error: Infinite glue shrinkage found in box being split
+
+! Infinite glue shrinkage found in box being split.
+<argument> Infinite shrink error above ignored ! 
+                                                 
+l.507 \end{longtable}
+                     
+The box you are \vsplitting contains some infinitely
+shrinkable glue, e.g., `\vss' or `\vskip 0pt minus 1fil'.
+Such glue doesn't belong there; but you can safely proceed,
+since the offensive shrinkability has been made finite.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 507.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [34]
+[35]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 510.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [35]
-<Image/purchaseSe.drawio.png, id=947, 1368.11125pt x 2388.925pt>
+[36]
+<Image/purchaseSe.drawio.png, id=953, 1368.11125pt x 2388.925pt>
 File: Image/purchaseSe.drawio.png Graphic file (type png)
 <use Image/purchaseSe.drawio.png>
 Package pdftex.def Info: Image/purchaseSe.drawio.png  used on input line 514.
 (pdftex.def)             Requested size: 455.24411pt x 794.90907pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 521.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-
-[36 <./Image/purchaseSe.drawio.png>]
-<Image/purchaseAc.png, id=956, 745.78625pt x 2893.81125pt>
+[37 <./Image/purchaseSe.drawio.png>]
+<Image/purchaseAc.png, id=962, 745.78625pt x 2893.81125pt>
 File: Image/purchaseAc.png Graphic file (type png)
 <use Image/purchaseAc.png>
 Package pdftex.def Info: Image/purchaseAc.png  used on input line 525.
 (pdftex.def)             Requested size: 745.78444pt x 2893.80423pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 531.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [37 <./Image/purchaseAc.png>]
-<Image/Untitled Diagram-Page-16.drawio.png, id=965, 2309.62875pt x 1381.16pt>
+[38 <./Image/purchaseAc.png>]
+<Image/Untitled Diagram-Page-16.drawio.png, id=970, 2309.62875pt x 1381.16pt>
 File: Image/Untitled Diagram-Page-16.drawio.png Graphic file (type png)
 <use Image/Untitled Diagram-Page-16.drawio.png>
 Package pdftex.def Info: Image/Untitled Diagram-Page-16.drawio.png  used on inp
 ut line 536.
 (pdftex.def)             Requested size: 455.24411pt x 272.2229pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 560.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [38 <./Image/Untitled Diagram-Page-16.drawio.png>]
-<Image/erd.jpg, id=973, 2569.6pt x 1391.1975pt>
+[39 <./Image/Untitled Diagram-Page-16.drawio.png>]
+<Image/erd.jpg, id=978, 2569.6pt x 1391.1975pt>
 File: Image/erd.jpg Graphic file (type jpg)
 <use Image/erd.jpg>
 Package pdftex.def Info: Image/erd.jpg  used on input line 592.
 (pdftex.def)             Requested size: 455.24411pt x 246.45634pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 598.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [39]
-<Image/mapping.jpg, id=981, 2569.6pt x 1280.785pt>
+[40]
+<Image/mapping.jpg, id=986, 2569.6pt x 1280.785pt>
 File: Image/mapping.jpg Graphic file (type jpg)
 <use Image/mapping.jpg>
 Package pdftex.def Info: Image/mapping.jpg  used on input line 601.
@@ -2228,14 +2520,17 @@ to 0.
 
 LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 6
 16.
-(D:\Program\MikTex\tex/latex/vntex\t5cmtt.fd
+
+(/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/vntex/
+t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 618.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [40 <./Image/erd.jpg> <./Image/mapping.jpg>]
+[41 <./Image/erd.jpg> <./Image/mapping.jpg>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2264,8 +2559,9 @@ or  <return>  to continue without it.
 
 
 Overfull \hbox (24.14688pt too wide) in paragraph at lines 632--633
-[]\T5/ptm/m/n/12 Tham gia c°c b†i gi£ng v† b†i ki∫m tra, sinh ra c°c th¸c th∫ \
-T5/cmtt/m/n/12 LectureResult\T5/ptm/m/n/12 , \T5/cmtt/m/n/12 ExerciseResult
+[]\T5/ptm/m/n/12 Tham gia c^^a1c b^^a0i gi^^a3ng v^^a0 b^^a0i ki^^bam tra, sinh
+ ra c^^a1c th^^fcc th^^ba \T5/cmtt/m/n/12 LectureResult\T5/ptm/m/n/12 , \T5/cmt
+t/m/n/12 ExerciseResult
  []
 
 
@@ -2298,11 +2594,13 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 666.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[41]
+[42]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2359,11 +2657,13 @@ or  <return>  to continue without it.
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 719.
 
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 723.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[42]
+[43]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2411,11 +2711,13 @@ Package hyperref Warning: Difference (3) between bookmark levels is greater
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 765.
 
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 773.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[43]) (Content/Thi·∫øt k·∫ø giao di·ªán.tex
+[44]) (Content/Thi^^e1^^ba^^bft k^^e1^^ba^^bf giao di^^e1^^bb^^87n.tex
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2481,146 +2783,162 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/LandingPage.jpg, id=1009, 1927.2pt x 2918.905pt>
+<Image/UI/LandingPage.jpg, id=1014, 1927.2pt x 2918.905pt>
 File: Image/UI/LandingPage.jpg Graphic file (type jpg)
 <use Image/UI/LandingPage.jpg>
 Package pdftex.def Info: Image/UI/LandingPage.jpg  used on input line 29.
 (pdftex.def)             Requested size: 409.71692pt x 620.51521pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 34.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[44]
+[45]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 40.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [45 <./Image/UI/LandingPage.jpg>]
-<Image/UI/Auth/LoginPage-HidePassword.jpg, id=1028, 1927.2pt x 1027.84pt>
+[46 <./Image/UI/LandingPage.jpg>]
+<Image/UI/Auth/LoginPage-HidePassword.jpg, id=1033, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/LoginPage-HidePassword.jpg Graphic file (type jpg)
 <use Image/UI/Auth/LoginPage-HidePassword.jpg>
 Package pdftex.def Info: Image/UI/Auth/LoginPage-HidePassword.jpg  used on inpu
 t line 50.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Auth/LoginPage-ShowPassword.jpg, id=1029, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/LoginPage-ShowPassword.jpg, id=1034, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/LoginPage-ShowPassword.jpg Graphic file (type jpg)
 <use Image/UI/Auth/LoginPage-ShowPassword.jpg>
 Package pdftex.def Info: Image/UI/Auth/LoginPage-ShowPassword.jpg  used on inpu
 t line 57.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Auth/LoginErrorMessage.jpg, id=1030, 1915.155pt x 973.6375pt>
+<Image/UI/Auth/LoginErrorMessage.jpg, id=1035, 1915.155pt x 973.6375pt>
 File: Image/UI/Auth/LoginErrorMessage.jpg Graphic file (type jpg)
 <use Image/UI/Auth/LoginErrorMessage.jpg>
 Package pdftex.def Info: Image/UI/Auth/LoginErrorMessage.jpg  used on input lin
 e 64.
 (pdftex.def)             Requested size: 409.71692pt x 208.28802pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 68.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [46 <./Image/UI/Auth/LoginPage-HidePassword.jpg>]
-<Image/UI/Auth/SignUpPage-RolePicking.jpg, id=1040, 1927.2pt x 1027.84pt>
+[47 <./Image/UI/Auth/LoginPage-HidePassword.jpg>]
+<Image/UI/Auth/SignUpPage-RolePicking.jpg, id=1045, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/SignUpPage-RolePicking.jpg Graphic file (type jpg)
 <use Image/UI/Auth/SignUpPage-RolePicking.jpg>
 Package pdftex.def Info: Image/UI/Auth/SignUpPage-RolePicking.jpg  used on inpu
 t line 84.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 89.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [47 <./Image/UI/Auth/LoginPage-ShowPassword.jpg> <./Image/UI/Auth/LoginErrorMe
-ssage.jpg>]
-<Image/UI/Auth/SignUpPage-SignUp-Student.jpg, id=1050, 1927.2pt x 1027.84pt>
+[48 <./Image/UI/Auth/LoginPage-ShowPassword.jpg> <./Image/UI/Auth/LoginErrorMes
+sage.jpg>]
+<Image/UI/Auth/SignUpPage-SignUp-Student.jpg, id=1057, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/SignUpPage-SignUp-Student.jpg Graphic file (type jpg)
 <use Image/UI/Auth/SignUpPage-SignUp-Student.jpg>
 Package pdftex.def Info: Image/UI/Auth/SignUpPage-SignUp-Student.jpg  used on i
 nput line 100.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Auth/SignUpPage-SignUp-Parent.jpg, id=1051, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/SignUpPage-SignUp-Parent.jpg, id=1058, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/SignUpPage-SignUp-Parent.jpg Graphic file (type jpg)
 <use Image/UI/Auth/SignUpPage-SignUp-Parent.jpg>
 Package pdftex.def Info: Image/UI/Auth/SignUpPage-SignUp-Parent.jpg  used on in
 put line 107.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 112.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [48 <./Image/UI/Auth/SignUpPage-RolePicking.jpg> <./Image/UI/Auth/SignUpPage-S
-ignUp-Student.jpg>]
-<Image/UI/Auth/EmailExistError.jpg, id=1063, 1922.18124pt x 984.67876pt>
+[49 <./Image/UI/Auth/SignUpPage-RolePicking.jpg> <./Image/UI/Auth/SignUpPage-Si
+gnUp-Student.jpg>]
+<Image/UI/Auth/EmailExistError.jpg, id=1068, 1922.18124pt x 984.67876pt>
 File: Image/UI/Auth/EmailExistError.jpg Graphic file (type jpg)
 <use Image/UI/Auth/EmailExistError.jpg>
 Package pdftex.def Info: Image/UI/Auth/EmailExistError.jpg  used on input line 
 117.
 (pdftex.def)             Requested size: 409.71692pt x 209.88377pt.
-<Image/UI/Auth/SignUpSuccess.jpg, id=1064, 1922.18124pt x 983.675pt>
+<Image/UI/Auth/SignUpSuccess.jpg, id=1069, 1922.18124pt x 983.675pt>
 File: Image/UI/Auth/SignUpSuccess.jpg Graphic file (type jpg)
 <use Image/UI/Auth/SignUpSuccess.jpg>
 Package pdftex.def Info: Image/UI/Auth/SignUpSuccess.jpg  used on input line 12
 4.
 (pdftex.def)             Requested size: 409.71692pt x 209.66983pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 129.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [49 <./Image/UI/Auth/SignUpPage-SignUp-Parent.jpg> <./Image/UI/Auth/EmailExist
-Error.jpg>]
+[50 <./Image/UI/Auth/SignUpPage-SignUp-Parent.jpg> <./Image/UI/Auth/EmailExistE
+rror.jpg>]
 ! Too many }'s.
 l.129 \end{itemize}}
                     
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-<Image/UI/Auth/Onboarding-Info.jpg, id=1073, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/Onboarding-Info.jpg, id=1078, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/Onboarding-Info.jpg Graphic file (type jpg)
 <use Image/UI/Auth/Onboarding-Info.jpg>
 Package pdftex.def Info: Image/UI/Auth/Onboarding-Info.jpg  used on input line 
 145.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Auth/Onboarding-Avatar.jpg, id=1075, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/Onboarding-Avatar.jpg, id=1080, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/Onboarding-Avatar.jpg Graphic file (type jpg)
 <use Image/UI/Auth/Onboarding-Avatar.jpg>
 Package pdftex.def Info: Image/UI/Auth/Onboarding-Avatar.jpg  used on input lin
 e 154.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 158.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[50 <./Image/UI/Auth/SignUpSuccess.jpg> <./Image/UI/Auth/Onboarding-Info.jpg>]
-<Image/UI/Auth/Onboarding-InviteCode.jpg, id=1083, 1927.2pt x 1027.84pt>
+[51 <./Image/UI/Auth/SignUpSuccess.jpg> <./Image/UI/Auth/Onboarding-Info.jpg>]
+<Image/UI/Auth/Onboarding-InviteCode.jpg, id=1088, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/Onboarding-InviteCode.jpg Graphic file (type jpg)
 <use Image/UI/Auth/Onboarding-InviteCode.jpg>
 Package pdftex.def Info: Image/UI/Auth/Onboarding-InviteCode.jpg  used on input
  line 163.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 172.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-
-[51 <./Image/UI/Auth/Onboarding-Avatar.jpg> <./Image/UI/Auth/Onboarding-InviteC
+[52 <./Image/UI/Auth/Onboarding-Avatar.jpg> <./Image/UI/Auth/Onboarding-InviteC
 ode.jpg>]
-<Image/UI/Auth/PasswordReset1.jpg, id=1093, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/PasswordReset1.jpg, id=1098, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/PasswordReset1.jpg Graphic file (type jpg)
 <use Image/UI/Auth/PasswordReset1.jpg>
 Package pdftex.def Info: Image/UI/Auth/PasswordReset1.jpg  used on input line 1
 83.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Auth/PasswordReset2.jpg, id=1095, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/PasswordReset2.jpg, id=1100, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/PasswordReset2.jpg Graphic file (type jpg)
 <use Image/UI/Auth/PasswordReset2.jpg>
 Package pdftex.def Info: Image/UI/Auth/PasswordReset2.jpg  used on input line 1
 93.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 201.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [52 <./Image/UI/Auth/PasswordReset1.jpg> <./Image/UI/Auth/PasswordReset2.jpg>]
-<Image/UI/Auth/PasswordReset3.jpg, id=1104, 1927.2pt x 1027.84pt>
+[53 <./Image/UI/Auth/PasswordReset1.jpg> <./Image/UI/Auth/PasswordReset2.jpg>]
+<Image/UI/Auth/PasswordReset3.jpg, id=1109, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/PasswordReset3.jpg Graphic file (type jpg)
 <use Image/UI/Auth/PasswordReset3.jpg>
 Package pdftex.def Info: Image/UI/Auth/PasswordReset3.jpg  used on input line 2
@@ -2638,39 +2956,43 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-<Image/UI/Main-Student/Home-Morning.jpg, id=1106, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Home-Morning.jpg, id=1111, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Home-Morning.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Home-Morning.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Home-Morning.jpg  used on input 
 line 237.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 241.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[53 <./Image/UI/Auth/PasswordReset3.jpg>]
+[54 <./Image/UI/Auth/PasswordReset3.jpg>]
 File: Image/UI/Main-Student/Home-Morning.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Home-Morning.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Home-Morning.jpg  used on input 
 line 247.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Home-Afternoon.jpg, id=1116, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Home-Afternoon.jpg, id=1122, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Home-Afternoon.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Home-Afternoon.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Home-Afternoon.jpg  used on inpu
 t line 254.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Home-Night.jpg, id=1117, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Home-Night.jpg, id=1123, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Home-Night.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Home-Night.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Home-Night.jpg  used on input li
 ne 261.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 265.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [54 <./Image/UI/Main-Student/Home-Morning.jpg>]
+[55 <./Image/UI/Main-Student/Home-Morning.jpg>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2697,13 +3019,15 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 276.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[55 <./Image/UI/Main-Student/Home-Afternoon.jpg> <./Image/UI/Main-Student/Home-
+[56 <./Image/UI/Main-Student/Home-Afternoon.jpg> <./Image/UI/Main-Student/Home-
 Night.jpg>]
-<Image/UI/Main-Student/LessonRecommend.jpg, id=1136, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/LessonRecommend.jpg, id=1141, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/LessonRecommend.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/LessonRecommend.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/LessonRecommend.jpg  used on inp
@@ -2723,13 +3047,13 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/Main-Student/EntranceTestPopup.jpg, id=1140, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/EntranceTestPopup.jpg, id=1145, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/EntranceTestPopup.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/EntranceTestPopup.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/EntranceTestPopup.jpg  used on i
 nput line 291.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/EntranceTestFloatingButton.jpg, id=1141, 1927.2pt x 1027
+<Image/UI/Main-Student/EntranceTestFloatingButton.jpg, id=1146, 1927.2pt x 1027
 .84pt>
 File: Image/UI/Main-Student/EntranceTestFloatingButton.jpg Graphic file (type j
 pg)
@@ -2737,30 +3061,34 @@ pg)
 Package pdftex.def Info: Image/UI/Main-Student/EntranceTestFloatingButton.jpg  
 used on input line 298.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 303.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[56 <./Image/UI/Main-Student/LessonRecommend.jpg> <./Image/UI/Main-Student/Entr
+[57 <./Image/UI/Main-Student/LessonRecommend.jpg> <./Image/UI/Main-Student/Entr
 anceTestPopup.jpg>]
-<Image/UI/Main-Student/Topics-G1.jpg, id=1153, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Topics-G1.jpg, id=1158, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Topics-G1.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Topics-G1.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Topics-G1.jpg  used on input lin
 e 311.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Topics-Locked.jpg, id=1154, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Topics-Locked.jpg, id=1159, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Topics-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Topics-Locked.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Topics-Locked.jpg  used on input
  line 318.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 323.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [57 <./Image/UI/Main-Student/EntranceTestFloatingButton.jpg> <./Image/UI/Main-
-Student/Topics-G1.jpg>]
+[58 <./Image/UI/Main-Student/EntranceTestFloatingButton.jpg> <./Image/UI/Main-S
+tudent/Topics-G1.jpg>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2787,191 +3115,199 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 336.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[58 <./Image/UI/Main-Student/Topics-Locked.jpg>]
-<Image/UI/Milestones/Paths-G1-NB.jpg, id=1175, 1927.2pt x 1027.84pt>
+[59 <./Image/UI/Main-Student/Topics-Locked.jpg>]
+<Image/UI/Milestones/Paths-G1-NB.jpg, id=1181, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G1-NB.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G1-NB.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G1-NB.jpg  used on input lin
 e 343.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G1-TH.jpg, id=1176, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G1-TH.jpg, id=1182, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G1-TH.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G1-TH.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G1-TH.jpg  used on input lin
 e 351.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G1-VD.jpg, id=1177, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G1-VD.jpg, id=1183, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G1-VD.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G1-VD.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G1-VD.jpg  used on input lin
 e 361.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G1-Locked.jpg, id=1178, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G1-Locked.jpg, id=1184, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G1-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G1-Locked.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G1-Locked.jpg  used on input
  line 369.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G2-NB.jpg, id=1182, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G2-NB.jpg, id=1188, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G2-NB.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G2-NB.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G2-NB.jpg  used on input lin
 e 384.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G2-TH.jpg, id=1183, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G2-TH.jpg, id=1189, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G2-TH.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G2-TH.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G2-TH.jpg  used on input lin
 e 392.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G2-VD.jpg, id=1184, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G2-VD.jpg, id=1190, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G2-VD.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G2-VD.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G2-VD.jpg  used on input lin
 e 402.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G2-Locked.jpg, id=1185, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G2-Locked.jpg, id=1191, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G2-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G2-Locked.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G2-Locked.jpg  used on input
  line 410.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G3-NB.jpg, id=1189, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G3-NB.jpg, id=1195, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G3-NB.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G3-NB.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G3-NB.jpg  used on input lin
 e 425.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G3-TH.jpg, id=1190, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G3-TH.jpg, id=1196, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G3-TH.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G3-TH.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G3-TH.jpg  used on input lin
 e 433.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G3-VD.jpg, id=1191, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G3-VD.jpg, id=1197, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G3-VD.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G3-VD.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G3-VD.jpg  used on input lin
 e 442.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G3-Locked.jpg, id=1192, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G3-Locked.jpg, id=1198, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G3-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G3-Locked.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G3-Locked.jpg  used on input
  line 450.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 455.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [59 <./Image/UI/Milestones/Paths-G1-NB.jpg> <./Image/UI/Milestones/Paths-G1-TH
-.jpg> <./Image/UI/Milestones/Paths-G1-VD.jpg> <./Image/UI/Milestones/Paths-G1-L
-ocked.jpg> <./Image/UI/Milestones/Paths-G2-NB.jpg> <./Image/UI/Milestones/Paths
--G2-TH.jpg> <./Image/UI/Milestones/Paths-G2-VD.jpg> <./Image/UI/Milestones/Path
-s-G2-Locked.jpg>]
-<Image/UI/Milestones/Paths-G4-NB.jpg, id=1204, 1927.2pt x 1027.84pt>
+[60 <./Image/UI/Milestones/Paths-G1-NB.jpg> <./Image/UI/Milestones/Paths-G1-TH.
+jpg> <./Image/UI/Milestones/Paths-G1-VD.jpg> <./Image/UI/Milestones/Paths-G1-Lo
+cked.jpg> <./Image/UI/Milestones/Paths-G2-NB.jpg> <./Image/UI/Milestones/Paths-
+G2-TH.jpg> <./Image/UI/Milestones/Paths-G2-VD.jpg> <./Image/UI/Milestones/Paths
+-G2-Locked.jpg>]
+<Image/UI/Milestones/Paths-G4-NB.jpg, id=1210, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G4-NB.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G4-NB.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G4-NB.jpg  used on input lin
 e 465.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G4-TH.jpg, id=1205, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G4-TH.jpg, id=1211, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G4-TH.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G4-TH.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G4-TH.jpg  used on input lin
 e 473.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G4-VD.jpg, id=1206, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G4-VD.jpg, id=1212, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G4-VD.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G4-VD.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G4-VD.jpg  used on input lin
 e 482.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G4-Locked.jpg, id=1207, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G4-Locked.jpg, id=1213, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G4-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G4-Locked.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G4-Locked.jpg  used on input
  line 490.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G5-NB.jpg, id=1211, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G5-NB.jpg, id=1217, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G5-NB.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G5-NB.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G5-NB.jpg  used on input lin
 e 505.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G5-TH.jpg, id=1212, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G5-TH.jpg, id=1218, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G5-TH.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G5-TH.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G5-TH.jpg  used on input lin
 e 513.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G5-VD.jpg, id=1213, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G5-VD.jpg, id=1219, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G5-VD.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G5-VD.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G5-VD.jpg  used on input lin
 e 522.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G5-Locked.jpg, id=1214, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G5-Locked.jpg, id=1220, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G5-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G5-Locked.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G5-Locked.jpg  used on input
  line 530.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 535.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [60 <./Image/UI/Milestones/Paths-G3-NB.jpg> <./Image/UI/Milestones/Paths-G3-TH
-.jpg> <./Image/UI/Milestones/Paths-G3-VD.jpg> <./Image/UI/Milestones/Paths-G3-L
-ocked.jpg> <./Image/UI/Milestones/Paths-G4-NB.jpg> <./Image/UI/Milestones/Paths
--G4-TH.jpg> <./Image/UI/Milestones/Paths-G4-VD.jpg> <./Image/UI/Milestones/Path
-s-G4-Locked.jpg>]
-<Image/UI/Exercises/MultiChoice.jpg, id=1227, 1927.2pt x 983.675pt>
+[61 <./Image/UI/Milestones/Paths-G3-NB.jpg> <./Image/UI/Milestones/Paths-G3-TH.
+jpg> <./Image/UI/Milestones/Paths-G3-VD.jpg> <./Image/UI/Milestones/Paths-G3-Lo
+cked.jpg> <./Image/UI/Milestones/Paths-G4-NB.jpg> <./Image/UI/Milestones/Paths-
+G4-TH.jpg> <./Image/UI/Milestones/Paths-G4-VD.jpg> <./Image/UI/Milestones/Paths
+-G4-Locked.jpg>]
+<Image/UI/Exercises/MultiChoice.jpg, id=1232, 1927.2pt x 983.675pt>
 File: Image/UI/Exercises/MultiChoice.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/MultiChoice.jpg>
 Package pdftex.def Info: Image/UI/Exercises/MultiChoice.jpg  used on input line
  545.
 (pdftex.def)             Requested size: 218.51521pt x 111.52171pt.
-<Image/UI/Exercises/Matching.jpg, id=1228, 1924.18875pt x 981.6675pt>
+<Image/UI/Exercises/Matching.jpg, id=1233, 1924.18875pt x 981.6675pt>
 File: Image/UI/Exercises/Matching.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Matching.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Matching.jpg  used on input line 55
 3.
 (pdftex.def)             Requested size: 218.51521pt x 111.47386pt.
-<Image/UI/Exercises/Fill.jpg, id=1229, 1922.18124pt x 984.67876pt>
+<Image/UI/Exercises/Fill.jpg, id=1234, 1922.18124pt x 984.67876pt>
 File: Image/UI/Exercises/Fill.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Fill.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Fill.jpg  used on input line 565.
 (pdftex.def)             Requested size: 218.51521pt x 111.936pt.
-<Image/UI/Exercises/TrueFalse.jpg, id=1230, 1923.185pt x 980.66376pt>
+<Image/UI/Exercises/TrueFalse.jpg, id=1235, 1923.185pt x 980.66376pt>
 File: Image/UI/Exercises/TrueFalse.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/TrueFalse.jpg>
 Package pdftex.def Info: Image/UI/Exercises/TrueFalse.jpg  used on input line 5
 72.
 (pdftex.def)             Requested size: 218.51521pt x 111.41974pt.
-<Image/UI/Exercises/Drag.jpg, id=1231, 1920.17375pt x 980.66376pt>
+<Image/UI/Exercises/Drag.jpg, id=1236, 1920.17375pt x 980.66376pt>
 File: Image/UI/Exercises/Drag.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Drag.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Drag.jpg  used on input line 582.
 (pdftex.def)             Requested size: 218.51521pt x 111.5993pt.
-<Image/UI/Exercises/Grouping.jpg, id=1232, 1927.2pt x 1027.84pt>
+<Image/UI/Exercises/Grouping.jpg, id=1237, 1927.2pt x 1027.84pt>
 File: Image/UI/Exercises/Grouping.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Grouping.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Grouping.jpg  used on input line 58
 9.
 (pdftex.def)             Requested size: 218.51521pt x 116.52881pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 595.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [61 <./Image/UI/Milestones/Paths-G5-NB.jpg> <./Image/UI/Milestones/Paths-G5-TH
-.jpg> <./Image/UI/Milestones/Paths-G5-VD.jpg> <./Image/UI/Milestones/Paths-G5-L
-ocked.jpg> <./Image/UI/Exercises/MultiChoice.jpg> <./Image/UI/Exercises/Matchin
-g.jpg>]
+[62 <./Image/UI/Milestones/Paths-G5-NB.jpg> <./Image/UI/Milestones/Paths-G5-TH.
+jpg> <./Image/UI/Milestones/Paths-G5-VD.jpg> <./Image/UI/Milestones/Paths-G5-Lo
+cked.jpg> <./Image/UI/Exercises/MultiChoice.jpg> <./Image/UI/Exercises/Matching
+.jpg>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2985,41 +3321,45 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/Exercises/Correct.jpg, id=1243, 1923.185pt x 975.645pt>
+<Image/UI/Exercises/Correct.jpg, id=1248, 1923.185pt x 975.645pt>
 File: Image/UI/Exercises/Correct.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Correct.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Correct.jpg  used on input line 600
 .
 (pdftex.def)             Requested size: 409.71692pt x 207.85403pt.
-<Image/UI/Exercises/Wrong.jpg, id=1244, 1927.2pt x 979.66pt>
+<Image/UI/Exercises/Wrong.jpg, id=1249, 1927.2pt x 979.66pt>
 File: Image/UI/Exercises/Wrong.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Wrong.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Wrong.jpg  used on input line 607.
 (pdftex.def)             Requested size: 455.24411pt x 231.416pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 612.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[62 <./Image/UI/Exercises/Fill.jpg> <./Image/UI/Exercises/TrueFalse.jpg> <./Ima
+[63 <./Image/UI/Exercises/Fill.jpg> <./Image/UI/Exercises/TrueFalse.jpg> <./Ima
 ge/UI/Exercises/Drag.jpg> <./Image/UI/Exercises/Grouping.jpg> <./Image/UI/Exerc
 ises/Correct.jpg>]
-<Image/UI/Exercises/Finish.jpg, id=1253, 1923.185pt x 983.675pt>
+<Image/UI/Exercises/Finish.jpg, id=1258, 1923.185pt x 983.675pt>
 File: Image/UI/Exercises/Finish.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Finish.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Finish.jpg  used on input line 616.
 
 (pdftex.def)             Requested size: 409.71692pt x 209.56476pt.
-<Image/UI/Main-Student/Arena-Home.jpg, id=1256, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-Home.jpg, id=1261, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-Home.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-Home.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-Home.jpg  used on input li
 ne 627.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 632.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [63 <./Image/UI/Exercises/Wrong.jpg> <./Image/UI/Exercises/Finish.jpg>]
+[64 <./Image/UI/Exercises/Wrong.jpg> <./Image/UI/Exercises/Finish.jpg>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3033,66 +3373,70 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/Main-Student/Arena-R1.jpg, id=1264, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-R1.jpg, id=1269, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-R1.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-R1.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-R1.jpg  used on input line
  642.
 (pdftex.def)             Requested size: 218.51521pt x 116.52881pt.
-<Image/UI/Main-Student/Arena-R2.jpg, id=1265, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-R2.jpg, id=1270, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-R2.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-R2.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-R2.jpg  used on input line
  644.
 (pdftex.def)             Requested size: 218.51521pt x 116.52881pt.
-<Image/UI/Main-Student/Arena-R3.jpg, id=1266, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-R3.jpg, id=1271, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-R3.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-R3.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-R3.jpg  used on input line
  648.
 (pdftex.def)             Requested size: 218.51521pt x 116.52881pt.
-<Image/UI/Main-Student/Arena-R4.jpg, id=1267, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-R4.jpg, id=1272, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-R4.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-R4.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-R4.jpg  used on input line
  650.
 (pdftex.def)             Requested size: 218.51521pt x 116.52881pt.
-<Image/UI/Main-Student/Arena-R5.jpg, id=1268, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-R5.jpg, id=1273, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-R5.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-R5.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-R5.jpg  used on input line
  654.
 (pdftex.def)             Requested size: 218.51521pt x 116.52881pt.
-<Image/UI/badges.jpg, id=1270, 1927.2pt x 1084.05pt>
+<Image/UI/badges.jpg, id=1275, 1927.2pt x 1084.05pt>
 File: Image/UI/badges.jpg Graphic file (type jpg)
 <use Image/UI/badges.jpg>
 Package pdftex.def Info: Image/UI/badges.jpg  used on input line 665.
 (pdftex.def)             Requested size: 409.71692pt x 230.45268pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 675.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[64 <./Image/UI/Main-Student/Arena-Home.jpg> <./Image/UI/Main-Student/Arena-R1.
+[65 <./Image/UI/Main-Student/Arena-Home.jpg> <./Image/UI/Main-Student/Arena-R1.
 jpg> <./Image/UI/Main-Student/Arena-R2.jpg> <./Image/UI/Main-Student/Arena-R3.j
 pg> <./Image/UI/Main-Student/Arena-R4.jpg> <./Image/UI/Main-Student/Arena-R5.jp
 g>]
-<Image/UI/Main-Student/Arena-Finished.jpg, id=1279, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-Finished.jpg, id=1284, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-Finished.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-Finished.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-Finished.jpg  used on inpu
 t line 680.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Exam.jpg, id=1282, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Exam.jpg, id=1287, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Exam.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Exam.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Exam.jpg  used on input line 691
 .
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 694.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [65 <./Image/UI/badges.jpg> <./Image/UI/Main-Student/Arena-Finished.jpg>]
+[66 <./Image/UI/badges.jpg> <./Image/UI/Main-Student/Arena-Finished.jpg>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3106,160 +3450,178 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/Main-Student/Exitpopup.jpg, id=1293, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Exitpopup.jpg, id=1299, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Exitpopup.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Exitpopup.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Exitpopup.jpg  used on input lin
 e 701.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Submitpopup.jpg, id=1294, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Submitpopup.jpg, id=1300, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Submitpopup.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Submitpopup.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Submitpopup.jpg  used on input l
 ine 708.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 713.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[66 <./Image/UI/Main-Student/Exam.jpg> <./Image/UI/Main-Student/Exitpopup.jpg>]
-<Image/UI/Main-Student/Leaderboard.jpg, id=1304, 1923.185pt x 978.65625pt>
+[67 <./Image/UI/Main-Student/Exam.jpg> <./Image/UI/Main-Student/Exitpopup.jpg>]
+<Image/UI/Main-Student/Leaderboard.jpg, id=1309, 1923.185pt x 978.65625pt>
 File: Image/UI/Main-Student/Leaderboard.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Leaderboard.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Leaderboard.jpg  used on input l
 ine 718.
 (pdftex.def)             Requested size: 409.71692pt x 208.49556pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 723.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[67 <./Image/UI/Main-Student/Submitpopup.jpg> <./Image/UI/Main-Student/Leaderbo
+[68 <./Image/UI/Main-Student/Submitpopup.jpg> <./Image/UI/Main-Student/Leaderbo
 ard.jpg>]
-<Image/UI/Main-Student/Mission-Complete.jpg, id=1311, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Mission-Complete.jpg, id=1316, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Mission-Complete.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Mission-Complete.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Mission-Complete.jpg  used on in
 put line 728.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Mission-Incomplete.jpg, id=1312, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Mission-Incomplete.jpg, id=1317, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Mission-Incomplete.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Mission-Incomplete.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Mission-Incomplete.jpg  used on 
 input line 734.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 739.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [68 <./Image/UI/Main-Student/Mission-Complete.jpg> <./Image/UI/Main-Student/Mi
-ssion-Incomplete.jpg>]
-<Image/UI/Main-Student/Game-Single.jpg, id=1321, 1919.17pt x 973.6375pt>
+[69 <./Image/UI/Main-Student/Mission-Complete.jpg> <./Image/UI/Main-Student/Mis
+sion-Incomplete.jpg>]
+<Image/UI/Main-Student/Game-Single.jpg, id=1326, 1919.17pt x 973.6375pt>
 File: Image/UI/Main-Student/Game-Single.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Game-Single.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Game-Single.jpg  used on input l
 ine 745.
 (pdftex.def)             Requested size: 409.71692pt x 207.85718pt.
-<Image/UI/Main-Student/Game-PVP.jpg, id=1322, 1912.14375pt x 975.645pt>
+<Image/UI/Main-Student/Game-PVP.jpg, id=1327, 1912.14375pt x 975.645pt>
 File: Image/UI/Main-Student/Game-PVP.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Game-PVP.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Game-PVP.jpg  used on input line
  751.
 (pdftex.def)             Requested size: 409.71692pt x 209.045pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 756.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [69 <./Image/UI/Main-Student/Game-Single.jpg> <./Image/UI/Main-Student/Game-PV
-P.jpg>]
-<Image/UI/Main-Student/MathMatchGame.jpg, id=1331, 1909.1325pt x 975.645pt>
+[70 <./Image/UI/Main-Student/Game-Single.jpg> <./Image/UI/Main-Student/Game-PVP
+.jpg>]
+<Image/UI/Main-Student/MathMatchGame.jpg, id=1337, 1909.1325pt x 975.645pt>
 File: Image/UI/Main-Student/MathMatchGame.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/MathMatchGame.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/MathMatchGame.jpg  used on input
  line 760.
 (pdftex.def)             Requested size: 409.71692pt x 209.37251pt.
-<Image/UI/Main-Student/History.jpg, id=1332, 1913.1475pt x 975.645pt>
+<Image/UI/Main-Student/History.jpg, id=1338, 1913.1475pt x 975.645pt>
 File: Image/UI/Main-Student/History.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/History.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/History.jpg  used on input line 
 770.
 (pdftex.def)             Requested size: 409.71692pt x 208.9408pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 776.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [70 <./Image/UI/Main-Student/MathMatchGame.jpg> <./Image/UI/Main-Student/Histo
-ry.jpg>]
-<Image/UI/Main-Student/ExamDetail1.jpg, id=1341, 1912.14375pt x 976.64874pt>
+[71 <./Image/UI/Main-Student/MathMatchGame.jpg> <./Image/UI/Main-Student/Histor
+y.jpg>]
+<Image/UI/Main-Student/ExamDetail1.jpg, id=1346, 1912.14375pt x 976.64874pt>
 File: Image/UI/Main-Student/ExamDetail1.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/ExamDetail1.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/ExamDetail1.jpg  used on input l
 ine 780.
 (pdftex.def)             Requested size: 409.71692pt x 209.26007pt.
-<Image/UI/Main-Student/ExamDetail2.jpg, id=1342, 1912.14375pt x 974.64125pt>
+<Image/UI/Main-Student/ExamDetail2.jpg, id=1347, 1912.14375pt x 974.64125pt>
 File: Image/UI/Main-Student/ExamDetail2.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/ExamDetail2.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/ExamDetail2.jpg  used on input l
 ine 786.
 (pdftex.def)             Requested size: 409.71692pt x 208.82994pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 791.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [71 <./Image/UI/Main-Student/ExamDetail1.jpg> <./Image/UI/Main-Student/ExamDet
-ail2.jpg>]
-<Image/UI/Main-Student/Info.jpg, id=1350, 1927.2pt x 1027.84pt>
+[72 <./Image/UI/Main-Student/ExamDetail1.jpg> <./Image/UI/Main-Student/ExamDeta
+il2.jpg>]
+<Image/UI/Main-Student/Info.jpg, id=1356, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Info.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Info.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Info.jpg  used on input line 801
 .
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/ChangePassword.jpg, id=1351, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/ChangePassword.jpg, id=1357, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/ChangePassword.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/ChangePassword.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/ChangePassword.jpg  used on inpu
 t line 819.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 823.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [72 <./Image/UI/Main-Student/Info.jpg>]
-<Image/UI/Main-Student/Account-Unlinked.jpg, id=1361, 1927.2pt x 1027.84pt>
+[73 <./Image/UI/Main-Student/Info.jpg>]
+<Image/UI/Main-Student/Account-Unlinked.jpg, id=1366, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Account-Unlinked.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Account-Unlinked.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Account-Unlinked.jpg  used on in
 put line 831.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Account-Linked.jpg, id=1362, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Account-Linked.jpg, id=1367, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Account-Linked.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Account-Linked.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Account-Linked.jpg  used on inpu
 t line 837.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 841.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [73 <./Image/UI/Main-Student/ChangePassword.jpg> <./Image/UI/Main-Student/Acco
-unt-Unlinked.jpg>]
-<Image/UI/Main-Parent/Statistics.jpg, id=1371, 1927.2pt x 1027.84pt>
+[74 <./Image/UI/Main-Student/ChangePassword.jpg> <./Image/UI/Main-Student/Accou
+nt-Unlinked.jpg>]
+<Image/UI/Main-Parent/Statistics.jpg, id=1376, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/Statistics.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/Statistics.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/Statistics.jpg  used on input lin
 e 849.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Parent/History.jpg, id=1372, 1931.215pt x 1027.84pt>
+<Image/UI/Main-Parent/History.jpg, id=1377, 1931.215pt x 1027.84pt>
 File: Image/UI/Main-Parent/History.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/History.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/History.jpg  used on input line 8
 59.
 (pdftex.def)             Requested size: 409.71692pt x 218.04846pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 862.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [74 <./Image/UI/Main-Student/Account-Linked.jpg> <./Image/UI/Main-Parent/Stati
-stics.jpg>]
+[75 <./Image/UI/Main-Student/Account-Linked.jpg> <./Image/UI/Main-Parent/Statis
+tics.jpg>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3273,145 +3635,166 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/Main-Parent/ExamDetail.jpg, id=1380, 1914.15125pt x 979.66pt>
+<Image/UI/Main-Parent/ExamDetail.jpg, id=1385, 1914.15125pt x 979.66pt>
 File: Image/UI/Main-Parent/ExamDetail.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/ExamDetail.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/ExamDetail.jpg  used on input lin
 e 869.
 (pdftex.def)             Requested size: 409.71692pt x 209.68105pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 877.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[75 <./Image/UI/Main-Parent/History.jpg> <./Image/UI/Main-Parent/ExamDetail.jpg
+[76 <./Image/UI/Main-Parent/History.jpg> <./Image/UI/Main-Parent/ExamDetail.jpg
 >]
-<Image/UI/Main-Parent/Info.jpg, id=1389, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Parent/Info.jpg, id=1394, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/Info.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/Info.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/Info.jpg  used on input line 886.
 
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 902.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [76 <./Image/UI/Main-Parent/Info.jpg>]
-<Image/UI/Main-Parent/NoLinkedAccount.jpg, id=1401, 1927.2pt x 1027.84pt>
+[77 <./Image/UI/Main-Parent/Info.jpg>]
+<Image/UI/Main-Parent/NoLinkedAccount.jpg, id=1406, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/NoLinkedAccount.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/NoLinkedAccount.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/NoLinkedAccount.jpg  used on inpu
 t line 906.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Parent/Account-Linked.jpg, id=1402, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Parent/Account-Linked.jpg, id=1407, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/Account-Linked.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/Account-Linked.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/Account-Linked.jpg  used on input
  line 912.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 918.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [77 <./Image/UI/Main-Parent/NoLinkedAccount.jpg> <./Image/UI/Main-Parent/Accou
-nt-Linked.jpg>]
-<Image/UI/Main-Parent/Plans.jpg, id=1410, 1927.2pt x 1027.84pt>
+[78 <./Image/UI/Main-Parent/NoLinkedAccount.jpg> <./Image/UI/Main-Parent/Accoun
+t-Linked.jpg>]
+<Image/UI/Main-Parent/Plans.jpg, id=1416, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/Plans.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/Plans.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/Plans.jpg  used on input line 927
 .
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Parent/Payment-Loading.jpg, id=1411, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Parent/Payment-Loading.jpg, id=1417, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/Payment-Loading.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/Payment-Loading.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/Payment-Loading.jpg  used on inpu
 t line 935.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 940.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [78 <./Image/UI/Main-Parent/Plans.jpg> <./Image/UI/Main-Parent/Payment-Loading
-.jpg>]
-<Image/UI/Main-Parent/AfterPurchase.jpg, id=1421, 1927.2pt x 1027.84pt>
+[79 <./Image/UI/Main-Parent/Plans.jpg> <./Image/UI/Main-Parent/Payment-Loading.
+jpg>]
+<Image/UI/Main-Parent/AfterPurchase.jpg, id=1426, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/AfterPurchase.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/AfterPurchase.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/AfterPurchase.jpg  used on input 
 line 944.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 969.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [79 <./Image/UI/Main-Parent/AfterPurchase.jpg>] (Content/H·ªá th·ªëng b√†i t·∫
-≠p.tex
-<Image/multi.jpg, id=1435, 1927.2pt x 1027.84pt>
+[80 <./Image/UI/Main-Parent/AfterPurchase.jpg>]
+(Content/H^^e1^^bb^^87 th^^e1^^bb^^91ng b^^c3^^a0i t^^e1^^ba^^adp.tex
+<Image/multi.jpg, id=1440, 1927.2pt x 1027.84pt>
 File: Image/multi.jpg Graphic file (type jpg)
 <use Image/multi.jpg>
 Package pdftex.def Info: Image/multi.jpg  used on input line 14.
 (pdftex.def)             Requested size: 432.48051pt x 230.64236pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 26.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [80 <./Image/multi.jpg>]
-<Image/match.jpg, id=1443, 1201.48875pt x 640.3925pt>
+[81 <./Image/multi.jpg>]
+<Image/match.jpg, id=1448, 1201.48875pt x 640.3925pt>
 File: Image/match.jpg Graphic file (type jpg)
 <use Image/match.jpg>
 Package pdftex.def Info: Image/match.jpg  used on input line 32.
 (pdftex.def)             Requested size: 432.48051pt x 230.51181pt.
-<Image/fill.jpg, id=1444, 980.66376pt x 514.92375pt>
+<Image/fill.jpg, id=1449, 980.66376pt x 514.92375pt>
 File: Image/fill.jpg Graphic file (type jpg)
 <use Image/fill.jpg>
 Package pdftex.def Info: Image/fill.jpg  used on input line 50.
 (pdftex.def)             Requested size: 432.48051pt x 227.08571pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 55.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [81 <./Image/match.jpg>]
-<Image/drag.jpg, id=1451, 1002.74625pt x 538.01pt>
+[82 <./Image/match.jpg>]
+<Image/drag.jpg, id=1457, 1002.74625pt x 538.01pt>
 File: Image/drag.jpg Graphic file (type jpg)
 <use Image/drag.jpg>
 Package pdftex.def Info: Image/drag.jpg  used on input line 68.
 (pdftex.def)             Requested size: 432.48051pt x 232.04579pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 78.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [82 <./Image/fill.jpg> <./Image/drag.jpg>]
-<Image/Grouping.jpg, id=1460, 1445.4pt x 1027.84pt>
+[83 <./Image/fill.jpg> <./Image/drag.jpg>]
+<Image/Grouping.jpg, id=1465, 1445.4pt x 1027.84pt>
 File: Image/Grouping.jpg Graphic file (type jpg)
 <use Image/Grouping.jpg>
 Package pdftex.def Info: Image/Grouping.jpg  used on input line 86.
 (pdftex.def)             Requested size: 432.48051pt x 307.53883pt.
-<Image/true.jpg, id=1461, 623.32875pt x 446.66875pt>
+<Image/true.jpg, id=1466, 623.32875pt x 446.66875pt>
 File: Image/true.jpg Graphic file (type jpg)
 <use Image/true.jpg>
 Package pdftex.def Info: Image/true.jpg  used on input line 104.
 (pdftex.def)             Requested size: 432.48051pt x 309.91248pt.
 )
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 974.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [83 <./Image/Grouping.jpg>]) (Content/Hi·ªán th·ª±c.tex
+[84 <./Image/Grouping.jpg>]) (Content/Hi^^e1^^bb^^87n th^^e1^^bb^^b1c.tex
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 17.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [84 <./Image/true.jpg>]
+[85 <./Image/true.jpg>]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 43.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [85] (Content/M√¥ t·∫£ t·ªï ch·ª©c m√£ ngu·ªìn.tex
+[86] (Content/M^^c3^^b4 t^^e1^^ba^^a3 t^^e1^^bb^^95 ch^^e1^^bb^^a9c m^^c3^^a3 n
+gu^^e1^^bb^^93n.tex
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 47.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [86]
+[87]
 
-LaTeX Warning: Citation `awsec2' on page 87 undefined on input line 52.
+LaTeX Warning: Citation `awsec2' on page 88 undefined on input line 52.
 
 ! Argument of \bracket@Parse@token has an extra }.
 <inserted text> 
@@ -3446,104 +3829,125 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 113.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[87]
+[88]
 LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `T5/cmtt/m/n' tried instead on input line 113.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 161.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [88]
+[89]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 235.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [89]
+[90]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 246.
+
+
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 260.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[90]
+[91]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 300.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [91]
+[92]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 341.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [92]
+[93]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 378.
+
+
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 397.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[93]
+[94]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 433.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [94]
+[95]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 460.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [95]
+[96]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 488.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [96]
+[97]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 525.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [97]
+[98]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 529.
+
+
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 585.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[98]
+[99]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 634.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [99]
+[100]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 675.
+
+
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 683.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[100]
+[101]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 722.
 
 ))
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 312.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [101] (Content/T·ªïng k·∫øt.tex
+[102] (Content/T^^e1^^bb^^95ng k^^e1^^ba^^bft.tex
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3557,84 +3961,124 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 29.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[102] (Content/K·∫æ HO·∫†CH V√Ä PH√ÇN C√îNG C√îNG VI·ªÜC.tex
+[103] (Content/K^^e1^^ba^^be HO^^e1^^ba^^a0CH V^^c3^^80 PH^^c3^^82N C^^c3^^94NG
+ C^^c3^^94NG VI^^e1^^bb^^86C.tex
 Underfull \hbox (badness 3701) in paragraph at lines 44--44
-[]|\T5/ptm/m/n/12 Setup back-end, cßu hºnh server, t§o
+[]|\T5/ptm/m/n/12 Setup back-end, c^^a7u h^^bcnh server, t^^a4o
  []
 
-ignored error: Infinite glue shrinkage found in box being split
+
+! Infinite glue shrinkage found in box being split.
+<argument> Infinite shrink error above ignored ! 
+                                                 
+l.78 \end{longtable}
+                    
+The box you are \vsplitting contains some infinitely
+shrinkable glue, e.g., `\vss' or `\vskip 0pt minus 1fil'.
+Such glue doesn't belong there; but you can safely proceed,
+since the offensive shrinkability has been made finite.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 78.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [103]
-<Image/phase1.png, id=1648, 1458.44875pt x 1277.77374pt>
+[104]
+<Image/phase1.png, id=1653, 1458.44875pt x 1277.77374pt>
 File: Image/phase1.png Graphic file (type png)
 <use Image/phase1.png>
 Package pdftex.def Info: Image/phase1.png  used on input line 82.
 (pdftex.def)             Requested size: 455.24411pt x 398.83539pt.
 )
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 38.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [104]
+[105]
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 39.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-
-[105 <./Image/phase1.png>]
+[106 <./Image/phase1.png>]
 Underfull \hbox (badness 1292) in paragraph at lines 58--59
-[]\TS1/ptm/m/n/12 à \T5/ptm/b/n/12 BE: \T5/ptm/m/n/12 Thi∏t k∏ cßu trÛc cÏ s d
-˙ liªu
+[]\TS1/ptm/m/n/12 ^^88 \T5/ptm/b/n/12 BE: \T5/ptm/m/n/12 Thi^^b8t k^^b8 c^^a7u 
+tr^^f3c c^^ec s^^f0 d^^fa li^^bbu
  []
 
 
 Underfull \hbox (badness 1552) in paragraph at lines 82--83
-[]|\T5/ptm/b/n/12 Mission & Achieve-ment (Nhiªm vˆ &
+[]|\T5/ptm/b/n/12 Mission & Achieve-ment (Nhi^^bbm v^^f6 &
  []
 
 
 Underfull \hbox (badness 1354) in paragraph at lines 97--98
-\T5/ptm/m/n/12 qu£n l˛ l‡ch s˚ bi∏n ^^_Îng ph¶n th˜ng
+\T5/ptm/m/n/12 qu^^a3n l^^fe l^^e0ch s^^fb bi^^b8n ^^_^^ebng ph^^a6n th^^f7^^f0
+ng
  []
 
-ignored error: Infinite glue shrinkage found in box being split
+
+! Infinite glue shrinkage found in box being split.
+<argument> Infinite shrink error above ignored ! 
+                                                 
+l.147 \end{longtable}
+                     
+The box you are \vsplitting contains some infinitely
+shrinkable glue, e.g., `\vss' or `\vskip 0pt minus 1fil'.
+Such glue doesn't belong there; but you can safely proceed,
+since the offensive shrinkability has been made finite.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 147.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [106]
-ignored error: Infinite glue shrinkage found in box being split
+[107]
+! Infinite glue shrinkage found in box being split.
+<argument> Infinite shrink error above ignored ! 
+                                                 
+l.147 \end{longtable}
+                     
+The box you are \vsplitting contains some infinitely
+shrinkable glue, e.g., `\vss' or `\vskip 0pt minus 1fil'.
+Such glue doesn't belong there; but you can safely proceed,
+since the offensive shrinkability has been made finite.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 147.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [107]
-<Image/phase2.png, id=1672, 1458.44875pt x 1097.09875pt>
+[108]
+<Image/phase2.png, id=1678, 1458.44875pt x 1097.09875pt>
 File: Image/phase2.png Graphic file (type png)
 <use Image/phase2.png>
 Package pdftex.def Info: Image/phase2.png  used on input line 151.
 (pdftex.def)             Requested size: 455.24411pt x 342.44075pt.
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 156.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [108])
+[109])
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 316.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-
-[109 <./Image/phase2.png>] (Content/T√ÄI LI·ªÜU THAM KH·∫¢O.tex
+[110 <./Image/phase2.png>] (Content/T^^c3^^80I LI^^e1^^bb^^86U THAM KH^^e1^^ba^
+^a2O.tex
 ! Misplaced alignment tab character &.
-l.11 	https://vanban.chinhphu.vn/?pageid=27160&
-                                               docid=215347,
+l.11 ^^Ihttps://vanban.chinhphu.vn/?pageid=27160&
+                                                 docid=215347,
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3644,14 +4088,14 @@ might try typing `S' now just to see what is salvageable.
 
 
 Underfull \hbox (badness 7030) in paragraph at lines 9--13
-[]\T5/ptm/m/n/12 BÎ Gi°o dˆc v† ^^^†o t§o, \T5/ptm/m/it/12 Ch˜Ïng trºnh Gi°o dˆ
-c phÍ thÊng - Ch˜Ïng
+[]\T5/ptm/m/n/12 B^^eb Gi^^a1o d^^f6c v^^a0 ^^^^^a0o t^^a4o, \T5/ptm/m/it/12 Ch
+^^f7^^ecng tr^^bcnh Gi^^a1o d^^f6c ph^^ea th^^e6ng - Ch^^f7^^ecng
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--13
-\T5/ptm/m/it/12 trºnh mÊn To°n (Ban h†nh k±m theo ThÊng t˜ sË 32/2018/TT-BGD^^^
-T)\T5/ptm/m/n/12 ,
+\T5/ptm/m/it/12 tr^^bcnh m^^e6n To^^a1n (Ban h^^a0nh k^^b1m theo Th^^e6ng t^^f7
+ s^^e8 32/2018/TT-BGD^^^T)\T5/ptm/m/n/12 ,
  []
 
 
@@ -3669,66 +4113,67 @@ k Badge De-sign by @Taen\T5/ptm/m/n/12 ,
 
 Underfull \hbox (badness 10000) in paragraph at lines 55--59
 \T5/ptm/m/n/12 https://www.figma.com/community/file/1358718222712048791, Truy c
-™p ng†y
+^^aap ng^^a0y
  []
 
 
 Underfull \hbox (badness 3792) in paragraph at lines 61--65
 []\T5/ptm/m/n/12 GitHub, Inc., \T5/ptm/m/it/12 GitHub Doc-u-men-ta-tion\T5/ptm/
-m/n/12 , https://docs.github.com/en, Truy c™p ng†y
+m/n/12 , https://docs.github.com/en, Truy c^^aap ng^^a0y
  []
 
 
 Underfull \hbox (badness 2941) in paragraph at lines 80--84
 []\T5/ptm/m/n/12 Redis Soft-ware, Inc., \T5/ptm/m/it/12 Re-dis Doc-u-men-ta-tio
-n\T5/ptm/m/n/12 , https://redis.io/docs/, Truy c™p ng†y
+n\T5/ptm/m/n/12 , https://redis.io/docs/, Truy c^^aap ng^^a0y
  []
 
 )
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 320.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
- [110
+[111
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (main.aux)
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
+L3 programming layer <2026-03-20>
  ***********
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: FA835D8DE678D33D72F6B36F52BF5EC0;30913.
  ) 
 Here is how much of TeX's memory you used:
- 45575 strings out of 467870
- 966131 string characters out of 5431344
- 1500778 words of memory out of 5000000
- 73283 multiletter control sequences out of 15000+600000
+ 45611 strings out of 467694
+ 991973 string characters out of 5406862
+ 1504957 words of memory out of 5000000
+ 73498 multiletter control sequences out of 15000+600000
  693820 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 145i,25n,138p,1582b,2784s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{page.111} has been referenced but does not exist, r
-eplaced by a fixed one
-
-<D:/Program/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program/MikTex
-/fonts/type1/vntex/urwvn/utmb8v.pfb><D:/Program/MikTex/fonts/type1/urw/times/ut
-mr8a.pfb><D:/Program/MikTex/fonts/type1/vntex/urwvn/utmr8v.pfb><D:/Program/MikT
-ex/fonts/type1/vntex/urwvn/utmri8v.pfb><D:/Program/MikTex/fonts/type1/vntex/vnr
-/vnitt10.pfb><D:/Program/MikTex/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on main.pdf (111 pages, 16638677 bytes).
+ 145i,25n,138p,1582b,2738s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvip
+s/base/8r.enc}{/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/fo
+nts/enc/dvips/vntex/t5.enc}</Users/khoa/Library/Application Support/MiKTeX/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/khoa/Library/Appli
+cation Support/MiKTeX/texmfs/install/fonts/type1/vntex/urwvn/utmb8v.pfb></Users
+/khoa/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/u
+tmr8a.pfb></Users/khoa/Library/Application Support/MiKTeX/texmfs/install/fonts/
+type1/vntex/urwvn/utmr8v.pfb></Users/khoa/Library/Application Support/MiKTeX/te
+xmfs/install/fonts/type1/vntex/urwvn/utmri8v.pfb></Users/khoa/Library/Applicati
+on Support/MiKTeX/texmfs/install/fonts/type1/vntex/vnr/vnitt10.pfb></Users/khoa
+/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/vntex/vnr/vntt12
+.pfb>
+Output written on main.pdf (112 pages, 16646328 bytes).
 PDF statistics:
- 1820 PDF objects out of 2073 (max. 8388607)
- 1535 compressed objects within 16 object streams
+ 1824 PDF objects out of 2073 (max. 8388607)
+ 1538 compressed objects within 16 object streams
  428 named destinations out of 1000 (max. 500000)
  1771 words of extra memory for PDF output out of 10000 (max. 10000000)
 
