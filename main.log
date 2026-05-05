@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2026.5.5)  5 MAY 2026 13:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2026.5.5)  5 MAY 2026 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2143,6 +2143,20 @@ Package pdftex.def Info: Image/HCMUT logo.png  used on input line 26.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
 [9]
 
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 ^^I\item T
+               h^^e1^^bb^^9di gian t^^e1^^ba^^a3i trang ch^^c3^^adnh $\leq 3...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 76.
@@ -2152,7 +2166,7 @@ Package pdftex.def Info: Image/HCMUT logo.png  used on input line 76.
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
-Package pdftex.def Info: Image/HCMUT logo.png  used on input line 17.
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 15.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
 [11]))
 
@@ -2483,35 +2497,90 @@ File: Image/HCMUT logo.png Graphic file (type png)
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 531.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
 [38 <./Image/purchaseAc.png>]
-<Image/Untitled Diagram-Page-16.drawio.png, id=970, 2309.62875pt x 1381.16pt>
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 541.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 541.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 541.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 541.
+
+Underfull \hbox (badness 10000) in paragraph at lines 559--571
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 559--571
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--585
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--585
+
+ []
+
+
+! Infinite glue shrinkage found in box being split.
+<argument> Infinite shrink error above ignored ! 
+                                                 
+l.586 \end{longtable}
+                     
+The box you are \vsplitting contains some infinitely
+shrinkable glue, e.g., `\vss' or `\vskip 0pt minus 1fil'.
+Such glue doesn't belong there; but you can safely proceed,
+since the offensive shrinkability has been made finite.
+
+
+File: Image/HCMUT logo.png Graphic file (type png)
+<use Image/HCMUT logo.png>
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 586.
+(pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
+[39]
+
+File: Image/HCMUT logo.png Graphic file (type png)
+<use Image/HCMUT logo.png>
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 588.
+(pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
+[40]
+<Image/Untitled Diagram-Page-16.drawio.png, id=983, 2309.62875pt x 1381.16pt>
 File: Image/Untitled Diagram-Page-16.drawio.png Graphic file (type png)
 <use Image/Untitled Diagram-Page-16.drawio.png>
 Package pdftex.def Info: Image/Untitled Diagram-Page-16.drawio.png  used on inp
-ut line 536.
+ut line 593.
 (pdftex.def)             Requested size: 455.24411pt x 272.2229pt.
 
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
-Package pdftex.def Info: Image/HCMUT logo.png  used on input line 560.
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 617.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[39 <./Image/Untitled Diagram-Page-16.drawio.png>]
-<Image/erd.jpg, id=978, 2569.6pt x 1391.1975pt>
+[41 <./Image/Untitled Diagram-Page-16.drawio.png>]
+<Image/erd.jpg, id=991, 2569.6pt x 1391.1975pt>
 File: Image/erd.jpg Graphic file (type jpg)
 <use Image/erd.jpg>
-Package pdftex.def Info: Image/erd.jpg  used on input line 592.
+Package pdftex.def Info: Image/erd.jpg  used on input line 649.
 (pdftex.def)             Requested size: 455.24411pt x 246.45634pt.
 
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
-Package pdftex.def Info: Image/HCMUT logo.png  used on input line 598.
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 655.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[40]
-<Image/mapping.jpg, id=986, 2569.6pt x 1280.785pt>
+[42]
+<Image/mapping.jpg, id=1000, 2569.6pt x 1280.785pt>
 File: Image/mapping.jpg Graphic file (type jpg)
 <use Image/mapping.jpg>
-Package pdftex.def Info: Image/mapping.jpg  used on input line 601.
+Package pdftex.def Info: Image/mapping.jpg  used on input line 658.
 (pdftex.def)             Requested size: 455.24411pt x 226.89632pt.
 
 
@@ -2519,7 +2588,7 @@ Package hyperref Warning: bookmark level for unknown subsubsubsection defaults
 to 0.
 
 LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 6
-16.
+73.
 
 (/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/tex/latex/vntex/
 t5cmtt.fd
@@ -2528,9 +2597,9 @@ File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
-Package pdftex.def Info: Image/HCMUT logo.png  used on input line 618.
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 675.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[41 <./Image/erd.jpg> <./Image/mapping.jpg>]
+[43 <./Image/erd.jpg> <./Image/mapping.jpg>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2538,7 +2607,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.619 \newline
+l.676 \newline
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2551,81 +2620,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.624 \newline
+l.681 \newline
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (24.14688pt too wide) in paragraph at lines 632--633
+Overfull \hbox (24.14688pt too wide) in paragraph at lines 689--690
 []\T5/ptm/m/n/12 Tham gia c^^a1c b^^a0i gi^^a3ng v^^a0 b^^a0i ki^^bam tra, sinh
  ra c^^a1c th^^fcc th^^ba \T5/cmtt/m/n/12 LectureResult\T5/ptm/m/n/12 , \T5/cmt
 t/m/n/12 ExerciseResult
  []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.641 \newline
-              
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 650.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.658 \newline
-              
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-
-File: Image/HCMUT logo.png Graphic file (type png)
-<use Image/HCMUT logo.png>
-Package pdftex.def Info: Image/HCMUT logo.png  used on input line 666.
-(pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[42]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.672 \newline
-              
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.683 \newline
-              
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -2641,21 +2647,21 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 707.
+
+
 ! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.710 \newline
+l.715 \newline
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
-
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 719.
 
 
 
@@ -2663,7 +2669,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 723.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[43]
+[44]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2671,7 +2677,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.727 \newline
+l.729 \newline
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2684,7 +2690,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.738 \newline
+l.740 \newline
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2697,7 +2703,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.748 \newline
+l.755 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.767 \newline
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2705,19 +2724,69 @@ or  <return>  to continue without it.
 
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 755.
-
-
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 765.
+(hyperref)                than one, level fixed on input line 776.
 
 
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
-Package pdftex.def Info: Image/HCMUT logo.png  used on input line 773.
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 780.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[44]) (Content/Thi^^e1^^ba^^bft k^^e1^^ba^^bf giao di^^e1^^bb^^87n.tex
+[45]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.784 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.795 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.805 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 812.
+
+
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 822.
+
+
+
+File: Image/HCMUT logo.png Graphic file (type png)
+<use Image/HCMUT logo.png>
+Package pdftex.def Info: Image/HCMUT logo.png  used on input line 830.
+(pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
+[46]) (Content/Thi^^e1^^ba^^bft k^^e1^^ba^^bf giao di^^e1^^bb^^87n.tex
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2783,7 +2852,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/LandingPage.jpg, id=1014, 1927.2pt x 2918.905pt>
+<Image/UI/LandingPage.jpg, id=1027, 1927.2pt x 2918.905pt>
 File: Image/UI/LandingPage.jpg Graphic file (type jpg)
 <use Image/UI/LandingPage.jpg>
 Package pdftex.def Info: Image/UI/LandingPage.jpg  used on input line 29.
@@ -2794,26 +2863,26 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 34.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[45]
+[47]
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 40.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[46 <./Image/UI/LandingPage.jpg>]
-<Image/UI/Auth/LoginPage-HidePassword.jpg, id=1033, 1927.2pt x 1027.84pt>
+[48 <./Image/UI/LandingPage.jpg>]
+<Image/UI/Auth/LoginPage-HidePassword.jpg, id=1047, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/LoginPage-HidePassword.jpg Graphic file (type jpg)
 <use Image/UI/Auth/LoginPage-HidePassword.jpg>
 Package pdftex.def Info: Image/UI/Auth/LoginPage-HidePassword.jpg  used on inpu
 t line 50.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Auth/LoginPage-ShowPassword.jpg, id=1034, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/LoginPage-ShowPassword.jpg, id=1048, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/LoginPage-ShowPassword.jpg Graphic file (type jpg)
 <use Image/UI/Auth/LoginPage-ShowPassword.jpg>
 Package pdftex.def Info: Image/UI/Auth/LoginPage-ShowPassword.jpg  used on inpu
 t line 57.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Auth/LoginErrorMessage.jpg, id=1035, 1915.155pt x 973.6375pt>
+<Image/UI/Auth/LoginErrorMessage.jpg, id=1049, 1915.155pt x 973.6375pt>
 File: Image/UI/Auth/LoginErrorMessage.jpg Graphic file (type jpg)
 <use Image/UI/Auth/LoginErrorMessage.jpg>
 Package pdftex.def Info: Image/UI/Auth/LoginErrorMessage.jpg  used on input lin
@@ -2825,8 +2894,8 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 68.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[47 <./Image/UI/Auth/LoginPage-HidePassword.jpg>]
-<Image/UI/Auth/SignUpPage-RolePicking.jpg, id=1045, 1927.2pt x 1027.84pt>
+[49 <./Image/UI/Auth/LoginPage-HidePassword.jpg>]
+<Image/UI/Auth/SignUpPage-RolePicking.jpg, id=1060, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/SignUpPage-RolePicking.jpg Graphic file (type jpg)
 <use Image/UI/Auth/SignUpPage-RolePicking.jpg>
 Package pdftex.def Info: Image/UI/Auth/SignUpPage-RolePicking.jpg  used on inpu
@@ -2838,15 +2907,15 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 89.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[48 <./Image/UI/Auth/LoginPage-ShowPassword.jpg> <./Image/UI/Auth/LoginErrorMes
+[50 <./Image/UI/Auth/LoginPage-ShowPassword.jpg> <./Image/UI/Auth/LoginErrorMes
 sage.jpg>]
-<Image/UI/Auth/SignUpPage-SignUp-Student.jpg, id=1057, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/SignUpPage-SignUp-Student.jpg, id=1070, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/SignUpPage-SignUp-Student.jpg Graphic file (type jpg)
 <use Image/UI/Auth/SignUpPage-SignUp-Student.jpg>
 Package pdftex.def Info: Image/UI/Auth/SignUpPage-SignUp-Student.jpg  used on i
 nput line 100.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Auth/SignUpPage-SignUp-Parent.jpg, id=1058, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/SignUpPage-SignUp-Parent.jpg, id=1071, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/SignUpPage-SignUp-Parent.jpg Graphic file (type jpg)
 <use Image/UI/Auth/SignUpPage-SignUp-Parent.jpg>
 Package pdftex.def Info: Image/UI/Auth/SignUpPage-SignUp-Parent.jpg  used on in
@@ -2858,15 +2927,15 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 112.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[49 <./Image/UI/Auth/SignUpPage-RolePicking.jpg> <./Image/UI/Auth/SignUpPage-Si
+[51 <./Image/UI/Auth/SignUpPage-RolePicking.jpg> <./Image/UI/Auth/SignUpPage-Si
 gnUp-Student.jpg>]
-<Image/UI/Auth/EmailExistError.jpg, id=1068, 1922.18124pt x 984.67876pt>
+<Image/UI/Auth/EmailExistError.jpg, id=1081, 1922.18124pt x 984.67876pt>
 File: Image/UI/Auth/EmailExistError.jpg Graphic file (type jpg)
 <use Image/UI/Auth/EmailExistError.jpg>
 Package pdftex.def Info: Image/UI/Auth/EmailExistError.jpg  used on input line 
 117.
 (pdftex.def)             Requested size: 409.71692pt x 209.88377pt.
-<Image/UI/Auth/SignUpSuccess.jpg, id=1069, 1922.18124pt x 983.675pt>
+<Image/UI/Auth/SignUpSuccess.jpg, id=1082, 1922.18124pt x 983.675pt>
 File: Image/UI/Auth/SignUpSuccess.jpg Graphic file (type jpg)
 <use Image/UI/Auth/SignUpSuccess.jpg>
 Package pdftex.def Info: Image/UI/Auth/SignUpSuccess.jpg  used on input line 12
@@ -2878,7 +2947,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 129.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[50 <./Image/UI/Auth/SignUpPage-SignUp-Parent.jpg> <./Image/UI/Auth/EmailExistE
+[52 <./Image/UI/Auth/SignUpPage-SignUp-Parent.jpg> <./Image/UI/Auth/EmailExistE
 rror.jpg>]
 ! Too many }'s.
 l.129 \end{itemize}}
@@ -2886,13 +2955,13 @@ l.129 \end{itemize}}
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-<Image/UI/Auth/Onboarding-Info.jpg, id=1078, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/Onboarding-Info.jpg, id=1091, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/Onboarding-Info.jpg Graphic file (type jpg)
 <use Image/UI/Auth/Onboarding-Info.jpg>
 Package pdftex.def Info: Image/UI/Auth/Onboarding-Info.jpg  used on input line 
 145.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Auth/Onboarding-Avatar.jpg, id=1080, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/Onboarding-Avatar.jpg, id=1093, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/Onboarding-Avatar.jpg Graphic file (type jpg)
 <use Image/UI/Auth/Onboarding-Avatar.jpg>
 Package pdftex.def Info: Image/UI/Auth/Onboarding-Avatar.jpg  used on input lin
@@ -2904,8 +2973,8 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 158.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[51 <./Image/UI/Auth/SignUpSuccess.jpg> <./Image/UI/Auth/Onboarding-Info.jpg>]
-<Image/UI/Auth/Onboarding-InviteCode.jpg, id=1088, 1927.2pt x 1027.84pt>
+[53 <./Image/UI/Auth/SignUpSuccess.jpg> <./Image/UI/Auth/Onboarding-Info.jpg>]
+<Image/UI/Auth/Onboarding-InviteCode.jpg, id=1101, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/Onboarding-InviteCode.jpg Graphic file (type jpg)
 <use Image/UI/Auth/Onboarding-InviteCode.jpg>
 Package pdftex.def Info: Image/UI/Auth/Onboarding-InviteCode.jpg  used on input
@@ -2917,15 +2986,15 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 172.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[52 <./Image/UI/Auth/Onboarding-Avatar.jpg> <./Image/UI/Auth/Onboarding-InviteC
+[54 <./Image/UI/Auth/Onboarding-Avatar.jpg> <./Image/UI/Auth/Onboarding-InviteC
 ode.jpg>]
-<Image/UI/Auth/PasswordReset1.jpg, id=1098, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/PasswordReset1.jpg, id=1112, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/PasswordReset1.jpg Graphic file (type jpg)
 <use Image/UI/Auth/PasswordReset1.jpg>
 Package pdftex.def Info: Image/UI/Auth/PasswordReset1.jpg  used on input line 1
 83.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Auth/PasswordReset2.jpg, id=1100, 1927.2pt x 1027.84pt>
+<Image/UI/Auth/PasswordReset2.jpg, id=1114, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/PasswordReset2.jpg Graphic file (type jpg)
 <use Image/UI/Auth/PasswordReset2.jpg>
 Package pdftex.def Info: Image/UI/Auth/PasswordReset2.jpg  used on input line 1
@@ -2937,8 +3006,8 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 201.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[53 <./Image/UI/Auth/PasswordReset1.jpg> <./Image/UI/Auth/PasswordReset2.jpg>]
-<Image/UI/Auth/PasswordReset3.jpg, id=1109, 1927.2pt x 1027.84pt>
+[55 <./Image/UI/Auth/PasswordReset1.jpg> <./Image/UI/Auth/PasswordReset2.jpg>]
+<Image/UI/Auth/PasswordReset3.jpg, id=1123, 1927.2pt x 1027.84pt>
 File: Image/UI/Auth/PasswordReset3.jpg Graphic file (type jpg)
 <use Image/UI/Auth/PasswordReset3.jpg>
 Package pdftex.def Info: Image/UI/Auth/PasswordReset3.jpg  used on input line 2
@@ -2956,7 +3025,7 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-<Image/UI/Main-Student/Home-Morning.jpg, id=1111, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Home-Morning.jpg, id=1125, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Home-Morning.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Home-Morning.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Home-Morning.jpg  used on input 
@@ -2968,19 +3037,19 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 241.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[54 <./Image/UI/Auth/PasswordReset3.jpg>]
+[56 <./Image/UI/Auth/PasswordReset3.jpg>]
 File: Image/UI/Main-Student/Home-Morning.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Home-Morning.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Home-Morning.jpg  used on input 
 line 247.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Home-Afternoon.jpg, id=1122, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Home-Afternoon.jpg, id=1135, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Home-Afternoon.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Home-Afternoon.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Home-Afternoon.jpg  used on inpu
 t line 254.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Home-Night.jpg, id=1123, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Home-Night.jpg, id=1136, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Home-Night.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Home-Night.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Home-Night.jpg  used on input li
@@ -2992,7 +3061,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 265.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[55 <./Image/UI/Main-Student/Home-Morning.jpg>]
+[57 <./Image/UI/Main-Student/Home-Morning.jpg>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3025,9 +3094,9 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 276.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[56 <./Image/UI/Main-Student/Home-Afternoon.jpg> <./Image/UI/Main-Student/Home-
+[58 <./Image/UI/Main-Student/Home-Afternoon.jpg> <./Image/UI/Main-Student/Home-
 Night.jpg>]
-<Image/UI/Main-Student/LessonRecommend.jpg, id=1141, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/LessonRecommend.jpg, id=1154, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/LessonRecommend.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/LessonRecommend.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/LessonRecommend.jpg  used on inp
@@ -3047,13 +3116,13 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/Main-Student/EntranceTestPopup.jpg, id=1145, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/EntranceTestPopup.jpg, id=1158, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/EntranceTestPopup.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/EntranceTestPopup.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/EntranceTestPopup.jpg  used on i
 nput line 291.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/EntranceTestFloatingButton.jpg, id=1146, 1927.2pt x 1027
+<Image/UI/Main-Student/EntranceTestFloatingButton.jpg, id=1159, 1927.2pt x 1027
 .84pt>
 File: Image/UI/Main-Student/EntranceTestFloatingButton.jpg Graphic file (type j
 pg)
@@ -3067,15 +3136,15 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 303.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[57 <./Image/UI/Main-Student/LessonRecommend.jpg> <./Image/UI/Main-Student/Entr
+[59 <./Image/UI/Main-Student/LessonRecommend.jpg> <./Image/UI/Main-Student/Entr
 anceTestPopup.jpg>]
-<Image/UI/Main-Student/Topics-G1.jpg, id=1158, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Topics-G1.jpg, id=1171, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Topics-G1.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Topics-G1.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Topics-G1.jpg  used on input lin
 e 311.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Topics-Locked.jpg, id=1159, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Topics-Locked.jpg, id=1172, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Topics-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Topics-Locked.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Topics-Locked.jpg  used on input
@@ -3087,7 +3156,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 323.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[58 <./Image/UI/Main-Student/EntranceTestFloatingButton.jpg> <./Image/UI/Main-S
+[60 <./Image/UI/Main-Student/EntranceTestFloatingButton.jpg> <./Image/UI/Main-S
 tudent/Topics-G1.jpg>]
 
 ! LaTeX Error: There's no line here to end.
@@ -3121,74 +3190,74 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 336.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[59 <./Image/UI/Main-Student/Topics-Locked.jpg>]
-<Image/UI/Milestones/Paths-G1-NB.jpg, id=1181, 1927.2pt x 1027.84pt>
+[61 <./Image/UI/Main-Student/Topics-Locked.jpg>]
+<Image/UI/Milestones/Paths-G1-NB.jpg, id=1195, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G1-NB.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G1-NB.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G1-NB.jpg  used on input lin
 e 343.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G1-TH.jpg, id=1182, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G1-TH.jpg, id=1196, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G1-TH.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G1-TH.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G1-TH.jpg  used on input lin
 e 351.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G1-VD.jpg, id=1183, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G1-VD.jpg, id=1197, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G1-VD.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G1-VD.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G1-VD.jpg  used on input lin
 e 361.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G1-Locked.jpg, id=1184, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G1-Locked.jpg, id=1198, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G1-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G1-Locked.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G1-Locked.jpg  used on input
  line 369.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G2-NB.jpg, id=1188, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G2-NB.jpg, id=1202, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G2-NB.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G2-NB.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G2-NB.jpg  used on input lin
 e 384.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G2-TH.jpg, id=1189, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G2-TH.jpg, id=1203, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G2-TH.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G2-TH.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G2-TH.jpg  used on input lin
 e 392.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G2-VD.jpg, id=1190, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G2-VD.jpg, id=1204, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G2-VD.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G2-VD.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G2-VD.jpg  used on input lin
 e 402.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G2-Locked.jpg, id=1191, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G2-Locked.jpg, id=1205, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G2-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G2-Locked.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G2-Locked.jpg  used on input
  line 410.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G3-NB.jpg, id=1195, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G3-NB.jpg, id=1209, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G3-NB.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G3-NB.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G3-NB.jpg  used on input lin
 e 425.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G3-TH.jpg, id=1196, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G3-TH.jpg, id=1210, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G3-TH.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G3-TH.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G3-TH.jpg  used on input lin
 e 433.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G3-VD.jpg, id=1197, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G3-VD.jpg, id=1211, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G3-VD.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G3-VD.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G3-VD.jpg  used on input lin
 e 442.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G3-Locked.jpg, id=1198, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G3-Locked.jpg, id=1212, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G3-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G3-Locked.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G3-Locked.jpg  used on input
@@ -3200,54 +3269,54 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 455.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[60 <./Image/UI/Milestones/Paths-G1-NB.jpg> <./Image/UI/Milestones/Paths-G1-TH.
+[62 <./Image/UI/Milestones/Paths-G1-NB.jpg> <./Image/UI/Milestones/Paths-G1-TH.
 jpg> <./Image/UI/Milestones/Paths-G1-VD.jpg> <./Image/UI/Milestones/Paths-G1-Lo
 cked.jpg> <./Image/UI/Milestones/Paths-G2-NB.jpg> <./Image/UI/Milestones/Paths-
 G2-TH.jpg> <./Image/UI/Milestones/Paths-G2-VD.jpg> <./Image/UI/Milestones/Paths
 -G2-Locked.jpg>]
-<Image/UI/Milestones/Paths-G4-NB.jpg, id=1210, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G4-NB.jpg, id=1223, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G4-NB.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G4-NB.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G4-NB.jpg  used on input lin
 e 465.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G4-TH.jpg, id=1211, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G4-TH.jpg, id=1224, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G4-TH.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G4-TH.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G4-TH.jpg  used on input lin
 e 473.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G4-VD.jpg, id=1212, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G4-VD.jpg, id=1225, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G4-VD.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G4-VD.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G4-VD.jpg  used on input lin
 e 482.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G4-Locked.jpg, id=1213, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G4-Locked.jpg, id=1226, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G4-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G4-Locked.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G4-Locked.jpg  used on input
  line 490.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G5-NB.jpg, id=1217, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G5-NB.jpg, id=1230, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G5-NB.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G5-NB.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G5-NB.jpg  used on input lin
 e 505.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G5-TH.jpg, id=1218, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G5-TH.jpg, id=1231, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G5-TH.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G5-TH.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G5-TH.jpg  used on input lin
 e 513.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G5-VD.jpg, id=1219, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G5-VD.jpg, id=1232, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G5-VD.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G5-VD.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G5-VD.jpg  used on input lin
 e 522.
 (pdftex.def)             Requested size: 204.85846pt x 109.25163pt.
-<Image/UI/Milestones/Paths-G5-Locked.jpg, id=1220, 1927.2pt x 1027.84pt>
+<Image/UI/Milestones/Paths-G5-Locked.jpg, id=1233, 1927.2pt x 1027.84pt>
 File: Image/UI/Milestones/Paths-G5-Locked.jpg Graphic file (type jpg)
 <use Image/UI/Milestones/Paths-G5-Locked.jpg>
 Package pdftex.def Info: Image/UI/Milestones/Paths-G5-Locked.jpg  used on input
@@ -3259,40 +3328,40 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 535.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[61 <./Image/UI/Milestones/Paths-G3-NB.jpg> <./Image/UI/Milestones/Paths-G3-TH.
+[63 <./Image/UI/Milestones/Paths-G3-NB.jpg> <./Image/UI/Milestones/Paths-G3-TH.
 jpg> <./Image/UI/Milestones/Paths-G3-VD.jpg> <./Image/UI/Milestones/Paths-G3-Lo
 cked.jpg> <./Image/UI/Milestones/Paths-G4-NB.jpg> <./Image/UI/Milestones/Paths-
 G4-TH.jpg> <./Image/UI/Milestones/Paths-G4-VD.jpg> <./Image/UI/Milestones/Paths
 -G4-Locked.jpg>]
-<Image/UI/Exercises/MultiChoice.jpg, id=1232, 1927.2pt x 983.675pt>
+<Image/UI/Exercises/MultiChoice.jpg, id=1245, 1927.2pt x 983.675pt>
 File: Image/UI/Exercises/MultiChoice.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/MultiChoice.jpg>
 Package pdftex.def Info: Image/UI/Exercises/MultiChoice.jpg  used on input line
  545.
 (pdftex.def)             Requested size: 218.51521pt x 111.52171pt.
-<Image/UI/Exercises/Matching.jpg, id=1233, 1924.18875pt x 981.6675pt>
+<Image/UI/Exercises/Matching.jpg, id=1246, 1924.18875pt x 981.6675pt>
 File: Image/UI/Exercises/Matching.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Matching.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Matching.jpg  used on input line 55
 3.
 (pdftex.def)             Requested size: 218.51521pt x 111.47386pt.
-<Image/UI/Exercises/Fill.jpg, id=1234, 1922.18124pt x 984.67876pt>
+<Image/UI/Exercises/Fill.jpg, id=1247, 1922.18124pt x 984.67876pt>
 File: Image/UI/Exercises/Fill.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Fill.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Fill.jpg  used on input line 565.
 (pdftex.def)             Requested size: 218.51521pt x 111.936pt.
-<Image/UI/Exercises/TrueFalse.jpg, id=1235, 1923.185pt x 980.66376pt>
+<Image/UI/Exercises/TrueFalse.jpg, id=1248, 1923.185pt x 980.66376pt>
 File: Image/UI/Exercises/TrueFalse.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/TrueFalse.jpg>
 Package pdftex.def Info: Image/UI/Exercises/TrueFalse.jpg  used on input line 5
 72.
 (pdftex.def)             Requested size: 218.51521pt x 111.41974pt.
-<Image/UI/Exercises/Drag.jpg, id=1236, 1920.17375pt x 980.66376pt>
+<Image/UI/Exercises/Drag.jpg, id=1249, 1920.17375pt x 980.66376pt>
 File: Image/UI/Exercises/Drag.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Drag.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Drag.jpg  used on input line 582.
 (pdftex.def)             Requested size: 218.51521pt x 111.5993pt.
-<Image/UI/Exercises/Grouping.jpg, id=1237, 1927.2pt x 1027.84pt>
+<Image/UI/Exercises/Grouping.jpg, id=1250, 1927.2pt x 1027.84pt>
 File: Image/UI/Exercises/Grouping.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Grouping.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Grouping.jpg  used on input line 58
@@ -3304,7 +3373,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 595.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[62 <./Image/UI/Milestones/Paths-G5-NB.jpg> <./Image/UI/Milestones/Paths-G5-TH.
+[64 <./Image/UI/Milestones/Paths-G5-NB.jpg> <./Image/UI/Milestones/Paths-G5-TH.
 jpg> <./Image/UI/Milestones/Paths-G5-VD.jpg> <./Image/UI/Milestones/Paths-G5-Lo
 cked.jpg> <./Image/UI/Exercises/MultiChoice.jpg> <./Image/UI/Exercises/Matching
 .jpg>]
@@ -3321,13 +3390,13 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/Exercises/Correct.jpg, id=1248, 1923.185pt x 975.645pt>
+<Image/UI/Exercises/Correct.jpg, id=1261, 1923.185pt x 975.645pt>
 File: Image/UI/Exercises/Correct.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Correct.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Correct.jpg  used on input line 600
 .
 (pdftex.def)             Requested size: 409.71692pt x 207.85403pt.
-<Image/UI/Exercises/Wrong.jpg, id=1249, 1927.2pt x 979.66pt>
+<Image/UI/Exercises/Wrong.jpg, id=1262, 1927.2pt x 979.66pt>
 File: Image/UI/Exercises/Wrong.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Wrong.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Wrong.jpg  used on input line 607.
@@ -3338,16 +3407,16 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 612.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[63 <./Image/UI/Exercises/Fill.jpg> <./Image/UI/Exercises/TrueFalse.jpg> <./Ima
+[65 <./Image/UI/Exercises/Fill.jpg> <./Image/UI/Exercises/TrueFalse.jpg> <./Ima
 ge/UI/Exercises/Drag.jpg> <./Image/UI/Exercises/Grouping.jpg> <./Image/UI/Exerc
 ises/Correct.jpg>]
-<Image/UI/Exercises/Finish.jpg, id=1258, 1923.185pt x 983.675pt>
+<Image/UI/Exercises/Finish.jpg, id=1271, 1923.185pt x 983.675pt>
 File: Image/UI/Exercises/Finish.jpg Graphic file (type jpg)
 <use Image/UI/Exercises/Finish.jpg>
 Package pdftex.def Info: Image/UI/Exercises/Finish.jpg  used on input line 616.
 
 (pdftex.def)             Requested size: 409.71692pt x 209.56476pt.
-<Image/UI/Main-Student/Arena-Home.jpg, id=1261, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-Home.jpg, id=1274, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-Home.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-Home.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-Home.jpg  used on input li
@@ -3359,7 +3428,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 632.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[64 <./Image/UI/Exercises/Wrong.jpg> <./Image/UI/Exercises/Finish.jpg>]
+[66 <./Image/UI/Exercises/Wrong.jpg> <./Image/UI/Exercises/Finish.jpg>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3373,37 +3442,37 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/Main-Student/Arena-R1.jpg, id=1269, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-R1.jpg, id=1283, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-R1.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-R1.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-R1.jpg  used on input line
  642.
 (pdftex.def)             Requested size: 218.51521pt x 116.52881pt.
-<Image/UI/Main-Student/Arena-R2.jpg, id=1270, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-R2.jpg, id=1284, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-R2.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-R2.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-R2.jpg  used on input line
  644.
 (pdftex.def)             Requested size: 218.51521pt x 116.52881pt.
-<Image/UI/Main-Student/Arena-R3.jpg, id=1271, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-R3.jpg, id=1285, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-R3.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-R3.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-R3.jpg  used on input line
  648.
 (pdftex.def)             Requested size: 218.51521pt x 116.52881pt.
-<Image/UI/Main-Student/Arena-R4.jpg, id=1272, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-R4.jpg, id=1286, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-R4.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-R4.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-R4.jpg  used on input line
  650.
 (pdftex.def)             Requested size: 218.51521pt x 116.52881pt.
-<Image/UI/Main-Student/Arena-R5.jpg, id=1273, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-R5.jpg, id=1287, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-R5.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-R5.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-R5.jpg  used on input line
  654.
 (pdftex.def)             Requested size: 218.51521pt x 116.52881pt.
-<Image/UI/badges.jpg, id=1275, 1927.2pt x 1084.05pt>
+<Image/UI/badges.jpg, id=1289, 1927.2pt x 1084.05pt>
 File: Image/UI/badges.jpg Graphic file (type jpg)
 <use Image/UI/badges.jpg>
 Package pdftex.def Info: Image/UI/badges.jpg  used on input line 665.
@@ -3414,17 +3483,17 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 675.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[65 <./Image/UI/Main-Student/Arena-Home.jpg> <./Image/UI/Main-Student/Arena-R1.
+[67 <./Image/UI/Main-Student/Arena-Home.jpg> <./Image/UI/Main-Student/Arena-R1.
 jpg> <./Image/UI/Main-Student/Arena-R2.jpg> <./Image/UI/Main-Student/Arena-R3.j
 pg> <./Image/UI/Main-Student/Arena-R4.jpg> <./Image/UI/Main-Student/Arena-R5.jp
 g>]
-<Image/UI/Main-Student/Arena-Finished.jpg, id=1284, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Arena-Finished.jpg, id=1298, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Arena-Finished.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Arena-Finished.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Arena-Finished.jpg  used on inpu
 t line 680.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Exam.jpg, id=1287, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Exam.jpg, id=1301, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Exam.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Exam.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Exam.jpg  used on input line 691
@@ -3436,7 +3505,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 694.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[66 <./Image/UI/badges.jpg> <./Image/UI/Main-Student/Arena-Finished.jpg>]
+[68 <./Image/UI/badges.jpg> <./Image/UI/Main-Student/Arena-Finished.jpg>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3450,13 +3519,13 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/Main-Student/Exitpopup.jpg, id=1299, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Exitpopup.jpg, id=1312, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Exitpopup.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Exitpopup.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Exitpopup.jpg  used on input lin
 e 701.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Submitpopup.jpg, id=1300, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Submitpopup.jpg, id=1313, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Submitpopup.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Submitpopup.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Submitpopup.jpg  used on input l
@@ -3468,8 +3537,8 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 713.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[67 <./Image/UI/Main-Student/Exam.jpg> <./Image/UI/Main-Student/Exitpopup.jpg>]
-<Image/UI/Main-Student/Leaderboard.jpg, id=1309, 1923.185pt x 978.65625pt>
+[69 <./Image/UI/Main-Student/Exam.jpg> <./Image/UI/Main-Student/Exitpopup.jpg>]
+<Image/UI/Main-Student/Leaderboard.jpg, id=1322, 1923.185pt x 978.65625pt>
 File: Image/UI/Main-Student/Leaderboard.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Leaderboard.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Leaderboard.jpg  used on input l
@@ -3481,15 +3550,15 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 723.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[68 <./Image/UI/Main-Student/Submitpopup.jpg> <./Image/UI/Main-Student/Leaderbo
+[70 <./Image/UI/Main-Student/Submitpopup.jpg> <./Image/UI/Main-Student/Leaderbo
 ard.jpg>]
-<Image/UI/Main-Student/Mission-Complete.jpg, id=1316, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Mission-Complete.jpg, id=1329, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Mission-Complete.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Mission-Complete.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Mission-Complete.jpg  used on in
 put line 728.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Mission-Incomplete.jpg, id=1317, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Mission-Incomplete.jpg, id=1330, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Mission-Incomplete.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Mission-Incomplete.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Mission-Incomplete.jpg  used on 
@@ -3501,15 +3570,15 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 739.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[69 <./Image/UI/Main-Student/Mission-Complete.jpg> <./Image/UI/Main-Student/Mis
+[71 <./Image/UI/Main-Student/Mission-Complete.jpg> <./Image/UI/Main-Student/Mis
 sion-Incomplete.jpg>]
-<Image/UI/Main-Student/Game-Single.jpg, id=1326, 1919.17pt x 973.6375pt>
+<Image/UI/Main-Student/Game-Single.jpg, id=1340, 1919.17pt x 973.6375pt>
 File: Image/UI/Main-Student/Game-Single.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Game-Single.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Game-Single.jpg  used on input l
 ine 745.
 (pdftex.def)             Requested size: 409.71692pt x 207.85718pt.
-<Image/UI/Main-Student/Game-PVP.jpg, id=1327, 1912.14375pt x 975.645pt>
+<Image/UI/Main-Student/Game-PVP.jpg, id=1341, 1912.14375pt x 975.645pt>
 File: Image/UI/Main-Student/Game-PVP.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Game-PVP.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Game-PVP.jpg  used on input line
@@ -3521,15 +3590,15 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 756.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[70 <./Image/UI/Main-Student/Game-Single.jpg> <./Image/UI/Main-Student/Game-PVP
+[72 <./Image/UI/Main-Student/Game-Single.jpg> <./Image/UI/Main-Student/Game-PVP
 .jpg>]
-<Image/UI/Main-Student/MathMatchGame.jpg, id=1337, 1909.1325pt x 975.645pt>
+<Image/UI/Main-Student/MathMatchGame.jpg, id=1351, 1909.1325pt x 975.645pt>
 File: Image/UI/Main-Student/MathMatchGame.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/MathMatchGame.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/MathMatchGame.jpg  used on input
  line 760.
 (pdftex.def)             Requested size: 409.71692pt x 209.37251pt.
-<Image/UI/Main-Student/History.jpg, id=1338, 1913.1475pt x 975.645pt>
+<Image/UI/Main-Student/History.jpg, id=1352, 1913.1475pt x 975.645pt>
 File: Image/UI/Main-Student/History.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/History.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/History.jpg  used on input line 
@@ -3541,15 +3610,15 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 776.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[71 <./Image/UI/Main-Student/MathMatchGame.jpg> <./Image/UI/Main-Student/Histor
+[73 <./Image/UI/Main-Student/MathMatchGame.jpg> <./Image/UI/Main-Student/Histor
 y.jpg>]
-<Image/UI/Main-Student/ExamDetail1.jpg, id=1346, 1912.14375pt x 976.64874pt>
+<Image/UI/Main-Student/ExamDetail1.jpg, id=1360, 1912.14375pt x 976.64874pt>
 File: Image/UI/Main-Student/ExamDetail1.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/ExamDetail1.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/ExamDetail1.jpg  used on input l
 ine 780.
 (pdftex.def)             Requested size: 409.71692pt x 209.26007pt.
-<Image/UI/Main-Student/ExamDetail2.jpg, id=1347, 1912.14375pt x 974.64125pt>
+<Image/UI/Main-Student/ExamDetail2.jpg, id=1361, 1912.14375pt x 974.64125pt>
 File: Image/UI/Main-Student/ExamDetail2.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/ExamDetail2.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/ExamDetail2.jpg  used on input l
@@ -3561,15 +3630,15 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 791.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[72 <./Image/UI/Main-Student/ExamDetail1.jpg> <./Image/UI/Main-Student/ExamDeta
+[74 <./Image/UI/Main-Student/ExamDetail1.jpg> <./Image/UI/Main-Student/ExamDeta
 il2.jpg>]
-<Image/UI/Main-Student/Info.jpg, id=1356, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Info.jpg, id=1369, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Info.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Info.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Info.jpg  used on input line 801
 .
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/ChangePassword.jpg, id=1357, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/ChangePassword.jpg, id=1370, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/ChangePassword.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/ChangePassword.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/ChangePassword.jpg  used on inpu
@@ -3581,14 +3650,14 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 823.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[73 <./Image/UI/Main-Student/Info.jpg>]
-<Image/UI/Main-Student/Account-Unlinked.jpg, id=1366, 1927.2pt x 1027.84pt>
+[75 <./Image/UI/Main-Student/Info.jpg>]
+<Image/UI/Main-Student/Account-Unlinked.jpg, id=1379, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Account-Unlinked.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Account-Unlinked.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Account-Unlinked.jpg  used on in
 put line 831.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Student/Account-Linked.jpg, id=1367, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Student/Account-Linked.jpg, id=1380, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Student/Account-Linked.jpg Graphic file (type jpg)
 <use Image/UI/Main-Student/Account-Linked.jpg>
 Package pdftex.def Info: Image/UI/Main-Student/Account-Linked.jpg  used on inpu
@@ -3600,15 +3669,15 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 841.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[74 <./Image/UI/Main-Student/ChangePassword.jpg> <./Image/UI/Main-Student/Accou
+[76 <./Image/UI/Main-Student/ChangePassword.jpg> <./Image/UI/Main-Student/Accou
 nt-Unlinked.jpg>]
-<Image/UI/Main-Parent/Statistics.jpg, id=1376, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Parent/Statistics.jpg, id=1389, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/Statistics.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/Statistics.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/Statistics.jpg  used on input lin
 e 849.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Parent/History.jpg, id=1377, 1931.215pt x 1027.84pt>
+<Image/UI/Main-Parent/History.jpg, id=1390, 1931.215pt x 1027.84pt>
 File: Image/UI/Main-Parent/History.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/History.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/History.jpg  used on input line 8
@@ -3620,7 +3689,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 862.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[75 <./Image/UI/Main-Student/Account-Linked.jpg> <./Image/UI/Main-Parent/Statis
+[77 <./Image/UI/Main-Student/Account-Linked.jpg> <./Image/UI/Main-Parent/Statis
 tics.jpg>]
 
 ! LaTeX Error: There's no line here to end.
@@ -3635,7 +3704,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Image/UI/Main-Parent/ExamDetail.jpg, id=1385, 1914.15125pt x 979.66pt>
+<Image/UI/Main-Parent/ExamDetail.jpg, id=1398, 1914.15125pt x 979.66pt>
 File: Image/UI/Main-Parent/ExamDetail.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/ExamDetail.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/ExamDetail.jpg  used on input lin
@@ -3647,9 +3716,9 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 877.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[76 <./Image/UI/Main-Parent/History.jpg> <./Image/UI/Main-Parent/ExamDetail.jpg
+[78 <./Image/UI/Main-Parent/History.jpg> <./Image/UI/Main-Parent/ExamDetail.jpg
 >]
-<Image/UI/Main-Parent/Info.jpg, id=1394, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Parent/Info.jpg, id=1408, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/Info.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/Info.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/Info.jpg  used on input line 886.
@@ -3661,14 +3730,14 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 902.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[77 <./Image/UI/Main-Parent/Info.jpg>]
-<Image/UI/Main-Parent/NoLinkedAccount.jpg, id=1406, 1927.2pt x 1027.84pt>
+[79 <./Image/UI/Main-Parent/Info.jpg>]
+<Image/UI/Main-Parent/NoLinkedAccount.jpg, id=1420, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/NoLinkedAccount.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/NoLinkedAccount.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/NoLinkedAccount.jpg  used on inpu
 t line 906.
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Parent/Account-Linked.jpg, id=1407, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Parent/Account-Linked.jpg, id=1421, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/Account-Linked.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/Account-Linked.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/Account-Linked.jpg  used on input
@@ -3680,15 +3749,15 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 918.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[78 <./Image/UI/Main-Parent/NoLinkedAccount.jpg> <./Image/UI/Main-Parent/Accoun
+[80 <./Image/UI/Main-Parent/NoLinkedAccount.jpg> <./Image/UI/Main-Parent/Accoun
 t-Linked.jpg>]
-<Image/UI/Main-Parent/Plans.jpg, id=1416, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Parent/Plans.jpg, id=1429, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/Plans.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/Plans.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/Plans.jpg  used on input line 927
 .
 (pdftex.def)             Requested size: 409.71692pt x 218.50328pt.
-<Image/UI/Main-Parent/Payment-Loading.jpg, id=1417, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Parent/Payment-Loading.jpg, id=1430, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/Payment-Loading.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/Payment-Loading.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/Payment-Loading.jpg  used on inpu
@@ -3700,9 +3769,9 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 940.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[79 <./Image/UI/Main-Parent/Plans.jpg> <./Image/UI/Main-Parent/Payment-Loading.
+[81 <./Image/UI/Main-Parent/Plans.jpg> <./Image/UI/Main-Parent/Payment-Loading.
 jpg>]
-<Image/UI/Main-Parent/AfterPurchase.jpg, id=1426, 1927.2pt x 1027.84pt>
+<Image/UI/Main-Parent/AfterPurchase.jpg, id=1439, 1927.2pt x 1027.84pt>
 File: Image/UI/Main-Parent/AfterPurchase.jpg Graphic file (type jpg)
 <use Image/UI/Main-Parent/AfterPurchase.jpg>
 Package pdftex.def Info: Image/UI/Main-Parent/AfterPurchase.jpg  used on input 
@@ -3714,9 +3783,9 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 969.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[80 <./Image/UI/Main-Parent/AfterPurchase.jpg>]
+[82 <./Image/UI/Main-Parent/AfterPurchase.jpg>]
 (Content/H^^e1^^bb^^87 th^^e1^^bb^^91ng b^^c3^^a0i t^^e1^^ba^^adp.tex
-<Image/multi.jpg, id=1440, 1927.2pt x 1027.84pt>
+<Image/multi.jpg, id=1453, 1927.2pt x 1027.84pt>
 File: Image/multi.jpg Graphic file (type jpg)
 <use Image/multi.jpg>
 Package pdftex.def Info: Image/multi.jpg  used on input line 14.
@@ -3727,13 +3796,13 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 26.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[81 <./Image/multi.jpg>]
-<Image/match.jpg, id=1448, 1201.48875pt x 640.3925pt>
+[83 <./Image/multi.jpg>]
+<Image/match.jpg, id=1462, 1201.48875pt x 640.3925pt>
 File: Image/match.jpg Graphic file (type jpg)
 <use Image/match.jpg>
 Package pdftex.def Info: Image/match.jpg  used on input line 32.
 (pdftex.def)             Requested size: 432.48051pt x 230.51181pt.
-<Image/fill.jpg, id=1449, 980.66376pt x 514.92375pt>
+<Image/fill.jpg, id=1463, 980.66376pt x 514.92375pt>
 File: Image/fill.jpg Graphic file (type jpg)
 <use Image/fill.jpg>
 Package pdftex.def Info: Image/fill.jpg  used on input line 50.
@@ -3744,8 +3813,8 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 55.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[82 <./Image/match.jpg>]
-<Image/drag.jpg, id=1457, 1002.74625pt x 538.01pt>
+[84 <./Image/match.jpg>]
+<Image/drag.jpg, id=1471, 1002.74625pt x 538.01pt>
 File: Image/drag.jpg Graphic file (type jpg)
 <use Image/drag.jpg>
 Package pdftex.def Info: Image/drag.jpg  used on input line 68.
@@ -3756,13 +3825,13 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 78.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[83 <./Image/fill.jpg> <./Image/drag.jpg>]
-<Image/Grouping.jpg, id=1465, 1445.4pt x 1027.84pt>
+[85 <./Image/fill.jpg> <./Image/drag.jpg>]
+<Image/Grouping.jpg, id=1479, 1445.4pt x 1027.84pt>
 File: Image/Grouping.jpg Graphic file (type jpg)
 <use Image/Grouping.jpg>
 Package pdftex.def Info: Image/Grouping.jpg  used on input line 86.
 (pdftex.def)             Requested size: 432.48051pt x 307.53883pt.
-<Image/true.jpg, id=1466, 623.32875pt x 446.66875pt>
+<Image/true.jpg, id=1480, 623.32875pt x 446.66875pt>
 File: Image/true.jpg Graphic file (type jpg)
 <use Image/true.jpg>
 Package pdftex.def Info: Image/true.jpg  used on input line 104.
@@ -3773,28 +3842,28 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 974.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[84 <./Image/Grouping.jpg>]) (Content/Hi^^e1^^bb^^87n th^^e1^^bb^^b1c.tex
+[86 <./Image/Grouping.jpg>]) (Content/Hi^^e1^^bb^^87n th^^e1^^bb^^b1c.tex
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 17.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[85 <./Image/true.jpg>]
+[87 <./Image/true.jpg>]
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 43.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[86] (Content/M^^c3^^b4 t^^e1^^ba^^a3 t^^e1^^bb^^95 ch^^e1^^bb^^a9c m^^c3^^a3 n
+[88] (Content/M^^c3^^b4 t^^e1^^ba^^a3 t^^e1^^bb^^95 ch^^e1^^bb^^a9c m^^c3^^a3 n
 gu^^e1^^bb^^93n.tex
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 47.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[87]
+[89]
 
-LaTeX Warning: Citation `awsec2' on page 88 undefined on input line 52.
+LaTeX Warning: Citation `awsec2' on page 90 undefined on input line 52.
 
 ! Argument of \bracket@Parse@token has an extra }.
 <inserted text> 
@@ -3835,7 +3904,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 113.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[88]
+[90]
 LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `T5/cmtt/m/n' tried instead on input line 113.
 
@@ -3844,13 +3913,13 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 161.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[89]
+[91]
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 235.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[90]
+[92]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 246.
@@ -3861,19 +3930,19 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 260.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[91]
+[93]
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 300.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[92]
+[94]
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 341.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[93]
+[95]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 378.
@@ -3884,31 +3953,31 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 397.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[94]
+[96]
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 433.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[95]
+[97]
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 460.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[96]
+[98]
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 488.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[97]
+[99]
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 525.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[98]
+[100]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 529.
@@ -3919,13 +3988,13 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 585.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[99]
+[101]
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 634.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[100]
+[102]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 675.
@@ -3936,7 +4005,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 683.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[101]
+[103]
 
 Package hyperref Warning: Difference (3) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 722.
@@ -3947,7 +4016,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 312.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[102] (Content/T^^e1^^bb^^95ng k^^e1^^ba^^bft.tex
+[104] (Content/T^^e1^^bb^^95ng k^^e1^^ba^^bft.tex
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3967,7 +4036,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 29.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[103] (Content/K^^e1^^ba^^be HO^^e1^^ba^^a0CH V^^c3^^80 PH^^c3^^82N C^^c3^^94NG
+[105] (Content/K^^e1^^ba^^be HO^^e1^^ba^^a0CH V^^c3^^80 PH^^c3^^82N C^^c3^^94NG
  C^^c3^^94NG VI^^e1^^bb^^86C.tex
 Underfull \hbox (badness 3701) in paragraph at lines 44--44
 []|\T5/ptm/m/n/12 Setup back-end, c^^a7u h^^bcnh server, t^^a4o
@@ -3989,8 +4058,8 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 78.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[104]
-<Image/phase1.png, id=1653, 1458.44875pt x 1277.77374pt>
+[106]
+<Image/phase1.png, id=1666, 1458.44875pt x 1277.77374pt>
 File: Image/phase1.png Graphic file (type png)
 <use Image/phase1.png>
 Package pdftex.def Info: Image/phase1.png  used on input line 82.
@@ -4001,13 +4070,13 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 38.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[105]
+[107]
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 39.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[106 <./Image/phase1.png>]
+[108 <./Image/phase1.png>]
 Underfull \hbox (badness 1292) in paragraph at lines 58--59
 []\TS1/ptm/m/n/12 ^^88 \T5/ptm/b/n/12 BE: \T5/ptm/m/n/12 Thi^^b8t k^^b8 c^^a7u 
 tr^^f3c c^^ec s^^f0 d^^fa li^^bbu
@@ -4040,7 +4109,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 147.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[107]
+[109]
 ! Infinite glue shrinkage found in box being split.
 <argument> Infinite shrink error above ignored ! 
                                                  
@@ -4056,8 +4125,8 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 147.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[108]
-<Image/phase2.png, id=1678, 1458.44875pt x 1097.09875pt>
+[110]
+<Image/phase2.png, id=1691, 1458.44875pt x 1097.09875pt>
 File: Image/phase2.png Graphic file (type png)
 <use Image/phase2.png>
 Package pdftex.def Info: Image/phase2.png  used on input line 151.
@@ -4068,13 +4137,13 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 156.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[109])
+[111])
 
 File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 316.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[110 <./Image/phase2.png>] (Content/T^^c3^^80I LI^^e1^^bb^^86U THAM KH^^e1^^ba^
+[112 <./Image/phase2.png>] (Content/T^^c3^^80I LI^^e1^^bb^^86U THAM KH^^e1^^ba^
 ^a2O.tex
 ! Misplaced alignment tab character &.
 l.11 ^^Ihttps://vanban.chinhphu.vn/?pageid=27160&
@@ -4134,7 +4203,7 @@ File: Image/HCMUT logo.png Graphic file (type png)
 <use Image/HCMUT logo.png>
 Package pdftex.def Info: Image/HCMUT logo.png  used on input line 320.
 (pdftex.def)             Requested size: 28.4371pt x 28.4393pt.
-[111
+[113
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -4147,33 +4216,43 @@ L3 programming layer <2026-03-20>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FA835D8DE678D33D72F6B36F52BF5EC0;30913.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: FA835D8DE678D33D72F6B36F52BF5EC0;30913
+(rerunfilecheck)             After:  AA94527D597CC55F1FFEEEBD177814DE;31244.
  ) 
 Here is how much of TeX's memory you used:
- 45611 strings out of 467694
- 991973 string characters out of 5406862
+ 45620 strings out of 467694
+ 992087 string characters out of 5406862
  1504957 words of memory out of 5000000
- 73498 multiletter control sequences out of 15000+600000
- 693820 words of font info for 118 fonts, out of 8000000 for 9000
+ 73502 multiletter control sequences out of 15000+600000
+ 694157 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  145i,25n,138p,1582b,2738s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvip
-s/base/8r.enc}{/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/fo
-nts/enc/dvips/vntex/t5.enc}</Users/khoa/Library/Application Support/MiKTeX/texm
-fs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/khoa/Library/Appli
-cation Support/MiKTeX/texmfs/install/fonts/type1/vntex/urwvn/utmb8v.pfb></Users
-/khoa/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw/times/u
-tmr8a.pfb></Users/khoa/Library/Application Support/MiKTeX/texmfs/install/fonts/
-type1/vntex/urwvn/utmr8v.pfb></Users/khoa/Library/Application Support/MiKTeX/te
-xmfs/install/fonts/type1/vntex/urwvn/utmri8v.pfb></Users/khoa/Library/Applicati
-on Support/MiKTeX/texmfs/install/fonts/type1/vntex/vnr/vnitt10.pfb></Users/khoa
-/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/vntex/vnr/vntt12
-.pfb>
-Output written on main.pdf (112 pages, 16646328 bytes).
+ </Users/khoa/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/
+jknappen/ec/dpi600/tcrm1200.pk>{/Users/khoa/Library/Application Support/MiKTeX/
+texmfs/install/fonts/enc/dvips/base/8r.enc}{/Users/khoa/Library/Application Sup
+port/MiKTeX/texmfs/install/fonts/enc/dvips/vntex/t5.enc}</Users/khoa/Library/Ap
+plication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></Users/khoa/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/v
+ntex/urwvn/utmb8v.pfb></Users/khoa/Library/Application Support/MiKTeX/texmfs/in
+stall/fonts/type1/urw/times/utmr8a.pfb></Users/khoa/Library/Application Support
+/MiKTeX/texmfs/install/fonts/type1/vntex/urwvn/utmr8v.pfb></Users/khoa/Library/
+Application Support/MiKTeX/texmfs/install/fonts/type1/vntex/urwvn/utmri8v.pfb><
+/Users/khoa/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/vntex
+/vnr/vnitt10.pfb></Users/khoa/Library/Application Support/MiKTeX/texmfs/install
+/fonts/type1/vntex/vnr/vntt12.pfb>
+Output written on main.pdf (114 pages, 16650753 bytes).
 PDF statistics:
- 1824 PDF objects out of 2073 (max. 8388607)
- 1538 compressed objects within 16 object streams
- 428 named destinations out of 1000 (max. 500000)
+ 1841 PDF objects out of 2073 (max. 8388607)
+ 1552 compressed objects within 16 object streams
+ 432 named destinations out of 1000 (max. 500000)
  1771 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -529,6 +529,63 @@ Usecase kết thúc. \\
 \end{figure}
 
 \newpage
+\subsubsection{Quản lý chương trình học (Manage Curriculum)}
+\begin{longtable}{|l|p{0.75\textwidth}|}
+\caption{Usecase - Manage Curriculum}
+\label{table:uc_managecurriculum} \\
+\hline
+\textbf{Usecase name} & Manage Curriculum \\
+\hline
+\textbf{Actor} & Admin \\
+\hline
+\textbf{Description} & Cho phép Admin quản lý toàn bộ chương trình học theo cấu trúc: Học kỳ (AcademicTerm) → Khối lớp (Grade) → Chủ đề (Topic) → Bài học (Lecture) → Bài tập (Exercise). Admin có thể tạo, chỉnh sửa, xóa nội dung; bài học chỉ được chỉnh sửa khi chưa được publish; và khi thêm bài tập có thể preview để làm thử trực tiếp. \\
+\hline
+\textbf{Precondition} & Admin đã đăng nhập vào hệ thống với quyền quản trị. \\
+\hline
+\textbf{Postcondition} & Chương trình học được cập nhật thành công và phản ánh trên giao diện học sinh sau khi bài học được publish. \\
+\hline
+\textbf{Main flow} &
+1. Admin truy cập trang quản lý chương trình học. \newline
+2. Hệ thống hiển thị danh sách các Học kỳ hiện có. \newline
+3. Admin chọn một Học kỳ; hệ thống hiển thị các Khối lớp thuộc học kỳ đó. \newline
+4. Admin chọn một Khối lớp; hệ thống hiển thị danh sách Chủ đề thuộc khối lớp. \newline
+5. Admin chọn một Chủ đề; hệ thống hiển thị danh sách Bài học trong chủ đề. \newline
+6. Admin chọn một Bài học chưa được publish; hệ thống hiển thị nội dung và danh sách Bài tập của bài học. \newline
+7. Admin thực hiện thao tác mong muốn: thêm, chỉnh sửa hoặc xóa Bài tập. \newline
+8. Hệ thống xác thực dữ liệu đầu vào và lưu thay đổi. \newline
+9. Hệ thống hiển thị thông báo thành công và cập nhật lại danh sách. \\
+\hline
+\textbf{Alternative flow} &
+\textit{Alternative flow 1: Tạo mới Chủ đề hoặc Bài học} \newline
+Tại bước 4 hoặc 5: Admin nhấn "Thêm mới". \newline
+Admin nhập thông tin (tên, mô tả, thứ tự). \newline
+Hệ thống lưu và hiển thị mục mới trong danh sách. \newline\newline
+\textit{Alternative flow 2: Preview bài tập vừa thêm} \newline
+Tại bước 7: Sau khi thêm một Bài tập, Admin nhấn nút "Preview". \newline
+Hệ thống mở giao diện làm thử bài tập cho Admin xem trước nội dung hiển thị đối với học sinh. \newline
+Admin đóng preview và quay lại trang quản lý. \newline\newline
+\textit{Alternative flow 3: Publish bài học} \newline
+Tại bước 6: Admin nhấn "Publish" để công bố bài học. \newline
+Hệ thống cập nhật trạng thái bài học thành đã publish. \newline
+Bài học hiển thị cho học sinh và không thể chỉnh sửa thêm. \\
+\hline
+\textbf{Exception} &
+\textit{Exception 1: Chỉnh sửa bài học đã được publish} \newline
+Tại bước 6: Admin chọn một Bài học đã được publish. \newline
+Hệ thống hiển thị cảnh báo "Bài học này đã được publish, không thể chỉnh sửa". \newline
+Admin chỉ có thể xem nội dung ở chế độ read-only. \newline\newline
+\textit{Exception 2: Xóa nội dung đang được học sinh sử dụng} \newline
+Tại bước 7: Admin xóa một Bài tập hoặc Bài học đang có dữ liệu tiến độ của học sinh. \newline
+Hệ thống phát hiện ràng buộc và hiển thị cảnh báo "Nội dung này đang được sử dụng, không thể xóa". \newline
+Admin hủy thao tác. \newline\newline
+\textit{Exception 3: Dữ liệu đầu vào không hợp lệ} \newline
+Tại bước 8: Hệ thống phát hiện dữ liệu không hợp lệ (tên trống, thiếu trường bắt buộc). \newline
+Hệ thống hiển thị thông báo lỗi cụ thể. \newline
+Admin chỉnh sửa và thực hiện lại từ bước 8. \\
+\hline
+\end{longtable}
+
+\newpage
 \subsection{Mô tả kiến trúc hệ thống}
 \begin{figure}[h!]
 	\centering
