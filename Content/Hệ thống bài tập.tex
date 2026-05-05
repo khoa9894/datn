@@ -1,108 +1,183 @@
 \subsubsection{Các dạng toán}
-\subsubsubsection{Dạng toán trắc nghiệm (Multiple Choice)}
 
-\textbf{Đặc điểm kỹ thuật:}
-\begin{itemize}
-	\item \textbf{Cấu trúc dữ liệu:} Mỗi câu hỏi bao gồm một câu hỏi chính và 4 lựa chọn, trong đó có duy nhất một đáp án đúng
-	\item \textbf{Tương tác:} Người dùng chọn một trong các lựa chọn bằng cách nhấp chuột
-	\item \textbf{Xác thực:} Hệ thống so sánh lựa chọn với đáp án chính xác được định nghĩa trong dữ liệu
-	\item \textbf{Phản hồi:} Hiển thị hiệu ứng nhấp nháy cho đáp án đúng khi trả lời chính xác
-\end{itemize}
+Hệ thống hỗ trợ 18 dạng bài tập đa dạng, mỗi dạng được thiết kế với cơ chế tương tác đặc trưng phù hợp với từng chủ đề và lứa tuổi tiểu học.
 
+% --- Hàng 1: Multiple Choice | Matching | Fill ---
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{Image/multi.jpg}
-	\vspace{0.5cm}
-	\caption{Dạng toán trắc nghiệm}
-	\label{fig:multiple-choice}
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/MultiChoice.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Trắc nghiệm (Multiple Choice)}\\[0.2em]
+		Chọn 1 trong 4 đáp án; phản hồi nhấp nháy khi trả lời đúng.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Matching.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Ghép cặp (Matching)}\\[0.2em]
+		Kéo thả ghép 4 cặp tương ứng; đổi màu khi ghép thành công.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Fill.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Điền số (Fill in the Blanks)}\\[0.2em]
+		Điền vào tối đa 3 ô trống; chấm điểm từng phần độc lập.}
+	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán cơ bản (1)}
+	\label{fig:exercise-row1}
 \end{figure}
 
-\subsubsubsection{Dạng toán ghép cặp (Matching)}
-
-\textbf{Đặc điểm kỹ thuật:}
-\begin{itemize}
-	\item \textbf{Cấu trúc dữ liệu:} Mỗi câu hỏi bao gồm 4 cặp ghép, mỗi cặp có một phần tử bên trái và một phần tử bên phải cần được kết nối
-	\item \textbf{Tương tác:} Người dùng kéo thả các block đáp án vào vùng tương ứng bằng cơ chế drag-drop 
-	\item \textbf{Xác thực:} Hệ thống kiểm tra từng cặp ghép có đúng vị trí hay không và theo dõi trạng thái của tất cả các block
-	\item \textbf{Phản hồi:} Thay đổi màu sắc của block khi kéo thả thành công 
-\end{itemize}
-
+% --- Hàng 2: Drag | Grouping | True/False ---
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{Image/match.jpg}
-	\vspace{0.5cm}
-	\caption{Dạng toán ghép cặp}
-	\label{fig:matching}
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Drag.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Kéo thả (Drag and Drop)}\\[0.2em]
+		Kéo số vào vị trí trống trong biểu thức; tự động reset khi thả sai.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Grouping.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Phân loại chẵn/lẻ (Grouping)}\\[0.2em]
+		Chọn mode rồi click phân loại 20 số; kiểm tra toàn bộ cùng lúc.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/TrueFalse.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Đúng/Sai (True/False)}\\[0.2em]
+		Chọn Đúng hoặc Sai; chỉ cho phép một lựa chọn duy nhất.}
+	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán cơ bản (2)}
+	\label{fig:exercise-row2}
 \end{figure}
 
-\subsubsubsection{Dạng toán điền từ/số (Fill in the Blanks)}
-
-\textbf{Đặc điểm kỹ thuật:}
-\begin{itemize}
-	\item \textbf{Cấu trúc dữ liệu:} Mỗi câu hỏi chứa tối đa 3 ô trống cần điền
-	\item \textbf{Tương tác:} Người dùng nhập trực tiếp số vào các ô input, có thể điền từng ô riêng lẻ hoặc tất cả cùng lúc
-	\item \textbf{Xác thực:} Hệ thống kiểm tra từng ô điền riêng biệt và tính điểm từng phần 
-	\item \textbf{Phản hồi:} Hiệu ứng fade-in khi hiển thị đáp án 
-\end{itemize}
-
+% --- Hàng 3: Burger | Bus | Catch Bird ---
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{Image/fill.jpg}
-	\vspace{0.5cm}
-	\caption{Dạng toán điền từ}
-	\label{fig:fill-blanks}
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Burger.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Tổ hợp burger (Burger)}\\[0.2em]
+		Tổ hợp xác suất: tạo tổ hợp burger đúng yêu cầu từ các nguyên liệu cho sẵn.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Bus.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Xe buýt (Bus)}\\[0.2em]
+		Cộng số tròn chục: xếp hàng lên xe buýt; hỗ trợ nhiều cách xếp cho cùng một kết quả.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/CatchBird.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Bắt chim (Catch Bird)}\\[0.2em]
+		Dạng tổng quát: tạo đáp án bằng cơ chế bắt chim, biểu diễn nhiều dạng toán khác nhau.}
+	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán tương tác (1)}
+	\label{fig:exercise-row3}
 \end{figure}
 
-\subsubsubsection{Dạng toán kéo thả (Drag and Drop)}
-
-\textbf{Đặc điểm kỹ thuật:}
-\begin{itemize}
-	\item \textbf{Cấu trúc dữ liệu:} Câu hỏi chứa biểu thức toán học với vị trí trống linh hoạt (đầu, giữa, hoặc cuối) và danh sách các lựa chọn bao gồm đáp án đúng và nhiễu
-	\item \textbf{Tương tác:} Người dùng kéo các số từ danh sách lựa chọn vào vùng trống trong biểu thức
-	\item \textbf{Xác thực:} Hệ thống so sánh lựa chọn với đáp án chính xác được định nghĩa trong dữ liệu
-	\item \textbf{Phản hồi:} Reset về vị trí ban đầu khi thả sai, hiệu ứng visual khi thả đúng 
-\end{itemize}
-
+% --- Hàng 4: Clock | Coin | Gumball ---
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{Image/drag.jpg}
-	\vspace{0.5cm}
-	\caption{Dạng toán kéo thả}
-	\label{fig:drag-drop}
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Clock.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Đồng hồ (Clock)}\\[0.2em]
+		Học thời gian qua đồng hồ kim/số.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Coin.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Đổi tiền xu (Coin)}\\[0.2em]
+		Đổi tiền xu vận dụng cao: kết hợp nhiều phép tính, tương tác đổi xu trực tiếp.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Gumball.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Viên bi (Gumball)}\\[0.2em]
+		Tập đếm và so sánh thông qua các viên bi nhiều màu sắc trực quan.}
+	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán tương tác (2)}
+	\label{fig:exercise-row4}
 \end{figure}
 
-\subsubsubsection{Dạng toán phân loại chẵn/lẻ (Even/Odd Classification)}
-
-\textbf{Đặc điểm kỹ thuật:}
-\begin{itemize}
-	\item \textbf{Cấu trúc dữ liệu:} Câu hỏi chứa seed number để tạo ra 20 số ngẫu nhiên nhất quán, mỗi số cần được phân loại là chẵn hoặc lẻ
-	\item \textbf{Tương tác:} Người dùng chọn mode (chẵn/lẻ) rồi click vào các số để gán màu tương ứng, con trỏ thay đổi màu theo mode hiện tại
-	\item \textbf{Xác thực:} Hệ thống kiểm tra toàn bộ danh sách cùng lúc, đảm bảo tất cả số đã được phân loại và đúng tính chất chẵn/lẻ
-	\item \textbf{Phản hồi:} Đổi màu nền số theo lựa chọn và hiệu ứng chuyển đổi màu khi hiển thị đáp án đúng
-\end{itemize}
-
+% --- Hàng 5: Manual Scale | Pizza | Release Bird ---
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{Image/Grouping.jpg}
-	\vspace{0.5cm}
-	\caption{Dạng toán phân loại chẵn lẻ}
-	\label{fig:even-odd}
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/ManualScale.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Cân thủ công (Manual Scale)}\\[0.2em]
+		So sánh lớn hơn, bé hơn, bằng nhau thông qua cân thủ công trực quan.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Pizza.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Chia pizza (Pizza)}\\[0.2em]
+		Làm quen với phân số qua cách chia và quan sát các phần của chiếc pizza.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/RealeaseBirt.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Thả chim (Release Bird)}\\[0.2em]
+		Dạng tổng quát: thả chim để chọn đáp án đúng, biểu diễn nhiều dạng toán khác nhau.}
+	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán tương tác (3)}
+	\label{fig:exercise-row5}
 \end{figure}
 
-\subsubsubsection{Dạng toán đúng/sai (True/False)}
-
-\textbf{Đặc điểm kỹ thuật:}
-\begin{itemize}
-	\item \textbf{Cấu trúc dữ liệu:} Mỗi câu hỏi gồm một câu hỏi chính, đáp án boolean (true/false), và nội dung hướng dẫn tùy chọn
-	\item \textbf{Tương tác:} Người dùng chọn một trong hai lựa chọn Đúng/Sai bằng cách click, chỉ cho phép chọn một đáp án duy nhất
-	\item \textbf{Xác thực:} Hệ thống so sánh lựa chọn với đáp án chính xác được định nghĩa trong dữ liệu
-	\item \textbf{Phản hồi:} Hiển thị hiệu ứng nhấp nháy cho đáp án đúng khi trả lời chính xác
-\end{itemize}
-
+% --- Hàng 6: Scale | Tree | Geo ---
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.95\textwidth]{Image/true.jpg}
-	\vspace{0.5cm}
-	\caption{Dạng toán đúng sai}
-	\label{fig:true-false}
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Scale.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Cân điện tử (Scale)}\\[0.2em]
+		Cộng trừ qua cân bằng; điểm đặc biệt là có thể có nhiều đáp án đúng.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Tree.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Tưới cây (Tree)}\\[0.2em]
+		Dạng tổng quát nhiều bước: tưới cây theo từng bước để hoàn thành bài toán.}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{Image/UI/Exercises/Geo.jpg}
+		\vspace{0.2cm}
+
+		{\small\textbf{Vẽ hình (Geo)}\\[0.2em]
+		Vẽ hình tổng quát: hỗ trợ nhiều cách vẽ, có thể mở rộng thành nhiều dạng con.}
+	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán tương tác (4)}
+	\label{fig:exercise-row6}
 \end{figure}
