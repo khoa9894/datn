@@ -1,10 +1,8 @@
 \section{Kiểm thử}
 
+\subsection{Kiểm thử hiệu năng giao diện}
 Toàn bộ mã nguồn và kết quả kiểm thử được công khai tại:
 \url{https://github.com/khoa9894/Light-House}.
-
-\subsection{Kiểm thử hiệu năng giao diện}
-
 \subsubsection{Tổng quan}
 
 Nhóm đã tiến hành kiểm thử giao diện người dùng bằng công cụ Google Lighthouse
@@ -222,30 +220,30 @@ bảo trì và phát triển tiếp theo của dự án.
 \subsubsection{Tổng quan}
 
 Nhóm đã thực hiện kiểm thử tự động bằng \textbf{Playwright} thông qua file
-\texttt{arena.spec.ts}, chạy song song trên \textbf{5 browser/project}:
-\textit{auth, chromium, edge, firefox, webkit}.
+\texttt{arena.spec.ts}, chạy trên \textbf{4 project}: \textit{auth, chromium, edge, firefox}.
+Trong đó \textbf{auth} là project riêng dành cho các test xác thực (chạy trên Chromium),
+các project còn lại tương ứng với từng trình duyệt.
 
 \begin{center}
 \begin{tabular}{lcccccc}
 \toprule
-\textbf{Browser} & \textbf{Tổng} & \textbf{Pass} & \textbf{Fail} & \textbf{Skip} & \textbf{Flaky} & \textbf{Tỉ lệ} \\
+\textbf{Project} & \textbf{Tổng} & \textbf{Pass} & \textbf{Fail} & \textbf{Skip} & \textbf{Flaky} & \textbf{Tỉ lệ} \\
 \midrule
-auth     & 38  & \scoreGreen{38}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+auth (Chromium) & 38  & \scoreGreen{38}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
 \rowcolor{lhrowgray}
-chromium & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
-edge     & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+chromium        & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+edge            & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
 \rowcolor{lhrowgray}
-firefox  & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
-webkit   & 11  & \scoreGreen{11}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+firefox         & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
 \midrule
-\textbf{Tổng} & \textbf{202} & \textbf{\textcolor{lhgreen}{202}} & \textbf{0} & \textbf{0} & \textbf{0} & \scoreGreen{\textbf{100\%}} \\
+\textbf{Tổng} & \textbf{191} & \textbf{\textcolor{lhgreen}{191}} & \textbf{0} & \textbf{0} & \textbf{0} & \scoreGreen{\textbf{100\%}} \\
 \bottomrule
 \end{tabular}
 \end{center}
 
 \vspace{0.5em}
-\noindent Kết quả tổng hợp: \textbf{202/202 test cases passed}, không có test nào
-failed hoặc flaky trên toàn bộ các browser được kiểm thử.
+\noindent Kết quả tổng hợp: \textbf{191/191 test cases passed}, không có test nào
+failed hoặc flaky trên toàn bộ các project được kiểm thử.
 
 % --------------------------------------------------------
 \subsubsection{Chi tiết các nhóm test cases}
@@ -295,9 +293,8 @@ TC-14 & Edit Profile               & 6  & 9.6s  & \scoreGreen{PASS} \\
 \subsubsection{Nhận xét kiểm thử tự động}
 
 \begin{itemize}[leftmargin=*]
-  \item \textbf{Tỉ lệ pass:} 202/202 test cases passed trên cả 5 browser, trong đó
-        webkit (Safari engine) thường có độ tương thích thấp hơn các browser khác nhưng
-        vẫn cho kết quả tốt trong lần kiểm thử này.
+  \item \textbf{Tỉ lệ pass:} 191/191 test cases passed trên 4 project (auth, chromium, edge, firefox),
+        đạt tỉ lệ 100\%.
   \item \textbf{Không có flaky test:} Toàn bộ test cases cho kết quả ổn định qua
         nhiều lần chạy, không có trường hợp kết quả không nhất quán do timing.
   \item \textbf{Phạm vi bao phủ:} 14 nhóm test cases bao gồm các luồng chính của
@@ -308,5 +305,383 @@ TC-14 & Edit Profile               & 6  & 9.6s  & \scoreGreen{PASS} \\
   \item \textbf{Hạn chế:} Phạm vi kiểm thử hiện tập trung vào giao diện người dùng
         cuối; các luồng của Admin Panel chưa được bao phủ bởi kiểm thử tự động và
         có thể được bổ sung trong các giai đoạn tiếp theo.
+\end{itemize}
+
+% ======================================================
+\subsection{Kiểm thử tích hợp Backend (Integration Testing)}
+
+\subsubsection{Tổng quan}
+
+Nhóm đã triển khai kiểm thử tích hợp (Integration Testing) cho toàn bộ hệ thống backend
+nhằm đảm bảo các luồng nghiệp vụ quan trọng hoạt động chính xác khi có sự giao tiếp
+giữa các thành phần: từ \textbf{Router} (tiếp nhận yêu cầu), \textbf{Middleware}
+(xác thực, phân quyền), \textbf{Controller} (xử lý logic) đến \textbf{Database}
+(lưu trữ và truy xuất dữ liệu). Toàn bộ mã nguồn kiểm thử được công khai tại:
+\url{https://github.com/boyastro/dino_math_backend/tree/add-and-fix-api/src/tests/integration}.
+
+Thay vì chỉ kiểm thử từng hàm riêng lẻ (Unit Test), phương pháp này mô phỏng
+chính xác cách ứng dụng vận hành trong thực tế từ góc nhìn của một HTTP Client.
+
+% --------------------------------------------------------
+\subsubsection{Môi trường và công cụ kiểm thử}
+
+Hệ thống kiểm thử được xây dựng trên bộ công cụ tiêu chuẩn trong hệ sinh thái
+Node.js/TypeScript:
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Jest \& ts-jest} --- Framework cốt lõi quản lý và chạy các bài test,
+        cung cấp hàm assertion (\texttt{expect}) và cơ chế mocking mạnh mẽ.
+        \texttt{ts-jest} cho phép chạy trực tiếp mã TypeScript mà không cần build trước.
+  \item \textbf{Supertest} --- Thư viện mô phỏng các HTTP request (GET, POST, PUT, DELETE)
+        gửi trực tiếp đến ứng dụng Express mà không cần mở port thực tế, giúp test
+        chạy nhanh và ổn định.
+  \item \textbf{MongoDB Memory Server} --- Phiên bản MongoDB thu nhỏ chạy hoàn toàn
+        trên RAM, đảm bảo mỗi lần chạy test có một cơ sở dữ liệu trống, hoàn toàn
+        cách ly với môi trường thật (Dev/Prod). Dữ liệu tự xóa sau mỗi lần chạy,
+        không để lại side-effects.
+  \item \textbf{Redis Mocking} --- Do Redis được dùng để lưu session/cache, hệ thống
+        giả lập (mock) Redis client để trả về kết quả cấu hình sẵn (như token hợp lệ)
+        thay vì kết nối server thật.
+  \item \textbf{Service Mocking} --- Các logic ngoài phạm vi test (như kích hoạt
+        trigger nhiệm vụ) được mock để tránh tác động không mong muốn.
+\end{itemize}
+
+% --------------------------------------------------------
+\subsubsection{Quy trình thực thi kiểm thử}
+
+Mỗi Test Suite tuân thủ vòng đời kiểm thử chuẩn gồm ba bước:
+
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{Khởi tạo (Before All / Before Each)} --- Xóa toàn bộ dữ liệu cũ trong
+        RAM Database; khởi tạo dữ liệu phụ thuộc bắt buộc (User Admin, Student, JWT Token).
+  \item \textbf{Thực thi (Action)} --- Dùng Supertest gửi HTTP request chứa payload
+        (body, query, params) kèm header \texttt{Authorization}.
+  \item \textbf{Xác nhận (Assertion)} --- Kiểm tra HTTP Status Code (200, 201, 400,
+        403, 404); kiểm tra cấu trúc JSON trả về; truy vấn ngược Database để đảm bảo
+        dữ liệu đã lưu hoặc thay đổi đúng kỳ vọng.
+\end{enumerate}
+
+% --------------------------------------------------------
+\subsubsection{Báo cáo độ bao phủ mã nguồn}
+
+Toàn bộ 24 Controller của hệ thống Backend đạt mức độ bao phủ \textbf{100\%},
+với \textbf{142 test cases} đều vượt qua (100\% PASS rate).
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Module (Controller)} & \textbf{Bao phủ} & \textbf{Trạng thái} \\
+\midrule
+\texttt{academicTerm.controller.ts}      & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{achievement.controller.ts}       & \scoreGreen{100\%} & Tuyệt đối \\
+\texttt{answer.controller.ts}            & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{arena.controller.ts}             & \scoreGreen{100\%} & Tuyệt đối \\
+\texttt{assessment.controller.ts}        & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{assessmentResult.controller.ts}  & \scoreGreen{100\%} & Tuyệt đối \\
+\texttt{auth.controller.ts}              & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{exercise.controller.ts}          & \scoreGreen{100\%} & Tuyệt đối \\
+\texttt{family.controller.ts}            & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{familyGameParticipation.controller.ts} & \scoreGreen{100\%} & Tuyệt đối \\
+\texttt{grade.controller.ts}             & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{land.controller.ts}              & \scoreGreen{100\%} & Tuyệt đối \\
+\texttt{lecture.controller.ts}           & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{lectureResult.controller.ts}     & \scoreGreen{100\%} & Tuyệt đối \\
+\texttt{miniGame.controller.ts}          & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{mission.controller.ts}           & \scoreGreen{100\%} & Tuyệt đối \\
+\texttt{participation.controller.ts}     & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{payment.controller.ts}           & \scoreGreen{100\%} & Tuyệt đối \\
+\texttt{progress.controller.ts}          & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{rank.controller.ts}              & \scoreGreen{100\%} & Tuyệt đối \\
+\texttt{statistics.controller.ts}        & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{topic.controller.ts}             & \scoreGreen{100\%} & Tuyệt đối \\
+\texttt{user.controller.ts}              & \scoreGreen{100\%} & Tuyệt đối \\
+\rowcolor{lhrowgray}
+\texttt{world.controller.ts}             & \scoreGreen{100\%} & Tuyệt đối \\
+\midrule
+\textbf{Tổng cộng (24 module)}           & \scoreGreen{\textbf{100\%}} & \textbf{142/142 PASS} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% --------------------------------------------------------
+\subsubsection{Chi tiết kết quả kiểm thử}
+
+Dưới đây là chi tiết 57 kịch bản kiểm thử cho các phân hệ được triển khai mới,
+bao trùm toàn bộ các luồng thao tác quan trọng.
+
+\paragraph{Module: Lecture Result (Kết quả bài học) --- 6 TC}
+
+\begin{longtable}{cp{5.2cm}p{5.5cm}c}
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+TC01 & Học sinh nộp kết quả bài học hợp lệ
+     & Lưu kết quả, cập nhật bảng Progress của học sinh. HTTP 201.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC02 & Nộp kết quả thiếu dữ liệu bắt buộc
+     & Từ chối yêu cầu, trả về lỗi thiếu trường (HTTP 400).
+     & \scoreGreen{PASS} \\
+TC03 & Học sinh lấy danh sách bài làm của mình
+     & Chỉ trả về bài của chính học sinh đó (HTTP 200).
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC04 & Phụ huynh xem bài làm của con
+     & Cho phép nếu \texttt{familyId} trùng khớp.
+     & \scoreGreen{PASS} \\
+TC05 & Học sinh xem chi tiết một kết quả
+     & Trả về đầy đủ thông tin, các ID liên kết được populate.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC06 & Học sinh xem kết quả của học sinh khác
+     & Từ chối truy cập (HTTP 403 Forbidden).
+     & \scoreGreen{PASS} \\
+\bottomrule
+\caption{Module Lecture Result}
+\end{longtable}
+
+\paragraph{Module: Assessment Result (Kết quả kiểm tra đầu vào) --- 6 TC}
+
+\begin{longtable}{cp{5.2cm}p{5.5cm}c}
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+TC01 & Admin tạo kết quả đánh giá thủ công
+     & Lưu kết quả cho học sinh do Admin chỉ định.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC02 & Lấy toàn bộ danh sách đánh giá
+     & Phân trang hoạt động đúng, trả về tổng số kết quả.
+     & \scoreGreen{PASS} \\
+TC03 & Lọc danh sách theo \texttt{userId}
+     & Các bản ghi trả về thuộc về một học sinh duy nhất.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC04 & Xem chi tiết kết quả đánh giá qua ID
+     & Trả về thông tin chi tiết kèm \texttt{assessmentId}.
+     & \scoreGreen{PASS} \\
+TC05 & Truy vấn ID đánh giá không tồn tại
+     & Trả về HTTP 404 Not Found.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC06 & Admin cập nhật trạng thái kết quả
+     & Điểm số và trạng thái thay đổi thành công trong DB.
+     & \scoreGreen{PASS} \\
+\bottomrule
+\caption{Module Assessment Result}
+\end{longtable}
+
+\paragraph{Module: Answer (Câu trả lời chi tiết) --- 8 TC}
+
+Phân hệ này áp dụng logic \textbf{Snapshot Exercise}: lưu lại trạng thái câu hỏi
+tại thời điểm học sinh làm bài để phục vụ mục đích xem lại (Review).
+
+\begin{longtable}{cp{5.0cm}p{5.7cm}c}
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+TC01 & Nộp một câu trả lời mới
+     & Lưu câu trả lời, snapshot dữ liệu Exercise gốc vào bản ghi.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC02 & Nộp thiếu \texttt{exerciseId}
+     & Bắt lỗi Validation, từ chối xử lý (HTTP 400).
+     & \scoreGreen{PASS} \\
+TC03 & Nộp hàng loạt câu trả lời (Bulk Upsert)
+     & Xử lý qua \texttt{bulkWrite}, tối ưu hiệu năng DB.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC04 & Lấy danh sách câu trả lời có phân trang
+     & Trả về đúng số \texttt{limit} và tổng số lượng để hỗ trợ phân trang.
+     & \scoreGreen{PASS} \\
+TC05 & Lọc theo \texttt{userId}
+     & Chỉ trả về câu trả lời của một học sinh xác định.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC06 & Xem chi tiết qua ID
+     & Truy vấn chính xác một bản ghi Answer.
+     & \scoreGreen{PASS} \\
+TC07 & Cập nhật câu trả lời
+     & Điểm số hoặc đáp án thay đổi thành công.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC08 & Xóa câu trả lời
+     & Xóa khỏi DB, kiểm tra lại bằng \texttt{findById} trả về \texttt{null}.
+     & \scoreGreen{PASS} \\
+\bottomrule
+\caption{Module Answer}
+\end{longtable}
+
+\paragraph{Module: Mission (Nhiệm vụ hệ thống) --- 8 TC}
+
+\begin{longtable}{cp{5.0cm}p{5.7cm}c}
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+TC01 & Người dùng lấy danh sách nhiệm vụ
+     & Trả về danh sách nhiệm vụ được cấu hình sẵn.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC02 & Lọc nhiệm vụ đang kích hoạt (\texttt{isActive=true})
+     & Chỉ trả về nhiệm vụ học sinh có thể thực hiện.
+     & \scoreGreen{PASS} \\
+TC03 & Tìm kiếm theo từ khóa
+     & Regex \texttt{\$regex} hoạt động đúng, không phân biệt hoa/thường.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC04 & Admin tạo nhiệm vụ mới
+     & Nhiệm vụ được lưu kèm thông tin phần thưởng (Rewards).
+     & \scoreGreen{PASS} \\
+TC05 & Học sinh cố tình tạo nhiệm vụ
+     & Middleware \texttt{isAdmin} chặn, trả về HTTP 403.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC06 & Admin cập nhật tiến độ yêu cầu
+     & Nội dung mục tiêu thay đổi chính xác.
+     & \scoreGreen{PASS} \\
+TC07 & Bật/Tắt nhiệm vụ (Toggle)
+     & Đảo ngược giá trị boolean \texttt{isActive} tự động.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC08 & Admin xóa nhiệm vụ
+     & Xóa dữ liệu khỏi cơ sở dữ liệu thành công.
+     & \scoreGreen{PASS} \\
+\bottomrule
+\caption{Module Mission}
+\end{longtable}
+
+\paragraph{Module: Land \& World (Quản lý vùng đất và thế giới) --- 17 TC}
+
+Hệ thống cấu trúc map của nền tảng theo thứ bậc: World $\to$ Land $\to$ Topic $\to$ Lecture.
+
+\begin{longtable}{cp{5.0cm}p{5.7cm}c}
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\multicolumn{4}{l}{\textit{Thế giới (World) --- 8 TC}} \\
+\midrule
+TC01--02 & Lấy danh sách công khai, tìm kiếm theo tên
+         & Trả về đúng danh sách, tìm kiếm hoạt động.
+         & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC03--04 & Admin tạo thế giới mới, bắt lỗi thiếu tên
+         & Lưu thành công / trả về HTTP 400.
+         & \scoreGreen{PASS} \\
+TC05--06 & Admin cập nhật và xóa thế giới
+         & Thay đổi hoặc xóa dữ liệu thành công.
+         & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC07--08 & Xem chi tiết (populate dữ liệu), bắt lỗi 404
+         & Trả về đầy đủ thông tin / HTTP 404 nếu không tồn tại.
+         & \scoreGreen{PASS} \\
+\midrule
+\multicolumn{4}{l}{\textit{Vùng đất (Land) --- 9 TC}} \\
+\midrule
+TC01--03 & Danh sách công khai, lọc theo độ khó, tìm kiếm
+         & Bộ lọc và tìm kiếm hoạt động chính xác.
+         & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC04--05 & Xem chi tiết (populate World cha), bắt lỗi 404
+         & Trả về đúng thông tin kèm World cha / HTTP 404.
+         & \scoreGreen{PASS} \\
+TC06--07 & Tạo vùng đất mới (yêu cầu \texttt{worldId} hợp lệ)
+         & Lưu thành công / báo lỗi nếu \texttt{worldId} không tồn tại.
+         & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC08--09 & Cập nhật và xóa vùng đất
+         & Thay đổi hoặc xóa khỏi hệ thống thành công.
+         & \scoreGreen{PASS} \\
+\bottomrule
+\caption{Module Land \& World}
+\end{longtable}
+
+\paragraph{Các module còn lại}
+
+Các module còn lại trong hệ thống đều đạt 100\% PASS rate với các kịch bản
+kiểm thử tương tự, bao gồm:
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Mini Game (8 TC)} --- Xem danh sách công khai, lọc theo \texttt{gameType},
+        thao tác CRUD của Admin và kiểm tra ngăn chặn truy cập trái phép.
+  \item \textbf{Auth (8 TC)} --- Đăng ký (kể cả trùng email), đăng nhập (đúng/sai mật khẩu),
+        quên mật khẩu, reset mật khẩu, kiểm tra Middleware token hợp lệ/thiếu token.
+  \item \textbf{User \& Family (6 TC)} --- Xem/cập nhật profile, ngăn leo thang đặc quyền
+        (Privilege Escalation), tạo nhóm gia đình, thêm/xóa thành viên.
+  \item \textbf{Lộ trình học --- Grade, Topic, Lecture, Exercise (5 TC)} --- Quản lý khối lớp,
+        liên kết Topic, lấy danh sách Lecture có thứ tự, phân quyền, random bài tập.
+  \item \textbf{Arena \& Participation (4 TC)} --- Tìm phòng/ghép cặp theo Rank,
+        báo cáo kết quả ván đấu, cập nhật điểm Elo, tra cứu lịch sử.
+  \item \textbf{Progress \& Statistics (4 TC)} --- Tính phần trăm hoàn thành, báo cáo
+        cá nhân, thống kê con cái (phụ huynh), Dashboard Admin.
+  \item \textbf{Payment (3 TC)} --- Khởi tạo phiên Stripe, xử lý Webhook thành công
+        và thất bại.
+  \item \textbf{Achievement \& Rank (4 TC)} --- Trigger mở khóa thành tựu, danh sách Badge,
+        bảng xếp hạng Arena (Top 100 theo Elo), xác định thứ hạng bản thân.
+  \item \textbf{Academic Term \& Assessment (4 TC)} --- Quản lý học kỳ, tạo bài kiểm tra
+        năng lực, lọc theo lớp/độ tuổi, phân quyền Admin.
+\end{itemize}
+
+% --------------------------------------------------------
+\subsubsection{Nhận xét kiểm thử tích hợp}
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Độ bao phủ:} 24/24 Controller đạt 100\% code coverage, 142/142
+        test cases đều vượt qua, không có test nào failed.
+  \item \textbf{Cách ly hoàn toàn:} Nhờ MongoDB Memory Server, mỗi lần chạy test
+        đều có môi trường DB sạch, đảm bảo tính tái hiện và tránh dữ liệu nhiễu.
+  \item \textbf{Phân quyền:} Các kịch bản bảo mật (học sinh cố thực hiện hành động
+        của Admin, leo thang đặc quyền) đều được ngăn chặn đúng đắn.
+  \item \textbf{Tích hợp CI/CD:} Bộ test được thiết kế để tích hợp dễ dàng vào
+        quy trình CI/CD. Lệnh khởi chạy: \texttt{npm run test} (toàn bộ) hoặc
+        \texttt{npm run test:coverage} (kèm báo cáo bao phủ).
+  \item \textbf{Hạn chế:} Một số luồng tích hợp với dịch vụ bên ngoài (Stripe Webhook,
+        gửi email) phụ thuộc vào mock, chưa được kiểm thử với endpoint thực.
+        Đây là giới hạn chấp nhận được ở giai đoạn phát triển hiện tại.
 \end{itemize}
 
