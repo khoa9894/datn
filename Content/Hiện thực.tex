@@ -15,6 +15,12 @@
       \item \textbf{Giới thiệu:} Cocos Creator là một game engine đa nền tảng mã nguồn mở, chuyên dụng cho phát triển game 2D/3D và các ứng dụng tương tác \cite{cocoscreator38}.
       \item \textbf{Lý do sử dụng:} Cocos Creator được sử dụng để tạo các bài tập tương tác (interactive exercises) và minigames với đồ họa phong phú, animation mượt mà. Engine này hỗ trợ export ra WebGL để chạy trực tiếp trên trình duyệt web, tích hợp dễ dàng với Next.js. Cocos Creator cung cấp editor trực quan giúp thiết kế game nhanh chóng, hỗ trợ physics engine tích hợp sẵn, và có khả năng xử lý nhiều đối tượng game cùng lúc với hiệu năng cao \cite{cocoscreator38}. Điều này rất phù hợp cho việc tạo các trò chơi toán học tương tác, bài tập kéo thả, và các minigame giáo dục hấp dẫn.
     \end{itemize}
+
+  \item \textbf{Colyseus}
+    \begin{itemize}
+      \item \textbf{Giới thiệu:} Colyseus là một framework mã nguồn mở chuyên dụng cho việc xây dựng máy chủ game đa người chơi thời gian thực (real-time multiplayer), được phát triển trên nền tảng Node.js và sử dụng giao thức WebSocket để truyền tải dữ liệu hai chiều với độ trễ thấp.
+      \item \textbf{Lý do sử dụng:} Trong hệ thống Dino Math, Colyseus được tích hợp để hỗ trợ tính năng minigame tương tác giữa hai người chơi, cụ thể là minigame \textbf{Tomato Shooting} -- trò chơi đối kháng thời gian thực lấy ý tưởng từ Gunny, trong đó hai người chơi cạnh tranh trả lời các phép tính toán học bằng cách bắn trúng đáp án đúng trước đối thủ. Colyseus cung cấp cơ chế quản lý \textit{Room} (phòng chơi) cho phép nhóm nhiều người chơi vào cùng một phiên game, đồng bộ hóa trạng thái game (game state) giữa tất cả các client thông qua \textit{Schema} -- một cấu trúc dữ liệu được tối ưu để chỉ truyền phần dữ liệu thay đổi (delta), giảm thiểu băng thông. Client Colyseus được tích hợp trực tiếp vào Cocos Creator thông qua SDK chính thức, giúp việc đồng bộ trạng thái game giữa server và engine trở nên liền mạch. Bên cạnh đó, Colyseus hỗ trợ cơ chế \textit{matchmaking} đơn giản, cho phép tự động ghép cặp hai người chơi vào cùng một phòng, cũng như xử lý các tình huống ngắt kết nối và tái kết nối (reconnect) một cách graceful.
+    \end{itemize}
 \end{itemize}
 
 
@@ -75,6 +81,12 @@
 			
 			\item \textbf{Tính linh hoạt:} Việc kết hợp K3s và AWS giúp tận dụng hạ tầng đàn hồi của EC2 trong khi vẫn giữ quyền kiểm soát toàn diện cụm (cluster). Giải pháp này đáp ứng tốt các yêu cầu về chi phí, hiệu năng và khả năng mở rộng quy mô trong môi trường thực tế.
 		\end{itemize}
+	\end{itemize}
+
+	\item \textbf{Render}
+	\begin{itemize}
+		\item \textbf{Giới thiệu:} Render là nền tảng điện toán đám mây (PaaS) hỗ trợ triển khai ứng dụng web, API và các dịch vụ nền (background services) một cách đơn giản, tích hợp CI/CD tự động từ kho lưu trữ Git.
+		\item \textbf{Lý do sử dụng:} Render được sử dụng để triển khai máy chủ \textbf{Colyseus} -- thành phần xử lý logic game đa người chơi thời gian thực cho minigame Tomato Shooting. So với việc tự quản lý hạ tầng trên AWS, Render giúp đơn giản hóa đáng kể quy trình triển khai và vận hành server Colyseus: tự động build và deploy khi có commit mới lên nhánh chính, hỗ trợ WebSocket vốn là giao thức cốt lõi của Colyseus, và cung cấp logs theo thời gian thực để theo dõi trạng thái server trong quá trình phát triển. Ngoài ra, Render có gói miễn phí phù hợp với quy mô của đề tài, giúp tiết kiệm chi phí vận hành trong giai đoạn phát triển và demo.
 	\end{itemize}
 \end{itemize}
 

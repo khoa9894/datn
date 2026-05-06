@@ -49,11 +49,62 @@ Dự án \textbf{Dino Math} được thiết kế và phát triển dựa trên 
 	Sử dụng môi trường thực thi \textit{Node.js} kết hợp với framework \textit{Express} và ngôn ngữ \textit{TypeScript}. Hệ thống quản trị dữ liệu thông qua cơ sở dữ liệu NoSQL \textit{MongoDB} để lưu trữ thông tin người dùng và kết quả học tập; đồng thời tích hợp \textit{Redis} làm bộ nhớ đệm (caching) nhằm tối ưu hóa tốc độ truy xuất và nâng cao khả năng phản hồi của hệ thống.
 \end{itemize}
 
-Sự kết hợp giữa các công nghệ hiện đại này không chỉ giúp dự án vận hành ổn định mà còn tạo tiền đề thuận lợi cho việc triển khai linh hoạt trên hạ tầng đám mây AWS \cite{awsec2} và quản lý thông qua cụm k3s \cite{k3s}.
+\vspace{0.4cm}
+Cấu trúc tổng quan của toàn bộ dự án được minh họa như sau:
 
-\vspace{0.5cm}
+\vspace{0.3cm}
+\begin{forest}
+  dir tree
+  [dino-math-project/
+    [dino-fe/ \textit{(Frontend)}
+      [src/
+        [app/ \textit{(Routes)}]
+        [components/ \textit{(UI, GameComponent)}]
+        [apis/]
+        [stores/]
+        [types/]
+      ]
+      [public/
+        [assets/]
+        [web-desktop/ \textit{(Cocos build)}]
+      ]
+    ]
+    [dino\_math\_backend/ \textit{(Backend)}
+      [src/
+        [controllers/]
+        [routes/]
+        [model/]
+        [middleware/]
+        [utils/]
+      ]
+    ]
+    [dino-admin-dashboard/ \textit{(Admin)}
+      [src/app/
+        [api/ \textit{(API clients)}]
+        [dashboard/
+          [accounts/]
+          [study/]
+          [finance/]
+          [minigames/]
+          [tasks/]
+        ]
+        [components/
+          [exercises/ \textit{(Editors + Preview)}]
+          [ui/ \textit{(shadcn/ui)}]
+        ]
+      ]
+    ]
+  ]
+\end{forest}
+\vspace{0.1cm}
+\begin{center}
+  \small\textit{Hình: Cấu trúc tổng quan mã nguồn dự án Dino Math}
+\end{center}
+\vspace{0.3cm}
 
-\textbf{Cấu trúc thư mục tổng quan:}
+Sự kết hợp giữa các công nghệ hiện đại này không chỉ giúp dự án vận hành ổn định mà còn tạo tiền đề thuận lợi cho việc triển khai linh hoạt trên hạ tầng đám mây AWS \cite{awsec2} và quản lý thông qua cụm k3s \cite{k3s}. Toàn bộ mã nguồn được lưu trữ công khai tại: \href{https://github.com/coldwind444/dino-fe.git}{Frontend Repository} và \href{https://github.com/boyastro/dino_math_backend.git}{Backend Repository}.
+
+\iffalse
 
 \begin{forest}
   dir tree
@@ -721,3 +772,5 @@ Kiến trúc MVC:
 
 \subsubsection{Kết luận}
 Cấu trúc mã nguồn của dự án \textbf{Dino Math} được tổ chức một cách khoa học và nhất quán theo mô hình phân lớp. Việc tách biệt hoàn toàn giữa các thành phần không chỉ giúp nhóm phát triển dễ dàng quản lý mã nguồn mà còn tối ưu hóa quy trình kiểm thử và triển khai độc lập. Toàn bộ mã nguồn của dự án hiện được lưu trữ công khai nhằm phục vụ mục đích kiểm tra và phát triển, cụ thể tại các kho lưu trữ: \href{https://github.com/coldwind444/dino-fe.git}{Frontend Repository} và \href{https://github.com/boyastro/dino_math_backend.git}{Backend Repository}. Cách tiếp cận này đảm bảo hệ thống có khả năng mở rộng cao, sẵn sàng cho việc tích hợp thêm các tính năng giáo dục phức tạp mà không làm ảnh hưởng đến độ ổn định cốt lõi của ứng dụng.
+
+\fi
