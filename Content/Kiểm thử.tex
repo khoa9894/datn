@@ -1,0 +1,312 @@
+\section{Kiểm thử}
+
+Toàn bộ mã nguồn và kết quả kiểm thử được công khai tại:
+\url{https://github.com/khoa9894/Light-House}.
+
+\subsection{Kiểm thử hiệu năng giao diện}
+
+\subsubsection{Tổng quan}
+
+Nhóm đã tiến hành kiểm thử giao diện người dùng bằng công cụ Google Lighthouse
+trên tổng cộng \textbf{26 trang}, bao gồm \textbf{14 trang Admin Panel} và
+\textbf{12 trang Main Web}. Các chỉ số được đo gồm: \textbf{Performance (P)},
+\textbf{Accessibility (A)}, \textbf{Best Practices (BP)} và \textbf{SEO (S)}
+trên thang điểm 0--100.
+
+Nhìn chung, kết quả kiểm thử cho thấy phần lớn các trang đạt điểm tương đối
+tốt ở hầu hết các hạng mục. Tuy nhiên, vẫn còn một số điểm cần cải thiện,
+đặc biệt ở hạng mục Accessibility và một số chỉ số Performance trên các
+trang có tương tác phức tạp.
+
+% --------------------------------------------------------
+\subsubsection{Kết quả Admin Panel}
+
+\begin{longtable}{lp{5cm}cccc}
+\toprule
+\textbf{Trang} & \textbf{URL} & \textbf{P} & \textbf{A} & \textbf{BP} & \textbf{S} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Trang} & \textbf{URL} & \textbf{P} & \textbf{A} & \textbf{BP} & \textbf{S} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+
+Accounts
+  & /dashboard/accounts
+  & \scoreGreen{99}  & \scoreOrange{83} & \scoreGreen{100} & \scoreGreen{100} \\
+\rowcolor{lhrowgray}
+Arenas
+  & /dashboard/study/arenas
+  & \scoreGreen{100} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
+Exercises
+  & /dashboard/study/lessons/.../exercises
+  & \scoreGreen{100} & \scoreOrange{83} & \scoreGreen{100} & \scoreGreen{100} \\
+\rowcolor{lhrowgray}
+Games
+  & /dashboard/minigames
+  & \scoreOrange{93} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
+Grades
+  & /dashboard/study/grades
+  & \scoreGreen{100} & \scoreOrange{89} & \scoreGreen{100} & \scoreGreen{100} \\
+\rowcolor{lhrowgray}
+Lessons
+  & /dashboard/study/lessons
+  & \scoreGreen{100} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
+Login
+  & /auth/login
+  & \scoreGreen{100} & \scoreGreen{98}  & \scoreGreen{100} & \scoreOrange{92} \\
+\rowcolor{lhrowgray}
+Register
+  & /auth/register
+  & \scoreGreen{100} & \scoreGreen{98}  & \scoreGreen{100} & \scoreOrange{92} \\
+Root
+  & /
+  & \scoreGreen{100} & \scoreOrange{93} & \scoreGreen{100} & \scoreOrange{92} \\
+\rowcolor{lhrowgray}
+Semester
+  & /dashboard/study/semesters
+  & \scoreGreen{100} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
+Tasks
+  & /dashboard/tasks
+  & \scoreGreen{100} & \scoreOrange{85} & \scoreGreen{100} & \scoreGreen{100} \\
+\rowcolor{lhrowgray}
+Tests
+  & /dashboard/study/tests
+  & \scoreGreen{100} & \scoreOrange{83} & \scoreGreen{100} & \scoreGreen{100} \\
+Theory
+  & /dashboard/study/.../theory
+  & \scoreGreen{100} & \scoreOrange{81} & \scoreGreen{100} & \scoreGreen{100} \\
+\rowcolor{lhrowgray}
+Topics
+  & /dashboard/study/topics
+  & \scoreOrange{97} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
+
+\bottomrule
+\caption{Điểm Lighthouse --- Admin Panel}
+\label{tab:lighthouse-admin}
+\end{longtable}
+
+\textbf{Nhận xét:}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Performance:} 12/14 trang Admin đạt điểm Performance từ 99--100.
+        Hai trang còn lại (Games và Topics) đạt 93 và 97, vẫn nằm trong ngưỡng chấp
+        nhận được. Điều này cho thấy việc tối ưu bundle size và lazy loading đã được
+        thực hiện ở mức cơ bản.
+  \item \textbf{Best Practices:} Toàn bộ 14/14 trang đạt \textbf{100/100}, cho thấy
+        code nhìn chung tuân thủ các quy chuẩn kỹ thuật hiện đại.
+  \item \textbf{SEO:} 11/14 trang đạt 100. Ba trang Login, Register và Root đạt 92 ---
+        đây là mức chấp nhận được vì Admin Panel không đặt ưu tiên SEO cao.
+  \item \textbf{Accessibility:} Đây là hạng mục có điểm thấp nhất, dao động từ 81 đến
+        98. Một số trang chưa đáp ứng đầy đủ các tiêu chuẩn hỗ trợ người dùng khuyết
+        tật, và đây là điểm cần cải thiện trong các phiên bản tiếp theo.
+\end{itemize}
+
+% --------------------------------------------------------
+\subsubsection{Kết quả Main Web}
+
+\begin{longtable}{lp{5cm}cccc}
+\toprule
+\textbf{Trang} & \textbf{URL} & \textbf{P} & \textbf{A} & \textbf{BP} & \textbf{S} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Trang} & \textbf{URL} & \textbf{P} & \textbf{A} & \textbf{BP} & \textbf{S} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+
+Arena
+  & /student/arena
+  & \scoreOrange{96} & \scoreGreen{94}  & \scoreOrange{96} & \scoreGreen{100} \\
+\rowcolor{lhrowgray}
+Auth
+  & /auth
+  & \scoreGreen{99}  & \scoreGreen{94}  & \scoreGreen{100} & \scoreOrange{92} \\
+Games
+  & /student/games
+  & \scoreOrange{94} & \scoreGreen{94}  & \scoreGreen{100} & \scoreGreen{100} \\
+\rowcolor{lhrowgray}
+History
+  & /student/history
+  & \scoreOrange{97} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
+Home
+  & /student/home
+  & \scoreOrange{98} & \scoreGreen{96}  & \scoreGreen{100} & \scoreGreen{100} \\
+\rowcolor{lhrowgray}
+Landing
+  & /
+  & \scoreGreen{100} & \scoreGreen{94}  & \scoreGreen{100} & \scoreOrange{92} \\
+Leaderboard
+  & /student/leaderboard
+  & \scoreOrange{97} & \scoreOrange{93} & \scoreGreen{100} & \scoreGreen{100} \\
+\rowcolor{lhrowgray}
+Milestones
+  & /student/adventure/...
+  & \scoreOrange{93} & \scoreOrange{89} & \scoreGreen{100} & \scoreGreen{100} \\
+Mission
+  & /student/missions
+  & \scoreGreen{99}  & \scoreGreen{96}  & \scoreGreen{100} & \scoreGreen{100} \\
+\rowcolor{lhrowgray}
+ParentDashboard
+  & /parent/dashboard
+  & \scoreOrange{97} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
+ResetPassword
+  & /auth/reset-password
+  & \scoreGreen{100} & \scoreOrange{90} & \scoreGreen{100} & \scoreOrange{92} \\
+\rowcolor{lhrowgray}
+Topics
+  & /student/lessons
+  & \scoreOrange{93} & \scoreOrange{89} & \scoreGreen{100} & \scoreGreen{100} \\
+
+\bottomrule
+\caption{Điểm Lighthouse --- Main Web}
+\label{tab:lighthouse-mainweb}
+\end{longtable}
+
+\textbf{Nhận xét:}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Accessibility:} Điểm Accessibility của Main Web (trung bình khoảng 92)
+        nhìn chung cao hơn Admin Panel (trung bình khoảng 87). Điều này có thể do giao
+        diện người dùng cuối được chú ý hơn trong quá trình phát triển, dù vẫn còn
+        dư địa để cải thiện.
+  \item \textbf{Best Practices:} 11/12 trang đạt 100. Trang Arena đạt 96 do một số
+        tính năng tương tác thời gian thực ảnh hưởng nhỏ đến chỉ số này.
+  \item \textbf{Performance:} Không có trang nào dưới 93 --- hầu hết các trang đã
+        được tối ưu ở mức cơ bản và không gặp vấn đề nghiêm trọng về tốc độ tải.
+  \item \textbf{SEO:} Ba trang Auth, Landing và ResetPassword đạt 92 do cấu hình
+        \texttt{robots.txt} chưa hoàn chỉnh; đây là điểm cần xử lý trong thời gian tới.
+\end{itemize}
+
+% --------------------------------------------------------
+\subsubsection{Các vấn đề phát hiện và hướng khắc phục}
+
+Qua quá trình kiểm thử, nhóm ghi nhận một số vấn đề còn tồn tại:
+
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{Thiếu thẻ \texttt{<main>} (document landmark)} --- Nhiều trang chưa
+        có thẻ \texttt{<main>} bao quanh nội dung chính, ảnh hưởng đến khả năng
+        điều hướng của screen reader. Đây là cải tiến đơn giản, có thể thực hiện
+        trong thời gian ngắn.
+  \item \textbf{Tương phản màu sắc chưa đủ} --- Một số cặp màu chữ/nền chưa đạt tỉ
+        lệ tương phản 4.5:1 theo tiêu chuẩn WCAG AA, làm giảm điểm Accessibility
+        trên nhiều trang.
+  \item \textbf{Render-blocking requests} --- Một số tài nguyên CSS/JS chặn quá trình
+        render ban đầu; có thể cải thiện bằng cách inline critical CSS hoặc dùng
+        thuộc tính \texttt{rel="preload"}.
+  \item \textbf{JavaScript chưa được tree-shaking triệt để} --- Bundle size còn có thể
+        giảm thêm thông qua tối ưu code splitting và loại bỏ code không sử dụng.
+  \item \textbf{File \texttt{robots.txt} chưa hợp lệ} --- Cần cấu hình lại để tránh
+        ảnh hưởng đến điểm SEO của các trang công khai.
+\end{enumerate}
+
+% --------------------------------------------------------
+\subsubsection{Đánh giá chung}
+
+Nhìn chung, kết quả kiểm thử Lighthouse cho thấy hệ thống đạt mức hiệu năng
+chấp nhận được so với quy mô của một đồ án sinh viên. Hạng mục Best Practices
+đạt tốt trên hầu hết các trang, trong khi Performance và SEO ở mức khá. Tuy
+nhiên, điểm Accessibility vẫn còn thấp ở một số trang và cần được ưu tiên cải
+thiện trong các phiên bản tiếp theo, đặc biệt với đối tượng người dùng là học
+sinh tiểu học --- nhóm cần giao diện thân thiện và dễ tiếp cận.
+
+Các vấn đề phát hiện được nhìn chung đều có hướng khắc phục rõ ràng và không
+đòi hỏi thay đổi kiến trúc lớn, do đó có thể được xử lý dần trong quá trình
+bảo trì và phát triển tiếp theo của dự án.
+
+% ======================================================
+\subsection{Kiểm thử tự động (Playwright)}
+
+\subsubsection{Tổng quan}
+
+Nhóm đã thực hiện kiểm thử tự động bằng \textbf{Playwright} thông qua file
+\texttt{arena.spec.ts}, chạy song song trên \textbf{5 browser/project}:
+\textit{auth, chromium, edge, firefox, webkit}.
+
+\begin{center}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Browser} & \textbf{Tổng} & \textbf{Pass} & \textbf{Fail} & \textbf{Skip} & \textbf{Flaky} & \textbf{Tỉ lệ} \\
+\midrule
+auth     & 38  & \scoreGreen{38}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+\rowcolor{lhrowgray}
+chromium & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+edge     & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+\rowcolor{lhrowgray}
+firefox  & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+webkit   & 11  & \scoreGreen{11}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+\midrule
+\textbf{Tổng} & \textbf{202} & \textbf{\textcolor{lhgreen}{202}} & \textbf{0} & \textbf{0} & \textbf{0} & \scoreGreen{\textbf{100\%}} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5em}
+\noindent Kết quả tổng hợp: \textbf{202/202 test cases passed}, không có test nào
+failed hoặc flaky trên toàn bộ các browser được kiểm thử.
+
+% --------------------------------------------------------
+\subsubsection{Chi tiết các nhóm test cases}
+
+Tổng cộng \textbf{89 test cases độc lập} được phân thành 14 nhóm chức năng:
+
+\begin{longtable}{clccc}
+\toprule
+\textbf{Nhóm} & \textbf{Chức năng} & \textbf{Cases} & \textbf{Thời gian TB} & \textbf{Kết quả} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Nhóm} & \textbf{Chức năng} & \textbf{Cases} & \textbf{Thời gian TB} & \textbf{Kết quả} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+
+TC-01 & Login                      & 10 & 5.6s  & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC-02 & Register                   & 17 & 3.1s  & \scoreGreen{PASS} \\
+TC-03 & Home (Student)             & 5  & 11.5s & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC-04 & Topics / Lessons           & 5  & 13.7s & \scoreGreen{PASS} \\
+TC-05 & Milestones                 & 4  & 12.8s & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC-06 & Arena / Assessment         & 6  & 8.9s  & \scoreGreen{PASS} \\
+TC-07 & Claim Rewards              & 1  & 20.0s & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC-08 & History (Student + Parent) & 13 & 7.0s  & \scoreGreen{PASS} \\
+TC-09 & Leaderboard                & 3  & 5.6s  & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC-10 & Games                      & 3  & 7.2s  & \scoreGreen{PASS} \\
+TC-11 & Reset Password             & 6  & 13.4s & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC-12 & Register Profile           & 5  & 8.3s  & \scoreGreen{PASS} \\
+TC-13 & Forgot Password            & 5  & 14.6s & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC-14 & Edit Profile               & 6  & 9.6s  & \scoreGreen{PASS} \\
+
+\bottomrule
+\caption{Chi tiết test cases theo nhóm chức năng}
+\label{tab:playwright}
+\end{longtable}
+
+% --------------------------------------------------------
+\subsubsection{Nhận xét kiểm thử tự động}
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Tỉ lệ pass:} 202/202 test cases passed trên cả 5 browser, trong đó
+        webkit (Safari engine) thường có độ tương thích thấp hơn các browser khác nhưng
+        vẫn cho kết quả tốt trong lần kiểm thử này.
+  \item \textbf{Không có flaky test:} Toàn bộ test cases cho kết quả ổn định qua
+        nhiều lần chạy, không có trường hợp kết quả không nhất quán do timing.
+  \item \textbf{Phạm vi bao phủ:} 14 nhóm test cases bao gồm các luồng chính của
+        hệ thống: xác thực, nội dung học tập, đấu trường, lịch sử, bảng xếp hạng,
+        trò chơi và quản lý tài khoản.
+  \item \textbf{Kiểm thử biên:} Các nhóm TC-01 và TC-02 bao gồm cả trường hợp
+        input không hợp lệ (rỗng, sai định dạng, trùng lặp) bên cạnh luồng chính.
+  \item \textbf{Hạn chế:} Phạm vi kiểm thử hiện tập trung vào giao diện người dùng
+        cuối; các luồng của Admin Panel chưa được bao phủ bởi kiểm thử tự động và
+        có thể được bổ sung trong các giai đoạn tiếp theo.
+\end{itemize}
+

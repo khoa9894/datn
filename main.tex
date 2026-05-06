@@ -52,7 +52,16 @@
 \usepackage{epsfig}
 \usepackage{tikz}
 \usetikzlibrary{arrows,snakes,backgrounds,calc}
+\usepackage{color}
+\usepackage{colortbl}
 \usepackage{array, tabularx}
+% colortbl v1.0k bug fixes:
+% (1) \insert@pcolumn used in p-column template but never defined
+% (2) \tbl_gdecr_row_count: used in \LT@@hline but no fallback stub
+\makeatletter
+\let\insert@pcolumn\insert@column
+\expandafter\def\csname tbl_gdecr_row_count:\endcsname{}
+\makeatother
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{diagbox}
@@ -70,8 +79,18 @@
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage{alltt}
-\usepackage{color}
 \usepackage[framemethod=tikz]{mdframed}
+
+% ====================================================================
+% MÀU SẮC VÀ LỆNH CHO BẢNG KIỂM THỬ LIGHTHOUSE
+% ====================================================================
+\definecolor{lhgreen}{RGB}{0,168,76}
+\definecolor{lhorange}{RGB}{255,165,0}
+\definecolor{lhrowgray}{RGB}{245,245,245}
+\definecolor{lhscoregreen}{RGB}{230,255,230}
+\definecolor{lhscoreorange}{RGB}{255,245,220}
+\newcommand{\scoreGreen}[1]{\cellcolor{lhscoregreen}\textbf{\textcolor{lhgreen}{#1}}}
+\newcommand{\scoreOrange}[1]{\cellcolor{lhscoreorange}\textbf{\textcolor{lhorange}{#1}}}
 
 % ====================================================================
 % GÓI CODE VÀ THUẬT TOÁN
@@ -188,7 +207,7 @@
     \end{tabular}
 }
 \fancyfoot{}
-\fancyfoot[L]{\scriptsize Báo cáo Đồ án chuyên ngành- HK1 2025 - 2026}
+\fancyfoot[L]{\scriptsize Báo cáo Đồ án tốt nghiệp- HK2 2025 - 2026}
 \fancyfoot[R]{\scriptsize Trang {\thepage}/\pageref{LastPage}}
 
 \renewcommand{\headrulewidth}{0.3pt}
@@ -247,7 +266,7 @@
 	% ===== Tiêu đề =====
 	\begin{center}
 		{\fontsize{14}{16}\selectfont \textbf{BÁO CÁO}}\\[0.2cm]
-		{\fontsize{14}{16}\selectfont \textbf{ĐỒ ÁN CHUYÊN NGÀNH}}\\[0.8cm]
+		{\fontsize{14}{16}\selectfont \textbf{ĐỒ ÁN TỐT NGHIỆP}}\\[0.8cm]
 		
 		{\fontsize{16}{18}\selectfont \textbf{XÂY DỰNG WEBSITE HỌC TOÁN TƯ DUY}}\\[0.2cm]
 		{\fontsize{16}{18}\selectfont \textbf{CHO HỌC SINH TIỂU HỌC}}\\[0.2cm]
@@ -261,9 +280,9 @@
 	% ===== Thông tin =====
 	\begin{center}
 		\begin{tabular}{l l}
-			\textbf{HỘI ĐỒNG:} & HỘI ĐỒNG 25L ĐỒ ÁN CHUYÊN NGÀNH  \\[0.1cm]
+			\textbf{HỘI ĐỒNG:} & HỘI ĐỒNG 25L ĐỒ ÁN TỐT NGHIỆP  \\[0.1cm]
 			\textbf{GIẢNG VIÊN HƯỚNG DẪN:} & ThS. Trần Thị Quế Nguyệt \\[0.1cm]
-			\textbf{THƯ KÝ HỘI ĐỒNG:} & CN. Lê Bình Đẳng \\[0.6cm]
+%			\textbf{THƯ KÝ HỘI ĐỒNG:} & CN. Lê Bình Đẳng \\[0.6cm]
 			
 			\textbf{SINH VIÊN THỰC HIỆN:} & Nguyễn Văn Thành -- 2320012 \\[0.2cm]
 			& Nguyễn Minh Tân -- 2213057 \\[0.2cm]
@@ -275,7 +294,7 @@
 	
 	% ===== Địa điểm - thời gian =====
 	\begin{center}
-		{\fontsize{13}{15}\selectfont \textbf{TP. HỒ CHÍ MINH, THÁNG 12/2025}}
+		{\fontsize{13}{15}\selectfont \textbf{TP. HỒ CHÍ MINH, THÁNG 5/2026}}
 	\end{center}
 	
 \end{titlepage}
@@ -311,6 +330,9 @@
 \input{Content/Hiện thực}
 
 % Chuong 7
+\input{Content/Kiểm thử}
+
+% Chuong 8
 \input{Content/Tổng kết}
 
 \newpage

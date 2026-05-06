@@ -531,9 +531,18 @@ Usecase kết thúc. \\
 \newpage
 \subsubsection{Quản lý chương trình học (Manage Curriculum)}
 \begin{longtable}{|l|p{0.75\textwidth}|}
+\caption{Usecase - Manage Curriculum}
+\label{table:uc_managecurriculum} \\
 \hline
 \textbf{Usecase name} & Manage Curriculum \\
 \hline
+\endfirsthead
+\hline
+\textbf{Usecase name} & Manage Curriculum (tiếp) \\
+\hline
+\endhead
+\hline
+\endfoot
 \textbf{Actor} & Admin \\
 \hline
 \textbf{Description} & Cho phép Admin quản lý toàn bộ chương trình học theo cấu trúc: Học kỳ (AcademicTerm) → Khối lớp (Grade) → Chủ đề (Topic) → Bài học (Lecture) → Bài tập (Exercise). Admin có thể tạo, chỉnh sửa, xóa nội dung; bài học chỉ được chỉnh sửa khi chưa được publish; và khi thêm bài tập có thể preview để làm thử trực tiếp. \\
@@ -581,9 +590,27 @@ Tại bước 8: Hệ thống phát hiện dữ liệu không hợp lệ (tên t
 Hệ thống hiển thị thông báo lỗi cụ thể. \newline
 Admin chỉnh sửa và thực hiện lại từ bước 8. \\
 \hline
-\caption{Usecase - Manage Curriculum}
-\label{table:uc_managecurriculum} \\
 \end{longtable}
+
+\newpage
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{max height=0.9\textheight}
+\includegraphics[width=\textwidth]{Image/SequenceAdmin.jpg}
+\end{adjustbox}
+\hspace{2.0cm}
+\caption{Sequence diagram Manage Curriculum}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+\centering
+\begin{adjustbox}{max width=\textwidth, max height=0.9\textheight}
+\includegraphics{Image/AcitvityAdmin.jpg}
+\end{adjustbox}
+\vspace{0.6cm}
+\caption{Activity diagram Manage Curriculum}
+\end{figure}
 
 \newpage
 \subsection{Mô tả kiến trúc hệ thống}
