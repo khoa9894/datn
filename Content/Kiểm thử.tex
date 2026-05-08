@@ -641,6 +641,37 @@ TC08--09 & Cập nhật và xóa vùng đất
 \caption{Module Land \& World}
 \end{longtable}
 
+\paragraph{Module: Payment (Thanh toán \& Premium) --- 3 TC}
+
+Phân hệ này tích hợp cổng thanh toán \textbf{VNPAY} để xử lý đăng ký gói Premium.
+Các kịch bản kiểm thử bao phủ toàn bộ luồng từ khởi tạo đến xác nhận giao dịch.
+
+\begin{longtable}{cp{5.0cm}p{5.7cm}c}
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ID} & \textbf{Kịch bản} & \textbf{Kết quả mong đợi} & \textbf{Status} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+TC01 & Khởi tạo yêu cầu thanh toán VNPAY
+     & Gọi API \texttt{initiatePurchase}, trả về thông tin giao dịch và mã định danh.
+     & \scoreGreen{PASS} \\
+\rowcolor{lhrowgray}
+TC02 & Xác nhận giao dịch (Thành công)
+     & Gọi API \texttt{completeTransaction} (mô phỏng callback VNPAY), tự động cập nhật
+       User lên gói Premium.
+     & \scoreGreen{PASS} \\
+TC03 & Xác nhận giao dịch (Thất bại)
+     & Xử lý khi giao dịch không tồn tại hoặc đã hoàn tất, đảm bảo tính toàn vẹn dữ liệu.
+     & \scoreGreen{PASS} \\
+\bottomrule
+\caption{Module Payment}
+\end{longtable}
+
 \paragraph{Các module còn lại}
 
 Các module còn lại trong hệ thống đều đạt 100\% PASS rate với các kịch bản
@@ -659,8 +690,8 @@ kiểm thử tương tự, bao gồm:
         báo cáo kết quả ván đấu, cập nhật điểm Elo, tra cứu lịch sử.
   \item \textbf{Progress \& Statistics (4 TC)} --- Tính phần trăm hoàn thành, báo cáo
         cá nhân, thống kê con cái (phụ huynh), Dashboard Admin.
-  \item \textbf{Payment (3 TC)} --- Khởi tạo phiên Stripe, xử lý Webhook thành công
-        và thất bại.
+  \item \textbf{Payment (3 TC)} --- Khởi tạo yêu cầu VNPAY (\texttt{initiatePurchase}),
+        xác nhận giao dịch thành công và thất bại (\texttt{completeTransaction}).
   \item \textbf{Achievement \& Rank (4 TC)} --- Trigger mở khóa thành tựu, danh sách Badge,
         bảng xếp hạng Arena (Top 100 theo Elo), xác định thứ hạng bản thân.
   \item \textbf{Academic Term \& Assessment (4 TC)} --- Quản lý học kỳ, tạo bài kiểm tra
