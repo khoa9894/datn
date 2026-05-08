@@ -44,7 +44,7 @@ Exercises
 \rowcolor{lhrowgray}
 Games
   & /dashboard/minigames
-  & \scoreOrange{93} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
+  & \scoreGreen{93} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
 Grades
   & /dashboard/study/grades
   & \scoreGreen{100} & \scoreOrange{89} & \scoreGreen{100} & \scoreGreen{100} \\
@@ -54,14 +54,14 @@ Lessons
   & \scoreGreen{100} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
 Login
   & /auth/login
-  & \scoreGreen{100} & \scoreGreen{98}  & \scoreGreen{100} & \scoreOrange{92} \\
+  & \scoreGreen{100} & \scoreGreen{98}  & \scoreGreen{100} & \scoreGreen{92} \\
 \rowcolor{lhrowgray}
 Register
   & /auth/register
-  & \scoreGreen{100} & \scoreGreen{98}  & \scoreGreen{100} & \scoreOrange{92} \\
+  & \scoreGreen{100} & \scoreGreen{98}  & \scoreGreen{100} & \scoreGreen{92} \\
 Root
   & /
-  & \scoreGreen{100} & \scoreOrange{93} & \scoreGreen{100} & \scoreOrange{92} \\
+  & \scoreGreen{100} & \scoreGreen{93} & \scoreGreen{100} & \scoreGreen{92} \\
 \rowcolor{lhrowgray}
 Semester
   & /dashboard/study/semesters
@@ -79,7 +79,7 @@ Theory
 \rowcolor{lhrowgray}
 Topics
   & /dashboard/study/topics
-  & \scoreOrange{97} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
+  & \scoreGreen{97} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
 
 \bottomrule
 \caption{Điểm Lighthouse --- Admin Panel}
@@ -118,46 +118,46 @@ Topics
 
 Arena
   & /student/arena
-  & \scoreOrange{96} & \scoreGreen{94}  & \scoreOrange{96} & \scoreGreen{100} \\
+  & \scoreGreen{96} & \scoreGreen{94}  & \scoreGreen{96} & \scoreGreen{100} \\
 \rowcolor{lhrowgray}
 Auth
   & /auth
-  & \scoreGreen{99}  & \scoreGreen{94}  & \scoreGreen{100} & \scoreOrange{92} \\
+  & \scoreGreen{99}  & \scoreGreen{94}  & \scoreGreen{100} & \scoreGreen{92} \\
 Games
   & /student/games
-  & \scoreOrange{94} & \scoreGreen{94}  & \scoreGreen{100} & \scoreGreen{100} \\
+  & \scoreGreen{94} & \scoreGreen{94}  & \scoreGreen{100} & \scoreGreen{100} \\
 \rowcolor{lhrowgray}
 History
   & /student/history
-  & \scoreOrange{97} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
+  & \scoreGreen{97} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
 Home
   & /student/home
-  & \scoreOrange{98} & \scoreGreen{96}  & \scoreGreen{100} & \scoreGreen{100} \\
+  & \scoreGreen{98} & \scoreGreen{96}  & \scoreGreen{100} & \scoreGreen{100} \\
 \rowcolor{lhrowgray}
 Landing
   & /
-  & \scoreGreen{100} & \scoreGreen{94}  & \scoreGreen{100} & \scoreOrange{92} \\
+  & \scoreGreen{100} & \scoreGreen{94}  & \scoreGreen{100} & \scoreGreen{92} \\
 Leaderboard
   & /student/leaderboard
-  & \scoreOrange{97} & \scoreOrange{93} & \scoreGreen{100} & \scoreGreen{100} \\
+  & \scoreGreen{97} & \scoreGreen{93} & \scoreGreen{100} & \scoreGreen{100} \\
 \rowcolor{lhrowgray}
 Milestones
   & /student/adventure/...
-  & \scoreOrange{93} & \scoreOrange{89} & \scoreGreen{100} & \scoreGreen{100} \\
+  & \scoreGreen{93} & \scoreOrange{89} & \scoreGreen{100} & \scoreGreen{100} \\
 Mission
   & /student/missions
   & \scoreGreen{99}  & \scoreGreen{96}  & \scoreGreen{100} & \scoreGreen{100} \\
 \rowcolor{lhrowgray}
 ParentDashboard
   & /parent/dashboard
-  & \scoreOrange{97} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
+  & \scoreGreen{97} & \scoreOrange{84} & \scoreGreen{100} & \scoreGreen{100} \\
 ResetPassword
   & /auth/reset-password
-  & \scoreGreen{100} & \scoreOrange{90} & \scoreGreen{100} & \scoreOrange{92} \\
+  & \scoreGreen{100} & \scoreGreen{90} & \scoreGreen{100} & \scoreGreen{92} \\
 \rowcolor{lhrowgray}
 Topics
   & /student/lessons
-  & \scoreOrange{93} & \scoreOrange{89} & \scoreGreen{100} & \scoreGreen{100} \\
+  & \scoreGreen{93} & \scoreOrange{89} & \scoreGreen{100} & \scoreGreen{100} \\
 
 \bottomrule
 \caption{Điểm Lighthouse --- Main Web}
@@ -220,29 +220,27 @@ bảo trì và phát triển tiếp theo của dự án.
 \subsubsection{Tổng quan}
 
 Nhóm đã thực hiện kiểm thử tự động bằng \textbf{Playwright} thông qua file
-\texttt{arena.spec.ts}, chạy trên \textbf{4 project}: \textit{auth, chromium, edge, firefox}.
-Trong đó \textbf{auth} là project riêng dành cho các test xác thực (chạy trên Chromium),
-các project còn lại tương ứng với từng trình duyệt.
+\texttt{arena.spec.ts}, chạy trên \textbf{3 project}: \textit{chromium, edge, firefox}.
+tương ứng với từng trình duyệt.
 
 \begin{center}
 \begin{tabular}{lcccccc}
 \toprule
 \textbf{Project} & \textbf{Tổng} & \textbf{Pass} & \textbf{Fail} & \textbf{Skip} & \textbf{Flaky} & \textbf{Tỉ lệ} \\
 \midrule
-auth (Chromium) & 38  & \scoreGreen{38}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
 \rowcolor{lhrowgray}
-chromium        & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
-edge            & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+chromium        & 89  & \scoreGreen{89}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+edge            & 89  & \scoreGreen{89}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
 \rowcolor{lhrowgray}
-firefox         & 51  & \scoreGreen{51}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
+firefox         & 89  & \scoreGreen{89}  & 0 & 0 & 0 & \scoreGreen{100\%} \\
 \midrule
-\textbf{Tổng} & \textbf{191} & \textbf{\textcolor{lhgreen}{191}} & \textbf{0} & \textbf{0} & \textbf{0} & \scoreGreen{\textbf{100\%}} \\
+\textbf{Tổng} & \textbf{267} & \textbf{\textcolor{lhgreen}{267}} & \textbf{0} & \textbf{0} & \textbf{0} & \scoreGreen{\textbf{100\%}} \\
 \bottomrule
 \end{tabular}
 \end{center}
 
 \vspace{0.5em}
-\noindent Kết quả tổng hợp: \textbf{191/191 test cases passed}, không có test nào
+\noindent Kết quả tổng hợp: \textbf{267/267 test cases passed}, không có test nào
 failed hoặc flaky trên toàn bộ các project được kiểm thử.
 
 % --------------------------------------------------------
@@ -293,7 +291,7 @@ TC-14 & Edit Profile               & 6  & 9.6s  & \scoreGreen{PASS} \\
 \subsubsection{Nhận xét kiểm thử tự động}
 
 \begin{itemize}[leftmargin=*]
-  \item \textbf{Tỉ lệ pass:} 191/191 test cases passed trên 4 project (auth, chromium, edge, firefox),
+  \item \textbf{Tỉ lệ pass:} 267/267 test cases passed trên 3 project (chromium, edge, firefox),
         đạt tỉ lệ 100\%.
   \item \textbf{Không có flaky test:} Toàn bộ test cases cho kết quả ổn định qua
         nhiều lần chạy, không có trường hợp kết quả không nhất quán do timing.
