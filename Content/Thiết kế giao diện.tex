@@ -43,33 +43,31 @@ Cuối trang là \textbf{Chân trang (Footer)}, cung cấp thông tin giới thi
 		\item Giao diện đăng nhập ở giữa màn hình sẽ được hiển thị khi người dùng chọn tab \textit{Đăng nhập} ở thanh điều hướng bên trái.
 		\item Có 2 phương thức để đăng nhập: Đăng nhập bằng tài khoản hệ thống hoặc Đăng nhập bằng tài khoản Google.
 		\begin{itemize}
-			\item Đối với chức năng Đăng nhập bằng tài khoản hệ thống, người dùng phải nhập thông tin đăng nhập vào các field \textit{Email} và \textit{Mật khẩu} như \textit{Hình \ref{fig:login1}} và \textit{Hình \ref{fig:login2}}. Nếu người dùng quên mật khẩu, có thể bấm vào link \textit{Quên mật khẩu} để truy cập vào trang \textbf{Lấy lại mật khẩu} được mô tả ở mục \ref{subsec:resetpassword}.
+			\item Đối với chức năng Đăng nhập bằng tài khoản hệ thống, người dùng phải nhập thông tin đăng nhập vào các field \textit{Email} và \textit{Mật khẩu} như \textit{Hình \ref{fig:login}}. Nếu người dùng quên mật khẩu, có thể bấm vào link \textit{Quên mật khẩu} để truy cập vào trang \textbf{Lấy lại mật khẩu} được mô tả ở mục \ref{subsec:resetpassword}.
 			Nút \textit{Đăng nhập} chỉ được enable khi giá trị của các field khác rỗng. Sau khi bấm đăng nhập, hệ thống sẽ tiến hành gửi request về backend để
 			xác thực người dùng. Nếu thành công, người dùng sẽ được điều hướng về giao diện mặc định tùy theo loại tài khoản (đối với tài khoản học sinh, giao diện mặc định là \textbf{Trang chủ} được mô tả ở mục \ref{subsubsec:studenthome}, còn đối với phụ huynh là \textbf{Trang thống kê tổng quan} được mô tả ở mục \ref{subsubsec:parenthome}). Nếu thất bại, lỗi cụ thể sẽ được hiển thị dưới dạng toast message để thông báo cho người dùng như \textit{Hình \ref{fig:wrongpassword}}. Ngoài ra, đối với tài khoản học sinh, sau khi đăng nhập lần đầu tiên, người dùng sẽ được điều hướng đến giao diện \textbf{Onboarding} được mô tả ở mục \ref{subsec:onboarding} để cập nhật hồ sơ cá nhân.
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.9\textwidth]{Image/UI/Auth/LoginPage-HidePassword.jpg}
+				\includegraphics[width=0.9\textwidth]{Image/UI/Auth/Login.jpg}
 				\vspace{0.6cm}
-				\caption{Giao diện đăng nhập - Ẩn mật khẩu}
-				\label{fig:login1}
+				\caption{Giao diện đăng nhập}
+				\label{fig:login}
 			\end{figure}
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.9\textwidth]{Image/UI/Auth/LoginPage-ShowPassword.jpg}
+				\includegraphics[width=0.9\textwidth]{Image/UI/Auth/LoginError.jpg}
 				\vspace{0.6cm}
-				\caption{Giao diện đăng nhập - Hiện mật khẩu}
-				\label{fig:login2}
-			\end{figure}
-			\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.9\textwidth]{Image/UI/Auth/LoginErrorMessage.jpg}
-				\vspace{0.6cm}
-				\caption{Giao diện đăng nhập - Lỗi sai mật khẩu}
+				\caption{Lỗi sai thông tin đăng nhập}
 				\label{fig:wrongpassword}
 			\end{figure}
-			\item Đối với chức năng đăng nhập bằng Google, người dùng sẽ bấm vào nút \textit{Đăng nhập bằng Google} và được điều hướng đến trang xác thực
-			của Google. Sau đó, người dùng thực hiện các thao tác đăng nhập bằng tài khoản Google. Nếu thành công, trang xác thực sẽ điều hướng người dùng
-			về trang chủ của mình.
+			\item Đối với chức năng đăng nhập bằng Google (chỉ dành cho Phụ huynh), người dùng sẽ bấm vào nút \textit{Đăng nhập bằng Google}. Sau đó, người dùng thực hiện các thao tác đăng nhập bằng tài khoản Google trên cửa sổ mới. Nếu thành công, người dùng được điều hướng tới trang chủ của mình.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\textwidth]{Image/UI/Auth/OAuth.jpg}
+				\vspace{0.6cm}
+				\caption{Giao diện đăng nhập bằng Google}
+				\label{fig:oauth}
+			\end{figure}
 		\end{itemize}
 	\end{itemize}
 \end{itemize}
@@ -88,7 +86,7 @@ Cuối trang là \textbf{Chân trang (Footer)}, cung cấp thông tin giới thi
 			\label{fig:rolepick}
 		\end{figure}
 		
-		\item \textbf{Bước 2 - Nhập thông tin đăng ký}: Người dùng cần nhập  các thông tin bao gồm: Email, Họ và tên, Mật khẩu và Xác nhận mật khẩu. Đối với thông tin về Họ và tên, thông tin này chỉ xuất hiện khi người dùng chọn đăng ký tài khoản Phụ huynh, còn đối với Học sinh, thông tin này sẽ được bổ sung sau ở giao diện \textbf{Onboarding} được mô tả ở mục \ref{subsec:onboarding}.
+		\item \textbf{Bước 2 - Nhập thông tin đăng ký}: Người dùng cần nhập  các thông tin bao gồm: Email (đối với phụ huynh) hoặc Tên tài khoản (đối với học sinh), Họ và tên, Mật khẩu và Xác nhận mật khẩu. Đối với thông tin về Họ và tên, thông tin này chỉ xuất hiện khi người dùng chọn đăng ký tài khoản Phụ huynh, còn đối với Học sinh, thông tin này sẽ được bổ sung sau ở giao diện \textbf{Onboarding} được mô tả ở mục \ref{subsec:onboarding}.
 		Nút \textit{Đăng ký} chỉ được enable khi các điều kiện sau được thỏa mãn:
 		\begin{itemize}
 			\item Giá trị của tất cả các field khác rỗng.
@@ -98,14 +96,14 @@ Cuối trang là \textbf{Chân trang (Footer)}, cung cấp thông tin giới thi
 		Giao diện của bước 2 được thiết kế như \textit{Hình \ref{fig:regstudent}} và \textit{Hình \ref{fig:regparent}} bên dưới.
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/SignUpPage-SignUp-Student.jpg}
+			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/StudentRegister.jpg}
 			\vspace{0.6cm}
 			\caption{Giao diện đăng ký tài khoản - Học sinh}
 			\label{fig:regstudent}
 		\end{figure}
 		\begin{figure}[H]
 			\centering
-			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/SignUpPage-SignUp-Parent.jpg}
+			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/ParentRegister.jpg}
 			\vspace{0.6cm}
 			\caption{Giao diện đăng ký tài khoản - Phụ huynh}
 			\label{fig:regparent}
@@ -115,14 +113,14 @@ Cuối trang là \textbf{Chân trang (Footer)}, cung cấp thông tin giới thi
 	\end{itemize}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.9\textwidth]{Image/UI/Auth/EmailExistError.jpg}
+		\includegraphics[width=0.9\textwidth]{Image/UI/Auth/UserExist.jpg}
 		\vspace{0.6cm}
-		\caption{Giao diện đăng ký tài khoản - Lỗi email đã được sử dụng}
+		\caption{Giao diện đăng ký tài khoản - Lỗi username đã được sử dụng}
 		\label{fig:regerror}
 	\end{figure}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.9\textwidth]{Image/UI/Auth/SignUpSuccess.jpg}
+		\includegraphics[width=0.9\textwidth]{Image/UI/Auth/RegisterSuccess.jpg}
 		\vspace{0.6cm}
 		\caption{Giao diện đăng ký tài khoản thành công}
 		\label{fig:success}
@@ -178,7 +176,7 @@ Cuối trang là \textbf{Chân trang (Footer)}, cung cấp thông tin giới thi
 	\item \textbf{Mô tả:} 
 	Khi người dùng bấm vào link \textit{Quên mật khẩu} ở giao diện đăng nhập, trang lấy lại mật khẩu sẽ được hiển thị. Giao diện Lấy lại mật khẩu bao gồm 3 bước như sau:
 	\begin{itemize}
-		\item \textbf{Bước 1 - Gửi OTP qua email}: Người dùng cần nhập email mà mình đã dùng để đăng ký tài khoản vào ô trống. Sau đó bấm \textit{Gửi mã xác thực}, hệ thống sẽ xác thực email được nhập vào và gửi một mã OTP đến email đó. Giao diện của bước 1 được thiết kế như \textit{Hình \ref{fig:sendotp}} bên dưới.
+		\item \textbf{Bước 1 - Gửi OTP qua email}: Người dùng cần nhập địa chỉ Email (nếu là phụ huynh) và Tên tài khoản (nếu là học sinh) vào ô trống và bấm nút \textit{Gửi mã xác thực}. Sau đó, một email kèm OTP sẽ được gửi đến địa chỉ email của phụ huynh. Nếu người dùng là học sinh, cần liên hệ với phụ huynh để nhận OTP. Giao diện của bước 1 được thiết kế như \textit{Hình \ref{fig:sendotp}} bên dưới.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/PasswordReset1.jpg}
@@ -187,7 +185,12 @@ Cuối trang là \textbf{Chân trang (Footer)}, cung cấp thông tin giới thi
 			\label{fig:sendotp}
 		\end{figure}
 		
-		\item \textbf{Bước 2 - Nhập OTP}: Người dùng nhập mã OTP vào các ô trống sau đó bấm \textit{Xác thực}. Nếu mã OTP hợp lệ, tiếp tục thực hiện bước 3.
+		\item \textbf{Bước 2 - Xác thực OTP và đổi mật khẩu}: Người dùng cần nhập mã OTP được cung cấp, sau đó điền mật khẩu mới của mình vào các textbox tương ứng.  Nút \textit{Đổi mật khẩu} chỉ được enable khi:
+		\begin{itemize}
+			\item Giá trị của tất cả các field khác rỗng.
+			\item Mật khẩu có ít nhất 8 ký tự, trong đó phải chứa chữ cái in hoa, chữ thường, số và ký tự đặc biệt.
+			\item Mật khẩu và Xác nhận mật khẩu phải trùng khớp.
+		\end{itemize}
 		Giao diện của bước 2 được thiết kế như \textit{Hình \ref{fig:inputotp}} bên dưới.
 		\begin{figure}[H]
 			\centering
@@ -195,21 +198,6 @@ Cuối trang là \textbf{Chân trang (Footer)}, cung cấp thông tin giới thi
 			\vspace{0.6cm}
 			\caption{Giao diện Lấy lại mật khẩu - Bước 2}
 			\label{fig:inputotp}
-		\end{figure}
-		
-		\item \textbf{Bước 3 - Đặt lại mật khẩu}: Người dùng nhập mật khẩu mới và xác nhận mật khẩu. Nút \textit{Đổi mật khẩu} chỉ được enable khi:
-		\begin{itemize}
-			\item Giá trị của tất cả các field khác rỗng.
-			\item Mật khẩu có ít nhất 8 ký tự, trong đó phải chứa chữ cái in hoa, chữ thường, số và ký tự đặc biệt.
-			\item Mật khẩu và Xác nhận mật khẩu phải trùng khớp.
-		\end{itemize}
-		Giao diện của bước 3 được thiết kế như \textit{Hình \ref{fig:resetpw}} bên dưới.
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.9\textwidth]{Image/UI/Auth/PasswordReset3.jpg}
-			\vspace{0.6cm}
-			\caption{Giao diện Lấy lại mật khẩu - Bước 3}
-			\label{fig:resetpw}
 		\end{figure}
 		
 		\item Sau khi đổi mật khẩu thành công, người dùng sẽ nhận được thông báo và được điều hướng về \textbf{Trang đăng nhập} được mô tả ở mục \ref{subsubsec:login}.
@@ -316,7 +304,7 @@ Phần nội dung chính của trang Bài học liệt kê danh sách toàn bộ
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Topics-Locked.jpg}
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/PremiumTopic.jpg}
 	\vspace{0.6cm}
 	\caption{Trang Bài học - Các chủ đề bị khóa}
 	\label{fig:lessonlocked}
@@ -555,6 +543,13 @@ Sau khi tương tác với bài tập, người dùng có thể bấm \textit{Ki
 	\caption{Hiệu ứng chúc mừng khi làm đúng}
 	\label{fig:wrong}
 \end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{Image/UI/Exercises/Explain.jpg}
+	\vspace{0.6cm}
+	\caption{Xem giải thích đáp án khi làm sai}
+	\label{fig:explain}
+\end{figure}
 
 Sau khi người dùng hoàn thành tất cả câu hỏi, giao diện kết quả sẽ được hiển thị như giao diện sẽ giống như \textit{Hình \ref{fig:result}} bao gồm tên lớp, chủ đề, tên bài học, tổng số điểm đạt được và tổng số thạch anh nhận được.
 \begin{figure}[H]
@@ -634,12 +629,52 @@ Sau khi có kết quả bài thi Đấu trường, tùy theo số điểm đạt
 \textbf{Trang Bài thi} cung cấp giao diện làm bài cho \textbf{Bài kiểm tra đầu vào} (mục \ref{subsubsec:studenthome}) và \textbf{Đấu trường} (mục \ref{subsubsec:arena}). Người dùng có thể chuyển câu hỏi bằng cách bấm vào các nút số ở thanh bên trái của màn hình hoặc bấm các nút điều hướng để chuyển sang câu tiếp theo hoặc trước đó. Giao diện còn hỗ trợ hiển thị thời gian làm bài còn lại cũng như số câu hỏi đã làm trên tổng số câu hỏi. Tất cả các câu hỏi kiểm tra sẽ thuộc dạng trắc nghiệm. Đối với bài thi Đấu trường, do thời gian làm bài dài (7 ngày), người dùng có thể thoát và lưu tiến trình làm bài của mình để có thể tiếp tục làm sau đó.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Exam.jpg}
-		\vspace{0.6cm}
-		\caption{Trang Bài thi}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Main-Student/ExamChoices.jpg}
+			\vspace{0.2cm}
+			\caption{Dạng trắc nghiệm}
+			\label{fig:exam1}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Main-Student/ExamFill.jpg}
+			\vspace{0.2cm}
+			\caption{Dạng điền khuyết}
+			\label{fig:exam2}
+		\end{minipage}
+		
+		\vspace{0.4cm}
+		
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Main-Student/ExamFill2.jpg}
+			\vspace{0.2cm}
+			\caption{Dạng điền khuyết - Click to Fill}
+			\label{fig:exam3}
+		\end{minipage}
+		\hspace{0.1cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Main-Student/ExamMatching.jpg}
+			\vspace{0.2cm}
+			\caption{Dạng nối}
+			\label{fig:exam4}
+		\end{minipage}
+		
+		\vspace{0.4cm}
+		
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Image/UI/Main-Student/ExamTF.jpg}
+			\vspace{0.2cm}
+			\caption{Dạng đúng/sai}
+			\label{fig:exam5}
+		\end{minipage}
 	\end{figure}
-
-\vspace{0.2cm}
+	
+	\vspace{0.4cm}
 \newline
 Khi người dùng chưa hoàn thành bài thi nhưng bấm thoát, giao diện sẽ hiển thị một thông báo lưu tiến trình làm bài như \textit{Hình \ref{fig:save}}. Khi người dùng bấm nộp bài, giao diện sẽ hiển thị thông báo để xác nhận như \textit{Hình \ref{fig:submit}}.
 	\begin{figure}[H]
@@ -661,25 +696,30 @@ Khi người dùng chưa hoàn thành bài thi nhưng bấm thoát, giao diện 
 Trang xếp hạng sẽ hiển thị top 8 học sinh đạt số lượng thạch anh cao nhất (thạch anh là tiêu chí để xếp hạng học tập), đồng thời vinh danh 3 học sinh xuất sắc nhất. Ngoài ra, trang còn hiển thị số lượng thạch anh mà người dùng đang sở hữu và vị trí xếp hạng hiện tại của người dùng.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Leaderboard.jpg}
+		\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Leaderboard2.jpg}
 		\vspace{0.6cm}
 		\caption{Trang Xếp hạng}
 	\end{figure}
 
-\newpage
 \subsubsection{Trang Nhiệm vụ}
 Trang nhiệm vụ hiển thị các nhiệm vụ hệ thống, phần thưởng là thạch anh. Nếu người dùng hoàn thành được nhiệm vụ đó thì họ có thể nhận phần thưởng tương ứng. Người dùng còn có thể xem các nhiệm vụ đã hoàn thành và các nhiệm vụ chưa hoàn thành.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Mission-Complete.jpg}
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/MissionComplete.jpg}
 	\vspace{0.6cm}
 	\caption{Trang Nhiệm vụ - Đã hoàn thành}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Mission-Incomplete.jpg}
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/MissionIncomplete.jpg}
 	\vspace{0.6cm}
 	\caption{Trang Nhiệm vụ - Chưa hoàn thành}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/ClaimMission.jpg}
+	\vspace{0.6cm}
+	\caption{Trang Nhiệm vụ - Nhận thưởng}
 \end{figure}
 
 \newpage
@@ -785,13 +825,7 @@ Học sinh có thể thay đổi mật khẩu bằng cách nhập các thông ti
 \item \textbf{Liên kết tài khoản}
 \vspace{0.1cm}
 \newline
-Để liên kết tài khoản, học sinh cần nhập mã liên kết vào ô trống (mã liên kết do phụ huynh cung cấp), sau đó bấm gửi yêu cầu và chờ xác nhận của phụ huynh. Sau khi đã liên kết tài khoản, học sinh có thể xem mã liên kết (mã mời) của Family hiện tại và có thể chia sẻ cho các học sinh khác. Ngoài ra, học sinh còn có thể xem đươc phụ huynh nào đang quản lý Family của mình và các thành viên khác trong Family.
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Account-Unlinked.jpg}
-			\vspace{0.6cm}
-			\caption{Quản lý tài khoản cá nhân - Chưa liên kết tài khoản}
-		\end{figure}
+Tại giao diện này, học sinh có thể xem mã liên kết (mã mời) của Family hiện tại và có thể chia sẻ cho các học sinh khác. Ngoài ra, học sinh còn có thể xem đươc phụ huynh nào đang quản lý Family của mình.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\textwidth]{Image/UI/Main-Student/Account-Linked.jpg}
@@ -834,7 +868,6 @@ Phụ huynh còn có thể xem chi tiết bài làm của học sinh bằng các
 \subsubsection{Trang Minigames}
 Trang Minigames của phụ huynh được thiết kế tương tự với Trang Minigames của Học sinh. Thiết kế được mô tả chi tiết ở mục \ref{subsubsec:games}.
 
-\newpage
 \subsubsection{Quản lý tài khoản cá nhân}
 \begin{enumerate}
 	\item \textbf{Xem và cập nhật thông tin cá nhân}
@@ -849,24 +882,11 @@ Trang Minigames của phụ huynh được thiết kế tương tự với Trang
 		\end{figure}
 	
 	\item \textbf{Thay đổi mật khẩu}: Giao diện thay đổi mật khẩu của phụ huynh được thiết kế tương tự với giao diện của Học sinh. Thiết kế được mô tả chi tiết ở mục \ref{subsubsec:profile}.
-	
+	\newpage
 	\item \textbf{Liên kết tài khoản}
 	\vspace{0.1cm}
 	\newline
-	Để liên kết với tài khoản của học sinh, phụ huynh có thể làm theo 2 cách sau đây:
-		\begin{itemize}
-			\item Cách 1: Sao chép mã liên kết và chia sẻ cho học sinh. Sau khi học sinh nhập mã liên kết và gửi yêu cầu, phụ huynh sẽ nhận được email xác nhận, lúc này cần chấp nhận yêu cầu để liên kết tài khoản.
-			\item Cách 2: Liên kết trực tiếp bằng cách nhập email của tài khoản học sinh muốn liên kết, sau đó bấm gửi yêu cầu. Học sinh sẽ nhận được lời mời từ email và chấp nhận để liên kết tài khoản.
-		\end{itemize}
-		
-		\newpage
-		Sau khi đã liên kết, phụ huynh có thể xem danh sách các tài khoản học sinh đã được thêm vào Family như \textit{Hình \ref{fig:linked}}.
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.9\textwidth]{Image/UI/Main-Parent/NoLinkedAccount.jpg}
-			\vspace{0.6cm}
-			\caption{Quản lý tài khoản cá nhân - Liên kết tài khoản bằng mã liên kết hoặc liên kết trực tiếp}
-		\end{figure}
+		Phụ huynh có thể xem danh sách các tài khoản học sinh đã được liên kết vào Family như \textit{Hình \ref{fig:linked}}.
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=0.9\textwidth]{Image/UI/Main-Parent/Account-Linked.jpg}
@@ -875,7 +895,6 @@ Trang Minigames của phụ huynh được thiết kế tương tự với Trang
 			\label{fig:linked}
 		\end{figure}
 	
-	\newpage
 	\item \textbf{Nâng cấp tài khoản}
 	\vspace{0.1cm}
 	\newline
@@ -897,7 +916,6 @@ Trang Minigames của phụ huynh được thiết kế tương tự với Trang
 				\caption{Chờ xác nhận thanh toán}
 			\end{figure}
 			
-			\newpage
 			\item Bước 3: Sau khi thanh toán thành công, màn hình hiển thị trạng thái tài khoản đã nâng cấp và một số các phúc lợi của người dùng.
 			\begin{figure}[H]
 				\centering
@@ -955,7 +973,7 @@ Quản trị viên có thể tạo, chỉnh sửa và xoá nội dung bài tập
 	\caption{Admin - Quản lý bài tập}
 \end{figure}
 
-Khi thêm mới hoặc chỉnh sửa bài tập, hệ thống cung cấp hai phương thức nhập liệu linh hoạt:
+Khi thêm mới hoặc chỉnh sửa bài tập, hệ thống cung cấp hai phương thức nhập liệu linh hoạt như sau:
 \begin{itemize}
 	\item \textbf{Nhập liệu qua form:} Mỗi dạng bài tập (trắc nghiệm, kéo thả, điền khuyết, nối, đúng/sai,...) có một form nhập câu hỏi đặc trưng riêng, bao gồm các trường thông tin phù hợp với cấu trúc dữ liệu của từng dạng. Quản trị viên chỉ cần điền vào các trường tương ứng mà không cần hiểu cấu trúc dữ liệu bên dưới.
 	\item \textbf{Nhập liệu qua JSON:} Đối với người dùng có kinh nghiệm kỹ thuật hoặc khi cần nhập hàng loạt, hệ thống hỗ trợ nhập dữ liệu trực tiếp dưới dạng JSON theo schema quy định sẵn cho từng loại bài tập. Phương thức này giúp tăng tốc độ tạo nội dung đáng kể.
