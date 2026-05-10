@@ -1,185 +1,183 @@
 \subsubsection{Các dạng toán}
 
-Hệ thống hỗ trợ 18 dạng bài tập đa dạng, mỗi dạng được thiết kế với cơ chế tương tác đặc trưng phù hợp với từng chủ đề và lứa tuổi tiểu học.
+\subsubsubsection{Trắc nghiệm (Multiple Choice)}
+Dạng bài tập trắc nghiệm cho phép người học lựa chọn một đáp án đúng trong bốn đáp án được cung cấp sẵn. Sau khi chọn đáp án, hệ thống sẽ phản hồi trực quan bằng hiệu ứng nhấp nháy hoặc đổi màu để giúp học sinh nhận biết kết quả ngay lập tức. Dạng bài này thường được sử dụng để luyện tập các phép tính cơ bản, nhận diện hình học, so sánh số hoặc các câu hỏi lý thuyết đơn giản phù hợp với học sinh tiểu học.
 
-% --- Hàng 1: Multiple Choice | Matching | Fill ---
 \begin{figure}[H]
 	\centering
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/MultiChoice.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Trắc nghiệm (Multiple Choice)}\\[0.2em]
-		Chọn 1 trong 4 đáp án; phản hồi nhấp nháy khi trả lời đúng.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Matching.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Ghép cặp (Matching)}\\[0.2em]
-		Kéo thả ghép 4 cặp tương ứng; đổi màu khi ghép thành công.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Fill.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Điền số (Fill in the Blanks)}\\[0.2em]
-		Điền vào tối đa 3 ô trống; chấm điểm từng phần độc lập.}
-	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán cơ bản (1)}
-	\label{fig:exercise-row1}
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/MultiChoice.jpg}
+	\caption{Dạng bài trắc nghiệm}
+	\label{fig:multiple-choice}
 \end{figure}
 
-% --- Hàng 2: Drag | Grouping | True/False ---
+\subsubsubsection{Ghép cặp (Matching)}
+Trong dạng bài ghép cặp, người học thực hiện thao tác kéo thả để nối các đối tượng tương ứng với nhau, ví dụ như phép tính với kết quả tương ứng. Khi ghép đúng, các đối tượng sẽ đổi màu hoặc xuất hiện hiệu ứng phản hồi nhằm tăng tính trực quan và tạo cảm giác hứng thú trong quá trình học tập.
+
 \begin{figure}[H]
-	\centering
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Drag.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Kéo thả (Drag and Drop)}\\[0.2em]
-		Kéo số vào vị trí trống trong biểu thức; tự động reset khi thả sai.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Grouping.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Phân loại chẵn/lẻ (Grouping)}\\[0.2em]
-		Chọn mode rồi click phân loại 20 số; kiểm tra toàn bộ cùng lúc.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/TrueFalse.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Đúng/Sai (True/False)}\\[0.2em]
-		Chọn Đúng hoặc Sai; chỉ cho phép một lựa chọn duy nhất.}
-	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán cơ bản (2)}
-	\label{fig:exercise-row2}
+	\centeringMô 
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Matching.jpg}
+	\caption{Dạng bài ghép cặp}
+	\label{fig:matching}
 \end{figure}
 
-% --- Hàng 3: Burger | Bus | Catch Bird ---
+\subsubsubsection{Điền số (Fill in the Blanks)}
+Dạng bài điền số yêu cầu học sinh nhập giá trị thích hợp vào các ô trống trong biểu thức hoặc câu hỏi toán học. Một bài có thể chứa tối đa ba ô trống và hệ thống sẽ chấm điểm độc lập cho từng phần nhằm hỗ trợ đánh giá chính xác hơn. Dạng bài này giúp rèn luyện khả năng tính toán và tư duy từng bước của người học.
+
 \begin{figure}[H]
 	\centering
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Burger.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Tổ hợp burger (Burger)}\\[0.2em]
-		Tổ hợp xác suất: tạo tổ hợp burger đúng yêu cầu từ các nguyên liệu cho sẵn.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Bus.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Xe buýt (Bus)}\\[0.2em]
-		Cộng số tròn chục: xếp hàng lên xe buýt; hỗ trợ nhiều cách xếp cho cùng một kết quả.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/CatchBird.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Bắt chim (Catch Bird)}\\[0.2em]
-		Dạng tổng quát: tạo đáp án bằng cơ chế bắt chim, biểu diễn nhiều dạng toán khác nhau.}
-	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán tương tác (1)}
-	\label{fig:exercise-row3}
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Fill.jpg}
+	\caption{Dạng bài điền số}
+	\label{fig:fill}
 \end{figure}
 
-% --- Hàng 4: Clock | Coin | Gumball ---
+\subsubsubsection{Kéo thả (Drag and Drop)}
+Ở dạng bài này, người học sẽ kéo các con số hoặc ký hiệu toán học vào đúng vị trí còn thiếu trong biểu thức. Nếu thả sai vị trí, hệ thống sẽ tự động đưa đối tượng trở về vị trí ban đầu để người học thử lại. Cơ chế tương tác trực tiếp giúp học sinh dễ dàng tiếp cận và ghi nhớ các phép tính cơ bản.
+
 \begin{figure}[H]
 	\centering
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Clock.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Đồng hồ (Clock)}\\[0.2em]
-		Học thời gian qua đồng hồ kim/số.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Coin.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Đổi tiền xu (Coin)}\\[0.2em]
-		Đổi tiền xu vận dụng cao: kết hợp nhiều phép tính, tương tác đổi xu trực tiếp.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Gumball.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Viên bi (Gumball)}\\[0.2em]
-		Tập đếm và so sánh thông qua các viên bi nhiều màu sắc trực quan.}
-	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán tương tác (2)}
-	\label{fig:exercise-row4}
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Drag.jpg}
+	\caption{Dạng bài kéo thả}
+	\label{fig:drag}
 \end{figure}
 
-% --- Hàng 5: Manual Scale | Pizza | Release Bird ---
+\subsubsubsection{Phân loại chẵn/lẻ (Grouping)}
+Dạng bài phân loại yêu cầu học sinh lựa chọn chế độ phân loại trước khi bắt đầu làm bài, trong đó số chẵn được biểu diễn bằng màu xanh và số lẻ được biểu diễn bằng màu hồng. Sau khi chọn chế độ, người học sẽ click trực tiếp vào từng con số để tô màu tương ứng, tương tự như một trò chơi tô màu tương tác. Hệ thống chỉ kiểm tra kết quả sau khi hoàn thành toàn bộ thao tác, giúp học sinh tập trung vào quá trình quan sát, suy luận và tự đánh giá trước khi nộp đáp án.
+
 \begin{figure}[H]
 	\centering
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/ManualScale.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Cân thủ công (Manual Scale)}\\[0.2em]
-		So sánh lớn hơn, bé hơn, bằng nhau thông qua cân thủ công trực quan.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Pizza.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Chia pizza (Pizza)}\\[0.2em]
-		Làm quen với phân số qua cách chia và quan sát các phần của chiếc pizza.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/RealeaseBirt.jpg}
-		\vspace{0.2cm}
-
-		{\small\textbf{Thả chim (Release Bird)}\\[0.2em]
-		Dạng tổng quát: thả chim để chọn đáp án đúng, biểu diễn nhiều dạng toán khác nhau.}
-	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán tương tác (3)}
-	\label{fig:exercise-row5}
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Grouping.jpg}
+	\caption{Dạng bài phân loại}
+	\label{fig:grouping}
 \end{figure}
 
-% --- Hàng 6: Scale | Tree | Geo ---
+\subsubsubsection{Đúng/Sai (True/False)}
+Dạng bài đúng/sai cung cấp cho người học một mệnh đề hoặc phép tính và yêu cầu lựa chọn “Đúng” hoặc “Sai”. Hệ thống chỉ cho phép một lựa chọn duy nhất nhằm đảm bảo tính rõ ràng trong câu trả lời. Đây là dạng bài đơn giản nhưng hiệu quả trong việc kiểm tra khả năng nhận biết nhanh và tư duy logic của học sinh.
+
 \begin{figure}[H]
 	\centering
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Scale.jpg}
-		\vspace{0.2cm}
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/TrueFalse.jpg}
+	\caption{Dạng bài đúng/sai}
+	\label{fig:truefalse}
+\end{figure}
 
-		{\small\textbf{Cân điện tử (Scale)}\\[0.2em]
-		Cộng trừ qua cân bằng; điểm đặc biệt là có thể có nhiều đáp án đúng.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Tree.jpg}
-		\vspace{0.2cm}
+\subsubsubsection{Tổ hợp burger (Burger)}
+Dạng bài tổ hợp burger giúp học sinh làm quen với tư duy tổ hợp và lựa chọn thành phần theo yêu cầu đề bài. Hệ thống cung cấp bốn loại nguyên liệu gồm cà chua, thịt, phô mai và rau. Dựa trên yêu cầu của bài toán, người học cần lựa chọn và sắp xếp đúng các nguyên liệu để tạo ra chiếc burger phù hợp. Một bài toán có thể có nhiều cách tạo burger khác nhau miễn đáp ứng đúng yêu cầu về thành phần.
 
-		{\small\textbf{Tưới cây (Tree)}\\[0.2em]
-		Dạng tổng quát nhiều bước: tưới cây theo từng bước để hoàn thành bài toán.}
-	\end{minipage}\hfill
-	\begin{minipage}[t]{0.3\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{Image/UI/Exercises/Geo.jpg}
-		\vspace{0.2cm}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Burger.jpg}
+	\caption{Dạng bài tổ hợp burger}
+	\label{fig:burger}
+\end{figure}
 
-		{\small\textbf{Vẽ hình (Geo)}\\[0.2em]
-		Vẽ hình tổng quát: hỗ trợ nhiều cách vẽ, có thể mở rộng thành nhiều dạng con.}
-	\end{minipage}	\vspace{0.5cm}	\caption{Các dạng toán tương tác (4)}
-	\label{fig:exercise-row6}
+\subsubsubsection{Xe buýt (Bus)}
+Dạng bài xe buýt được xây dựng nhằm giúp học sinh hiểu rõ giá trị hàng đơn vị, hàng chục và hàng trăm. Hệ thống cung cấp ba loại hộp tương ứng với giá trị 1, 10 và 100. Theo yêu cầu bài toán, học sinh cần lựa chọn các hộp sao cho tổng giá trị đúng với số lượng cần vận chuyển. Ví dụ, để vận chuyển 100 linh kiện, học sinh có thể chọn một hộp 100 hoặc mười hộp 10. Khi chọn hộp, các hộp sẽ bay trực tiếp lên xe buýt tạo nên trải nghiệm học tập sinh động và trực quan.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Bus.jpg}
+	\caption{Dạng bài xe buýt}
+	\label{fig:bus}
+\end{figure}
+
+\subsubsubsection{Bắt chim (Catch Bird)}
+Trong dạng bài bắt chim, trên cây sẽ có một số lượng chim ban đầu và người học cần click vào các chú chim để chúng bay vào lồng. Số lượng chim trong lồng sẽ đại diện cho kết quả của bài toán. Nhờ cơ chế biểu diễn trực quan này, hệ thống có thể mở rộng thành nhiều dạng câu hỏi khác nhau.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/CatchBird.jpg}
+	\caption{Dạng bài bắt chim}
+	\label{fig:catchbird}
+\end{figure}
+
+\subsubsubsection{Đồng hồ (Clock)}
+Dạng bài đồng hồ giúp học sinh học cách xem giờ thông qua đồng hồ kim 12 giờ. Người học cần xoay kim đồng hồ đến đúng thời gian được yêu cầu. Điểm đặc biệt của dạng bài này là hệ thống có thêm khung cửa sổ mô phỏng thời gian ngày và đêm. Ví dụ, khi chỉnh đến 12 giờ trưa, khung cửa sổ sẽ hiển thị mặt trời và bầu trời sáng; ngược lại khi chỉnh đến 12 giờ đêm, cửa sổ sẽ hiển thị bầu trời tối cùng mặt trăng. Điều này giúp học sinh phân biệt rõ khái niệm hệ thống giờ 12 giờ và 24 giờ một cách trực quan và sinh động hơn
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Clock.jpg}
+	\caption{Dạng bài đồng hồ}
+	\label{fig:clock}
+\end{figure}
+
+\subsubsubsection{Đổi tiền xu (Coin)}
+Dạng bài đổi tiền xu hỗ trợ học sinh làm quen với giá trị tiền tệ thông qua cơ chế đổi tiền trực quan. Hệ thống cung cấp ba loại đồng xu có giá trị 1 đồng, 10 đồng và 100 đồng cùng với một máy đổi tiền. Khi đưa một đồng xu vào máy, hệ thống sẽ tự động đổi sang các đồng xu có giá trị nhỏ hơn, ví dụ một đồng 100 sẽ đổi thành mười đồng 10. Người học cần vận dụng cơ chế đổi tiền để tạo đúng số tiền theo yêu cầu của bài toán.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Coin.jpg}
+	\caption{Dạng bài đổi tiền xu}
+	\label{fig:coin}
+\end{figure}
+
+\subsubsubsection{Viên bi (Gumball)}
+Dạng bài viên bi được thiết kế nhằm hỗ trợ học sinh luyện tập kỹ năng đếm và so sánh số lượng. Ban đầu hệ thống cung cấp một số lượng bi xanh và bi cam nhất định. Khi người học chọn một chiếc lọ, chiếc lọ sẽ di chuyển vào máy để hứng bi rơi xuống. Mỗi lần máy sẽ thả 10 viên bi và mỗi lọ chứa đúng 10 viên. Học sinh cần quan sát số lọ đã đầy cùng số viên còn lại để trả lời các câu hỏi so sánh như màu nào nhiều hơn hoặc ít hơn.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Gumball.jpg}
+	\caption{Dạng bài viên bi}
+	\label{fig:gumball}
+\end{figure}
+
+\subsubsubsection{Cân thủ công (Manual Scale)}
+Dạng bài cân thủ công sử dụng mô hình cân đòn nhằm giúp học sinh làm quen với các khái niệm lớn hơn, bé hơn và bằng nhau. Người học sẽ kéo các bát hạt lên hai bên cân theo yêu cầu của đề bài. Dựa vào độ nghiêng của cân sang trái hoặc phải, học sinh có thể trực quan nhận biết mối quan hệ giữa hai giá trị.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/ManualScale.jpg}
+	\caption{Dạng bài cân thủ công}
+	\label{fig:manual-scale}
+\end{figure}
+
+\subsubsubsection{Chia pizza (Pizza)}
+Dạng bài chia pizza giúp học sinh bước đầu làm quen với phân số thông qua việc chia chiếc pizza thành nhiều phần bằng nhau. Mỗi lát pizza sẽ có một loại topping khác nhau và bài toán sẽ yêu cầu người học tạo đúng số lượng lát tương ứng với từng loại. Dạng bài này giúp học sinh hình dung trực quan khái niệm phân số trong toán học.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Pizza.jpg}
+	\caption{Dạng bài chia pizza}
+	\label{fig:pizza}
+\end{figure}
+
+\subsubsubsection{Thả chim (Release Bird)}
+Dạng bài thả chim có cơ chế tương tự bài trắc nghiệm nhưng được thiết kế với phong cách tương tác sinh động hơn dành cho học sinh lớp nhỏ. Mỗi đáp án được biểu diễn bằng một chiếc lồng chim, phía dưới có bảng hiển thị nội dung đáp án tương ứng. Khi người học chọn đáp án, chiếc lồng sẽ rơi xuống và mở ra để chú chim bay đi, tạo cảm giác vui nhộn và tăng hứng thú học tập.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/RealeaseBirt.jpg}
+	\caption{Dạng bài thả chim}
+	\label{fig:release-bird}
+\end{figure}
+
+\subsubsubsection{Cân điện tử (Scale)}
+Dạng bài cân điện tử yêu cầu học sinh lựa chọn các quả tạ có giá trị khác nhau để đạt đúng khối lượng mục tiêu được đề bài đưa ra. Người học sẽ kéo các quả tạ lên bàn cân và hệ thống sẽ tự động tính tổng khối lượng hiện tại. Một bài toán có thể tồn tại nhiều cách chọn tạ khác nhau miễn tổng khối lượng đạt đúng yêu cầu.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Scale.jpg}
+	\caption{Dạng bài cân điện tử}
+	\label{fig:scale}
+\end{figure}
+
+\subsubsubsection{Tưới cây (Tree)}
+Dạng bài tưới cây gồm năm giai đoạn phát triển của cây tương ứng với năm câu hỏi liên tiếp. Mỗi khi trả lời đúng, mây sẽ xuất hiện và tạo mưa giúp cây phát triển sang giai đoạn tiếp theo. Nếu trả lời sai, cây sẽ quay trở lại trạng thái trước đó. Đáp án của mỗi câu hỏi được biểu diễn bằng số lần nhấn nút tương tác. Ví dụ, với bài toán \(2 + X = 5\), học sinh cần nhấn nút ba lần để tạo ra đáp án đúng.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Tree.jpg}
+	\caption{Dạng bài tưới cây}
+	\label{fig:tree}
+\end{figure}
+
+\subsubsubsection{Vẽ hình (Geo)}
+Dạng bài vẽ hình được xây dựng theo cơ chế tương tự geoboard. Người học có thể chọn các điểm cố định trên bảng và kéo nối để tạo thành các hình học khác nhau. Hệ thống hỗ trợ nhiều cách vẽ khác nhau cho cùng một đáp án, giúp tăng tính sáng tạo và khả năng tư duy hình học của học sinh.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Image/UI/Exercises/Geo.jpg}
+	\caption{Dạng bài vẽ hình}
+	\label{fig:geo}
 \end{figure}
 
 \subsubsection{Cơ sở học thuật xây dựng bài tập}

@@ -1,10 +1,37 @@
 \section{Tổng kết}
-\subsection{Kết quả giai đoạn 1}
-Kết thúc giai đoạn 1, phạm vi và các yêu cầu cần thiết của hệ thống đã được xác định cụ thể. Hệ thống được thiết kế hướng đến việc nâng cao trải nghiệm học tập và tạo động lực học toán cho học sinh tiểu học thông qua các tính năng tương tác, game hóa và theo dõi tiến độ học tập chi tiết.
 
-\newline
+\subsection{Đối với nhiệm vụ đề tài}
+Nhóm đã hoàn thành các mục tiêu cốt lõi của đề tài, xây dựng thành công một website học toán tư duy dành cho học sinh tiểu học với đầy đủ các tính năng tương tác, game hóa và theo dõi tiến độ học tập. Cụ thể:
+\begin{itemize}
+	\item Xác định rõ lý do chọn đề tài, thách thức hiện tại của giáo dục toán tư duy tại Việt Nam và đề xuất giải pháp phù hợp.
+	\item Khảo sát và đánh giá các hệ thống học toán hiện có trên thị trường (Khan Academy Kids, Duolingo Math, Kurio, VioEdu, Matific), từ đó xác định rõ điểm mạnh cần kế thừa và hạn chế cần khắc phục trong sản phẩm của nhóm.
+	\item Xác định được phạm vi hệ thống: tập trung phục vụ học sinh tiểu học (lớp 1--5) và phụ huynh tại Việt Nam, với nội dung bám sát chương trình của Bộ Giáo dục và Đào tạo.
+	\item Phân tích và đặc tả đầy đủ các yêu cầu chức năng (bài học tương tác, gamification, báo cáo tiến độ) và phi chức năng (hiệu năng, bảo mật, khả năng mở rộng) của hệ thống.
+\end{itemize}
+
+\subsection{Đối với cơ sở lý thuyết và công nghệ}
+Nhóm đã tìm hiểu và vận dụng các cơ sở lý thuyết cũng như công nghệ phù hợp vào quá trình xây dựng hệ thống:
+\begin{itemize}
+	\item Tìm hiểu lý thuyết Gamification (game hóa) và vận dụng các cơ chế cơ bản như điểm thưởng (Quartz), huy hiệu thành tựu (Achievement), bảng xếp hạng và hệ thống nhiệm vụ (Mission) nhằm tạo động lực tự học cho người dùng.
+	\item Tìm hiểu và vận dụng các công nghệ: \textbf{Next.js} cho giao diện người dùng, \textbf{Node.js \& Express.js} cho backend API, \textbf{MongoDB} cho cơ sở dữ liệu NoSQL linh hoạt, \textbf{Cocos Creator 3.8} cho các bài tập tương tác và minigame, và \textbf{Colyseus} cho tính năng đa người chơi thời gian thực.
+	\item Tìm hiểu các phương pháp dạy toán tư duy phù hợp với lứa tuổi tiểu học và áp dụng vào thiết kế nội dung, bao gồm học qua thao tác trực quan (kéo thả, điền số, chọn đáp án) và học qua trò chơi.
+\end{itemize}
+
+\subsection{Đối với phân tích và thiết kế hệ thống}
+Nhóm đã hoàn thành toàn bộ các hạng mục phân tích và thiết kế hệ thống, làm nền tảng vững chắc cho quá trình hiện thực:
+\begin{itemize}
+	\item Xây dựng đầy đủ các biểu đồ Use Case cho ba tác nhân chính: học sinh, phụ huynh và quản trị viên (Admin), thể hiện rõ ràng các chức năng của từng vai trò trong hệ thống.
+	\item Thiết kế các biểu đồ Activity và Sequence cho các luồng nghiệp vụ quan trọng như Đăng nhập, Đăng ký, Làm bài tập, Nộp bài kiểm tra và Đấu trường.
+	\item Thiết kế kiến trúc hệ thống theo mô hình phân lớp (Frontend -- Backend -- Database -- Game Engine), đảm bảo tính tách biệt và dễ bảo trì.
+	\item Thiết kế cơ sở dữ liệu MongoDB với các Schema chi tiết đáp ứng đầy đủ các yêu cầu lưu trữ phức tạp của hệ thống (người dùng, bài học, kết quả, phần thưởng, gia đình).
+	\item Thiết kế giao diện người dùng (UI/UX) trực quan, thân thiện và phù hợp với lứa tuổi tiểu học cho cả ba vai trò: học sinh, phụ huynh và Admin.
+\end{itemize}
+
+\subsection{Đối với hiện thực hệ thống}
+Nhóm đã hiện thực đầy đủ hệ thống qua hai giai đoạn phát triển.
+
 \vspace{0.2cm}
-Sau khi kết thúc giai đoạn 1, nhóm đã hoàn thành được các công việc sau đây:
+\noindent\textbf{Giai đoạn 1} -- Nhóm đã hoàn thành được các công việc sau:
 \begin{enumerate}
 	\item Xác định được phạm vi và yêu cầu của hệ thống cho phù hợp với nhu cầu sử dụng của người dùng hiện tại, cụ thể là học sinh ở cấp bậc Tiểu học và phụ huynh có con em đang học tập tại cấp bậc này. 
 	\item Thiết kế được cơ sở dữ liệu để đáp ứng được các yêu cầu lưu trữ của hệ thống.
@@ -34,124 +61,8 @@ Sau khi kết thúc giai đoạn 1, nhóm đã hoàn thành được các công 
 	\end{itemize}
 \end{enumerate}
 
-\input{Content/KẾ HOẠCH VÀ PHÂN CÔNG CÔNG VIỆC}
-
-\newpage
-\subsection{Kế hoạch và phân công công việc giai đoạn 2}
-\renewcommand{\arraystretch}{1.3}
-\begin{longtable}{|>{\centering\arraybackslash}m{2cm}|p{7.5cm}|p{4.5cm}|}
-	\hline
-	\textbf{Tuần} & \textbf{Công việc (Chi tiết thực hiện)} & \textbf{Người thực hiện} \\
-	\hline
-	\endfirsthead
-	
-	\hline
-	\textbf{Tuần} & \textbf{Công việc (Chi tiết thực hiện)} & \textbf{Người thực hiện} \\
-	\hline
-	\endhead
-	
-	\hline
-	\endfoot
-	
-	Tuần 1--2 & \textbf{Khởi động \& Triển khai tính năng Assessment cơ bản:} 
-	
-	\textbullet\ \textbf{BE:} Thiết kế cấu trúc cơ sở dữ liệu (Schema) cho Assessment, AssessmentResult và Answer. Xây dựng hệ thống API CRUD hoàn chỉnh để tạo, liệt kê và xem chi tiết bài kiểm tra. Thiết lập môi trường Swagger và chuẩn bị dữ liệu mẫu (Seed data). 
-	
-	\textbullet\ \textbf{FE:} Xây dựng giao diện danh sách các bài kiểm tra hiện có. Thiết kế trang chi tiết bài kiểm tra bao gồm mô tả, yêu cầu và thông tin tổng quan. Kết nối dữ liệu từ API để hiển thị lên giao diện. Hiện thực logic nghiệp vụ cho tính năng Đấu trường.
-	
-	\textbullet\ \textbf{Game:} Nghiên cứu và thiết kế bộ bài tập bám sát chương trình học của bộ Giáo dục và Đào tạo. & BE: Nguyễn Văn Thành
-	
-	FE: Nguyễn Minh Tân
-	
-	Game: Trương Anh Khoa \\
-	\hline
-	
-	Tuần 3--4 & \textbf{Nộp bài \& Quy trình chấm điểm tự động:} 
-	
-	\textbullet\ \textbf{BE:} Hoàn thiện logic xử lý khi người dùng nộp bài (POST /submit). Xây dựng bộ máy chấm điểm tự động (Auto-grading) cho trắc nghiệm và đúng/sai. Viết unit test và tích hợp để kiểm tra luồng dữ liệu từ lúc nộp đến khi lưu điểm. 
-	
-	\textbullet\ \textbf{FE:} Phát triển giao diện làm bài trực tuyến (Quiz Interface). Tích hợp logic bộ đếm ngược thời gian và trình quản lý trạng thái câu trả lời (State Management). Xây dựng màn hình hiển thị kết quả bài thi ngay sau khi nộp. 
-	
-	\textbullet\ \textbf{Game:} Nghiên cứu các dạng bài tập tương tác. Thiết kế các assets và hiệu ứng hình ảnh tương ứng. & BE: Nguyễn Văn Thành
-	
-	FE: Nguyễn Minh Tân
-	
-	Game: Trương Anh Khoa \\
-	\hline
-	
-	Tuần 5--6 & \textbf{Mission \& Achievement (Nhiệm vụ \& Thành tựu):} 
-	
-	\textbullet\ \textbf{BE:} Thiết kế Model Mission và Achievement. Xây dựng logic tự động cập nhật tiến trình (Progress) dựa trên hành động của người dùng (ví dụ: hoàn thành bài học, đăng nhập hàng ngày). API quản lý danh sách thành tựu người dùng đạt được. 
-	
-	\textbullet\ \textbf{FE:} Xây dựng Dashboard nhiệm vụ tập trung. Hiển thị danh sách nhiệm vụ hàng ngày/tuần kèm thanh tiến trình trực quan. Thiết kế trang hồ sơ cá nhân hiển thị kho huy hiệu thành tựu. 
-	
-	\textbullet\ \textbf{Game:} Xây dựng tính năng xem trước câu hỏi bài tập cho admin. & BE: Nguyễn Văn Thành
-	
-	FE: Nguyễn Minh Tân
-	
-	Game: Trương Anh Khoa \\
-	\hline
-	
-	Tuần 7--8 & \textbf{RewardRecord \& Cơ chế thưởng:} 
-	
-	\textbullet\ \textbf{BE:} Triển khai Model RewardRecord để quản lý lịch sử biến động phần thưởng (Quartz, BP). Đảm bảo tính atomicity (giao dịch an toàn) khi cộng thưởng vào ví người dùng. Xác thực nguồn gốc phần thưởng để tránh lỗi dữ liệu. 
-	
-	\textbullet\ \textbf{FE:} Xây dựng giao diện admin quản lý người dùng, bao gồm danh sách tài khoản, chức năng tìm kiếm, lọc theo vai trò và khóa/mở khóa tài khoản. Thiết kế trang thống kê tổng quan cho admin.
-	
-	\textbullet\ \textbf{Game:} Nghiên cứu minigame tương tác 2 người thông qua server. & BE: Nguyễn Văn Thành
-	
-	FE: Nguyễn Minh Tân
-	
-	Game: Trương Anh Khoa \\
-	\hline
-	
-	Tuần 9--10 & \textbf{FamilyGame \& FamilyReport (Tính năng gia đình):} 
-	
-	\textbullet\ \textbf{BE:} Xây dựng logic cho FamilyGame và tham gia nhóm. Thiết lập thuật toán tổng hợp dữ liệu để sinh báo cáo gia đình (FamilyReport), tính toán hiệu suất học tập trung bình của cả nhóm. 
-	
-	\textbullet\ \textbf{FE:} Thiết kế giao diện báo cáo gia đình với các biểu đồ so sánh (sử dụng thư viện biểu đồ). Xây dựng sảnh chờ (Lobby) cho các thành viên gia đình tương tác. 
-	
-	\textbullet\ \textbf{Game:} Phát triển logic và giao diện cho mini-game thi đấu giữa các thành viên. Đảm bảo tính đồng bộ dữ liệu điểm số trong thời gian thực. & BE: Nguyễn Văn Thành
-	
-	FE: Nguyễn Minh Tân
-	
-	Game: Trương Anh Khoa \\
-	\hline
-	
-	Tuần 11--12 & \textbf{LectureResult \& ExerciseResult (Lưu trữ chi tiết):} 
-	
-	\textbullet\ \textbf{BE:} Tích hợp logic lưu trữ điểm số chi tiết cho từng bài giảng và từng bài tập nhỏ. Xây dựng API truy vấn lịch sử học tập sâu (theo từng bài học cụ thể) để phục vụ việc phân tích dữ liệu. 
-	
-	\textbullet\ \textbf{FE:} Xây dựng trang "Nhật ký học tập" chi tiết. Cho phép người dùng xem lại các bài tập đã làm sai để ôn tập lại. Cập nhật luồng UX khi người dùng kết thúc một bài giảng. & BE: Nguyễn Văn Thành
-	
-	FE: Nguyễn Minh Tân \\
-	\hline
-	
-	Tuần 13--14 & \textbf{AI Recommendation \& Hoàn thiện hệ thống:} 
-	
-	\textbullet\ \textbf{AI \& BE:} Triển khai thuật toán gợi ý bài học dựa trên lịch sử làm bài (sai chủ đề nào gợi ý chủ đề đó) và sở thích cá nhân. Tối ưu hóa bảo mật API, cập nhật tài liệu Swagger toàn diện và chuẩn bị môi trường triển khai (Deploy). 
-	
-	\textbullet\ \textbf{FE:} Tích hợp khu vực "Gợi ý thông minh từ AI" vào trang chủ. Thực hiện Polish (tinh chỉnh) toàn bộ giao diện, sửa lỗi UI/UX tồn đọng sau các đợt kiểm thử. 
-	
-	\textbullet\ \textbf{Game:} Kiểm tra lại toàn bộ hiệu suất (Performance) của phần game, đảm bảo chạy mượt mà trên các thiết bị khác nhau. Đóng gói tài nguyên game. & BE: Nguyễn Văn Thành
-	
-	FE: Nguyễn Minh Tân
-	
-	Game: Trương Anh Khoa \\
-	\hline
-	
-\end{longtable}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{Image/phase2.jpg}
-	\vspace{0.5cm}
-	\caption{Biểu đồ Gantt giai đoạn 2}
-	\label{fig:gantt-phase2}
-\end{figure}
-
-\subsection{Kết quả giai đoạn 2}
-Sau khi kết thúc giai đoạn 2, nhóm đã hoàn thiện được các công việc sau đây:
+\vspace{0.2cm}
+\noindent\textbf{Giai đoạn 2} -- Nhóm đã hoàn thiện được các công việc sau:
 \begin{enumerate}
 	\item Hoàn thiện hệ thống bài kiểm tra (Assessment), bao gồm luồng làm bài trực tuyến, bộ đếm ngược thời gian, chấm điểm tự động và hiển thị kết quả.
 	\item Hoàn thiện cơ chế nhiệm vụ (Mission) và thành tựu (Achievement), tự động cập nhật tiến trình dựa trên hành động của người dùng.
@@ -162,12 +73,11 @@ Sau khi kết thúc giai đoạn 2, nhóm đã hoàn thiện được các công
 		\item Trang thống kê tổng quan hệ thống.
 	\end{itemize}
 	\item Hiện thực được \textbf{18 dạng toán tương tác} phục vụ học sinh luyện tập bám sát chương trình của Bộ Giáo dục và Đào tạo.
-	\item Hiện thực được \textbf{1 minigame} đơn người chơi.
-	\item Hiện thực được \textbf{1 game tương tác 2 người} theo thời gian thực.
+	\item Hiện thực được \textbf{1 minigame đơn}  người chơi.
+	\item Hiện thực được \textbf{1 minigame tương tác 2 người} theo thời gian thực.
 	\item Lưu trữ chi tiết kết quả học tập (LectureResult, ExerciseResult), hỗ trợ người dùng xem lại lịch sử và các bài tập đã làm sai.
 	\item Hoàn thiện báo cáo gia đình (FamilyReport) với các biểu đồ so sánh hiệu suất học tập giữa các thành viên.
 \end{enumerate}
 
 \vspace{0.3cm}
 \noindent\textbf{Hạn chế còn tồn đọng:} Nhóm chưa hoàn thành được tính năng tích hợp AI để tự động sinh bài tập theo trình độ người dùng. Đây sẽ là hướng phát triển tiếp theo của hệ thống trong tương lai.
-
