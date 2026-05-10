@@ -1,11 +1,12 @@
 \section{Kiểm thử}
+Chương này tập trung vào việc mô tả các quy trình và kết quả kiểm thử của hệ thống. Đây là giai đoạn then chốt không thể thiếu trong quy trình phát triển phần mềm, đóng vai trò quyết định đến chất lượng sản phẩm cuối cùng cũng như sự tuân thủ nghiêm ngặt các yêu cầu kĩ thuật và nghiệp vụ đã được xác lập.
 
 \subsection{Kiểm thử hiệu năng giao diện}
 Toàn bộ mã nguồn và kết quả kiểm thử được công khai tại:
 \url{https://github.com/khoa9894/Light-House}.
 \subsubsection{Tổng quan}
 
-Nhóm đã tiến hành kiểm thử giao diện người dùng bằng công cụ Google Lighthouse
+Quy trình kiểm thử hiệu năng giao diện người dùng được thực hiện bằng công cụ Google Lighthouse
 trên tổng cộng \textbf{26 trang}, bao gồm \textbf{14 trang Admin Panel} và
 \textbf{12 trang Main Web}. Các chỉ số được đo gồm: \textbf{Performance (P)},
 \textbf{Accessibility (A)}, \textbf{Best Practices (BP)} và \textbf{SEO (S)}
@@ -181,7 +182,7 @@ Topics
 % --------------------------------------------------------
 \subsubsection{Các vấn đề phát hiện và hướng khắc phục}
 
-Qua quá trình kiểm thử, nhóm ghi nhận một số vấn đề còn tồn tại:
+Sau quá trình kiểm thử, một số vấn đề còn tồn đọng được ghi nhận lại như sau:
 
 \begin{enumerate}[leftmargin=*]
   \item \textbf{Thiếu thẻ \texttt{<main>} (document landmark)} --- Nhiều trang chưa
@@ -203,9 +204,9 @@ Qua quá trình kiểm thử, nhóm ghi nhận một số vấn đề còn tồn
 % --------------------------------------------------------
 \subsubsection{Đánh giá chung}
 
-Nhìn chung, kết quả kiểm thử Lighthouse cho thấy hệ thống đạt mức hiệu năng
-chấp nhận được so với quy mô của một đồ án sinh viên. Hạng mục Best Practices
-đạt tốt trên hầu hết các trang, trong khi Performance và SEO ở mức khá. Tuy
+Nhìn chung, kết quả kiểm thử Lighthouse cho các danh mục đánh giá hiệu năng và trải nghiệm người dùng đạt mức
+khá tốt. Hạng mục Best Practices, Performance và SEO
+đạt tốt trên hầu hết các trang. Tuy
 nhiên, điểm Accessibility vẫn còn thấp ở một số trang và cần được ưu tiên cải
 thiện trong các phiên bản tiếp theo, đặc biệt với đối tượng người dùng là học
 sinh tiểu học --- nhóm cần giao diện thân thiện và dễ tiếp cận.

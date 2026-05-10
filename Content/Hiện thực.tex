@@ -1,6 +1,7 @@
 \section{Hiện thực}
-\subsection{Công nghệ sử dụng}
+Chương này tập trung trình bày các giải pháp công nghệ và hạ tầng kỹ thuật được áp dụng để hiện thực hóa và triển khai hệ thống. Việc lựa chọn các công nghệ này đóng vai trò quyết định đến tính ổn định trong vận hành, đồng thời đảm bảo khả năng đáp ứng trọn vẹn các yêu cầu đã được đề ra.
 
+\subsection{Công nghệ sử dụng}
 \subsubsection{Giao diện người dùng}
 
 \begin{itemize}
@@ -24,8 +25,7 @@
 \end{itemize}
 
 
-\subsubsection{Hạ tầng Backend và Quản lý dữ liệu}
-
+\subsubsection{Công nghệ Backend và Quản lý dữ liệu}
 \begin{itemize}
 	\item \textbf{Node.js \& Express.js}
 	\begin{itemize}
@@ -54,39 +54,182 @@
       \item \textbf{Giới thiệu:} Dịch vụ thanh toán trực tuyến của bên thứ ba (VNPay).
       \item \textbf{Lý do sử dụng:} Xử lý các giao dịch thanh toán cho việc đăng ký Premium một cách an toàn và tuân thủ các tiêu chuẩn bảo mật PCI DSS. Hỗ trợ nhiều phương thức thanh toán phổ biến tại Việt Nam như chuyển khoản ngân hàng, QR code, và ví điện tử. Cung cấp webhook để cập nhật trạng thái thanh toán real-time.
     \end{itemize}
+    \item \textbf{Gmail}
+    \begin{itemize}
+    	\item \textbf{Giới thiệu:} Dịch vụ thư điện tử phổ biến hiện nay của Google.
+    	\item \textbf{Lý do sử dụng:} Hỗ trợ việc xác thực danh tính người dùng bằng cách gửi mã xác thực qua email, được dùng cho tính năng đổi hoặc khôi phục mật khẩu.
+    \end{itemize}
+    \item \textbf{Google OAuth 2.0}
+    \begin{itemize}
+    	\item \textbf{Giới thiệu:} Cơ thức ủy quyền bảo mật cho phép người dùng chia sẻ tài liệu hoặc quyền truy cập từ tài khoản Google của mình cho các ứng dụng khác mà không cần tiết lộ mật khẩu cá nhân.
+    	\item \textbf{Lý do sử dụng:} Được sử dụng cho tính năng đăng nhập vào hệ thống bằng tài khoản Google (dành cho phụ huynh).
+    \end{itemize}
+ \end{itemize}
+ 
+ \subsubsection{Quản lý mã nguồn}
+
+ \begin{itemize}
+ 	\item \textbf{Giới thiệu:} GitHub là nền tảng quản lý mã nguồn dựa trên Git, hỗ trợ cộng tác phát triển phần mềm trên phạm vi toàn cầu \cite{github}.
+ 	\item \textbf{Lý do sử dụng:} Là dịch vụ tiêu chuẩn trong việc lưu trữ mã nguồn, theo dõi lịch sử thay đổi (version control), thực hiện quy trình kiểm tra mã (code review) và tích hợp linh hoạt với các công cụ CI/CD của bên thứ ba.
  \end{itemize}
 
-\subsubsection{Hạ tầng và DevOps}
-
+\subsection{Triển khai hệ thống}
+\subsubsection{Giao diện người dùng (Frontend)}
+Giao diện người dùng được triển khai trên nền tảng điện toán đám mây Vercel được tối ưu hóa riêng cho Next.js và các ứng dụng full-stack hiện đại. Vercel hỗ trợ quy trình triển khai ứng dụng Next.js tối giản thông qua cơ chế CI/CD tự động từ kho lưu trữ Git. Vercel cung cấp mạng lưới Edge Network toàn cầu giúp tối ưu hóa tốc độ truy cập (latency), khả năng tự động mở rộng (auto-scaling) và tính năng Preview Deployments cho mỗi pull request.
 \begin{itemize}
-	\item \textbf{Vercel}
+	\item \textbf{Các bước triển khai}:
+	\begin{enumerate}
+		\item Truy cập vào dashboard của Vercel và tạo project mới để triển khai.
+		\item Import repository mã nguồn của frontend vào Vercel và liên kết với project mới vừa được tạo.
+		\item Cấu hình các biến môi trường cần thiết.
+		\item Cấu hình Ignored Build Step sử dụng Customized Command:
+		\begin{verbatim}
+			if [ "$VERCEL_GIT_COMMIT_REF" == "prod" ]; 
+			then exit 1; 
+			else exit 0; 
+			fi
+		\end{verbatim}
+		Đoạn mã trên thiết lập cơ chế kiểm soát quá trình triển khai tự động (CI/CD), đảm bảo hệ thống chỉ thực hiện việc biên dịch và phát hành khi có thay đổi trên nhánh \textit{prod}. Các thay đổi trên những nhánh khác sẽ bị bỏ qua nhằm tối ưu hóa tài nguyên và thời gian triển khai.
+	\end{enumerate}
+	\item \textbf{Cấu hình Hạ tầng và Môi trường vận hành}
 	\begin{itemize}
-		\item \textbf{Giới thiệu:} Vercel là nền tảng điện toán đám mây (cloud deployment) được tối ưu hóa riêng cho Next.js và các ứng dụng full-stack hiện đại \cite{vercel}.
-		\item \textbf{Lý do sử dụng:} Hỗ trợ quy trình triển khai ứng dụng Next.js tối giản thông qua cơ chế CI/CD tự động từ kho lưu trữ Git. Vercel cung cấp mạng lưới Edge Network toàn cầu giúp tối ưu hóa tốc độ truy cập (latency), khả năng tự động mở rộng (auto-scaling) và tính năng Preview Deployments cho mỗi pull request.
-	\end{itemize}
-	
-	\item \textbf{GitHub} 
-	\begin{itemize}
-		\item \textbf{Giới thiệu:} GitHub là nền tảng quản lý mã nguồn dựa trên Git, hỗ trợ cộng tác phát triển phần mềm trên phạm vi toàn cầu \cite{github}.
-		\item \textbf{Lý do sử dụng:} Là dịch vụ tiêu chuẩn trong việc lưu trữ mã nguồn, theo dõi lịch sử thay đổi (version control), thực hiện quy trình kiểm tra mã (code review) và tích hợp linh hoạt với các công cụ CI/CD của bên thứ ba.
-	\end{itemize}
-	
-	\item \textbf{Amazon Web Services (AWS)}
-	\begin{itemize}
-		\item \textbf{Giới thiệu:} Nền tảng điện toán đám mây cung cấp hạ tầng mạnh mẽ. Trong đề tài này, nhóm triển khai hệ thống container trên các máy ảo EC2 nhằm vận hành ứng dụng theo mô hình Kubernetes tập trung.
-		
-		\item \textbf{Lý do sử dụng:} 
+		\item \textbf{Môi trường Xây dựng (Build Environment):}
 		\begin{itemize}
-			\item \textbf{K3s}: Được lựa chọn nhờ kiến trúc tối giản, phù hợp với các instance EC2 có cấu hình vừa phải. K3s cho phép nhóm vận hành các công cụ chuẩn của Kubernetes như Deployment, Service và YAML manifest để quản lý vòng đời ứng dụng một cách nhất quán qua giao diện dòng lệnh \texttt{kubectl} \cite{k3s}.
-			
-			\item \textbf{Tính linh hoạt:} Việc kết hợp K3s và AWS giúp tận dụng hạ tầng đàn hồi của EC2 trong khi vẫn giữ quyền kiểm soát toàn diện cụm (cluster). Giải pháp này đáp ứng tốt các yêu cầu về chi phí, hiệu năng và khả năng mở rộng quy mô trong môi trường thực tế.
+			\item \textbf{Tài nguyên:} 4 vCPU và 8 GB RAM.
+			\item \textbf{Vai trò:} Chịu trách nhiệm cài đặt các thư viện phụ thuộc, biên dịch mã nguồn và đóng gói ứng dụng (build artifact) trước khi triển khai chính thức.
+		\end{itemize}
+		
+		\item \textbf{Môi trường Thực thi (Runtime Environment):}
+		\begin{itemize}
+			\item \textbf{Tài nguyên:} 1 vCPU và 2 GB RAM.
+			\item \textbf{Vai trò:} Xử lý các yêu cầu (requests) trực tiếp từ người dùng cuối thông qua cơ chế Serverless Functions của Vercel.
+		\end{itemize}
+		
+		\item \textbf{Vị trí Địa lý (Region):}
+		\begin{itemize}
+			\item \textbf{Khu vực:} Singapore (\texttt{sin1}).
+			\item \textbf{Đặc điểm:} Việc đặt máy chủ tại Singapore giúp tối ưu hóa tốc độ phản hồi, giảm thiểu độ trễ mạng (network latency) cho người dùng tại khu vực Việt Nam và Đông Nam Á.
 		\end{itemize}
 	\end{itemize}
+\end{itemize}
 
-	\item \textbf{Render}
+\subsubsection{Backend}
+\begin{itemize}
+	\item \textbf{Tổng quan về môi trường triển khai:}
+	AWS là nền tảng điện toán đám mây cung cấp hạ tầng mạnh mẽ, tạo điều kiện thuận lợi cho việc triển khai hệ thống container trên các máy ảo EC2. Giải pháp này cho phép vận hành ứng dụng theo mô hình Kubernetes tập trung, đảm bảo tính ổn định và khả năng mở rộng tối ưu.
+
+	
 	\begin{itemize}
-		\item \textbf{Giới thiệu:} Render là nền tảng điện toán đám mây (PaaS) hỗ trợ triển khai ứng dụng web, API và các dịch vụ nền (background services) một cách đơn giản, tích hợp CI/CD tự động từ kho lưu trữ Git.
-		\item \textbf{Lý do sử dụng:} Render được sử dụng để triển khai máy chủ \textbf{Colyseus} -- thành phần xử lý logic game đa người chơi thời gian thực cho minigame Tomato Shooting. So với việc tự quản lý hạ tầng trên AWS, Render giúp đơn giản hóa đáng kể quy trình triển khai và vận hành server Colyseus: tự động build và deploy khi có commit mới lên nhánh chính, hỗ trợ WebSocket vốn là giao thức cốt lõi của Colyseus, và cung cấp logs theo thời gian thực để theo dõi trạng thái server trong quá trình phát triển. Ngoài ra, Render có gói miễn phí phù hợp với quy mô của đề tài, giúp tiết kiệm chi phí vận hành trong giai đoạn phát triển và demo.
+		\item \textbf{Dịch vụ hạ tầng:} AWS EC2 (Elastic Compute Cloud).
+		\item \textbf{Vị trí máy chủ (Region):} Singapore (\texttt{ap-southeast-1}).
+		\item \textbf{Trạng thái:} Hệ thống đang hoạt động ổn định (Production Ready).
+	\end{itemize}
+	
+	\item \textbf{Thông số kỹ thuật và Cấu hình hệ thống}
+	
+	\begin{enumerate}
+		\item \textbf{Nền tảng điều phối và Môi trường thực thi:}
+		Hệ thống áp dụng công nghệ Container hóa (Docker) và được điều phối bởi Kubernetes rút gọn (K3s), giúp tối ưu hóa tài nguyên trên máy chủ. K3s được lựa chọn nhờ kiến trúc tối giản, phù hợp với các instance EC2 có cấu hình vừa phải. Ngoài ra, K3s còn cho phép người dùng vận hành các công cụ chuẩn của Kubernetes như Deployment, Service và YAML manifest để quản lý vòng đời ứng dụng một cách nhất quán qua giao diện dòng lệnh \texttt{kubectl} \cite{k3s}.  Việc kết hợp K3s và AWS giúp tận dụng hạ tầng đàn hồi của EC2 trong khi vẫn giữ quyền kiểm soát toàn diện cụm (cluster). Giải pháp này đáp ứng tốt các yêu cầu về chi phí, hiệu năng và khả năng mở rộng quy mô trong môi trường thực tế.
+		
+		\begin{itemize}[leftmargin=*, label=\textbullet, topsep=0.3em]
+			\item \textbf{Hệ điều hành:} Amazon Linux (Truy cập quản trị qua tài khoản
+			\texttt{ec2-user}).
+			\item \textbf{Nền tảng điều phối:} K3s (Lightweight Kubernetes).
+			\item \textbf{Kiến trúc hệ thống:} \texttt{linux/amd64}.
+			\item \textbf{Mô hình triển khai:} High Availability với 02 bản sao (Replicas)
+			chạy song song.
+		\end{itemize}
+		
+		\item \textbf{Định mức tài nguyên hệ thống (Resource Quotas)}
+		Tài nguyên được phân bổ chi tiết cho mỗi đơn vị thực thi (Pod) nhằm đảm bảo
+		hiệu suất ổn định:
+		
+		\vspace{0.5em}
+		\begin{table}[ht] % Môi trường table giúp thêm caption và label
+			\centering % Căn giữa bảng trên trang
+			\begin{tabular}{lll}
+				\toprule
+				\textbf{Thông số} & \textbf{Mức yêu cầu (Request)} & \textbf{Mức giới hạn (Limit)} \\
+				\midrule
+				CPU               & 50m (0.05 Core)                & 200m (0.2 Core)               \\
+				Bộ nhớ (RAM)      & 64 MiB                         & 256 MiB                       \\
+				\bottomrule
+			\end{tabular}
+			\caption{Bảng định mức tài nguyên cho hệ thống} % Chú thích của bảng
+			\label{tab:dinh-muc-tai-nguyen} % Nhãn để dùng lệnh \ref{} khi cần nhắc tới bảng trong bài
+		\end{table}
+		\vspace{0.5em}
+		
+		\item \textbf{Các thành phần dịch vụ tích hợp}
+		
+		\begin{itemize}[leftmargin=*, label=\textbullet, topsep=0.3em]
+			\item \textbf{Cơ sở dữ liệu NoSQL:} MongoDB, kết nối thông qua chuỗi định
+			danh (URI) được bảo mật.
+			\item \textbf{Hệ thống Cache:} Redis, được triển khai trực tiếp bên trong
+			cụm Kubernetes.
+			\item \textbf{Lưu trữ tệp tin:} Cloudinary (Dịch vụ quản lý hình ảnh đám mây).
+			\item \textbf{Cổng thanh toán:} VNPAY Sandbox (Môi trường thử nghiệm tích hợp).
+		\end{itemize}
+		
+	\end{enumerate}
+	
+	\item \textbf{Quy trình triển khai kỹ thuật (Deployment Workflow)}
+	Quy trình triển khai hệ thống được thực hiện một cách tuần tự qua các giai đoạn sau:
+	
+	\begin{itemize}
+		\item \textbf{Giai đoạn 1 -- Đóng gói Ứng dụng:} Sử dụng Docker để xây dựng
+		Image hệ thống hỗ trợ kiến trúc Linux/amd64, sau đó đẩy lên kho lưu trữ
+		Docker Hub.
+		\item \textbf{Giai đoạn 2 -- Chuyển giao cấu hình:} Sử dụng giao thức SCP để
+		đồng bộ các tệp cấu hình Kubernetes (\texttt{.yaml}) từ môi trường phát
+		triển lên máy chủ EC2.
+		\item \textbf{Giai đoạn 3 -- Thực thi triển khai:} Kết nối SSH vào máy chủ để
+		khởi tạo các tài khoản định danh (Secrets) và áp dụng cấu hình thông qua
+		công cụ \texttt{kubectl}.
+		\item \textbf{Giai đoạn 4 -- Kiểm tra và Giám sát:} Thực hiện kiểm tra trạng
+		thái các Pod và dịch vụ K3s để xác nhận quá trình triển khai hoàn tất và
+		không có lỗi phát sinh.
+	\end{itemize}
+	
+	\item \textbf{Thiết lập Bảo mật Hạ tầng (AWS Security Group)}
+	
+	Để bảo vệ hệ thống trước các truy cập trái phép, quy tắc tường lửa (Security
+	Group) được cấu hình nghiêm ngặt theo mô hình tối giản các cổng kết nối (Least
+	Privilege):
+	
+	\vspace{0.5em}
+	\begin{table}[ht]
+		\centering
+		\renewcommand{\arraystretch}{1.4} % Tăng khoảng cách dòng cho thoáng
+		\begin{tabularx}{\textwidth}{l l l l X}
+			\toprule
+			\textbf{Loại lưu lượng} & \textbf{Giao thức} & \textbf{Cổng} & \textbf{Đối tượng} & \textbf{Mục đích} \\
+			\midrule
+			Bảo mật SSH & TCP & 22 & Quản trị viên & Truy cập dòng lệnh để quản lý và bảo trì server. \\
+			Ứng dụng Web & TCP & 30081 & Công cộng & Tiếp nhận yêu cầu từ người dùng tới hệ thống Dino Math. \\
+			\bottomrule
+		\end{tabularx}
+		\caption{Cấu hình lưu lượng mạng cho hệ thống}
+	\end{table}
+	\vspace{0.5em}
+	
+\end{itemize}
+
+\subsubsection{Minigames}
+\begin{itemize}
+	\item \textbf{Minigame chơi đơn (Math Matching):}
+	\begin{itemize}
+		\item \textbf{Nền tảng triển khai:} GitHub Pages.
+		\item \textbf{Cơ chế vận hành:} Tự động hóa quy trình build và deploy thông qua \textbf{GitHub Actions} ngay khi mã nguồn được cập nhật.
+		\item \textbf{Ưu điểm:} Đảm bảo tính nhất quán, phát hành nhanh chóng và không tốn chi phí vận hành máy chủ tĩnh.
+	\end{itemize}
+	
+	\item \textbf{Trò chơi đa người chơi (Tomato Shooting):}
+	\begin{itemize}
+		\item \textbf{Phần Game Client:} Triển khai tương tự trên \textbf{GitHub Pages} tích hợp \textbf{GitHub Actions} để tự động hóa quá trình phát hành phiên bản mới nhất.
+		\item \textbf{Phần Máy chủ thời gian thực (Server):} Triển khai trên nền tảng \textbf{Render}. Render là nền tảng điện toán đám mây (PaaS) hỗ trợ triển khai ứng dụng web, API và các dịch vụ nền (background services) một cách đơn giản, tích hợp CI/CD tự động từ kho lưu trữ Git. Render được sử dụng để triển khai máy chủ \textbf{Colyseus} -- thành phần xử lý logic game đa người chơi thời gian thực. 
+		\item \textbf{Ưu điểm của Render:} So với việc tự quản lý hạ tầng trên AWS, Render giúp đơn giản hóa đáng kể quy trình triển khai và vận hành server Colyseus: tự động build và deploy khi có commit mới lên nhánh chính, hỗ trợ WebSocket vốn là giao thức cốt lõi của Colyseus, và cung cấp logs theo thời gian thực để theo dõi trạng thái server trong quá trình phát triển. Ngoài ra, Render có gói miễn phí phù hợp với quy mô của đề tài, giúp tiết kiệm chi phí vận hành trong giai đoạn phát triển và demo.
+		\item \textbf{Vai trò máy chủ:} Xử lý kết nối đa người chơi, đồng bộ trạng thái trận đấu và truyền tải dữ liệu thời gian thực với độ trễ thấp.
 	\end{itemize}
 \end{itemize}
 
