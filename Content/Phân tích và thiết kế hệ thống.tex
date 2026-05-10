@@ -616,24 +616,25 @@ Hệ thống được thiết kế theo mô hình kiến trúc nhiều tầng (l
 Hệ thống được thiết kế theo mô hình kiến trúc nhiều tầng (layered architecture), nhằm tách biệt rõ ràng giữa giao diện người dùng, xử lý nghiệp vụ và truy cập dữ liệu, từ đó tăng khả năng mở rộng, bảo trì và kiểm thử.
 
 \subsubsection{Tầng Trình bày (Presentation Layer)}
-Tầng trình bày chịu trách nhiệm tương tác trực tiếp với người dùng, bao gồm các màn hình và chức năng như \textit{Đăng nhập/Đăng ký} (Login/Register), \textit{Bài tập} (Exercise), \textit{Trò chơi nhỏ} (Minigame), \textit{Đấu trường} (Arena), \textit{Thống kê} (Statistics) và \textit{Lịch sử} (History).  
+Tầng trình bày chịu trách nhiệm tương tác trực tiếp với người dùng, bao gồm các giao diện và chức năng như:
+\begin{itemize}
+	\item \textit{Đăng nhập/Đăng ký} (Login/Register UI)
+	\item Các giao diện liên quan đến học tập: Chủ đề, Đấu trường, Bài kiểm tra, Bài tập tương tác được thể hiện chung trên sơ đồ \textbf{Hình} \ref{fig:system-architecture} qua component Study UI.
+	\item \textit{Nhiệm vụ} (Mission UI)
+	\item \textit{Hồ sơ người dùng} (User Profile UI)
+	\item \textit{Trò chơi} (Minigame UI)
+	\item \textit{Thống kê} (Statistics UI): bao gồm các giao diện lịch sử, bảng xếp hạng, các thông số học tập,...
+\end{itemize}
 
 Các thành phần thuộc tầng này không xử lý logic nghiệp vụ, mà chỉ có nhiệm vụ gửi yêu cầu (request) đến Tầng Điều khiển và hiển thị kết quả (response) trả về cho người dùng.
 
 \subsubsection{Tầng Điều khiển (Controller Layer)}
 Tầng điều khiển đóng vai trò trung gian giữa Tầng Trình bày và Tầng Ứng dụng (Application Layer).  
 
-Mỗi bộ điều khiển (Controller) như \textit{Xác thực} (Auth), \textit{Trò chơi} (Game), \textit{Đấu trường} (Arena), \textit{Bài tập} (Exercise) và \textit{Thống kê} (Stats) tiếp nhận yêu cầu từ giao diện người dùng, điều phối luồng xử lý và gọi các thành phần nghiệp vụ tương ứng.  
+Mỗi bộ điều khiển (Controller) như: \textit{Xác thực} (Auth), \textit{Trò chơi} (Minigame), \textit{Nhiệm vụ} (Mission), \textit{Học tập} (Study), \textit{Thống kê} (Statistics),... tiếp nhận yêu cầu từ giao diện người dùng, điều phối luồng xử lý và gọi các thành phần nghiệp vụ tương ứng.  
 
-Trước khi chuyển tiếp yêu cầu, tầng điều khiển sử dụng các bộ kiểm tra dữ liệu (Validators) để xác thực dữ liệu đầu vào, nhằm đảm bảo tính hợp lệ và an toàn cho hệ thống.
-
-\subsubsection{Tầng Ứng dụng (Application Layer)}
-Tầng ứng dụng chịu trách nhiệm điều phối logic ở mức cao, đóng vai trò kết nối giữa Tầng Điều khiển và Tầng Nghiệp vụ (Business Logic Layer).  
-
-Tại tầng này, hệ thống đảm bảo các trường hợp sử dụng (Use Case) được thực thi đúng trình tự, đồng thời không phụ thuộc trực tiếp vào chi tiết cài đặt của tầng nghiệp vụ hay tầng truy cập dữ liệu.
-
-\subsubsection{Tầng Nghiệp vụ (Business Logic Layer)}
-Tầng nghiệp vụ chứa các dịch vụ cốt lõi (Core Services) của hệ thống, bao gồm \textit{Dịch vụ Xác thực} (Auth Service), \textit{Dịch vụ Trò chơi} (Game Service), \textit{Dịch vụ Đấu trường} (Arena Service), \textit{Dịch vụ Bài tập} (Exercise Service), \textit{Dịch vụ Thống kê} (Stats Service), \textit{Dịch vụ Thanh toán} (Payment Service) và \textit{Dịch vụ Gói đăng ký} (Subscription Service).  
+\subsubsection{Tầng Dịch vụ (Service Layer)}
+Tầng Dịch vụ chứa các dịch vụ cốt lõi (Core Services) của hệ thống, bao gồm \textit{Dịch vụ Xác thực} (Auth Service), \textit{Dịch vụ Trò chơi} (Minigame Service), \textit{Các dịch vụ liên quan đến học tập} (Study Services), \textit{Dịch vụ Nhiệm vụ} (Mission Service), \textit{Dịch vụ quản lý người dùng} (User Service), \textit{Các dịch vụ Thống kê} (Statistics Services), \textit{Các dịch vụ liên quan đến gói trả phí và thanh toán} (Pricing Services).  
 
 Mỗi dịch vụ chịu trách nhiệm xử lý một nhóm nghiệp vụ cụ thể, đóng gói các quy tắc nghiệp vụ và đảm bảo tính nhất quán của dữ liệu.  
 Các dịch vụ có thể giao tiếp với nhau khi cần thiết, đồng thời tương tác với các dịch vụ bên ngoài.
@@ -644,15 +645,14 @@ Tầng truy cập dữ liệu chịu trách nhiệm lưu trữ và truy xuất d
 Mọi thao tác liên quan đến dữ liệu đều được thực hiện thông qua tầng này, giúp cô lập logic nghiệp vụ khỏi chi tiết cài đặt của hệ quản trị cơ sở dữ liệu.
 
 \subsubsection{Các Dịch vụ Bên ngoài (External Services)}
-Hệ thống tích hợp với các dịch vụ bên ngoài như \textit{Cổng thanh toán} (Payment Gateway) để xử lý giao dịch và \textit{Dịch vụ Email} (Email Service) để gửi thông báo.  
+Hệ thống tích hợp với các dịch vụ bên ngoài như \textit{Cổng thanh toán} (Payment Gateway) để xử lý giao dịch, \textit{Dịch vụ Email} (Email Service) để gửi thông báo, dịch vụ xác thực người dùng thông qua tài khoản Google.  
 
 Việc tách riêng các dịch vụ bên ngoài giúp hệ thống dễ dàng thay thế, mở rộng hoặc nâng cấp trong tương lai mà không ảnh hưởng đến các thành phần cốt lõi.
 
 \subsubsection{Luồng Xử lý Tổng quát}
 Người dùng tương tác với Tầng Trình bày, các yêu cầu được chuyển đến bộ điều khiển (Controller) tương ứng.  
-Sau khi dữ liệu được xác thực và kiểm tra hợp lệ, yêu cầu sẽ được xử lý tại Tầng Nghiệp vụ thông qua các dịch vụ phù hợp, đồng thời truy xuất hoặc cập nhật dữ liệu tại Tầng Truy cập Dữ liệu.  
+Sau khi dữ liệu được xác thực và kiểm tra hợp lệ, yêu cầu sẽ được xử lý tại Tầng Dịch vụ thông qua các dịch vụ phù hợp, đồng thời truy xuất hoặc cập nhật dữ liệu tại Tầng Truy cập Dữ liệu.  
 Cuối cùng, kết quả xử lý được trả về Tầng Trình bày để hiển thị cho người dùng.
-
 
 \subsection{Thiết kế cơ sở dữ liệu}
 Phần này trình bày chi tiết các thực thể chính trong hệ thống Dino Math, bao gồm vai trò, đặc điểm và mối quan hệ giữa chúng. Các thực thể được thiết kế nhằm đáp ứng đồng thời hai mục tiêu cốt lõi:
